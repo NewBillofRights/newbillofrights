@@ -1,0 +1,10 @@
+# One-project override of the [REDACTED] org's Domain Restricted
+# Sharing policy, so michael@newbillofrights.net can hold IAM roles on
+# newbillofrights-prod. The org-wide policy is untouched; this applies to
+# this project only. (Stricter alternative: replace `allowAll: true` with
+# the two Workspace customer IDs once newbillofrights.net's is known.)
+name: projects/newbillofrights-prod/policies/iam.allowedPolicyMemberDomains
+spec:
+  inheritFromParent: false
+  rules:
+    - allowAll: true
