@@ -1,0 +1,40 @@
+/* ============================================================
+   Design tokens — the identity (Phase 0, settled 2026-08-14).
+   Civic-neutral: deep ink navy on parchment, single gold accent.
+   Type: Libre Caslon Text (headings — founding-era Caslon
+   lineage) + Public Sans (body — the U.S. civic typeface).
+   Contrast (computed): --ink on --paper 13.5:1 (AAA);
+   --ink-soft 7.0:1 (AAA); --accent-text 5.8:1 (AA);
+   --accent as non-text 3.5:1 (AA). Gold never carries
+   normal-size text on paper or ink.
+   Style guide: /styleguide
+   ============================================================ */
+:root {
+  /* color */
+  --paper: #faf7f1;
+  --paper-raised: #ffffff;
+  --ink: #1c2b3a;
+  --ink-soft: #46566b;
+  --accent: #a97d1c; /* gold — decorative use (rules, marks) */
+  --accent-text: #7c5c12; /* gold dark enough for text on paper */
+  --rule: #ddd6c8;
+  --band: #efe9dc; /* tinted band backgrounds */
+
+  /* type */
+  --font-serif: 'Libre Caslon Text', 'Iowan Old Style', Palatino, Georgia, serif;
+  --font-sans: 'Public Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --step-0: 1rem;
+  --step-1: 1.25rem;
+  --step-2: 1.563rem;
+  --step-3: 1.953rem;
+  --step-4: 2.441rem;
+
+  /* layout */
+  --max-width: 66rem;
+  --measure: 42rem; /* reading measure for body text */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+}

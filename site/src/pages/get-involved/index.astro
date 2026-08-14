@@ -1,0 +1,96 @@
+---
+import Base from '../../layouts/Base.astro';
+import SeedDonorBand from '../../components/SeedDonorBand.astro';
+---
+
+<Base
+  title="Get Involved"
+  description="Join the mailing list, become a founding donor, take the survey, or attend a salon."
+>
+  <div class="container">
+    <h1>Get Involved</h1>
+
+    <section id="join">
+      <h2>Join the mailing list</h2>
+      <p>
+        The best way to follow the work: occasional updates on new research,
+        polling, draft language, and salons. No spam, and we will never sell
+        the list.
+      </p>
+      <form class="signup" method="post" action="#join" aria-label="Mailing list signup">
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" required placeholder="you@example.com" disabled />
+        <button type="submit" disabled>Join</button>
+      </form>
+      <p class="placeholder-note">
+        Signup goes live with the forms backend (workstream D). Until then,
+        email <a href="mailto:contact@newbillofrights.net">contact@newbillofrights.net</a>
+        with the subject “Join”.
+      </p>
+    </section>
+
+    <section>
+      <h2>Take the survey</h2>
+      <p>
+        A national survey testing which amendment framings clear the
+        full-spectrum bar is in the works. When it's live, it will be here.
+      </p>
+    </section>
+
+    <section>
+      <h2>Salons</h2>
+      <p>
+        A monthly salon in Los Angeles — one topic per evening, across the
+        spectrum, in person — plus an invite-only online series for founding
+        donors. <a href="/get-involved/salons">Details and RSVP →</a>
+      </p>
+    </section>
+  </div>
+
+  <SeedDonorBand />
+</Base>
+
+<style>
+  section {
+    margin-block: var(--space-4);
+  }
+
+  .signup {
+    display: flex;
+    gap: var(--space-1);
+    align-items: end;
+    flex-wrap: wrap;
+    max-width: var(--measure);
+  }
+
+  .signup label {
+    display: block;
+    width: 100%;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+
+  .signup input {
+    flex: 1 1 16rem;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    font-size: 1rem;
+    background: var(--paper-raised);
+  }
+
+  .signup button {
+    padding: 0.6rem 1.4rem;
+    border: none;
+    border-radius: 3px;
+    background: var(--ink);
+    color: var(--paper);
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .signup button:disabled,
+  .signup input:disabled {
+    opacity: 0.55;
+  }
+</style>

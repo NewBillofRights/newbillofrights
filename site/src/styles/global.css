@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'Libre Caslon Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/libre-caslon-text-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Libre Caslon Text';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/libre-caslon-text-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url('/fonts/public-sans-var.woff2') format('woff2');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: var(--step-0);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-serif);
+  line-height: 1.15;
+  color: var(--ink);
+  margin: 0 0 var(--space-2);
+}
+
+h1 {
+  font-size: var(--step-4);
+}
+h2 {
+  font-size: var(--step-3);
+}
+h3 {
+  font-size: var(--step-2);
+}
+h4 {
+  font-size: var(--step-1);
+}
+
+p,
+ul,
+ol {
+  max-width: var(--measure);
+}
+
+a {
+  color: var(--accent-text);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: var(--ink);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--space-3);
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--ink);
+  color: var(--paper);
+  padding: var(--space-1) var(--space-2);
+  z-index: 100;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+/* Draft constitutional text — "the document is the brand" */
+.article-text {
+  font-family: var(--font-serif);
+  font-size: var(--step-1);
+  line-height: 1.7;
+  border-block: 3px double var(--rule);
+  padding-block: var(--space-3);
+  margin-block: var(--space-3);
+}
+
+.article-text p {
+  margin: 0 0 var(--space-2);
+}
+
+/* Cross-browser reset for <details>/<summary> disclosure markers
+   (AnnotatedArticle uses its own indicator) */
+summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Visible marker for copy still in the C-workstream pipeline */
+.placeholder-note {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  background: var(--band);
+  border-left: 3px solid var(--accent);
+  padding: var(--space-1) var(--space-2);
+  max-width: var(--measure);
+}

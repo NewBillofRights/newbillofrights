@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import AmendmentCard from '../../components/AmendmentCard.astro';
+
+const amendments = (await getCollection('amendments')).sort(
+  (a, b) => a.data.order - b.data.order
+);
+---
+
+<Base
+  title="The Amendments"
+  description="Eight proposed constitutional amendments, each with genuine support across the political spectrum."
+>
+  <div class="container">
+    <h1>The Amendments</h1>
+    <p>
+      Every amendment on this list has passed the full-spectrum gate: credible
+      evidence of support in both parties, from MAGA Republicans to socialist
+      Democrats. For what didn't make the list — and why — see the
+      <a href="/evidence/rejected">rejected categories</a>.
+    </p>
+    <div class="grid">
+      {
+        amendments.map((a) => (
+          <AmendmentCard
+            order={a.data.order}
+            title={a.data.title}
+            problemSummary={a.data.problemSummary}
+            href={`/amendments/${a.id}`}
+          />
+        ))
+      }
+    </div>
+  </div>
+</Base>
+
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    gap: var(--space-2);
+    margin-top: var(--space-3);
+  }
+</style>

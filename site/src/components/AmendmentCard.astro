@@ -1,0 +1,51 @@
+---
+interface Props {
+  order: number;
+  title: string;
+  problemSummary: string;
+  href: string;
+}
+
+const { order, title, problemSummary, href } = Astro.props;
+---
+
+<a class="card" href={href}>
+  <span class="num">{String(order).padStart(2, '0')}</span>
+  <h3>{title}</h3>
+  <p>{problemSummary}</p>
+</a>
+
+<style>
+  .card {
+    display: block;
+    background: var(--paper-raised);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: var(--space-3);
+    color: var(--ink);
+    text-decoration: none;
+    transition: border-color 120ms ease;
+  }
+
+  .card:hover {
+    border-color: var(--accent);
+  }
+
+  .num {
+    font-family: var(--font-serif);
+    color: var(--accent-text);
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+  }
+
+  .card h3 {
+    font-size: var(--step-1);
+    margin: var(--space-1) 0;
+  }
+
+  .card p {
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    margin: 0;
+  }
+</style>

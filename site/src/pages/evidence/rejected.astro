@@ -1,0 +1,61 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+const rejected = await getCollection('rejected');
+---
+
+<Base
+  title="Rejected Categories"
+  description="The categories that couldn't pass the full-spectrum test — and exactly why."
+>
+  <div class="container">
+    <h1>Rejected Categories</h1>
+    <p>
+      These aren't judgments that the issues don't matter — they're judgments
+      that a category can't pass the full-spectrum test, and that including it
+      would code the whole project as partisan. A rejected category can be
+      revisited if survey or salon work reveals an unexpected consensus
+      framing.
+    </p>
+    <ul class="rejected-list">
+      {
+        rejected.map((r) => (
+          <li>
+            <h2>{r.data.title}</h2>
+            <p class="date">Rejected {r.data.rejectedOn}</p>
+            <p>{r.data.reason}</p>
+          </li>
+        ))
+      }
+    </ul>
+    <p>
+      Also see the <a href="/evidence/candidates">candidate categories</a> —
+      the open pipeline of ideas under consideration — and the
+      <a href="/evidence/polling">polling evidence</a>.
+    </p>
+  </div>
+</Base>
+
+<style>
+  .rejected-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .rejected-list li {
+    border-bottom: 1px solid var(--rule);
+    padding-block: var(--space-3);
+  }
+
+  .rejected-list h2 {
+    font-size: var(--step-1);
+    margin-bottom: 0.25rem;
+  }
+
+  .date {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin-top: 0;
+  }
+</style>

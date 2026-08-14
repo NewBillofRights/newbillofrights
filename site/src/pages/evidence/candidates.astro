@@ -1,0 +1,51 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+const candidates = await getCollection('candidates');
+---
+
+<Base
+  title="Candidate Categories"
+  description="Categories under consideration — not yet accepted or rejected."
+>
+  <div class="container">
+    <h1>Candidate Categories</h1>
+    <p>
+      The open pipeline: ideas under consideration that haven't yet been
+      accepted or rejected. Each one needs evidence — usually fresh polling
+      with party breakdowns — to move in or out.
+    </p>
+    <ul class="candidate-list">
+      {
+        candidates.map((c) => (
+          <li>
+            <strong>{c.data.title}</strong>
+            {c.data.note && <span class="note"> — {c.data.note}</span>}
+          </li>
+        ))
+      }
+    </ul>
+    <p>
+      See what has already moved out in
+      <a href="/evidence/rejected">rejected categories</a>.
+    </p>
+  </div>
+</Base>
+
+<style>
+  .candidate-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .candidate-list li {
+    padding-block: var(--space-1);
+    border-bottom: 1px solid var(--rule);
+    max-width: var(--measure);
+  }
+
+  .note {
+    color: var(--ink-soft);
+  }
+</style>

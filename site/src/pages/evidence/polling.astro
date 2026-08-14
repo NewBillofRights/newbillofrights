@@ -1,0 +1,93 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+const polling = await getCollection('polling');
+const hasPlaceholders = polling.some((p) => p.data.placeholder);
+---
+
+<Base
+  title="Polling"
+  description="Cross-party polling support for each proposed amendment, with party breakdowns."
+>
+  <div class="container">
+    <h1>Polling</h1>
+    <p>
+      The evidence behind the full-spectrum test: for each proposal, support
+      among Democrats, Republicans, and independents. Per-proposal charts with
+      the bipartisan floor highlighted arrive in Phase 2; the table comes
+      first.
+    </p>
+    {
+      hasPlaceholders && (
+        <p class="placeholder-note">
+          The numbers below are placeholders — real figures and sources are
+          being distilled from POLLING_RESEARCH.md (workstream C3).
+        </p>
+      )
+    }
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Proposal</th>
+            <th scope="col">Dem</th>
+            <th scope="col">Rep</th>
+            <th scope="col">Ind</th>
+            <th scope="col">Overall</th>
+            <th scope="col">Source</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            polling.map((p) => (
+              <tr>
+                <td>{p.data.proposal}</td>
+                <td>{p.data.support.dem}%</td>
+                <td>{p.data.support.rep}%</td>
+                <td>{p.data.support.ind != null ? `${p.data.support.ind}%` : '—'}</td>
+                <td>
+                  {p.data.support.overall != null
+                    ? `${p.data.support.overall}%`
+                    : '—'}
+                </td>
+                <td class="source">
+                  {p.data.source} ({p.data.year})
+                </td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .table-wrap {
+    overflow-x: auto;
+    margin-top: var(--space-3);
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th,
+  td {
+    text-align: left;
+    padding: var(--space-1) var(--space-2);
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+
+  th {
+    font-family: var(--font-serif);
+  }
+
+  .source {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+  }
+</style>

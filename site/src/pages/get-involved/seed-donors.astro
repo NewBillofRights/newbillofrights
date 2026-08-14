@@ -1,0 +1,118 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base
+  title="Become a Founding Donor"
+  description="Founding donors ($1,000+) start the institution: incorporation, 501(c)(3) filing, and the founding board."
+>
+  <div class="container">
+    <h1>Become a Founding Donor</h1>
+    <p class="lede">
+      The New Bill of Rights Foundation doesn't formally exist yet — founding
+      donors are what start it. A commitment of $1,000 or more funds
+      incorporating the foundation, filing for 501(c)(3) status, opening bank
+      accounts, establishing the board of directors, and hiring part-time
+      support.
+    </p>
+
+    <h2>What founding donors receive</h2>
+    <ul>
+      <li>
+        A seat on the founding <strong>board of directors</strong> for at least
+        one year (continuing thereafter if re-appointed).
+      </li>
+      <li>Membership in the <strong>invite-only online salon series</strong>.</li>
+      <li>
+        <strong>Permanent recognition</strong> as a founding donor on this
+        website.
+      </li>
+    </ul>
+
+    <h2>How it works right now</h2>
+    <p>
+      <strong>No money changes hands today.</strong> Until the entity and its
+      bank account exist, we only collect expressions of interest: your name,
+      email, intended amount, and anything you'd like us to know. When the
+      foundation incorporates (planned for 2026), we'll come back to you before
+      any payment.
+    </p>
+
+    <form class="interest" method="post" action="#" aria-label="Founding donor interest">
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required disabled />
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required disabled />
+      </div>
+      <div class="field">
+        <label for="amount">Intended amount (USD)</label>
+        <input id="amount" name="amount" type="number" min="1000" step="100" placeholder="1000" disabled />
+      </div>
+      <div class="field">
+        <label for="note">Anything you'd like us to know (optional)</label>
+        <textarea id="note" name="note" rows="4" disabled></textarea>
+      </div>
+      <button type="submit" disabled>Express interest</button>
+    </form>
+    <p class="placeholder-note">
+      This form goes live with the forms backend (workstream D). Until then,
+      email
+      <a href="mailto:contact@newbillofrights.net">contact@newbillofrights.net</a>
+      with the subject “Founding donor”.
+    </p>
+  </div>
+</Base>
+
+<style>
+  .lede {
+    font-size: var(--step-1);
+    color: var(--ink-soft);
+  }
+
+  .interest {
+    max-width: var(--measure);
+    display: grid;
+    gap: var(--space-2);
+    margin-block: var(--space-3);
+  }
+
+  .field {
+    display: grid;
+    gap: 0.25rem;
+  }
+
+  label {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+
+  input,
+  textarea {
+    padding: 0.6rem 0.8rem;
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    font-size: 1rem;
+    font-family: inherit;
+    background: var(--paper-raised);
+  }
+
+  button {
+    justify-self: start;
+    padding: 0.6rem 1.4rem;
+    border: none;
+    border-radius: 3px;
+    background: var(--ink);
+    color: var(--paper);
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  button:disabled,
+  input:disabled,
+  textarea:disabled {
+    opacity: 0.55;
+  }
+</style>

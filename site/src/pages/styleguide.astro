@@ -1,0 +1,153 @@
+---
+import Base from '../layouts/Base.astro';
+import FullSpectrumChart from '../components/FullSpectrumChart.astro';
+import AmendmentCard from '../components/AmendmentCard.astro';
+
+const swatches = [
+  { name: '--paper', hex: '#faf7f1', role: 'Page background (parchment)' },
+  { name: '--paper-raised', hex: '#ffffff', role: 'Cards, form fields' },
+  { name: '--ink', hex: '#1c2b3a', role: 'Text, headings — 13.5:1 on paper (AAA)' },
+  { name: '--ink-soft', hex: '#46566b', role: 'Secondary text — 7.0:1 on paper (AAA)' },
+  { name: '--accent', hex: '#a97d1c', role: 'Gold — marks, rules, bars (3.5:1 non-text, AA)' },
+  { name: '--accent-text', hex: '#7c5c12', role: 'Gold for text/links — 5.8:1 on paper (AA)' },
+  { name: '--rule', hex: '#ddd6c8', role: 'Hairlines, borders' },
+  { name: '--band', hex: '#efe9dc', role: 'Tinted band backgrounds' },
+];
+---
+
+<Base
+  title="Style Guide"
+  description="The New Bill of Rights identity: palette, type, and components. Internal reference."
+>
+  <div class="container">
+    <h1>Style Guide</h1>
+    <p>
+      The identity, settled 2026-08-14: civic-neutral ink navy on parchment
+      with a single gold accent — deliberately neither red nor blue. This page
+      is the living reference the site is built against.
+    </p>
+
+    <h2>Palette</h2>
+    <ul class="swatches">
+      {
+        swatches.map((s) => (
+          <li>
+            <span class="chip" style={`background:${s.hex}`} />
+            <code>{s.name}</code>
+            <code class="hex">{s.hex}</code>
+            <span class="role">{s.role}</span>
+          </li>
+        ))
+      }
+    </ul>
+
+    <h2>Typography</h2>
+    <p>
+      Headings: <strong>Libre Caslon Text</strong> — the Caslon lineage is the
+      typeface of founding-era American printing.
+      Body: <strong>Public Sans</strong> — the U.S. government's open civic
+      typeface. Both self-hosted, three woff2 files, ~61&nbsp;KB total.
+    </p>
+    <div class="specimen">
+      <p class="spec-h1">The full-spectrum test — Caslon 700</p>
+      <p class="spec-h3">Rules that bind everyone — Caslon 400</p>
+      <p>
+        Body — Public Sans 400. Every proposal must clear a support floor in
+        both parties before it makes the
+        list. <strong>Emphasis is Public Sans 600.</strong>
+      </p>
+    </div>
+
+    <h2>The document is the brand</h2>
+    <p>Draft constitutional text renders as a founding document:</p>
+    <div class="article-text">
+      <p>
+        <strong>Section 1.</strong> The right of the people to choose their
+        representatives being prior to the power of representatives to choose
+        their voters, districts shall be drawn to serve the equal suffrage of
+        the people and not the advantage of any incumbent or party.
+      </p>
+    </div>
+
+    <h2>The signature graphic</h2>
+    <p>
+      Support bars wear the gold accent only — party identity comes from
+      labels, never red/blue. The dashed ink line is the star: the bipartisan
+      floor every proposal must clear.
+    </p>
+    <FullSpectrumChart
+      proposal="Congressional term limits (illustrative placeholder numbers)"
+      support={{ dem: 80, rep: 86, ind: 84 }}
+    />
+
+    <h2>Cards</h2>
+    <div class="card-demo">
+      <AmendmentCard
+        order={6}
+        title="Redistricting"
+        problemSummary="Politicians draw their own districts — and now redraw them mid-decade whenever it helps their party."
+        href="/amendments/redistricting"
+      />
+    </div>
+  </div>
+</Base>
+
+<style>
+  .swatches {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: var(--space-1);
+  }
+
+  .swatches li {
+    display: grid;
+    grid-template-columns: 2.5rem 9rem 6rem 1fr;
+    gap: var(--space-2);
+    align-items: center;
+    max-width: none;
+  }
+
+  .chip {
+    width: 2.5rem;
+    height: 2rem;
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+  }
+
+  .hex,
+  .role {
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+  }
+
+  .specimen {
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: var(--space-3);
+    background: var(--paper-raised);
+    max-width: var(--measure);
+  }
+
+  .spec-h1 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: var(--step-3);
+    margin: 0 0 var(--space-1);
+  }
+
+  .spec-h3 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: var(--step-2);
+    margin: 0 0 var(--space-1);
+  }
+
+  .card-demo {
+    max-width: 20rem;
+  }
+
+  h2 {
+    margin-top: var(--space-4);
+  }
+</style>

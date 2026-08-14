@@ -1,0 +1,20 @@
+[
+  {
+    "id": "example-congressional-term-limits",
+    "proposal": "Constitutional amendment imposing term limits on members of Congress",
+    "amendment": "term-limits",
+    "support": { "dem": 80, "rep": 86, "ind": 84, "overall": 83 },
+    "source": "PLACEHOLDER — real numbers and sources to be distilled from POLLING_RESEARCH.md (workstream C3)",
+    "year": 2023,
+    "placeholder": true
+  },
+  {
+    "id": "example-spending-limits",
+    "proposal": "Limits on the amount of money in political campaigns",
+    "amendment": "campaign-finance",
+    "support": { "dem": 85, "rep": 71, "ind": 78, "overall": 77 },
+    "source": "PLACEHOLDER — real numbers and sources to be distilled from POLLING_RESEARCH.md (workstream C3)",
+    "year": 2023,
+    "placeholder": true
+  }
+]

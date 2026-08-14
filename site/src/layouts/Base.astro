@@ -1,0 +1,198 @@
+---
+import '../styles/tokens.css';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = 'A new set of constitutional amendments that Americans across the entire political spectrum already agree on.',
+} = Astro.props;
+
+const fullTitle =
+  title === 'Home'
+    ? 'New Bill of Rights Foundation'
+    : `${title} — New Bill of Rights Foundation`;
+
+const nav = [
+  { href: '/mission', label: 'Mission' },
+  { href: '/amendments', label: 'Amendments' },
+  { href: '/evidence/rejected', label: 'Evidence' },
+  { href: '/get-involved', label: 'Get Involved' },
+  { href: '/about', label: 'About' },
+];
+
+const path = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={new URL(path, Astro.site)} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link
+      rel="preload"
+      href="/fonts/libre-caslon-text-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/public-sans-var.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header>
+      <div class="container header-inner">
+        <a class="brand" href="/">New&nbsp;Bill&nbsp;of&nbsp;Rights</a>
+        <nav aria-label="Main">
+          <ul>
+            {
+              nav.map((item) => (
+                <li>
+                  <a
+                    href={item.href}
+                    aria-current={
+                      path.startsWith(item.href) ? 'page' : undefined
+                    }
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))
+            }
+            <li>
+              <a class="join" href="/get-involved#join">Join</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer>
+      <div class="container">
+        <p class="footer-thesis">
+          A new set of constitutional amendments that Americans across the
+          entire political spectrum already agree on.
+        </p>
+        <p>
+          <a href="/get-involved#join">Join the mailing list</a>&ensp;·&ensp;<a
+            href="/about">Contact</a>&ensp;·&ensp;<a href="/faq">FAQ</a>
+        </p>
+        <p class="footer-fine">
+          © 2026 New Bill of Rights Foundation (incorporation planned for
+          2026). The seed donor round funds its formation —
+          <a href="/get-involved/seed-donors">learn more</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  header {
+    border-bottom: 1px solid var(--rule);
+    background: var(--paper);
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+    padding-block: var(--space-2);
+  }
+
+  .brand {
+    font-family: var(--font-serif);
+    font-size: var(--step-1);
+    font-weight: 700;
+    color: var(--ink);
+    text-decoration: none;
+    letter-spacing: 0.01em;
+  }
+
+  .brand::after {
+    content: '';
+    display: inline-block;
+    width: 0.45em;
+    height: 0.45em;
+    margin-left: 0.45em;
+    background: var(--accent);
+    transform: rotate(45deg) translateY(-0.05em);
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav a {
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+
+  nav a:hover,
+  nav a[aria-current='page'] {
+    color: var(--accent-text);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  nav a.join {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 0.35rem 0.9rem;
+    border-radius: 3px;
+  }
+
+  nav a.join:hover {
+    background: var(--accent-text);
+    text-decoration: none;
+  }
+
+  main {
+    min-height: 60vh;
+    padding-block: var(--space-4);
+  }
+
+  footer {
+    border-top: 1px solid var(--rule);
+    background: var(--band);
+    padding-block: var(--space-4);
+    margin-top: var(--space-5);
+  }
+
+  .footer-thesis {
+    font-family: var(--font-serif);
+    font-size: var(--step-1);
+  }
+
+  .footer-fine {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+  }
+</style>

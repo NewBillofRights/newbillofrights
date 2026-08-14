@@ -1,0 +1,58 @@
+---
+import Base from '../layouts/Base.astro';
+
+const faqs = [
+  {
+    q: 'Isn’t amending the Constitution impossible?',
+    a: 'It’s hard by design — two-thirds of Congress and three-quarters of the states — and that bar is the organizing principle of this project, not an obstacle to it. It has been met 27 times, almost always for proposals with overwhelming cross-party support. That’s exactly the kind we work on.',
+  },
+  {
+    q: 'Which party is this really for?',
+    a: 'Neither. Every proposal must show credible support across the full spectrum — from MAGA Republicans to socialist Democrats — before it makes the list, and we publish the party-by-party polling so you can check us. When a popular idea fails that bar, we reject it and say why.',
+  },
+  {
+    q: 'Why isn’t my issue included?',
+    a: 'Probably because it couldn’t pass the full-spectrum test — see the rejected categories for each judgment and the reasoning behind it. Rejection isn’t a judgment that an issue doesn’t matter; it’s a judgment that it can’t yet clear the bar.',
+  },
+  {
+    q: 'Why amendments instead of legislation?',
+    a: 'Because the problems we target are structural: they persist precisely because ordinary legislation can’t reach them, or because any statute can be repealed by the next majority. Rules that bind everyone, permanently, belong in the Constitution.',
+  },
+  {
+    q: 'How is this funded?',
+    a: 'Right now, it isn’t — the work is volunteer. Founding donors ($1,000+) will fund the foundation’s formal launch: incorporation, 501(c)(3) filing, and a founding board. No money is collected until the entity and its bank account exist.',
+  },
+];
+---
+
+<Base title="FAQ" description="Recurring questions about the New Bill of Rights project, answered.">
+  <div class="container">
+    <h1>FAQ</h1>
+    <p class="placeholder-note">
+      Draft answers — pending Michael's voice pass (workstream C4).
+    </p>
+    <dl>
+      {
+        faqs.map((f) => (
+          <>
+            <dt>{f.q}</dt>
+            <dd>{f.a}</dd>
+          </>
+        ))
+      }
+    </dl>
+  </div>
+</Base>
+
+<style>
+  dt {
+    font-family: var(--font-serif);
+    font-size: var(--step-1);
+    margin-top: var(--space-3);
+  }
+
+  dd {
+    margin: var(--space-1) 0 0;
+    max-width: var(--measure);
+  }
+</style>
