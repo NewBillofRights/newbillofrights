@@ -38,33 +38,51 @@ import Base from '../../layouts/Base.astro';
       any payment.
     </p>
 
-    <form class="interest" method="post" action="#" aria-label="Founding donor interest">
+    <p class="form-success" id="donor-success" hidden>
+      <strong>Thank you.</strong> Your interest is recorded — we'll be in touch
+      personally as incorporation moves forward.
+    </p>
+    <form
+      class="interest"
+      method="post"
+      action="/api/submit"
+      aria-label="Founding donor interest"
+      data-success="donor-success"
+    >
+      <input type="hidden" name="type" value="seed-donor" />
+      <input type="hidden" name="source" value="/get-involved/seed-donors" />
+      <input type="hidden" name="redirect" value="/get-involved/seed-donors?submitted=donor" />
+      <input type="hidden" name="startedAt" value="" />
+      <p class="hp" aria-hidden="true">
+        <label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+      </p>
       <div class="field">
         <label for="name">Name</label>
-        <input id="name" name="name" type="text" required disabled />
+        <input id="name" name="name" type="text" required />
       </div>
       <div class="field">
         <label for="email">Email</label>
-        <input id="email" name="email" type="email" required disabled />
+        <input id="email" name="email" type="email" required />
       </div>
       <div class="field">
         <label for="amount">Intended amount (USD)</label>
-        <input id="amount" name="amount" type="number" min="1000" step="100" placeholder="1000" disabled />
+        <input id="amount" name="amount" type="number" min="1000" step="100" placeholder="1000" />
       </div>
       <div class="field">
         <label for="note">Anything you'd like us to know (optional)</label>
-        <textarea id="note" name="note" rows="4" disabled></textarea>
+        <textarea id="note" name="note" rows="4"></textarea>
       </div>
-      <button type="submit" disabled>Express interest</button>
+      <button type="submit">Express interest</button>
     </form>
-    <p class="placeholder-note">
-      This form goes live with the forms backend (workstream D). Until then,
-      email
+    <p>
+      Prefer email? Reach us at
       <a href="mailto:contact@newbillofrights.net">contact@newbillofrights.net</a>
       with the subject “Founding donor”.
     </p>
   </div>
 </Base>
+
+<script src="../../scripts/form-submit.ts"></script>
 
 <style>
   .lede {
@@ -110,9 +128,17 @@ import Base from '../../layouts/Base.astro';
     font-weight: 600;
   }
 
-  button:disabled,
-  input:disabled,
-  textarea:disabled {
-    opacity: 0.55;
+  .hp {
+    position: absolute;
+    left: -9999px;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .form-success {
+    background: var(--band);
+    border-left: 3px solid var(--accent);
+    padding: var(--space-1) var(--space-2);
+    max-width: var(--measure);
   }
 </style>

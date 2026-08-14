@@ -1,12 +1,27 @@
 [
   {
-    "id": "example-congressional-term-limits",
-    "proposal": "Constitutional amendment imposing term limits on members of Congress",
+    "id": "congressional-term-limits",
+    "proposal": "Term limits for members of Congress",
+    "amendment": "term-limits",
+    "support": { "dem": 86, "rep": 90, "overall": 87 },
+    "source": "Pew Research Center",
+    "year": 2023
+  },
+  {
+    "id": "scotus-fixed-terms",
+    "proposal": "Fixed terms instead of life tenure for Supreme Court justices",
+    "amendment": "term-limits",
+    "support": { "dem": 87, "rep": 73, "ind": 71, "overall": 79 },
+    "source": "Marquette Law School Poll",
+    "year": 2026
+  },
+  {
+    "id": "term-limits-deliberative",
+    "proposal": "A term-limits amendment, after hearing both sides' arguments",
     "amendment": "term-limits",
     "support": { "dem": 80, "rep": 86, "ind": 84, "overall": 83 },
-    "source": "PLACEHOLDER — real numbers and sources to be distilled from POLLING_RESEARCH.md (workstream C3)",
-    "year": 2023,
-    "placeholder": true
+    "source": "University of Maryland Program for Public Consultation (deliberative survey)",
+    "year": 2023
   },
   {
     "id": "example-spending-limits",

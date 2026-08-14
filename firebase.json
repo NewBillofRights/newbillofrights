@@ -4,6 +4,15 @@
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "cleanUrls": true,
     "trailingSlash": false,
+    "rewrites": [
+      {
+        "source": "/api/submit",
+        "function": {
+          "functionId": "submitForm",
+          "region": "us-central1"
+        }
+      }
+    ],
     "headers": [
       {
         "source": "**/*.@(woff2|png|jpg|jpeg|webp|avif|svg|ico)",
@@ -18,5 +27,12 @@
         ]
       }
     ]
+  },
+  "functions": {
+    "source": "functions",
+    "predeploy": ["npm --prefix functions run build"]
+  },
+  "firestore": {
+    "rules": "firestore.rules"
   }
 }

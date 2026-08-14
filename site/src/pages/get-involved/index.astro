@@ -17,16 +17,27 @@ import SeedDonorBand from '../../components/SeedDonorBand.astro';
         polling, draft language, and salons. No spam, and we will never sell
         the list.
       </p>
-      <form class="signup" method="post" action="#join" aria-label="Mailing list signup">
-        <label for="email">Email address</label>
-        <input id="email" name="email" type="email" required placeholder="you@example.com" disabled />
-        <button type="submit" disabled>Join</button>
-      </form>
-      <p class="placeholder-note">
-        Signup goes live with the forms backend (workstream D). Until then,
-        email <a href="mailto:contact@newbillofrights.net">contact@newbillofrights.net</a>
-        with the subject “Join”.
+      <p class="form-success" id="join-success" hidden>
+        <strong>You're on the list.</strong> Thanks — we'll be in touch.
       </p>
+      <form
+        class="signup"
+        method="post"
+        action="/api/submit"
+        aria-label="Mailing list signup"
+        data-success="join-success"
+      >
+        <input type="hidden" name="type" value="mailing-list" />
+        <input type="hidden" name="source" value="/get-involved" />
+        <input type="hidden" name="redirect" value="/get-involved?submitted=join#join" />
+        <input type="hidden" name="startedAt" value="" />
+        <p class="hp" aria-hidden="true">
+          <label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+        </p>
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" required placeholder="you@example.com" />
+        <button type="submit">Join</button>
+      </form>
     </section>
 
     <section>
@@ -49,6 +60,8 @@ import SeedDonorBand from '../../components/SeedDonorBand.astro';
 
   <SeedDonorBand />
 </Base>
+
+<script src="../../scripts/form-submit.ts"></script>
 
 <style>
   section {
@@ -89,8 +102,17 @@ import SeedDonorBand from '../../components/SeedDonorBand.astro';
     font-weight: 600;
   }
 
-  .signup button:disabled,
-  .signup input:disabled {
-    opacity: 0.55;
+  .hp {
+    position: absolute;
+    left: -9999px;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .form-success {
+    background: var(--band);
+    border-left: 3px solid var(--accent);
+    padding: var(--space-1) var(--space-2);
+    max-width: var(--measure);
   }
 </style>
