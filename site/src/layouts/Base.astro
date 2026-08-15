@@ -39,6 +39,10 @@ const path = Astro.url.pathname;
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <!-- Pre-launch: keep search engines out until the copy passes review.
+         Remove this tag AND the X-Robots-Tag header in firebase.json at launch
+         (outline section 10, workstream E). -->
+    <meta name="robots" content="noindex, nofollow" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link
       rel="preload"

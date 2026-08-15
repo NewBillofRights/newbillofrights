@@ -249,6 +249,7 @@ Five workstreams. **A** gates visual polish, **C (copy) is the critical path** �
 
 ### Workstream E — Launch
 
+- **E0.** **Remove the pre-launch `noindex`** (added 2026-08-14 while drafts are public): delete the `X-Robots-Tag` header block in firebase.json and the `<meta name="robots">` tag in Base.astro. The site is invisible to search engines until this happens.
 - **E1.** QA pass: Lighthouse ≥ 95, keyboard/screen-reader walkthrough, mobile layout check, link check, both forms tested on the production project.
 - **E2.** OG images, favicons, sitemap, 404 page.
 - **E3.** Analytics installed and verified.
