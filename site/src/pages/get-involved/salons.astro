@@ -13,12 +13,27 @@ import Base from '../../layouts/Base.astro';
     <p>
       Once a month, one topic, in person: an evening built for genuine
       disagreement across the spectrum — the same bar the amendments have to
-      pass. Upcoming topic and format details land here soon.
+      pass. Every topic is a real open question where the discussion changes a
+      decision, not a briefing.
     </p>
+
+    <h3>Up next</h3>
+    <div class="topic">
+      <p class="topic-title">
+        What should a privacy amendment actually protect?
+      </p>
+      <p>
+        Should a constitutional right to privacy cover your <em>personal
+        information</em> — data, communications, surveillance — or the broader
+        <em>right to be let alone</em>? The state amendments that won landslide
+        votes took the first path; the second reaches further but carries far
+        more doctrinal freight. This is likely the single most consequential
+        open decision in the privacy category, and it isn't settled.
+      </p>
+    </div>
     <p class="placeholder-note">
-      Placeholder — upcoming topic to be pulled from SALON_TOPICS.md, with RSVP
-      via Luma (primary) and cross-listing on Eventbrite (workstream C4 /
-      Phase 3).
+      RSVP opens with the first scheduled date — via Luma, cross-listed on
+      Eventbrite.
     </p>
 
     <h2>The founding donors' series</h2>
@@ -28,3 +43,21 @@ import Base from '../../layouts/Base.astro';
     </p>
   </div>
 </Base>
+
+<style>
+  .topic {
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent);
+    background: var(--paper-raised);
+    border-radius: 4px;
+    padding: var(--space-3);
+    max-width: var(--measure);
+  }
+
+  .topic-title {
+    font-family: var(--font-serif);
+    font-size: var(--step-1);
+    font-weight: 700;
+    margin-top: 0;
+  }
+</style>

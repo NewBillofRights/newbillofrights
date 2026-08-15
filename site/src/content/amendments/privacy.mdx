@@ -4,16 +4,77 @@ order: 4
 problemSummary: Government can track communications, movements, and personal data under rules written for the paper age — or simply buy the data it could never lawfully seize.
 principleSummary: A constitutional right to be secure against unreasonable governmental intrusion into private life — closing the data-purchase loophole and prohibiting suspicionless mass collection.
 status: draft
-pollingKeys: []
+pollingKeys:
+  - data-privacy-regulation
+  - federal-data-protection-priority
 ---
+
+import FullSpectrumChart from '../../components/FullSpectrumChart.astro';
 
 ## The problem
 
-*Placeholder — to be distilled from PRIVACY_RESEARCH.md in the copy workstream (C2).*
+The Constitution never mentions privacy. The protection Americans rely on is
+inferred — mostly from a Fourth Amendment whose closed list of "persons,
+houses, papers, and effects" courts have strained for decades to stretch over
+phone records, location histories, and the data trails of digital life.
+Roughly 186 of the world's 193 national constitutions contain an express
+privacy provision; the United States is the conspicuous outlier.
+
+Inference has two costs. It has gaps: because information shared with a third
+party has long been treated as unprotected, the government can simply buy
+from data brokers — location histories, browsing records — what it could
+never seize without a warrant. And it is unstable: rights courts inferred,
+courts can narrow, and the leading digital-privacy precedent rests on a 5–4
+vote. Congress has tried to close the gap by statute. Every comprehensive
+privacy bill since 2018, from both parties, agreed on the substance — access,
+correction, deletion, data minimization, security — and every one died over
+machinery: whether the federal rule is a floor or a ceiling, and whether
+individuals can enforce it. Those are the two questions a constitutional
+right settles by its nature — it is individually enforceable, and it is a
+floor. That is what makes this amendment territory rather than a ninth
+attempt at the same statute.
 
 ## The principle
 
-*Placeholder — plain-English explanation of what the amendment does, before any legal text.*
+Four parts, each doing a specific job:
+
+**An express right with an open list.** Section 1 names the right and
+enumerates its anchors — home, communications, movements, personal
+information — with "including," not a closed list, so the text can reach
+technologies no drafter can foresee. Its second sentence does the most work
+in the article: information does not lose protection because it was
+disclosed to a phone carrier or a bank, or because each piece is trivial on
+its own. Modern surveillance is built from aggregated trivial data held by
+third parties; without this sentence, every other protection leaks through
+it.
+
+**One acquisition rule with one bright line.** Government may not obtain by
+purchase what it could not take by search — the principle behind a bill that
+passed the House with majorities of both parties voting yes. And one flat
+prohibition that balancing cannot erode: no generalized, suspicionless
+collection of the people's communications or movements. Where courts have
+policed mass surveillance with balancing tests alone, they have ended up
+regulating it rather than forbidding any of it. One bright line;
+proportionality governs everything else.
+
+**Rights in your own records, and a power to legislate.** You may know what
+the government holds about you and correct material errors — the Privacy Act
+of 1974, elevated to a right. Information collected for one purpose may not
+be quietly repurposed for another: census answers cannot become enforcement
+files, toll records cannot become a movement database. For data held by
+companies, the article grants Congress and the states express power to secure
+access, correction, and deletion by statute — settling the constitutional
+authority question while leaving consent mechanics and enforcement design to
+legislation, where they can be revised.
+
+**Tiered review and guaranteed redress.** Ordinary, lawful collection — tax
+filings, the census, benefits administration — requires only public,
+accessible, foreseeable law. The sensitive core (health, biometric and
+genetic identity, private communications, precise movements, children)
+requires a compelling public interest and narrow tailoring. Anyone aggrieved
+may seek redress in court — the thing every failed statute could not agree
+on — while damages regimes stay in legislation. And nothing in the article
+reaches publication of truthful information or the freedom of the press.
 
 ## The draft text
 
@@ -37,8 +98,87 @@ pollingKeys: []
 
 ## Why it can pass
 
-*Placeholder — bipartisan polling evidence with party breakdowns, from POLLING_RESEARCH.md.*
+An honest caveat first: no gold-standard pollster has asked Americans about a
+constitutional privacy amendment. The measured evidence is about data
+privacy — the closest proxy — and it shows some of the smallest partisan gaps
+of any issue we track:
+
+<FullSpectrumChart
+  proposal="More government regulation of what companies do with personal data — Pew Research Center, 2023"
+  support={{ dem: 78, rep: 68 }}
+/>
+
+<FullSpectrumChart
+  proposal="Congress should prioritize federal data-protection legislation — Morning Consult, 2023"
+  support={{ dem: 86, rep: 81 }}
+/>
+
+The support shows up in votes, not just surveys:
+
+- **The House has passed the acquisition rule's principle.** The Fourth
+  Amendment Is Not For Sale Act — barring government purchase of data it
+  could not seize without a warrant — passed the House 219–199 in 2024, with
+  123 Republicans and 96 Democrats voting yes. It died in the Senate; the
+  warrant question remains open in Congress today.
+- **Voters ratify this text by landslides.** Eleven states have
+  constitutional privacy language, some court-tested for fifty years. The
+  modern digital versions passed with about 89% of voters in Michigan
+  (2020), 81% in New Hampshire (2018), and 75% in Missouri (2014) — all
+  government-facing, informational framings like this one.
+- **Warrant requirements poll high**, with the hedge stated: 80% supported
+  requiring a warrant before government buys location or internet data, and
+  76% before searching Americans' communications (YouGov, 2023) — but the
+  survey was advocacy-commissioned and published no party breakdowns.
+- **There is no failed federal privacy amendment to live down.** After
+  Watergate, Congress chose statutes instead; no privacy amendment has ever
+  received committee action. The path is unworn, in both directions.
+
+Two findings we state openly: concern about government data use repolarizes
+by who holds power — each party's alarm rises when the other holds the White
+House — which is an argument for a rule that binds every administration, and
+a warning about campaign framing. And the article's flat ban on mass
+suspicionless collection rests on congressional votes and warrant polling
+rather than direct survey data; it is first on the list for the polling we
+commission.
 
 ## What we left out
 
-*Placeholder — formulations held back for failing the full-spectrum gate, with reasons.*
+What we considered and set aside, and why:
+
+- **"The right to be let alone."** The most famous phrasing in American
+  privacy law, and Florida's constitutional text. Set aside because an
+  unqualified right to privacy is read as a right about personal decisions,
+  not intrusion — it is the doctrinal root of the abortion cases, and an
+  unscoped text would be litigated, and campaigned against, as an abortion
+  amendment. This article anchors the right to intrusion into private life
+  and information, and "unreasonable" imports two centuries of settled
+  doctrine: taxation, subpoenas, and court process remain lawful.
+- **A constitutional right to deletion.** Deletion appears in every federal
+  bill from both parties — but a constitutional deletion right reaching
+  public records, court files, and journalism becomes a European-style
+  right-to-be-forgotten, which fails settled First Amendment doctrine, and
+  deleting government records undermines accountability. The article instead
+  guarantees access and correction against government and makes deletion
+  rights against companies an express legislative power.
+- **Judicial process for all government collection.** An unscoped warrant
+  rule would sweep in tax reporting, the census, benefits eligibility
+  checks, and public-health reporting — none of which involves a judge
+  today. The rule is scoped to investigative and intelligence acquisition,
+  the boundary the state amendments that won landslides already use.
+- **Blanket strict scrutiny.** A single top-tier standard for all personal
+  information would turn every audit and subpoena into constitutional
+  litigation. The tiered standard mirrors distinctions courts already draw —
+  and where constitutional privacy rights with proportionality tests exist
+  abroad, courts have upheld national welfare and registry systems while
+  striking overreach, evidence that tiering preserves legitimate state
+  functions.
+- **Constitutional damages or evidence-exclusion rules.** Writing automatic
+  damages or suppression into the text would re-fight, at constitutional
+  scale, the private-right-of-action dispute that helped kill every federal
+  bill. The article guarantees that the right can be enforced in court at
+  all, and leaves remedy design to legislation, where it can be calibrated
+  and revised.
+- **Everything inherently statutory**: covered-entity thresholds, opt-in and
+  opt-out mechanics, data-broker registries, enforcement-agency design, and
+  preemption rules — the last mooted outright, because a constitutional
+  right is inherently a floor.

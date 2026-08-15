@@ -8,34 +8,148 @@ import Base from '../layouts/Base.astro';
 >
   <div class="container">
     <h1>Mission</h1>
-    <p class="placeholder-note">
-      Placeholder — this page is a light restructuring of MISSION.md
-      (workstream C1): Who We Are → The Four Pillars → Founding Principles →
-      How We Work → What Success Looks Like, with the veil-of-ignorance passage
-      given visual prominence.
-    </p>
 
     <h2>Who we are</h2>
-    <p><em>Copy pending (C1).</em></p>
-
-    <h2>The four pillars</h2>
-    <p>Freedom · Democracy · Rule of Law · Good Government</p>
+    <p>
+      The New Bill of Rights Foundation is a nonpartisan organization dedicated
+      to passing a new group of amendments for the United States Constitution —
+      to secure the future of the American experiment by strengthening four
+      things:
+    </p>
+    <ul class="pillars">
+      <li><strong>Freedom</strong> — the individual liberties that define American life</li>
+      <li><strong>Democracy</strong> — government that is genuinely accountable to the people</li>
+      <li><strong>Rule of Law</strong> — the guarantee that every official, including the president, is bound by the law and the courts</li>
+      <li><strong>Good Government</strong> — institutions that are effective, honest, and trustworthy</li>
+    </ul>
 
     <h2>Founding principles</h2>
+
+    <h3>Bipartisanship as a fundamental, not a tactic</h3>
     <p>
-      Bipartisanship as a fundamental; the full-spectrum test as a measurement;
-      only existential problems; rules that bind everyone.
-      <em>Full copy pending (C1).</em>
+      Constitutional change in America requires overwhelming consensus —
+      two-thirds of Congress and three-fourths of the states. We treat that
+      high bar not as an obstacle but as our organizing principle.
     </p>
 
-    <blockquote>
-      <p><em>Veil-of-ignorance passage from MISSION.md goes here, set large.</em></p>
+    <h3>The full-spectrum test</h3>
+    <p>
+      Our amendments must appeal to the shared values of Americans across the
+      entire political spectrum — from MAGA Republicans to socialist Democrats
+      and everyone in between. If a proposal cannot win support across that
+      full range, it does not belong in our platform. We seek the principles
+      that nearly all Americans already agree on, even when their parties do
+      not.
+    </p>
+    <p>
+      And we treat the test as a measurement, not a hope. Every proposal is
+      judged by its <strong>bipartisan floor</strong> — the level of support in
+      the <em>less</em> supportive party — using independent polling, real
+      ballot results, and cross-party votes. Proposals that fail the test are
+      <a href="/evidence/rejected">set aside publicly, with their evidence</a>,
+      and can return only when the evidence changes.
+    </p>
+
+    <h3>Only existential problems</h3>
+    <p>
+      We do not pursue amendments for policy preferences, partisan advantage,
+      or symbolic wins. We include only amendments that solve problems that
+      genuinely threaten the future of our country. The Constitution is
+      amended rarely and for the ages — our proposals must meet that standard.
+    </p>
+
+    <h3>Rules that bind everyone</h3>
+    <p>
+      Every amendment we advance is written behind a veil of ignorance: it
+      binds all future presidents, all future majorities, and both parties
+      equally, forever. We pair each side's abuses in the same sentence, and we
+      ask each side to give up a weapon at the same moment the other side does.
+    </p>
+    <blockquote class="veil">
+      <p>
+        Consensus is possible not because Americans happen to agree, but
+        because no one knows who a fair rule will bind next — and a fair rule
+        protects everyone from everyone.
+      </p>
     </blockquote>
 
     <h2>How we work</h2>
-    <p><em>Research → polling → salon → draft pipeline. Copy pending (C1).</em></p>
+    <ul>
+      <li>
+        <strong>Evidence before advocacy.</strong> We research each focus area
+        in depth — the legal landscape, the polling with party breakdowns, the
+        state models, and how peer democracies solved the same problem — and we
+        publish what fails our bar alongside what passes it.
+      </li>
+      <li>
+        <strong>Principles, not machinery.</strong> Constitutional text should
+        carry durable principles: rights, limits, and duties that hold for a
+        century. Dollar amounts, thresholds, procedures, and agency designs
+        belong in legislation — so our drafts state the principle, delegate the
+        machinery to Congress, and include express savings clauses protecting
+        speech, press, petition, and mercy.
+      </li>
+      <li>
+        <strong>Ratify consensus; don't manufacture it.</strong> Amendments
+        succeed when they lock in agreement the country has already reached —
+        through state constitutions, court decisions, ballot measures, and
+        bipartisan votes. Our near-term work of research, polling, and salons
+        is how that consensus gets built and proven before the amendment is
+        asked to carry it.
+      </li>
+    </ul>
 
     <h2>What success looks like</h2>
-    <p><em>Copy pending (C1).</em></p>
+    <p>
+      A ratified set of amendments — a New Bill of Rights — that strengthens
+      the foundations of American freedom, democracy, and self-government for
+      generations to come. It will be achieved not by one faction defeating
+      another, but by Americans of every political persuasion recognizing their
+      shared stake in the country's future.
+    </p>
+
+    <p class="next">
+      <a href="/amendments">Read the amendments →</a>
+    </p>
   </div>
 </Base>
+
+<style>
+  h2 {
+    margin-top: var(--space-4);
+  }
+
+  h3 {
+    margin-top: var(--space-3);
+  }
+
+  .pillars {
+    list-style: none;
+    padding: 0;
+  }
+
+  .pillars li {
+    padding-block: var(--space-1);
+    border-bottom: 1px solid var(--rule);
+    max-width: var(--measure);
+  }
+
+  .veil {
+    margin: var(--space-4) 0;
+    padding: var(--space-3) var(--space-4);
+    border-left: 3px solid var(--accent);
+    background: var(--band);
+    max-width: var(--measure);
+  }
+
+  .veil p {
+    font-family: var(--font-serif);
+    font-size: var(--step-2);
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  .next {
+    margin-top: var(--space-4);
+  }
+</style>
