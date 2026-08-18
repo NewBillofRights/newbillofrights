@@ -1,6 +1,25 @@
 # Handoff — Phase 2 + Rejected-Categories Substantiation
 
-*Written 2026-08-17 at the end of the site-build conversation, for a fresh session to execute. Read this whole file, then the four docs in "Read first," before doing anything.*
+*Written 2026-08-17 at the end of the site-build conversation; **updated 2026-08-17 (later session) after Task 0 and Phase 2A/2B/2C were built.** Sections 4–7 below are the original specs and are kept for the record; §1a records what was done and what is open.*
+
+## 1a. Status after the 2026-08-17 execution session
+
+**Done (all pending Michael's manual review; every page still `status: draft`):**
+
+- **Task 0A — research.** Ten memos in [research/rejected/](research/rejected/) (`<SLUG>_REJECTED.md`, ~2,000–2,900 words each, one template: proposal · evidence · gate result · framings tested · path back · sources). Every figure was web-verified by the drafting agent; the set was then reviewed by Gemini (`gemini-3.1-pro-preview`) and every reviewer note was verified on the web before anything was applied — verified additions/corrections sit in each memo's `## Review Additions (2026-08-17)`; unverified reviewer claims were dropped (e.g., its H.J.Res. 2 (2011) "correction" was wrong). Linked from research/README.md and CATEGORIES.md.
+- **Task 0B — website.** `rejected` is now an MDX content collection ([site/src/content/rejected/](site/src/content/rejected/), schema in `content.config.ts`: title/order/rejectedOn/failedTest/summary/memo/status), with an index at `/evidence/rejected` (framing kept; one line per category naming the failed test) and a subpage per category at `/evidence/rejected/<slug>` (fixed structure: The proposal · The evidence · The test it failed · Framings we tested · The path back; `FullSpectrumChart` of the decisive number where one exists; GFM footnotes; every URL comes from the memo). `scripts/check-site.mjs` now checks the rejected pages (footnotes + URL provenance + banned words) and reads `research/rejected/*.md` as part of the corpus. Page conventions are recorded in COPY_VOICE_GUIDE.md.
+- **Phase 2A — annotations.** `site/src/components/Note.astro` (`<details class="annotation">`, no JS); one `<Note>` after each of the 35 `**Section N.**` paragraphs, drafted from the memos' trap notes; Gemini feedback round run and 10 high-confidence accuracy/clarity fixes applied. Draft text unchanged (integrity check passes).
+- **Phase 2B — polling page.** `/evidence/polling` is charts grouped by amendment (order = amendment order, then `pollingKeys` order) with the sortable table below (new Floor column). `FullSpectrumChart` no longer draws a threshold line; it labels each proposal's floor ("bipartisan floor · 71% (Republicans)" = lower of R/D) — global change (home, amendment pages, styleguide, polling, rejected pages).
+- **Phase 2C — share images.** Build-time OG PNGs via `satori` + `@resvg/resvg-js` (`site/src/lib/og.ts`, fonts in `site/src/og/fonts/`, endpoints in `site/src/pages/og/`): one per amendment (`/og/amendments/<slug>.png`), per rejected category (`/og/rejected/<slug>.png`), per static page (list in `site/src/lib/ogPages.ts`), and `/og/default.png`; wired in `Base.astro` (`og:image`, `twitter:card`, `og:url`).
+- **Corpus corrections found in the pass** (founder to apply; existing text untouched): appended to POLLING_RESEARCH.md as `## Review Additions (2026-08-17, rejected-categories pass)`. The most consequential: the 82% D / 43% R self-pardon figure is **YouGov Aug 15–19, 2024** (81/43/67), not Economist/YouGov Dec 2025 — the site's pardon page was corrected; CATEGORIES.md, PARDON_RESEARCH.md, SELECTION_METHOD.md, and AMENDMENT_IDEAS.md still carry the old attribution.
+- Prompt files used for the agent runs are in [scripts/prompts/](scripts/prompts/) (templates: `rejected-memo-prompt.md`, `rejected-page-prompt.md`, `annotate-prompt.md`, `rejected-verify-prompt.md`).
+
+**Open / for Michael:**
+
+- Manual read of the ten rejected pages (nonpartisan discipline is the thing to check — abortion, voting rights, Electoral College especially), the 35 annotations, the polling page, and the share images; then flip `status`.
+- Deploy: the production deploy was blocked by the session's permission classifier; a preview-channel deploy was used to verify. Run `scripts/deploy.sh prod` to publish (log lands in `/tmp/newbillofrights-deploys/`), then verify with the `--resolve` curl.
+- Apply the flagged corpus corrections listed in POLLING_RESEARCH.md (self-pardon attribution in four docs; QI range 28–46%; balanced-budget pollster dates/splits; caution-list photo-ID split).
+- Log the November 2026 abortion ballot measures (Idaho, Missouri, Nevada, Virginia) after the election (ABORTION memo).
 
 ## 0. Read first (in this order)
 

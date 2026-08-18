@@ -1,0 +1,70 @@
+---
+title: Balanced Budget
+order: 10
+rejectedOn: "2026-08-06"
+failedTest: "Depth: collapses under trade-offs"
+summary: "Requiring a balanced federal budget draws 84% of Republicans and 68% of Democrats in the abstract (Economist/YouGov, 2026), but support fell to 31% in the one poll that named entitlement cuts (Fox News, 2011)."
+memo: research/rejected/BALANCED_BUDGET_REJECTED.md
+status: draft
+---
+
+import FullSpectrumChart from '../../components/FullSpectrumChart.astro';
+
+## The proposal
+
+The idea is a constitutional rule that federal spending may not exceed federal revenue in a fiscal year. Every serious draft adds machinery, and there the drafts diverge. Most let a supermajority of each chamber — three-fifths or two-thirds — authorize a deficit, usually with an exception for war.[^hjres17-119] Some also require two-thirds of each chamber to raise taxes or the debt limit.[^hjres2-119] Advocates also pursue an Article V convention limited to the subject; by their own counts, 27 or 28 of the required 34 states have live applications.[^article-v-count]
+
+## The evidence
+
+The abstract question clears the bar in every independent poll we found. Asked about amending the Constitution to "require the federal budget to be balanced each year," 72% of Americans were in favor and 7% opposed — 84% of Republicans, 68% of Democrats, and 65% of independents (Economist/YouGov, 2026).[^yougov-2026]
+
+<FullSpectrumChart proposal="Require the federal budget to be balanced each year — Economist/YouGov, 2026 (abstract question)" support={{ dem: 68, rep: 84, ind: 65 }} />
+
+Other abstract readings agree. "Require a balanced federal budget" drew 69% — 77% of Republicans, 69% of Democrats, 62% of independents (Cato Institute/Morning Consult, 2026; Cato holds a position on the amendment, though the fieldwork is Morning Consult's).[^cato-2026] A forced-choice question on "a balanced budget within 10 years" drew 80% — 83% of Republicans, 79% of Democrats, 77% of independents (Harvard CAPS/Harris, 2023).[^harris-2023] An advocacy-commissioned poll found 70% — 74% of Republicans, 67% of Democrats (McLaughlin & Associates for America's New Majority Project, 2022).[^anmp-polls]
+
+Only one poll on record has named a trade-off (Fox News, 2011). In the abstract, 72% favored — 82% of Republicans, 62% of Democrats. Told that balancing the budget would mean "major spending cuts" to "entitlement programs like Medicare and Social Security," 31% favored and 63% opposed; 79% of Democrats opposed, and Republicans split 47% to 46%. Told it would mean "major tax increases," 62% opposed (no party breakdown published).[^fox-2011]
+
+The programs a binding rule would reach have been polled repeatedly since, and both parties reject cutting them: 79% say Social Security benefits "should not be reduced in any way" — 77% of Republicans, 83% of Democrats (Pew Research Center, 2024).[^pew-ss-2024] Reducing benefits drew 6% in favor, 79% opposed (AP-NORC, 2023).[^apnorc-2023] Majorities of Republicans oppose "major cuts" to Social Security (73%), Medicare (64%), and Medicaid (55%) (KFF, 2025).[^kff-2025]
+
+The amendment has never carried both chambers: the Senate fell two votes short in 1995 (65–35; Democrats 14–33) and one in 1997 (66–34; Democrats 11–34),[^senate-votes] and House Democratic support fell from 72 votes in 1995 to 25 in 2011 and 7 in 2018.[^house-votes]
+
+## The test it failed
+
+The bipartisan floor on the abstract question is 68% (Democrats, Economist/YouGov 2026): Strong. That is not the number a drafted amendment would face. On the conditioned question the floor is Weak: 31% overall, 79% of Democrats opposed, Republicans 47% to 46% (Fox News, 2011).[^fox-2011] Two failure modes apply.
+
+**Depth.** Support fell roughly 40 points, from 72% to 31%, once the trade-off was named.[^fox-2011] That is one poll, fifteen years old, but every modern program-level poll above points the same way.[^pew-ss-2024][^apnorc-2023][^kff-2025] The abstract number rests on a belief that no trade-off exists: 64% of a 2025 advocacy sample agreed the budget can be balanced without raising taxes or cutting benefits.[^anmp-2025-arithmetic]
+
+**Asymmetric coalition.** The two halves of any binding rule each lose a party. Benefit cuts lose Democrats (79% opposed) and half of Republicans (Fox News, 2011).[^fox-2011] Tax increases lose Republicans: 69% of Republicans want the deficit cut only or mostly through spending cuts, while 57% of Democrats want an equal mix of tax increases and cuts (Gallup, 2012),[^gallup-2012] and a Medicare tax on households earning over $400,000 drew 42% of Republicans against 75% of Democrats (AP-NORC, 2023).[^apnorc-2023]
+
+The why-an-amendment test is arguably met — Congress cannot bind future Congresses by statute, and the 1985 statutory attempt did not survive the courts intact[^crs-r41907] — and is not why the category failed. But a working balanced-budget rule is thresholds, exemptions, and enforcement, which our mission assigns to legislation.
+
+## Framings we tested
+
+- Unconditioned "require a balanced budget": 68% of Democrats (Economist/YouGov 2026), 69% (Cato/Morning Consult 2026), 79% (Harvard/Harris 2023).[^yougov-2026][^cato-2026][^harris-2023] Clears the bar; measures approval of the outcome, not the rule.
+- "Balanced within 10 years": 83% of Republicans, 79% of Democrats (Harvard/Harris 2023, forced choice).[^harris-2023] Same limitation.
+- Conditioned on entitlement cuts: 31% overall, 79% of Democrats opposed (Fox News 2011).[^fox-2011] Fails.
+- Conditioned on tax increases: 62% opposed, no party split published (Fox News 2011); the method data above make the Republican floor the binding one.[^fox-2011][^gallup-2012][^apnorc-2023] Fails.
+- Balance "without raising taxes or cutting benefits" by reducing waste: 64% agree it is possible (America's New Majority Project, advocacy poll, 2025).[^anmp-2025-arithmetic] A claim about arithmetic, not a rule; it cannot be drafted.
+
+No framing both clears the bar and describes an enforceable constitutional rule.
+
+## The path back
+
+The category reopens on a modern, independent, split-sample poll that names the mechanism — a balanced-budget amendment even if it meant a specified mix of cuts to major programs and tax increases, with a supermajority waiver for war or recession — and clears roughly 60% in both parties, the Democratic number surviving the benefit-cut condition and the Republican number the tax condition. A weaker signal would be a rerun of the 2011 experiment with a drop under 15 points in each party. The poll is on our commissioned-polling list.
+
+[^hjres17-119]: H.J.Res. 17 (119th Congress), introduced January 13, 2025, requires a two-thirds roll-call vote of each chamber to authorize a deficit and requires the President to submit a balanced budget — [Congress.gov, H.J.Res. 17](https://www.congress.gov/bill/119th-congress/house-joint-resolution/17).
+[^hjres2-119]: H.J.Res. 2 (119th Congress), introduced January 3, 2025, bars any increase in the public-debt limit and requires a two-thirds roll-call vote of each chamber for any revenue-raising bill — [Congress.gov, H.J.Res. 2](https://www.congress.gov/bill/119th-congress/house-joint-resolution/2).
+[^crs-r41907]: In the 112th Congress, H.J.Res. 1 paired a three-fifths deficit waiver with a two-thirds vote for revenue increases and an 18%-of-GDP spending cap; H.J.Res. 2, the version that reached the floor, dropped both; earlier votes (Senate 69–31 in 1982 and 66–34 in 1986; House 280–153 in 1992 and 271–153 in 1994) fell short of two-thirds; the Gramm-Rudman-Hollings Act of 1985 had its automatic sequestration mechanism struck in *Bowsher v. Synar* (1986) and was reworked by statute in 1987 — [CRS R41907, A Balanced Budget Constitutional Amendment: Background and Congressional Options](https://www.congress.gov/crs-product/R41907).
+[^article-v-count]: The Balanced Budget Amendment Task Force claimed 28 live state applications in 2017, counting unrescinded 1970s–80s applications — [CRS R44435, The Article V Convention: Current Developments (Nov. 2017)](https://www.congress.gov/crs_external_products/R/PDF/R44435/R44435.5.pdf); a January 2026 op-ed by Rep. James Comer puts the count at 27, seven short of 34 — [Comer, Jan. 2026](https://comer.house.gov/2026/1/comer-in-herald-leader-it-s-time-to-finally-balance-america-s-budget).
+[^yougov-2026]: Economist/YouGov, June 13–15, 2026 (1,549 adult citizens): "Require the federal budget to be balanced each year," 72% favor / 7% oppose / 21% not sure; Republicans 84%, Democrats 68%, independents 65% — [YouGov article](https://yougov.com/en-us/articles/54990-trumps-job-approval-rebounds-americans-lack-confidence-in-elections-abortion-views-and-more-june-13-15-2026-economist-yougov-poll); [crosstabs, table 13C](https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_GpnDRNm.pdf).
+[^cato-2026]: Cato Institute / Morning Consult, June 25–26, 2026 (2,253 adults; item asked of a 1,229 half-sample): "Require a balanced federal budget," 69% support / 13% oppose / 18% don't know; Republicans 77%, Democrats 69%, independents 62%; same battery: 73% for a right to health care, 69% for campaign-spending limits — [crosstabs, table CATO20_1](https://www.cato.org/sites/cato.org/files/2026-07/Cato%20Fourth%20of%20July%202026%20Survey%20Crosstabs.pdf); [Cato summary](https://www.cato.org/blog/new-poll-nearly-half-americans-dont-know-what-americas-250th-celebrating).
+[^harris-2023]: Harvard CAPS/Harris, July 19–20, 2023 (2,068 registered voters): "a constitutional amendment that would require a balanced budget within 10 years," 80% support / 20% oppose (forced choice); Republicans 83%, Democrats 79%, independents 77% — [crosstabs, table 143](https://harvardharrispoll.com/wp-content/uploads/2023/07/HHP_CAPS_July2023_crosstabs.pdf).
+[^anmp-polls]: McLaughlin & Associates for America's New Majority Project (Gingrich-affiliated), January 13–18, 2022 (1,000 likely voters): amendment "requiring congress to pass a balanced federal budget each year," 70% support / 13% oppose; Republicans 74%, Democrats 67%, independents 70% — [ANMP report, Feb. 4, 2022](https://americasnewmajorityproject.com/analysis-americans-want-a-return-to-balanced-budgets/); July 21–24, 2025 (2,000 registered voters): 69% support / 12% oppose; report party chart Republicans 80%, Democrats 62%, independents 65% — [ANMP report, Aug. 2025](https://americasnewmajorityproject.com/wp-content/uploads/2025/08/20250825-BalanceBudget.pdf).
+[^fox-2011]: Fox News poll, June 26–28, 2011 (912 registered voters; Anderson Robbins Research (D) / Shaw & Company Research (R)): abstract 72% favor / 20% oppose, Republicans 82%, Democrats 62%; if balancing the budget meant "major spending cuts" to entitlement programs like Medicare and Social Security, 31% favor / 63% oppose, Democrats 79% opposed, Republicans 47% favor / 46% oppose; if it meant "major tax increases," 62% oppose — [Fox News](https://www.foxnews.com/politics/fox-news-poll-balanced-budget-amendment-favored-obamas-stimulus-panned.amp).
+[^pew-ss-2024]: Pew Research Center, April 8–14, 2024 (8,709 adults): 79% say Social Security benefits "should not be reduced in any way," including 77% of Republicans and 83% of Democrats — [Pew, June 2024](https://www.pewresearch.org/politics/2024/06/24/americans-views-of-government-aid-to-poor-role-in-health-care-and-social-security/); [fieldwork](https://www.pewresearch.org/politics/2024/06/24/americans-views-of-governments-role-persistent-divisions-and-areas-of-agreement/).
+[^apnorc-2023]: AP-NORC, March 16–20, 2023 (1,081 adults): reduce Social Security benefits 6% favor / 79% oppose; raise full-benefit age from 67 to 70, 10% / 75%; raise Medicare age from 65 to 67, 15% / 70%; raise taxes on households over $400,000 for Medicare, 58% / 23%, with 75% of Democrats in favor and 42% of Republicans — [AP-NORC topline](https://apnorc.org/wp-content/uploads/2023/06/APNORC_Mar2023_Topline.pdf); [AP write-up via PBS](https://www.pbs.org/newshour/politics/most-americans-oppose-social-security-medicare-cuts-ap-norc-poll-says).
+[^kff-2025]: KFF Health Tracking Poll, April 8–15, 2025 (1,380 adults): oppose "major cuts" to Social Security 84%, Medicare 79%, Medicaid 76%; among Republicans 73%, 64%, 55% — [KFF](https://www.kff.org/medicaid/kff-health-tracking-poll-april-2025-publics-view-on-major-cuts-to-federal-health-agencies/).
+[^gallup-2012]: Gallup, November 9–12, 2012: 69% of Republicans chose only-or-mostly spending cuts to reduce the deficit; 57% of Democrats chose an equal mix of tax increases and spending cuts — [Gallup](https://news.gallup.com/poll/158828/balanced-approach-cutting-deficit.aspx).
+[^senate-votes]: Senate, March 2, 1995, H.J.Res. 1: 65–35 (Republicans 51–2, Democrats 14–33) — [senate.gov](https://www.senate.gov/legislative/LIS/roll_call_votes/vote1041/vote_104_1_00098.htm); Senate, March 4, 1997, S.J.Res. 1: 66–34 (Republicans 55–0, Democrats 11–34) — [senate.gov](https://www.senate.gov/legislative/LIS/roll_call_votes/vote1051/vote_105_1_00024.htm).
+[^house-votes]: House, January 26, 1995, H.J.Res. 1: 300–132 (Republicans 228–2, Democrats 72–129) — [Clerk roll 51](https://clerk.house.gov/evs/1995/roll051.xml); November 18, 2011, H.J.Res. 2: 261–165 (Republicans 236–4, Democrats 25–161) — [Clerk roll 858](https://clerk.house.gov/evs/2011/roll858.xml); April 12, 2018, H.J.Res. 2: 233–184 (Republicans 226–6, Democrats 7–178) — [Clerk roll 138](https://clerk.house.gov/evs/2018/roll138.xml).
+[^anmp-2025-arithmetic]: America's New Majority Project, July 21–24, 2025: 64% agree it is "possible to balance the federal budget without raising taxes or cutting benefits in popular programs like Medicare, Medicaid, and Social Security"; 72% agree waste and fraud reduction could save "hundreds of billions" without cutting benefits — [ANMP release](https://americasnewmajorityproject.com/voters-want-congress-to-balance-the-budget-without-raising-taxes-or-cutting-benefits/); [topline, Q67–69](https://americasnewmajorityproject.com/wp-content/uploads/2025/08/20250724-NationalANMP-Topline.pdf).

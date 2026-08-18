@@ -1,15 +1,20 @@
 ---
 import '../styles/tokens.css';
 import '../styles/global.css';
+import { ogImageForPath } from '../lib/ogPages';
 
 interface Props {
   title: string;
   description?: string;
+  /** Path of the share image (build-time PNG under /og/). Defaults to the
+      page's own image when one exists, else the site-wide fallback. */
+  ogImage?: string;
 }
 
 const {
   title,
   description = 'Constitutional amendments every American can agree on.',
+  ogImage,
 } = Astro.props;
 
 const fullTitle =
@@ -26,6 +31,8 @@ const nav = [
 ];
 
 const path = Astro.url.pathname;
+const ogImageUrl = new URL(ogImage ?? ogImageForPath(path), Astro.site);
+const canonicalUrl = new URL(path, Astro.site);
 ---
 
 <!doctype html>
@@ -35,10 +42,20 @@ const path = Astro.url.pathname;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={new URL(path, Astro.site)} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:site_name" content="New Bill of Rights Foundation" />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={`${title} — New Bill of Rights Foundation`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
     <!-- Pre-launch: keep search engines out until the copy passes review.
          Remove this tag AND the X-Robots-Tag header in firebase.json at launch
          (outline section 10, workstream E). -->

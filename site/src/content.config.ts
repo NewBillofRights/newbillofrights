@@ -14,12 +14,22 @@ const amendments = defineCollection({
   }),
 });
 
+// Rejected categories: one MDX page per category, drafted from the memo in
+// research/rejected/<SLUG>_REJECTED.md (footnoted to the same sources).
 const rejected = defineCollection({
-  loader: file('./src/content/data/rejected.json'),
+  loader: glob({ pattern: '**/*.mdx', base: './src/content/rejected' }),
   schema: z.object({
     title: z.string(),
+    order: z.number().int(),
     rejectedOn: z.string(),
-    reason: z.string(),
+    // The test the category failed, in a few words (index + page kicker)
+    failedTest: z.string(),
+    // One-line reason for the index (names the failed test)
+    summary: z.string(),
+    // Repo-relative path of the research memo the page is drafted from
+    memo: z.string(),
+    // 'draft' until Michael's read (decision 9), then 'reviewed'
+    status: z.enum(['draft', 'reviewed']).default('draft'),
   }),
 });
 

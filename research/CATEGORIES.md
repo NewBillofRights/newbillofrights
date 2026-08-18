@@ -66,3 +66,4 @@ Topics deliberately excluded from the platform. These aren't judgments that the 
 
 - A rejected category can be revisited if the survey or salon work reveals an unexpected consensus framing.
 - Ideas filed under a rejected category stay in [AMENDMENT_IDEAS.md](AMENDMENT_IDEAS.md) for the record (with attribution) but are marked as out of scope.
+- Each rejected category has a substantiation memo (evidence with party breakdowns, the specific test it failed, framings tested, and the path back) in [`rejected/`](rejected/) — added 2026-08-17.

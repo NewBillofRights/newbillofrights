@@ -52,3 +52,30 @@ The reference implementation is [site/src/content/amendments/term-limits.mdx](si
    the 1–2 strongest numbers), precedents, near-misses.
 5. **What we left out** — opens with "What we considered and set aside, and
    why:", from the research doc's held-back list. Transparency is the brand.
+
+## Rejected-category page structure (fixed)
+
+Pages under `/evidence/rejected/<slug>` (MDX in `site/src/content/rejected/`, drafted
+from the memo in `research/rejected/`; facts and URLs come only from that memo):
+
+1. **The proposal** — as commonly framed as an amendment, and its variants. No contributor names.
+2. **The evidence** — best polling with party breakdowns (independent pollsters first; ballots
+   and roll calls; advocacy polls labeled), with a `FullSpectrumChart` of the decisive number
+   where one exists (none for categories rejected on a non-polling test).
+3. **The test it failed** — the bipartisan floor and verdict (Strong ≥ 60 / Moderate 45–59 /
+   Weak < 45 / Unpolled) and only the failure modes that apply, with the numbers.
+4. **Framings we tested** — alternatives and their numbers; whether any clears honestly, and if
+   so why it does or does not rescue the category (usually: a different proposal wearing the name,
+   or it already lives in a target amendment).
+5. **The path back** — the specific evidence that would reopen it, or "none identified."
+
+Nonpartisan discipline matters most on these pages: pollster wording for each side's position,
+symmetric treatment, no contested labels, no view on the merits.
+
+## Draft-text annotations (`<Note>`)
+
+Each `**Section N.**` paragraph in an amendment's draft text is followed by a `<Note>` block
+(2–4 sentences, 40–90 words): what the section does in ordinary language, and why it is worded
+that way — naming the trap the wording avoids, from the research memo. Plain sentences only:
+no links, footnotes, emphasis, or officeholder names. Notes never claim the text does more or
+less than it says (respect every "by law," "except," and "unless" in the section).

@@ -14,7 +14,11 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 ---
 
-<Base title={entry.data.title} description={entry.data.problemSummary}>
+<Base
+  title={entry.data.title}
+  description={entry.data.problemSummary}
+  ogImage={`/og/amendments/${entry.id}.png`}
+>
   <div class="container">
     <article>
       <header class="amendment-header">

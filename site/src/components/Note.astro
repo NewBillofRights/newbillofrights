@@ -1,0 +1,79 @@
+---
+/**
+ * Plain-English annotation for one section of draft constitutional text
+ * (the NCC Interactive Constitution pattern). Renders a <details> block that
+ * works without JS; styled as a quiet aside inside the document. Used only
+ * inside <div class="article-text"> in the amendment MDX files, after each
+ * `**Section N.**` paragraph. The integrity script compares only the
+ * `**Section` lines, so annotations never touch the draft-text check.
+ */
+interface Props {
+  /** Summary label; default reads as the NCC pattern. */
+  label?: string;
+}
+const { label = 'What this means' } = Astro.props;
+---
+
+<details class="annotation">
+  <summary><span class="marker" aria-hidden="true"></span>{label}</summary>
+  <div class="annotation-body">
+    <slot />
+  </div>
+</details>
+
+<style>
+  .annotation {
+    font-family: var(--font-sans);
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    border-left: 2px solid var(--accent);
+    padding-left: var(--space-2);
+    margin: calc(-1 * var(--space-1)) 0 var(--space-3);
+    max-width: var(--measure);
+  }
+
+  summary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    font-weight: 600;
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent-text);
+    padding-block: 0.15rem;
+  }
+
+  summary:hover,
+  summary:focus-visible {
+    color: var(--ink);
+  }
+
+  .marker {
+    display: inline-block;
+    width: 0.55em;
+    height: 0.55em;
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
+    transform: rotate(-45deg);
+    transition: transform 120ms ease;
+    margin-inline-end: 0.15em;
+  }
+
+  .annotation[open] .marker {
+    transform: rotate(45deg);
+  }
+
+  .annotation-body {
+    padding-block: var(--space-1) 0;
+  }
+
+  .annotation-body :global(p) {
+    margin: 0 0 var(--space-1);
+  }
+
+  .annotation-body :global(p:last-child) {
+    margin-bottom: 0;
+  }
+</style>

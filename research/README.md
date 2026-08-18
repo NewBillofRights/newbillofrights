@@ -27,6 +27,21 @@ draft principles, and a gate check with the held-back list.
 - [EXECUTIVE_COMPLIANCE_RESEARCH.md](EXECUTIVE_COMPLIANCE_RESEARCH.md)
 - [PARDON_RESEARCH.md](PARDON_RESEARCH.md)
 
+## Rejected-category memos
+
+One memo per rejected category, all to one template (the proposal, the evidence with party breakdowns, the gate result, framings tested, the path back, sources); written 2026-08-17 to substantiate the rejections recorded in CATEGORIES.md.
+
+- [rejected/ABORTION_REJECTED.md](rejected/ABORTION_REJECTED.md)
+- [rejected/VOTING_RIGHTS_REJECTED.md](rejected/VOTING_RIGHTS_REJECTED.md)
+- [rejected/ELECTORAL_COLLEGE_REJECTED.md](rejected/ELECTORAL_COLLEGE_REJECTED.md)
+- [rejected/COURT_EXPANSION_REJECTED.md](rejected/COURT_EXPANSION_REJECTED.md)
+- [rejected/CONGRESSIONAL_STRUCTURE_REJECTED.md](rejected/CONGRESSIONAL_STRUCTURE_REJECTED.md)
+- [rejected/ELECTION_TECHNOLOGY_REJECTED.md](rejected/ELECTION_TECHNOLOGY_REJECTED.md)
+- [rejected/CIVIC_INFORMATION_REJECTED.md](rejected/CIVIC_INFORMATION_REJECTED.md)
+- [rejected/SELF_PARDON_BAN_REJECTED.md](rejected/SELF_PARDON_BAN_REJECTED.md)
+- [rejected/QUALIFIED_IMMUNITY_REJECTED.md](rejected/QUALIFIED_IMMUNITY_REJECTED.md)
+- [rejected/BALANCED_BUDGET_REJECTED.md](rejected/BALANCED_BUDGET_REJECTED.md)
+
 ## Evidence & ideas
 
 - [POLLING_RESEARCH.md](POLLING_RESEARCH.md) — cross-party polling with party breakdowns and sources

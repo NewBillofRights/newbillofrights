@@ -12,6 +12,7 @@ pollingKeys:
 ---
 
 import FullSpectrumChart from '../../components/FullSpectrumChart.astro';
+import Note from '../../components/Note.astro';
 
 ## The problem
 
@@ -87,13 +88,43 @@ Framers put it.
 
 **Section 1.** Every reprieve or pardon granted shall be published, together with the name of the recipient, the offenses covered, and a statement of the reasons for the grant, and shall be reported to Congress. No reprieve or pardon shall take effect until so published.
 
+<Note>
+
+Every pardon must be made public before it takes effect — who received it, for what offenses, and the president's written reasons — and Congress must be told. This is a disclosure condition, not an approval condition: no official judges whether the reasons are good enough, so the clause can never become a veto on mercy — the mercy-destruction trap. California and New York have asked exactly this of their governors for over a century. Its force is publicity, not review.
+
+</Note>
+
 **Section 2.** Every reprieve or pardon shall name the individual to whom it is granted and specify the offenses to which it applies; no reprieve or pardon shall extend to offenses not yet committed at the time of the grant.
+
+<Note>
+
+A pardon must name the person it covers and list the offenses it forgives, and cannot reach crimes not yet committed. That bars blanket grants to unnamed groups and open-ended grants for years of unspecified conduct; individual mercy — including a pardon for specified past conduct before charges are filed — is untouched. "Individual cases" is a tested constitutional phrase, used in Germany's Basic Law and France's 2008 reform. We drafted exceptions for class-wide amnesties — the mass-mercy trap — and dropped each as more complicated than it was worth.
+
+</Note>
 
 **Section 3.** The President may not grant a reprieve or pardon to his or her spouse, or to any relative of the President or the President's spouse within the third degree of kinship, or to the spouse of any such relative.
 
+<Note>
+
+The president may not pardon a spouse or a close relative, measured by degree of kinship — the yardstick state ethics and judicial-recusal law already use, so the boundary is familiar rather than novel. Any line excludes some sympathetic case — the line-drawing trap — but a relative denied a pardon loses only the conflicted grantor: the courts, the clemency process, and every successor president remain open. We chose a flat categorical rule because it asks nothing about motive and so gives a court nothing to excavate.
+
+</Note>
+
 **Section 4.** A reprieve or pardon granted in exchange for anything of value, or for the purpose of shielding the President from legal liability or advancing the President's private financial interest, is void; and the acceptance of anything of value in return for the grant of a reprieve or pardon may be punished as bribery notwithstanding any grant.
 
+<Note>
+
+A pardon sold for anything of value, or granted to shield the president from legal liability or advance the president's own finances, is void, and taking payment for one is punishable as bribery even after the grant. "Void" means a corrupt pardon fails even if prosecution never comes. The bribery half is a transaction test — was something of value exchanged — rather than a motive test, because motive tests invite courts to excavate presidential intent: the review-standard trap. The purpose clause is the narrower fallback; the categorical rules carry the load.
+
+</Note>
+
 **Section 5.** Nothing in this article shall be construed to diminish the power to grant reprieves, pardons, or commutations to any person not described herein.
+
+<Note>
+
+Nothing in the article reduces the power to pardon, reprieve, or commute the sentence of anyone it does not describe. This is the savings clause: the article constrains secrecy, sale, and family self-dealing, and leaves mercy's whole legitimate range — for the over-punished, for corrected injustices, for ordinary applicants — where the Framers put it. It is the drafted answer to the strongest objection, that constraining the pardon would deepen the existing clemency drought, and it is the sentence the rest of the article is read against.
+
+</Note>
 
 </div>
 
@@ -155,14 +186,16 @@ The precedents run deeper than the polling:
 What we considered and set aside, and why:
 
 - **An explicit self-pardon ban.** We set it aside as a standalone provision because its
-  support does not hold across changes of administration: 59% of Republicans
-  backed a self-pardon ban in 2024 (96% of Democrats — YouGov for Protect
-  Democracy),[^protect-democracy-2024] but by December 2025 Republican support had fallen to 43%
-  (Democrats at 82% — Economist/YouGov).[^yougov-dec-2025] A provision whose numbers move with
-  who holds the office fails our full-spectrum test. The principle survives
-  inside Section 4 — a pardon granted to shield the president from legal
-  liability is void — and the explicit ban returns if support proves stable
-  across an administration change.
+  support depends on the wording and the sample: 59% of Republicans backed a
+  self-pardon ban in a 2024 advocacy-commissioned survey (96% of Democrats — YouGov for Protect
+  Democracy),[^protect-democracy-2024] but a national YouGov survey that same summer found 43% of
+  Republicans supporting a prohibition (81% of Democrats, 67% of
+  independents),[^yougov-aug-2024] and a generic constitutional limit on the pardon power
+  drew 34% of Republicans in 2025 (Economist/YouGov).[^yougov-dec-2025] A provision whose
+  numbers move that much with wording and sample fails our full-spectrum test. The
+  principle survives inside Section 4 — a pardon granted to shield the president from legal
+  liability is void — and the explicit ban returns if an independent,
+  forward-looking poll shows support holding in both parties.
 - **A ban on pardoning the president's own associates and co-conspirators.**
   Polls at 69% (50% of Republicans, 84% of Democrats — YouGov for Protect
   Democracy, 2024)[^protect-democracy-2024] — exactly at the partisan threshold, and only in
@@ -200,7 +233,8 @@ What we considered and set aside, and why:
 [^france-2008]: The president "has the right to grant individual pardons" — [French Constitution art. 17](https://www.conseil-constitutionnel.fr/en/constitution-of-4-october-1958), as amended by the [constitutional law of 23 July 2008](https://en.wikipedia.org/wiki/French_constitutional_law_of_23_July_2008), which abolished collective pardons.
 [^germany-basic-law]: The Federal President exercises the pardon power "in individual cases" — [German Basic Law art. 60(2)](https://www.gesetze-im-internet.de/englisch_gg/englisch_gg.html).
 [^pardon-bribery-probes]: DOJ investigation into a pardon-for-money scheme, revealed in an unsealed 2020 court filing — [CNN](https://www.cnn.com/2020/12/01/politics/pardon-investigation-doj/index.html); federal criminal investigation of the Clinton-era Marc Rich pardon — [CBS News](https://www.cbsnews.com/news/clinton-pardon-under-fire/).
-[^yougov-dec-2025]: Amend the Constitution to limit the pardon power: 56% support (34% R / 76% D); self-pardon ban: 82% D / 43% R — [Economist/YouGov, Dec. 5–8, 2025](https://yougov.com/en-us/articles/53702-majorities-americans-say-donald-trump-gives-too-many-pardons-want-to-limit-pardon-power-december-5-8-2025-economist-yougov-poll).
+[^yougov-aug-2024]: Prohibiting a president from pardoning themself: 64% support (43% R / 81% D / 67% I); n=1,130 U.S. adult citizens — [YouGov, Aug. 15–19, 2024](https://ygo-assets-websites-editorial-emea.yougov.net/documents/Presidential_Pardons_poll_results.pdf).
+[^yougov-dec-2025]: Amend the Constitution to limit the pardon power: 56% support (34% R / 76% D) — [Economist/YouGov, Dec. 5–8, 2025](https://yougov.com/en-us/articles/53702-majorities-americans-say-donald-trump-gives-too-many-pardons-want-to-limit-pardon-power-december-5-8-2025-economist-yougov-poll).
 [^protect-democracy-2024]: Presidents should not pardon family members: 77% (64% R / 88% D / 77% I); staff and associates: 69% (50% R / 84% D); themselves: 78% (59% R / 96% D). Advocacy-commissioned survey by a pro-reform organization, battleground-district sample — [YouGov for Protect Democracy, May–June 2024](https://protectdemocracy.org/work/survey-jan-6-pardon-opposition/).
 [^monmouth-2024]: Hunter Biden pardon: 32% approve (12% R / 65% D); Trump associate pardons: 29% approve — [Monmouth University Poll, Dec. 11, 2024](https://www.monmouth.edu/polling-institute/reports/monmouthpoll_us_121124/).
 [^board-gated-states]: Pennsylvania: no pardon "except on the recommendation in writing of a majority of the Board of Pardons," after "full hearing in open session, upon due public notice" — [Pa. Const. art. IV, §9](https://codes.findlaw.com/pa/constitution-of-the-commonwealth-of-pennsylvania/pa-const-art-4-sect-9.html); Texas — [Tex. Const. art. IV, §11](https://law.justia.com/constitution/texas/sections/cn000400-001100.html); Delaware — [Del. Const. art. VII](https://delcode.delaware.gov/constitution/constitution-08.shtml). Florida (governor plus two cabinet members) per the [CCRC 50-state comparison](https://ccresourcecenter.org/state-restoration-profiles/50-state-comparisoncharacteristics-of-pardon-authorities-2/).

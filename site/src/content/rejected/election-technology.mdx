@@ -1,0 +1,67 @@
+---
+title: Election Technology & Modernization
+order: 6
+rejectedOn: "2026-08-06"
+failedTest: "Not popular; statutory"
+summary: "Allowing people to vote entirely online drew 28% support overall (AP-NORC, 2020) and no majority in either party since 2022; the technology items that are popular are statutory standards Congress already sets."
+memo: research/rejected/ELECTION_TECHNOLOGY_REJECTED.md
+status: draft
+---
+
+import FullSpectrumChart from '../../components/FullSpectrumChart.astro';
+
+## The proposal
+
+As an amendment, "election technology and modernization" resolves into two ideas. The first is a right to cast a ballot over the internet or from a mobile phone, the version that has been polled. We identified no congressional joint resolution proposing it as constitutional text; the vehicles are state bills, including a 2026 Minnesota bill with chief authors from both parties.[^mn-sf4559] The second is a general mandate to modernize machines, registration systems, ballot design and audits — not one proposal but a name for dozens of statutory choices, all already governed by federal law. Article I, Section 4 lets Congress "make or alter" the manner of congressional elections (Article II lets it set the time of choosing presidential electors),[^art-i-4] and the Help America Vote Act of 2002 created the Election Assistance Commission to set voting-system guidelines and certify systems.[^hava]
+
+## The evidence
+
+The best independent measurement is AP-NORC's September 2020 survey: "allowing people to vote entirely online by submitting their ballot through a website" drew 28% favor and 51% oppose (AP-NORC, 2020).[^apnorc-sept-2020] AP-NORC published no party table for that item; we computed the split from its public-use file: 39% of Democrats, 15% of Republicans and 30% of independents in favor.[^apnorc-puf-sept-2020] At the height of the pandemic in April 2020 the same wording peaked at 40% overall — 48% of Democrats and 26% of Republicans by the same computation — the high-water mark.[^apnorc-april-2020]
+
+MIT's Survey of the Performance of American Elections corroborates the level. In 2024, "allow voting over the Internet" drew about 33% overall, about 45% of Democrats and about 19% of Republicans (MIT Election Lab, 2024; read from the published chart).[^spae-2024] The 2022 edition recorded the only majority in the record — about 52% of Democrats, against about 18% of Republicans (MIT Election Lab, 2022) — and it was gone by 2024.[^spae-2022]
+
+The security bodies treat the proposal as the risk: the National Academies wrote in 2018 that marked ballots "should not be returned over the Internet or any network connected to it,"[^nasem-2018] and CISA, the EAC, the FBI and NIST in 2020 called electronic ballot return "high-risk even with controls in place."[^cisa-2020] The one advocacy poll — Hart Research for Tusk Philanthropies, December 2021, D.C. voters only, reporting 70% support for "digital voting tools" — has no published wording, sample or party breakdown.[^hart-tusk-2021]
+
+## The test it failed
+
+The bipartisan floor is 15% (Republicans, AP-NORC 2020, computed from the public-use file), corroborated at about 19% (MIT Election Lab, 2024). Verdict: Weak. Four failure modes apply.
+
+**Not popular on the topline.** Outside the pandemic spike, overall support has sat between 28% and 33%, and no independent poll since 2022 shows a majority in either party.[^apnorc-sept-2020][^spae-2024]
+
+**Partisan-coded, with a stable gap.** Across four readings the gap has run 25 to 34 points; Democratic support has ranged from 39% to about 52%, Republican support has never exceeded 26%, and the split held across 2018–2024 regardless of which party held the presidency.[^apnorc-puf-sept-2020][^apnorc-april-2020][^spae-2022][^spae-2024] The mirror-image proposal is party-sorted too: "prohibit the use of computers to mark or count ballots" drew about 50% of Republicans and about 33% of Democrats (MIT Election Lab, 2024).[^spae-2024]
+
+**The existential-problem test.** The mission admits only problems that threaten the country's future, and the security consensus is that this proposal would create a risk to elections rather than remove one.[^nasem-2018][^cisa-2020]
+
+**The why-an-amendment test.** Article I, Section 4 already gives Congress the power over the manner of congressional elections,[^art-i-4] Congress used it in HAVA — passed 357–48 in the House and 92–2 in the Senate[^hava-house][^hava-senate] — and the political branches are still revising the standards without an amendment: a March 2025 executive order directs the EAC to amend its guidelines toward voter-verifiable paper records.[^eo-14248] Voting technology is machinery, and the mission leaves machinery to legislation.
+
+## Framings we tested
+
+- **"Allow voting over the internet":** 28–33% overall; about 15–19% of Republicans, 39–45% of Democrats (AP-NORC 2020; MIT Election Lab 2024). Weak.[^apnorc-puf-sept-2020][^spae-2024]
+- **"Voting using cell phones"** — closest to the idea as filed: about 23% overall, about 14% of Republicans, about 30% of Democrats (MIT Election Lab, 2024). Fails by a wider margin.[^spae-2024]
+- **"Secure" or "quantum-cryptography" internet voting:** never polled by an independent pollster; the security assessments say no current technology meets the bar, so the qualifier is a contested claim, not a framing.[^nasem-2018][^cisa-2020]
+- **"Require electronic voting machines to print a paper backup":** 84% overall — 87% of Republicans and 82% of Democrats (Pew Research Center, 2025). Strong.[^pew-2025] It clears the bar, but it is the opposite instinct to the filed idea, it is where federal standards are already moving,[^eo-14248] and it is a statutory standard, not a constitutional principle.
+- **"Select election officials on a nonpartisan basis":** about 70% of Republicans and about 80% of Democrats (MIT Election Lab, 2024). Clears the bar, but it is election administration, never polled as constitutional text.[^spae-2024]
+
+<FullSpectrumChart proposal="The framing that clears — a statutory standard, not the filed idea: requiring electronic voting machines to print a paper backup of a voter's ballot — Pew Research Center, 2025" support={{ dem: 82, rep: 87 }} />
+
+None of the framings that clear the bar is what we would draft under this heading.
+
+## The path back
+
+None identified as an amendment; the category belongs on the statutory track. Reopening it would require independent national polling showing internet or cell-phone voting at 60% or better in both parties across two consecutive federal cycles, together with a reversal of the National Academies and CISA/EAC/FBI/NIST findings.[^nasem-2018][^cisa-2020] The why-an-amendment test would remain unmet even then, unless a court held that Congress lacks power under Article I, Section 4 to set voting-technology standards.
+
+[^mn-sf4559]: Minnesota SF 4559 (2026), electronic voting system / mobile phone technology, introduced March 18, 2026 with DFL and Republican chief authors, referred to the Senate Elections Committee with no further action when the session ended — [Minnesota Legislature, SF 4559 (2026)](https://www.revisor.mn.gov/bills/94/2026/0/SF/4559).
+[^art-i-4]: Article I §4: the "Times, Places and Manner of holding Elections for Senators and Representatives, shall be prescribed in each State by the Legislature thereof; but the Congress may at any time by law make or alter such Regulations" — [Cornell LII, U.S. Constitution, Article I §4](https://www.law.cornell.edu/constitution/articlei).
+[^hava]: The Help America Vote Act of 2002 created the Election Assistance Commission, funded replacement of punch-card and lever machines, and charged the EAC with voting-system guidelines and the federal certification program — [U.S. Election Assistance Commission, Help America Vote Act](https://www.eac.gov/about/help-america-vote-act).
+[^apnorc-sept-2020]: AP-NORC, Sept. 11–14, 2020 (n=1,108 adults), VOTE3: "Allowing people to vote entirely online by submitting their ballot through a website" 28% favor / 51% oppose; the trend table shows 28% favor / 53% oppose in Sept. 13–16, 2018 (n=1,059), no party breakdown published — [AP-NORC, Sept. 2020 topline](https://apnorc.org/wp-content/uploads/2020/09/topline_september_pdf.pdf); [AP-NORC, "Casting a ballot in 2020"](https://apnorc.org/projects/casting-a-ballot-in-2020/).
+[^apnorc-puf-sept-2020]: Party split computed by the foundation from AP-NORC's Sept. 2020 public-use file (FINALWT, self-identified party): Democrats 39% favor / 37% oppose; Republicans 15% / 70%; independents and others, including leaners, 30% / 44%; the recomputed overall (28.5 / 50.2) matches the published topline — [AP-NORC, Sept. 2020 public-use file](https://apnorc.org/wp-content/uploads/2020/09/September-2020-AP-NORC-Poll-PUF.zip).
+[^apnorc-april-2020]: AP-NORC, Apr. 16–20, 2020 (n=1,057), same wording: 40% favor / 39% oppose; party split computed by the foundation from the public-use file: Democrats 48% / 27%, Republicans 26% / 58%, independents 44% / 36% — [AP-NORC, Apr. 2020 topline](https://apnorc.org/wp-content/uploads/2020/06/april_topline_clean.pdf); [AP-NORC, "Voting in the Time of the Coronavirus"](https://apnorc.org/projects/voting-in-the-time-of-the-coronavirus/); [AP-NORC, Apr. 2020 public-use file](https://apnorc.org/wp-content/uploads/2020/06/April-2020-AP-NORC-PUF.zip).
+[^spae-2024]: MIT Election Lab, Survey of the Performance of American Elections 2024 (YouGov, 10,200 registered voters, post-election): "Allow voting over the Internet" about 33% overall, about 45% of Democrats and about 19% of Republicans; "Voting using cell phones" about 23%, about 30% D / about 14% R; "Prohibit the use of computers to mark or count ballots" about 50% R / about 33% D; nonpartisan selection of election officials about 70% R / about 80% D; paper backups about 87% in both parties; party figures read from Figure 35, pp. 37–38, ±2 points; the text states that cell-phone voting, universal vote-by-mail, internet voting and hand-marked paper ballots "did not receive majority backing from either party" — [MIT Election Lab, How We Voted in 2024](https://electionlab.mit.edu/sites/default/files/2025-07/HowWeVotedIn2024.pdf); [report announcement](https://electionlab.mit.edu/articles/new-report-how-we-voted-2024).
+[^spae-2022]: MIT SPAE 2022: internet voting about 36% overall, about 52% of Democrats and about 18% of Republicans; cell-phone voting about 26%, about 37% D / about 14% R; "count all ballots by hand" about 59% R / about 35% D (chart reads, p. 35) — [MIT Election Lab, How We Voted in 2022](https://electionlab.mit.edu/sites/default/files/2023-05/HowWeVotedIn2022.pdf).
+[^nasem-2018]: "Ballots that have been marked by voters should not be returned over the Internet or any network connected to it, because no current technology can guarantee their secrecy, security, and verifiability" — [National Academies of Sciences, Engineering, and Medicine, Securing the Vote: Protecting American Democracy (2018)](https://www.nationalacademies.org/publications/25120).
+[^cisa-2020]: "we recommend paper ballot return as electronic ballot return technologies are high-risk even with controls in place," and use "should be limited to voters who have no other means to return their ballot" — [CISA / EAC / FBI / NIST, Risk Management for Electronic Ballot Delivery, Marking, and Return (May 8, 2020)](https://www.cisa.gov/sites/default/files/2024-02/Final_%20Risk_Management_for_Electronic-Ballot_05082020_508c.pdf).
+[^hart-tusk-2021]: Hart Research for Tusk Philanthropies, Dec. 2021, D.C. voters only: "70 percent of D.C. voters support digital voting tools"; no pollster page, sample, wording or party breakdown available — [Built In, "Mobile Voting Could Be Coming to D.C." (Dec. 28, 2021)](https://builtin.com/articles/mobile-voting-project-dc-tusk-philanthropies-122821); the advocacy sponsor is the [Mobile Voting Project](https://www.mobilevoting.org/).
+[^hava-house]: HAVA conference report (H.R. 3295), House Roll Call 462, Oct. 10, 2002: 357–48 (172 R / 184 D / 1 I yea) — [House Clerk, Roll Call 462](https://clerk.house.gov/evs/2002/roll462.xml).
+[^hava-senate]: HAVA conference report (H.R. 3295), Senate Vote 238, Oct. 16, 2002: 92–2 — [U.S. Senate, Vote 238](https://www.senate.gov/legislative/LIS/roll_call_votes/vote1072/vote_107_2_00238.xml).
+[^eo-14248]: Executive Order 14248 (Mar. 25, 2025), §4(b), directs the EAC to amend the Voluntary Voting System Guidelines so that systems "should not use a ballot in which a vote is contained within a barcode or quick-response code … and should provide a voter-verifiable paper record" — [White House, Executive Order 14248, "Preserving and Protecting the Integrity of American Elections"](https://www.whitehouse.gov/presidential-actions/2025/03/preserving-and-protecting-the-integrity-of-american-elections/).
+[^pew-2025]: Pew Research Center, Aug. 4–10, 2025 (n=3,554): "Requiring electronic voting machines to print a paper backup of a voter's ballot" 84% favor, 87% of Republicans / 82% of Democrats; making Election Day a national holiday 74% (74 R / 76 D) — [Pew Research Center, "Most Americans Back Expanded Early Voting, Voting by Mail, Voter ID" (Aug. 22, 2025)](https://www.pewresearch.org/politics/2025/08/22/majority-of-americans-continue-to-back-expanded-early-voting-voting-by-mail-voter-id/).
