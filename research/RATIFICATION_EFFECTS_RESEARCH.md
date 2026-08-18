@@ -24,7 +24,7 @@ draft. Public page: `/amendments/after-ratification`.*
 
 ## 2. What happens to laws already on the books
 
-Once ratified, an amendment is part of "the supreme Law of the Land." Existing federal statutes and
+Once ratified, an amendment is part of "the supreme Law of the Land" — effective on the date the last necessary state ratifies, not the date it is proclaimed: "the date of its consummation, and not that on which it is proclaimed, controls." — [*Dillon v. Gloss*, 256 U.S. 368 (1921), LII](https://www.law.cornell.edu/supremecourt/text/256/368) Existing federal statutes and
 state constitutions and laws that conflict with it do not have to be repealed to lose force — but
 they are not erased either. In practice:
 
@@ -123,6 +123,7 @@ than leaving it to inference (§3).
 - https://www.archives.gov/federal-register/constitution
 - https://www.archives.gov/founding-docs/amendments-11-27
 - https://www.law.cornell.edu/supremecourt/text/3/378
+- https://www.law.cornell.edu/supremecourt/text/256/368
 - https://www.law.cornell.edu/supremecourt/text/258/130
 - https://www.law.cornell.edu/supremecourt/text/291/217
 - https://www.law.cornell.edu/supremecourt/text/392/409

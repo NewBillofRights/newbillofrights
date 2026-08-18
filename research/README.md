@@ -42,6 +42,26 @@ One memo per rejected category, all to one template (the proposal, the evidence 
 - [rejected/QUALIFIED_IMMUNITY_REJECTED.md](rejected/QUALIFIED_IMMUNITY_REJECTED.md)
 - [rejected/BALANCED_BUDGET_REJECTED.md](rejected/BALANCED_BUDGET_REJECTED.md)
 
+## Candidate-category memos
+
+One memo per candidate category, to the rejected-memo template plus a recommendation (the proposal, the evidence with party breakdowns, the gate result, framings tested, what would resolve it and the recommendation, sources); written 2026-08-18 so every category — target, candidate, rejected — is evaluated by the same criteria. Recommendations are to the founder; CATEGORIES.md records the decision.
+
+- [candidates/AGE_LIMITS_CANDIDATE.md](candidates/AGE_LIMITS_CANDIDATE.md)
+- [candidates/EXECUTIVE_LAWFULNESS_CANDIDATE.md](candidates/EXECUTIVE_LAWFULNESS_CANDIDATE.md)
+- [candidates/DOJ_INDEPENDENCE_CANDIDATE.md](candidates/DOJ_INDEPENDENCE_CANDIDATE.md)
+- [candidates/CIVIL_SERVICE_CANDIDATE.md](candidates/CIVIL_SERVICE_CANDIDATE.md)
+- [candidates/AGENCY_INDEPENDENCE_CANDIDATE.md](candidates/AGENCY_INDEPENDENCE_CANDIDATE.md)
+- [candidates/STATEHOOD_CANDIDATE.md](candidates/STATEHOOD_CANDIDATE.md)
+- [candidates/FILIBUSTER_REFORM_CANDIDATE.md](candidates/FILIBUSTER_REFORM_CANDIDATE.md)
+- [candidates/FAIR_DISTRICTING_CANDIDATE.md](candidates/FAIR_DISTRICTING_CANDIDATE.md)
+- [candidates/PROPORTIONAL_REPRESENTATION_CANDIDATE.md](candidates/PROPORTIONAL_REPRESENTATION_CANDIDATE.md)
+- [candidates/FUSION_VOTING_CANDIDATE.md](candidates/FUSION_VOTING_CANDIDATE.md)
+- [candidates/GOOD_GOVERNMENT_DATA_CANDIDATE.md](candidates/GOOD_GOVERNMENT_DATA_CANDIDATE.md)
+- [candidates/HOUSE_EXPANSION_CANDIDATE.md](candidates/HOUSE_EXPANSION_CANDIDATE.md)
+- [candidates/THIRTEENTH_EXCEPTION_CANDIDATE.md](candidates/THIRTEENTH_EXCEPTION_CANDIDATE.md)
+- [candidates/APPOINTMENT_DEFAULT_CANDIDATE.md](candidates/APPOINTMENT_DEFAULT_CANDIDATE.md)
+- [candidates/EMINENT_DOMAIN_CANDIDATE.md](candidates/EMINENT_DOMAIN_CANDIDATE.md)
+
 ## Evidence & ideas
 
 - [POLLING_RESEARCH.md](POLLING_RESEARCH.md) — cross-party polling with party breakdowns and sources
