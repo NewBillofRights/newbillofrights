@@ -263,7 +263,7 @@ Five workstreams. **A** gates visual polish, **C (copy) is the critical path** �
 | --- | --- | --- |
 | 0 — Identity | A | Style guide + tokens committed |
 | 1 — Launchable core | B, C, D, E | **Launch bar:** all 8 amendment pages live (abbreviated evidence OK), Mission/Evidence/Get Involved/About/FAQ live, both forms verified in production, QA pass clean, site on newbillofrights.net |
-| 2 — Evidence deepening | C (continued) | Polling page charts (per-proposal D/R/I with bipartisan floor), full per-section annotations, held-back formulations on every amendment page |
+| 2 — Evidence deepening | C (continued) | **Task 0 (first): substantiate the ten rejected categories** — one research memo each (`research/rejected/`) applying SELECTION_METHOD.md's gate and tests, then subpages under `/evidence/rejected/` · **2A** per-section plain-English annotations on the draft text (may name the trap the wording avoids; Gemini feedback round before Michael's review) · **2B** polling page charts (no floor line; label each proposal's floor number) · **2C** build-time social share images. Held-back formulations: done (every page's "What we left out"). Full spec: [HANDOFF.md](HANDOFF.md). |
 | 3 — Participation | new | Survey embed, Luma embed + Eventbrite cross-listing flow, post-incorporation donations, founding-donor recognition wall, invite-only salon infrastructure |
 
 Suggested execution order: A1 and B1–B3 in parallel → A2 → B4 (components styled against real tokens) → C2 first amendment proves the template → D while remaining C2 pages go through review → E once C and D exit. The site can sit on a preview channel through all of it; DNS cutover is the last step.
