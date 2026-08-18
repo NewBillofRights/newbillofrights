@@ -17,7 +17,7 @@
 **Open / for Michael:**
 
 - Manual read of the ten rejected pages (nonpartisan discipline is the thing to check — abortion, voting rights, Electoral College especially), the 35 annotations, the polling page, and the share images; then flip `status`.
-- Deploy: the production deploy was blocked by the session's permission classifier; a preview-channel deploy was used to verify. Run `scripts/deploy.sh prod` to publish (log lands in `/tmp/newbillofrights-deploys/`), then verify with the `--resolve` curl.
+- Deployed to production 2026-08-17 (log `/tmp/newbillofrights-deploys/deploy-20260817-223652.log`); verified on newbillofrights.net (rejected index + subpages, polling charts, annotations, OG images all 200; still noindexed).
 - Apply the flagged corpus corrections listed in POLLING_RESEARCH.md (self-pardon attribution in four docs; QI range 28–46%; balanced-budget pollster dates/splits; caution-list photo-ID split).
 - Log the November 2026 abortion ballot measures (Idaho, Missouri, Nevada, Virginia) after the election (ABORTION memo).
 
