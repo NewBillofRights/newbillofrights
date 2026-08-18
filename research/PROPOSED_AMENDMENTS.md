@@ -2,6 +2,8 @@
 
 Draft constitutional text compiled from the eight category research documents. Only formulations that pass the foundation's full-spectrum bar are included (see each research doc's gate check and held-back list for what was excluded and why). Each category reads as a separate draft article; section numbering is per article.
 
+*Revision 2026-08-17: (a) Campaign Finance gains a new Section 5 (power to exclude foreign money; former Section 5 becomes Section 6) after the corpus review found the principle clears the full-spectrum bar (PPC 2021: 77% R / 84% D; Maine Question 2, 86%; H.R. 3535 unanimous House voice vote, July 2026) and that* Citizens United *expressly reserved the question for foreign-controlled domestic entities. (b) Redistricting Section 2's court exception now reaches violations of state constitutions and laws, so state courts keep the mid-decade remedy they used against a Republican map (Pennsylvania 2018) and a Democratic map (New York 2022).*
+
 ## 1. Campaign Finance
 
 **Section 1.** To secure political equality, the integrity of government, and free and fair elections, Congress and the States may regulate and set reasonable, viewpoint-neutral limits on the raising and spending of money to influence elections, including contributions to candidates and expenditures made in their support or opposition.
@@ -12,7 +14,9 @@ Draft constitutional text compiled from the eight category research documents. O
 
 **Section 4.** In the regulation of contributions and expenditures to influence elections, Congress and the States may distinguish between natural persons and corporations or other artificial entities created by law.
 
-**Section 5.** Nothing in this article shall be construed to grant any power to abridge the freedom of speech or of the press, including news reporting, commentary, and editorial content, regardless of the speaker's form of organization. Congress and the States shall have power to enforce this article by appropriate legislation.
+**Section 5.** Congress and the States may prohibit foreign governments, foreign nationals, and any entity owned or controlled by them from contributing or spending money to influence elections in the United States.
+
+**Section 6.** Nothing in this article shall be construed to grant any power to abridge the freedom of speech or of the press, including news reporting, commentary, and editorial content, regardless of the speaker's form of organization. Congress and the States shall have power to enforce this article by appropriate legislation.
 
 ## 2. Term Limits
 
@@ -64,7 +68,7 @@ Draft constitutional text compiled from the eight category research documents. O
 
 **Section 1.** The right of the people to choose their representatives being prior to the power of representatives to choose their voters, districts shall be drawn to serve the equal suffrage of the people and not the advantage of any incumbent or party.
 
-**Section 2.** Districts for the election of Representatives in Congress, and for the election of members of any State legislature, shall be established once following each decennial enumeration, and shall not thereafter be altered until the next enumeration, except as a court of competent jurisdiction shall require to remedy a violation of this Constitution or of the laws of the United States.
+**Section 2.** Districts for the election of Representatives in Congress, and for the election of members of any State legislature, shall be established once following each decennial enumeration, and shall not thereafter be altered until the next enumeration, except as a court of competent jurisdiction shall require to remedy a violation of this Constitution, of the laws of the United States, or of the constitution or laws of the State.
 
 **Section 3.** This article shall apply to all districts established following the first decennial enumeration conducted after its ratification; no district established or altered other than in conformity with this article shall thereafter be given effect.
 

@@ -1,0 +1,45 @@
+# Research Corpus Review — 2026-08-17
+
+An outside completeness-and-accuracy review of the nine research documents (eight category memos plus POLLING_RESEARCH.md), run with Gemini's strongest model (`gemini-3.1-pro-preview`) as reviewer. **Every proposed addition was independently verified against a fetched source before it entered the corpus**; Gemini's own URLs and claims were rejected wherever they could not be verified or turned out to be wrong (this happened often — see "Reviewer errors caught" below). Additions were appended to each doc in a `## Review Additions (2026-08-17)` section, grouped by the memo section they extend; **no existing text was altered**. Verified corrections to existing text are listed in each doc under `### Flagged corrections` for you to apply.
+
+Totals: **~130 verified additions**, **~20 verified corrections flagged**, across 9 docs.
+
+## What changed on the live site as a result
+
+Five claims on the public pages rested on things the review corrected or superseded; all five are fixed and footnoted to the verified sources:
+
+1. **Lobbying** — the memo (and page) said "a lifetime ban polls at 32%" and "65% for five years." The 32% was a forced-choice *preference* share; asked standalone, a lifetime ban is acceptable to ~50% (48% R / 54% D), and the "65%" was the combined "at least five years" total. Page and polling table re-worded; the lifetime ban stays held back, but the stated basis is now correct.
+2. **Redistricting** — the "unpolled with party breakdowns" gap is filled: Marquette (Nov 2025) shows 70% R / 73% D oppose mid-decade partisan redistricting, with the arms-race dynamic visible between waves. Added as a chart on the page and a row in the polling table (previously redistricting had none).
+3. **Executive compliance** — "impoundment is essentially unpolled" was wrong; a March 2025 States United/YouGov poll exists (regime-coded wording; R 47–27 *for* withholding), confirming the clause fails the floor. Page corrected.
+4. **Pardon reform** — the family-ban's 64R/88D headline number now carries a caveat: an independent Feb 2025 YouGov poll taken after a Democratic president's family pardons found only 42% of Democrats calling them unacceptable (72% R). The floor is regime-dependent; the page now says so and commits to a forward-looking poll.
+5. **Campaign finance** — the doctrinal arc now runs through *NRSC v. FEC* (June 30, 2026), which struck coordinated-party-expenditure limits.
+
+## Highest-value findings, by document
+
+- **CAMPAIGN_FINANCE** (17 added) — *NRSC v. FEC* (2026); a **possible sixth amendment-grade principle** — authority to exclude foreign-national money — that appears to clear the bar (PPC poll 77R/84D; Maine Q2 86%; H.R. 3535 unanimous House voice vote July 2026) — *flagged for your decision, not adopted*; Maine's $5,000 super-PAC cap in the First Circuit as the live *SpeechNow* test; Arizona Prop 211 upheld (June 2026); Australia's mixed record qualifies "every peer democracy."
+- **TERM_LIMITS** (13) — ND Supreme Court struck the legislature's loosening measure (June 2026): a working domestic anti-evasion precedent; **Mexico re-banned consecutive reelection (2025) — retire the "Mexico converged on 12 years" argument**; new Marist Apr 2026 (83%: 78D/89R) and PRRI numbers; amendment-form SCOTUS vehicles (Manchin–Welch). Corrections: H.J.Res. 11 markup was Sept 2023 (not 2024).
+- **ETHICS** (7) — 2013 STOCK Act rollback by unanimous consent (the disclosure-floor argument's proof); *Helstoski* (Speech or Debate evidentiary bar the amendment must override); *Carrigan* (votes aren't protected speech); *Snyder* (2024). Correction: the UK Supreme Court *does* have a complaint procedure — soften "only apex court with no mechanism."
+- **PRIVACY** (15) — party split of the 212–212 §702 warrant vote (R 128–86, D 84–126) with executive opposition under both parties; children's privacy as the one commercial-side supermajority (Senate 91–3; House 267–117); state baseline now 23–24 laws almost all without a private right of action — sharpens the counterargument to the redress clause. Correction: "every bill died over machinery" overstates — civil-rights provisions were a substantive front in APRA.
+- **LOBBYING** (14) — the UMD misread (above); §207(f) already bans foreign-government representation for a year (lifetime for USTR); Clinton's E.O. 12834 self-revocation pairs with 2021's; Feb 2025 FARA enforcement rollback; **Michigan enacted a 2-year cooling-off July 27, 2026**; Montana repeal failed 26–74. Corrections: Florida injunction narrowed to the plaintiff; FFIA link points to the wrong bill.
+- **REDISTRICTING** (12) — Marquette Nov 2025 (above); **a possible drafting flaw in Section 2 of the draft amendment**: the court-remedy exception names "this Constitution or the laws of the United States," which would arguably bar *state* courts from ordering redraws under *state* constitutions — the remedy used against a Republican map (PA 2018) and a Democratic map (NY 2022); suggested fix adds "or of the constitution or laws of the State" — *for your decision; draft text untouched*. Corrections: Clean Missouri *was* constitutional text (repealed by amendment) → "only supermajority-entrenched text survives"; Texas: SCOTUS summarily reversed (Apr 2026), not stayed; Missouri referendum declared insufficient (Aug 4, 2026).
+- **EXECUTIVE_COMPLIANCE** (16) — Marquette: only 39% of Republicans call lower-court blocks proper vs. 76–80% for SCOTUS bindingness across ten waves — the tiering design's strongest evidence; *J.G.G.* contempt inquiry en banc (argument Sept 29, 2026); *AIDS Vaccine* (Sept 2025) — only the Comptroller General may sue under the ICA, and that office is held by an acting official; *Kendall* (1838). Corrections: WaPo tally is 57 of 165 rulings (~35%), not "32 cases"; a Marquette link mismatch; impoundment *is* polled.
+- **PARDON** (17) — *Trump v. United States* (2024) footnote 3 limits evidence in a pardon-bribery prosecution — qualifies "already prosecutable"; YouGov Feb 2025 regime-dependence (above); H.J.Res. 135 (Olszewski D / Bacon R, Dec 2025) — a bipartisan Mondale-style amendment; the Convention record (Sherman 1–8, Randolph 2–8–1) + Federalist 74 as the originalist counterargument; Brazil and Poland courts voiding bad-faith pardons. Corrections: *Burdick* "acceptance = confession" is dictum with no legal effect — don't build messaging on it; independent-board states are six, not ~nine.
+- **POLLING** (20) — Marquette May 2026 (coordinated-expenditure limits 74R/78D; removal protections R 39→54); Economist/YouGov Apr 2026 (71% say gerrymandering shouldn't be allowed: 69R/74D); PRRI 2025; Brennan/Verasight 2026 toplines; YouGov May 2026 stock-ban wording test with splits. Corrections: ERA *does* have a Pew party breakdown (66R/88D); QI accountability figure is 79%, not 84%.
+
+## Gate-check impacts (none change a verdict; three sharpen one)
+
+- Lobbying lifetime ban: still held back, but the exclusion should rest on Q36/Q37 acceptability (~50% standalone), and a standalone favor/oppose poll is the evidence that could reopen it.
+- Redistricting: timing rule clears (~70% floor both parties, now independently shown); a rule-choice framing (Noble Predictive, June 2026) shows a Republican plurality of only 42–40 for once-per-decade — the floor is framing-dependent.
+- Pardon family ban: floor is regime-dependent → prioritize a forward-looking independent poll before the 64R/88D number is used in materials.
+- Executive compliance: strengthened (tiering essential; impoundment and consequences clauses stay held back on evidence).
+- Campaign finance: possible **sixth principle** (foreign money) for your decision.
+
+## Reviewer errors caught (why verification was non-negotiable)
+
+Gemini's review was valuable for *finding gaps* but unreliable on *facts*: it called a real Canadian parliamentary report a hallucination; claimed the 8th Circuit *upheld* Missouri's lobbying ban (it struck it); named the wrong Republicans on the H.J.Res. 11 vote; misdated Germany's court entrenchment; asserted a §702 sunset date error that wasn't one; and supplied several nonexistent URLs. Every one was checked and rejected. Treat any future Gemini "correction" the same way.
+
+## Suggested next steps for you
+
+1. Decide the two flagged design questions: the **foreign-money principle** (campaign finance) and the **state-court remedy wording** (redistricting Section 2).
+2. Apply the "Flagged corrections" in each doc when you next revise it (they're listed at the end of each Review Additions section; original passages were left untouched so you can see both).
+3. Consider commissioning: forward-looking pardon poll; standalone lifetime-lobbying-ban poll; principle-level impoundment poll.

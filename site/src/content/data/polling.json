@@ -163,7 +163,7 @@
   },
   {
     "id": "executive-lobbying-five-year-wait",
-    "proposal": "Five-year lobbying wait for senior executive-branch officials",
+    "proposal": "Five-year lobbying wait for senior executive-branch officials (acceptable, standalone)",
     "amendment": "lobbying",
     "support": {
       "dem": 72,
@@ -189,7 +189,7 @@
   },
   {
     "id": "ex-member-lobbying-wait",
-    "proposal": "Extend former members of Congress's lobbying wait from two to five years",
+    "proposal": "Extend former members of Congress's lobbying wait to at least five years (five-year or lifetime, combined)",
     "amendment": "lobbying",
     "support": {
       "dem": 67,
@@ -198,7 +198,7 @@
     },
     "source": "Program for Public Consultation, University of Maryland",
     "year": 2022,
-    "url": "https://publicconsultation.org/united-states/large-bipartisan-majority-favors-increasing-lobbying-restrictions-on-former-members-of-congress-and-other-government-officials/"
+    "url": "https://vop.org/wp-content/uploads/2022/12/Lobbying_Quaire_0622.pdf"
   },
   {
     "id": "lobbyist-influence",
@@ -306,5 +306,33 @@
     "source": "YouGov for Protect Democracy",
     "year": 2024,
     "url": "https://protectdemocracy.org/work/survey-jan-6-pardon-opposition/"
+  },
+  {
+    "id": "redistricting-mid-decade-oppose",
+    "proposal": "Oppose states redrawing congressional districts mid-decade for partisan advantage",
+    "amendment": "redistricting",
+    "support": {
+      "dem": 73,
+      "rep": 70,
+      "ind": 68,
+      "overall": 71
+    },
+    "source": "Marquette Law School Poll",
+    "url": "https://law.marquette.edu/poll/wp-content/uploads/2025/11/MLSPSC29PressReleaseNationalIssues.pdf",
+    "year": 2025
+  },
+  {
+    "id": "cf-foreign-money",
+    "proposal": "Ban foreign individuals and entities from spending money to influence ballot initiatives",
+    "amendment": "campaign-finance",
+    "support": {
+      "dem": 84,
+      "rep": 77,
+      "ind": 74,
+      "overall": 80
+    },
+    "source": "University of Maryland Program for Public Consultation",
+    "url": "https://publicconsultation.org/united-states/foreign-funding-of-ballot-initiatives/",
+    "year": 2021
   }
 ]

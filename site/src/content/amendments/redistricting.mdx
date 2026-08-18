@@ -4,8 +4,11 @@ order: 6
 problemSummary: Politicians draw their own districts — and now redraw them mid-decade whenever it helps their party.
 principleSummary: Districts are drawn once per census, to serve the equal suffrage of the people, and cannot be redrawn for advantage until the next one.
 status: draft
-pollingKeys: []
+pollingKeys:
+  - redistricting-mid-decade-oppose
 ---
+
+import FullSpectrumChart from '../../components/FullSpectrumChart.astro';
 
 ## The problem
 
@@ -48,7 +51,7 @@ load is carried by the timing rule that follows.
 **One map per census.** Districts, congressional and state-legislative, are
 established once after each decennial census and cannot be altered until the
 next one — unless a court orders a redraw to remedy a violation of the
-Constitution or federal law. This design answers the objection that ended
+federal or state constitution or laws. This design answers the objection that ended
 judicial policing of gerrymandering: *Rucho* found no "judicially manageable
 standards" for deciding when a map is too partisan,[^rucho] but a calendar rule needs
 none — a court asks only whether this is the first map since the census. The
@@ -77,7 +80,7 @@ accept the rule before knowing which side it will next constrain.
 
 **Section 1.** The right of the people to choose their representatives being prior to the power of representatives to choose their voters, districts shall be drawn to serve the equal suffrage of the people and not the advantage of any incumbent or party.
 
-**Section 2.** Districts for the election of Representatives in Congress, and for the election of members of any State legislature, shall be established once following each decennial enumeration, and shall not thereafter be altered until the next enumeration, except as a court of competent jurisdiction shall require to remedy a violation of this Constitution or of the laws of the United States.
+**Section 2.** Districts for the election of Representatives in Congress, and for the election of members of any State legislature, shall be established once following each decennial enumeration, and shall not thereafter be altered until the next enumeration, except as a court of competent jurisdiction shall require to remedy a violation of this Constitution, of the laws of the United States, or of the constitution or laws of the State.
 
 **Section 3.** This article shall apply to all districts established following the first decennial enumeration conducted after its ratification; no district established or altered other than in conformity with this article shall thereafter be given effect.
 
@@ -90,9 +93,20 @@ The principle commands one of the broadest consensuses we have measured: only
 intentionally favor one party (Economist/YouGov, 2025).[^yougov-2025] A nationwide ban on
 gerrymandering and mid-decade redistricting drew two-thirds support,
 including majorities of Republicans and independents, in a September 2025
-survey — though that poll was commissioned by an advocacy organization, and
-we treat it as encouraging rather than established until it is independently
-replicated (Common Cause, 2025).[^common-cause-2025]
+survey — a poll commissioned by an advocacy organization (Common Cause,
+2025).[^common-cause-2025] It has since been independently replicated with party breakdowns:
+asked about states redrawing districts outside the census cycle for partisan
+advantage, with both Texas and California named, Americans opposed it 71–28,
+with majorities in both parties:[^marquette-nov-2025]
+
+<FullSpectrumChart
+  proposal="Oppose states redrawing congressional districts mid-decade for partisan advantage — Marquette Law School Poll, November 2025"
+  support={{ dem: 73, rep: 70, ind: 68 }}
+/>
+
+The same survey caught the arms race in motion: between September and
+November 2025 — before and after California's counter-map — Republican
+opposition rose eight points and Democratic opposition fell seven.[^marquette-nov-2025]
 
 The complication, however, is that the consensus is principled, not situational.
 In the same polling year, 66% of Republicans approved their party's Texas
@@ -182,3 +196,4 @@ What we considered and set aside, and why:
 [^nbc-2025]: 82% say nonpartisan commissions should draw district lines — [NBC News poll, August–September 2025](https://www.nbcnews.com/politics/politics-news/poll-americans-oppose-political-parties-drawing-election-lines-rcna229257).
 [^clc-2021]: 57% of Republicans support independent redistricting commissions; R Street poll reported by an advocacy organization — [Campaign Legal Center, 2021](https://campaignlegal.org/update/poll-57-republicans-support-independent-redistricting-commissions).
 [^oh-issue1-2024]: Ohio's November 2024 Issue 1 citizens'-commission amendment failed 53.7–46.3 after the Republican-controlled Ballot Board approved, 3–2 on party lines, language describing it as requiring gerrymandering — [Spectrum News, September 2024](https://spectrumnews1.com/oh/columbus/news/2024/09/19/ohio-officials-approve-issue-1-ballot-language); [Ohio Capital Journal](https://ohiocapitaljournal.com/2024/11/05/ohio-voters-reject-issue-1-leaving-politicians-in-control-over-map-making-process-ap-projects/); see also [2024 Ohio Issue 1, Wikipedia](https://en.wikipedia.org/wiki/2024_Ohio_Issue_1).
+[^marquette-nov-2025]: Marquette Law School Poll, national survey, November 5–12, 2025 (n=1,052; SSRS probability panel): oppose mid-decade partisan redistricting 71–28 overall; Republicans 70–30, independents 68–31, Democrats 73–27; the September 15–24, 2025 wave had Republicans 62–38 and Democrats 80–20 — [Marquette press release (PDF)](https://law.marquette.edu/poll/wp-content/uploads/2025/11/MLSPSC29PressReleaseNationalIssues.pdf).
