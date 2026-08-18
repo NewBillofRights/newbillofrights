@@ -1,0 +1,38 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Michael Hamilton and the New Bill of Rights Foundation
+
+This license covers the written and creative work in this repository:
+
+- research/            — the research memos, polling compendium, selection
+                          method, and the proposed amendment text
+- site/src/content/    — the published website copy (amendments, rejected
+                          categories, polling data)
+- HOME.md, HANDOFF.md, WEBSITE_OUTLINE.md, COPY_VOICE_GUIDE.md,
+  REVIEW_NOTES.md, and the other Markdown documents at the repository root
+- docs/conversations/  — the working-session archive
+- design/              — logo explorations and other design assets
+
+You are free to share (copy and redistribute in any medium or format) and to
+adapt (remix, transform, and build upon) this material for any purpose,
+including commercially, on the condition that you give appropriate credit to
+the New Bill of Rights Foundation, provide a link to the license, and indicate
+if changes were made. You may do so in any reasonable manner, but not in any
+way that suggests the Foundation endorses you or your use.
+
+Full legal text: https://creativecommons.org/licenses/by/4.0/legalcode
+Human-readable summary: https://creativecommons.org/licenses/by/4.0/
+
+The proposed amendment text in particular is meant to travel: quote it, argue
+with it, put it in front of your legislator. Just say where it came from.
+
+Third-party material quoted or cited in the research (polling results, court
+opinions, statutes, news reports) remains the property of its respective
+owners and is used under fair use for commentary and citation.
+
+Trademarks: "New Bill of Rights Foundation," the seal mark, and the wordmark
+identify the Foundation and are not licensed for use as identifiers of any
+other person or organization.
+
+The code in this repository is licensed separately under the MIT License —
+see LICENSE.

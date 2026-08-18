@@ -1,4 +1,4 @@
-# One-project override of the [REDACTED] org's Domain Restricted
+# One-project override of the parent organization's Domain Restricted
 # Sharing policy, so michael@newbillofrights.net can hold IAM roles on
 # newbillofrights-prod. The org-wide policy is untouched; this applies to
 # this project only. (Stricter alternative: replace `allowAll: true` with
