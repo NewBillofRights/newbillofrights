@@ -24,7 +24,9 @@ async function notifySeedDonor(data: {
   note?: string | null;
   source?: string | null;
 }): Promise<void> {
-  const pass = SMTP_APP_PASSWORD.value();
+  // Google displays app passwords as four groups with spaces; strip anything
+  // that isn't part of the 16-character code (spaces, stray newlines).
+  const pass = (SMTP_APP_PASSWORD.value() ?? '').replace(/\s+/g, '');
   if (!pass) {
     logger.warn('SMTP_APP_PASSWORD not set; skipping seed-donor notification');
     return;
