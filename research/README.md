@@ -48,3 +48,4 @@ One memo per rejected category, all to one template (the proposal, the evidence 
 - [AMENDMENT_IDEAS.md](AMENDMENT_IDEAS.md) — ideas by category, with contributor attribution
 - [REDDIT_THREAD_IDEAS.md](REDDIT_THREAD_IDEAS.md) — ideas surfaced from public threads
 - [SALON_TOPICS.md](SALON_TOPICS.md) — queued and discussed salon topics
+- [MARKETING_IDEAS.md](MARKETING_IDEAS.md) — positioning and branding ideas, with contributor attribution (kept apart from substance)

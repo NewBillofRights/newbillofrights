@@ -50,7 +50,18 @@ The reference implementation is [site/src/content/amendments/term-limits.mdx](si
    constitutional text in a copy pass.
 4. **Why it can pass** — polling with party breakdowns (FullSpectrumChart for
    the 1–2 strongest numbers), precedents, near-misses.
-5. **What we left out** — opens with "What we considered and set aside, and
+5. **If it passes: the law today and the day after** (added 2026-08-18) — three
+   h3 subsections: *Federal law today* (the statutes and controlling doctrine the
+   amendment overrides, confirms, or leaves alone), *State law today* (how many
+   states already do a version, with a cited count; what would become
+   unenforceable), *The day after* (what falls, what stands, what the draft's own
+   transition/enforcement clauses do by section number, what enabling or
+   conforming legislation would follow, what the courts are left to decide).
+   250–450 words, fully footnoted from the category memo's "Implementation" section;
+   one link to the general page `/amendments/after-ratification`. Respect every
+   "by law" and "except" in the draft: never claim the text does more or less than
+   it says.
+6. **What we left out** — opens with "What we considered and set aside, and
    why:", from the research doc's held-back list. Transparency is the brand.
 
 ## Rejected-category page structure (fixed)

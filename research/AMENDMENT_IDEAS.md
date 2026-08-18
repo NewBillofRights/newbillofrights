@@ -71,6 +71,8 @@ Added 2026-08-06 from polling research — cooling-off periods poll at 65–74% 
 
 - **Alex MacGregor (text message, 2026-08-18):** Raise the threshold for the Supreme Court to strike down an existing federal law — a supermajority of justices (e.g., 6–3 or more) rather than a bare 5–4. His reasoning: a statute has already been passed by the House and Senate and signed by the President, so two branches sworn to uphold the Constitution are in concurrence; letting five justices override all of that against four is "kind of insane." Framing note from Alex: it can be pitched in a right-friendly way — "limiting the power of activist judges." Michael's response: saved, but "the problem is it is new and not popular yet" — no polling with party breakdowns exists, so it can't clear the full-spectrum gate today. Adjacent to the rejected Supreme Court Expansion category (structure of the Court) and to Target 2 (judicial term limits/ethics); would need a poll before it moves.
 
+- **Alex MacGregor (text message, 2026-08-18):** Eminent domain restrictions for private development — the post-*Kelo* reform (no taking of private property to hand it to another private party for economic development). His framing: one of the "layups" — huge support across parties — "but less important than things like campaign finance reform." Filed as a candidate; the gate research is in [candidates/EMINENT_DOMAIN_CANDIDATE.md](candidates/EMINENT_DOMAIN_CANDIDATE.md). The deciding question is the existential-problem test in SELECTION_METHOD §5.1, not the polling.
+
 ### Executive-accountability drafts (Michael Hamilton, added 2026-08-06)
 
 Detailed proposal drafts, grouped by the candidate category they would fall under. Some are statutory rather than constitutional — flagged where so, since the mission is amendments.
@@ -150,6 +152,6 @@ Rationale for each rejection is in the [CATEGORIES.md](CATEGORIES.md) rejected t
 
 - **Michael Hamilton** — founder; seed categories (policing, privacy, term limits, campaign finance); Montana Plan reference; U.S. Term Limits alignment; stock-trading bans; pardon-reform drafts; executive-accountability drafts (power of the purse, executive privilege, immunity, DOJ independence, civil service, independent agencies); candidate ideas (DC/PR statehood, filibuster reform, FBI/DOJ independence, age limits, districting reform, proportional representation, good government data, FCC reform, fusion voting)
 - **Ryan Ward** — money in politics, electoral college, court expansion + term limits, Senate, voting rights, privacy, defamation; *Lawless* book recommendation
-- **Alex MacGregor** — supermajority threshold for the Supreme Court to strike down federal statutes (candidate, 2026-08-18)
+- **Alex MacGregor** — supermajority threshold for the Supreme Court to strike down federal statutes (candidate, 2026-08-18); eminent-domain limits for private development, post-*Kelo* (candidate, 2026-08-18)
 - **Austin Burns** — electoral modernization via quantum cryptography / secure mobile voting; bias-free AI for civic information
 - **Polling research (2026-08-06)** — lobbying/revolving-door restrictions, mid-decade redistricting ban, pardon reform, balanced budget (later rejected); evidence in [POLLING_RESEARCH.md](POLLING_RESEARCH.md)

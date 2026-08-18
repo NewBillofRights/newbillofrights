@@ -7,7 +7,8 @@
 //   3. every URL on the page appears somewhere in the research corpus (no invented sources)
 //   4. no banned vocabulary (COPY_VOICE_GUIDE.md) and no "landslide" (house rule: "wide margins")
 // and, for every rejected-category page (site/src/content/rejected), checks 2–4
-// (the corpus includes research/rejected/*.md).
+// (the corpus includes research/rejected/*.md). Standalone MDX under site/src/copy/ is
+//   checked the same way (footnotes, provenance, banned words).
 // Exits non-zero on any failure.
 import { readFileSync, readdirSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
@@ -25,8 +26,8 @@ const decode = (u) => u.replace(/%28/g, '(').replace(/%29/g, ')');
 const BANNED = /\b(populist|elites?|establishment|woke|weaponized|radical (left|right)|far[- ](left|right)|landslides?)\b/gi;
 
 let ok = true, total = 0;
-function checkDir(sub, { draftText }) {
-const dir = resolve(root, 'site/src/content', sub);
+function checkDir(sub, { draftText, base = 'site/src/content' }) {
+const dir = resolve(root, base, sub);
 for (const f of readdirSync(dir).filter((f) => f.endsWith('.mdx')).sort()) {
   const mdx = readFileSync(resolve(dir, f), 'utf8');
   const article = draftText ? (mdx.split('class="article-text"')[1] || '').split('</div>')[0] : '';
@@ -56,5 +57,7 @@ for (const f of readdirSync(dir).filter((f) => f.endsWith('.mdx')).sort()) {
 }
 checkDir('amendments', { draftText: true });
 checkDir('rejected', { draftText: false });
+// Standalone MDX copy rendered by .astro pages (e.g. /amendments/after-ratification)
+checkDir('copy', { draftText: false, base: 'site/src' });
 console.log(`${total} footnotes; ${ok ? 'ALL CHECKS PASS' : 'FIX NEEDED'}`);
 process.exit(ok ? 0 : 1);

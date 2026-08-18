@@ -1,16 +1,68 @@
 [
-  { "id": "dc-pr-statehood", "title": "Statehood for DC and Puerto Rico" },
-  { "id": "filibuster-reform", "title": "Filibuster reform" },
-  { "id": "fbi-doj-independence", "title": "FBI / DOJ independence" },
-  { "id": "civil-servant-independence", "title": "Civil servant independence" },
-  { "id": "age-limits", "title": "Age limits for the judiciary and Congress" },
-  { "id": "fair-districting", "title": "Restricting gerrymandering via fair single-member districting" },
-  { "id": "proportional-representation", "title": "Proportional representation" },
-  { "id": "good-government-data", "title": "Good-government data", "note": "A USAFacts-style constitutional footing for official statistics." },
-  { "id": "fcc-independence", "title": "FCC independence or reform" },
-  { "id": "executive-lawfulness", "title": "Stopping unlawful executive action", "note": "Power-of-the-purse dominance, limits on executive privilege, narrowing executive immunity." },
-  { "id": "fusion-voting", "title": "Fusion voting" },
-  { "id": "expand-house", "title": "Expanding / uncapping the House of Representatives", "note": "Founding-era pedigree via “Article the First”; gated on new polling of Wyoming-Rule and cube-root framings." },
-  { "id": "thirteenth-exception", "title": "Striking the 13th Amendment's exception clause", "note": "Red-state landslide ballot precedents for state versions; completes the Bill of Rights arc." },
-  { "id": "appointment-default", "title": "Appointment-default rule", "note": "Nominations not voted on within a fixed window are confirmed by default; likely rides as a companion clause in the Term Limits package." }
+  {
+    "id": "dc-pr-statehood",
+    "title": "Statehood for DC and Puerto Rico"
+  },
+  {
+    "id": "filibuster-reform",
+    "title": "Filibuster reform"
+  },
+  {
+    "id": "fbi-doj-independence",
+    "title": "FBI / DOJ independence"
+  },
+  {
+    "id": "civil-servant-independence",
+    "title": "Civil servant independence"
+  },
+  {
+    "id": "age-limits",
+    "title": "Age limits for the judiciary and Congress"
+  },
+  {
+    "id": "fair-districting",
+    "title": "Restricting gerrymandering via fair single-member districting"
+  },
+  {
+    "id": "proportional-representation",
+    "title": "Proportional representation"
+  },
+  {
+    "id": "good-government-data",
+    "title": "Good-government data",
+    "note": "A USAFacts-style constitutional footing for official statistics."
+  },
+  {
+    "id": "fcc-independence",
+    "title": "FCC independence or reform"
+  },
+  {
+    "id": "executive-lawfulness",
+    "title": "Stopping unlawful executive action",
+    "note": "Power-of-the-purse dominance, limits on executive privilege, narrowing executive immunity."
+  },
+  {
+    "id": "fusion-voting",
+    "title": "Fusion voting"
+  },
+  {
+    "id": "expand-house",
+    "title": "Expanding / uncapping the House of Representatives",
+    "note": "Founding-era pedigree via “Article the First”; gated on new polling of Wyoming-Rule and cube-root framings."
+  },
+  {
+    "id": "thirteenth-exception",
+    "title": "Striking the 13th Amendment's exception clause",
+    "note": "Red-state landslide ballot precedents for state versions; completes the Bill of Rights arc."
+  },
+  {
+    "id": "appointment-default",
+    "title": "Appointment-default rule",
+    "note": "Nominations not voted on within a fixed window are confirmed by default; likely rides as a companion clause in the Term Limits package."
+  },
+  {
+    "id": "eminent-domain",
+    "title": "Eminent domain limits for private development",
+    "note": "Restoring a narrow meaning of \"public use\" after Kelo v. City of New London (2005). Very high cross-party support on the record; under review on the existential-problem test."
+  }
 ]

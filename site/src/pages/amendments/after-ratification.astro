@@ -1,0 +1,50 @@
+---
+import Base from '../../layouts/Base.astro';
+import Content from '../../copy/after-ratification.mdx';
+---
+
+<Base
+  title="After ratification"
+  description="What happens to the laws already on the books when a constitutional amendment passes — and what an amendment can leave to later legislation."
+>
+  <div class="container">
+    <article>
+      <header class="page-header">
+        <p class="kicker">The amendments</p>
+        <h1>After ratification: what happens to the law on the books</h1>
+        <p class="lede">
+          What an amendment changes the day it is certified, what it leaves to
+          statute, and how legislatures prepare in advance.
+        </p>
+      </header>
+      <Content />
+      <p class="back"><a href="/amendments">← All amendments</a></p>
+    </article>
+  </div>
+</Base>
+
+<style>
+  .kicker {
+    font-family: var(--font-serif);
+    color: var(--accent-text);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    margin-bottom: var(--space-1);
+  }
+
+  .lede {
+    font-size: var(--step-1);
+    color: var(--ink-soft);
+  }
+
+  .page-header {
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: var(--space-3);
+    margin-bottom: var(--space-3);
+  }
+
+  .back {
+    margin-top: var(--space-4);
+  }
+</style>

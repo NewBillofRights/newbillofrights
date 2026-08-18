@@ -46,6 +46,7 @@ Under consideration — not yet accepted or rejected.
 - **Expand / uncap the House of Representatives?** *(added 2026-08-12 from Reddit thread research — see [REDDIT_THREAD_IDEAS.md](REDDIT_THREAD_IDEAS.md); founding-era pedigree via "Article the First"; gate on new polling of Wyoming Rule / cube-root framings)*
 - **Strike the 13th Amendment's exception clause?** *(added 2026-08-12 — red-state landslide ballot precedents (AL ~76%, TN ~79%, UT ~80% for state versions — verify); completes the Bill of Rights arc; see [REDDIT_THREAD_IDEAS.md](REDDIT_THREAD_IDEAS.md))*
 - **Appointment-default rule?** *(added 2026-08-12 — nominations not voted on within a fixed window are confirmed by default, or a forced-vote/knockout process applies; symmetric by construction, answers the Garland-scenario gap in the Term Limits staggering design — likely rides as a companion clause in that package rather than a standalone amendment; unpolled; see [REDDIT_THREAD_IDEAS.md](REDDIT_THREAD_IDEAS.md))*
+- **Eminent domain limits for private development (post-*Kelo*)?** *(added 2026-08-18 — suggested by Alex MacGregor as a "layup": very high cross-party support after* Kelo v. City of New London *(2005) — 2006 ballot wave, 40+ state reforms, House 376–38 — but he himself flags it as less important than campaign finance; the open question is the existential-problem test. Research memo: [candidates/EMINENT_DOMAIN_CANDIDATE.md](candidates/EMINENT_DOMAIN_CANDIDATE.md).)*
 
 ## Rejected Categories
 
