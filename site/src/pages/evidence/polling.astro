@@ -14,9 +14,9 @@ const hasPlaceholders = polling.some((p) => p.data.placeholder);
     <h1>Polling</h1>
     <p>
       The evidence behind the full-spectrum test: for each proposal, support
-      among Democrats, Republicans, and independents. Per-proposal charts with
-      the bipartisan floor highlighted arrive in Phase 2; the table comes
-      first.
+      among Democrats, Republicans, and independents, with the source linked
+      wherever it is public. Where a poll was commissioned by an advocacy
+      organization, the amendment page says so.
     </p>
     {
       hasPlaceholders && (
@@ -51,7 +51,14 @@ const hasPlaceholders = polling.some((p) => p.data.placeholder);
                     : '—'}
                 </td>
                 <td class="source">
-                  {p.data.source} ({p.data.year})
+                  {p.data.url ? (
+                    <a href={p.data.url} rel="noopener">
+                      {p.data.source}
+                    </a>
+                  ) : (
+                    p.data.source
+                  )}{' '}
+                  ({p.data.year})
                 </td>
               </tr>
             ))

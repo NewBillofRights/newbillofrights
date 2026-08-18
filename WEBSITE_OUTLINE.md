@@ -39,7 +39,7 @@ Small enough to hold in a single top nav: **Mission · Amendments · Evidence ·
 ## 3. Page-by-Page Outline
 
 ### Home
-- **Hero:** one-sentence thesis. Working draft: *"A new set of constitutional amendments that Americans across the entire political spectrum already agree on."* Sub-line naming the four pillars: Freedom, Democracy, Rule of Law, Good Government. Primary CTA: join the mailing list; secondary CTA: read the amendments.
+- **Hero:** one-sentence thesis: *"Constitutional amendments every American can agree on."* (settled 2026-08-17; text lives in HOME.md). Sub-line naming the four pillars: Freedom, Democracy, Rule of Law, Good Government. Primary CTA: join the mailing list; secondary CTA: read the amendments.
 - **The full-spectrum test, visualized:** the site's signature element. A simple graphic showing that every proposal must clear a support floor in *both* parties — this is what makes the project different, so it belongs above the fold or immediately after.
 - **The eight amendments as a card grid:** category name + one-line plain-English summary each, linking to detail pages.
 - **"We show our work" strip:** teaser for the Evidence section — e.g., "We've rejected 11 categories that couldn't pass the bar. Here's why." Rejection as a credibility feature.

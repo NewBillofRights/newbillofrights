@@ -43,6 +43,7 @@ const polling = defineCollection({
       overall: z.number().optional(),
     }),
     source: z.string(),
+    url: z.string().url().optional(),
     year: z.number(),
     placeholder: z.boolean().default(false),
   }),

@@ -120,6 +120,45 @@ img {
   margin: 0 0 var(--space-2);
 }
 
+/* Footnotes (GFM [^n] syntax) — "Sources" block at the end of each page */
+.footnotes {
+  margin-top: var(--space-5);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--rule);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.footnotes h2 {
+  font-size: var(--step-1);
+  color: var(--ink);
+}
+
+.footnotes ol {
+  padding-left: 1.5rem;
+  max-width: var(--measure);
+}
+
+.footnotes li {
+  margin-bottom: 0.4rem;
+}
+
+.footnotes li p {
+  margin: 0;
+  display: inline;
+}
+
+sup a[data-footnote-ref] {
+  text-decoration: none;
+  font-weight: 600;
+  padding-inline: 0.15em;
+}
+
+.data-footnote-backref {
+  text-decoration: none;
+  margin-left: 0.25em;
+}
+
 /* Cross-browser reset for <details>/<summary> disclosure markers
    (AnnotatedArticle uses its own indicator) */
 summary {

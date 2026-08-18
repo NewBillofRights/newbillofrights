@@ -3,184 +3,308 @@
     "id": "congressional-term-limits",
     "proposal": "Term limits for members of Congress",
     "amendment": "term-limits",
-    "support": { "dem": 86, "rep": 90, "overall": 87 },
+    "support": {
+      "dem": 86,
+      "rep": 90,
+      "overall": 87
+    },
     "source": "Pew Research Center",
-    "year": 2023
+    "year": 2023,
+    "url": "https://www.pewresearch.org/short-reads/2026/07/28/most-americans-favor-big-changes-to-the-political-system-that-likely-would-require-amending-the-constitution/"
   },
   {
     "id": "scotus-fixed-terms",
     "proposal": "Fixed terms instead of life tenure for Supreme Court justices",
     "amendment": "term-limits",
-    "support": { "dem": 87, "rep": 73, "ind": 71, "overall": 79 },
+    "support": {
+      "dem": 87,
+      "rep": 73,
+      "ind": 71,
+      "overall": 79
+    },
     "source": "Marquette Law School Poll",
-    "year": 2026
+    "year": 2026,
+    "url": "https://law.marquette.edu/poll/2026/06/04/detailed-results-of-the-marquette-law-school-supreme-court-poll-may-20-26-2026-court-issues/"
   },
   {
     "id": "term-limits-deliberative",
     "proposal": "A term-limits amendment, after hearing both sides' arguments",
     "amendment": "term-limits",
-    "support": { "dem": 80, "rep": 86, "ind": 84, "overall": 83 },
+    "support": {
+      "dem": 80,
+      "rep": 86,
+      "ind": 84,
+      "overall": 83
+    },
     "source": "University of Maryland Program for Public Consultation (deliberative survey)",
-    "year": 2023
+    "year": 2023,
+    "url": "https://publicconsultation.org/united-states/congressional-term-limits/"
   },
   {
     "id": "cf-spending-limits",
     "proposal": "Limits on the money individuals and organizations can spend on campaigns",
     "amendment": "campaign-finance",
-    "support": { "dem": 76, "rep": 71, "overall": 72 },
+    "support": {
+      "dem": 76,
+      "rep": 71,
+      "overall": 72
+    },
     "source": "Pew Research Center",
-    "year": 2023
+    "year": 2023,
+    "url": "https://www.pewresearch.org/short-reads/2023/10/23/7-facts-about-americans-views-of-money-in-politics/"
   },
   {
     "id": "cf-dark-money-disclosure",
     "proposal": "Requiring dark-money groups to disclose their donors",
     "amendment": "campaign-finance",
-    "support": { "dem": 88, "rep": 85, "ind": 84, "overall": 85 },
+    "support": {
+      "dem": 88,
+      "rep": 85,
+      "ind": 84,
+      "overall": 85
+    },
     "source": "Brennan Center",
-    "year": 2026
+    "year": 2026,
+    "url": "https://www.brennancenter.org/our-work/analysis-opinion/poll-voters-want-solutions-government-corruption"
   },
   {
     "id": "cf-amendment-support",
     "proposal": "Constitutional amendment to regulate and limit money in elections",
     "amendment": "campaign-finance",
-    "support": { "dem": 76, "rep": 72, "ind": 74, "overall": 71 },
+    "support": {
+      "dem": 76,
+      "rep": 72,
+      "ind": 74,
+      "overall": 71
+    },
     "source": "Ipsos for American Promise",
-    "year": 2025
+    "year": 2025,
+    "url": "https://americanpromise.net/americans-agree-protect-elections-with-a-constitutional-amendment/"
   },
   {
     "id": "ethics-stock-ban",
     "proposal": "Ban members of Congress from trading individual stocks",
     "amendment": "ethics",
-    "support": { "dem": 88, "rep": 87, "ind": 81, "overall": 86 },
+    "support": {
+      "dem": 88,
+      "rep": 87,
+      "ind": 81,
+      "overall": 86
+    },
     "source": "University of Maryland Program for Public Consultation",
-    "year": 2023
+    "year": 2023,
+    "url": "https://publicconsultation.org/united-states/stock-trading-by-members-of-congress/"
   },
   {
     "id": "scotus-ethics-enforcement",
     "proposal": "Enforcing a strict ethics code for Supreme Court justices",
     "amendment": "ethics",
-    "support": { "dem": 93, "rep": 88, "overall": 90 },
+    "support": {
+      "dem": 93,
+      "rep": 88,
+      "overall": 90
+    },
     "source": "Marquette Law School Poll",
-    "year": 2024
+    "year": 2024,
+    "url": "https://law.marquette.edu/poll/2024/10/17/new-marquette-law-school-poll-national-survey-finds-approval-of-u-s-supreme-court-edges-upward-but-55-disapprove-of-the-courts-work/"
   },
   {
     "id": "ethics-ban-extension",
     "proposal": "Extend the stock-trading ban to the President, Vice President, and Supreme Court justices",
     "amendment": "ethics",
-    "support": { "dem": 90, "rep": 87, "ind": 82, "overall": 87 },
+    "support": {
+      "dem": 90,
+      "rep": 87,
+      "ind": 82,
+      "overall": 87
+    },
     "source": "University of Maryland Program for Public Consultation",
-    "year": 2023
+    "year": 2023,
+    "url": "https://publicconsultation.org/united-states/stock-trading-by-members-of-congress/"
   },
   {
     "id": "scotus-binding-code-wording",
     "proposal": "A binding code of ethics for Supreme Court justices",
     "amendment": "ethics",
-    "support": { "dem": 86, "rep": 62, "overall": 70 },
+    "support": {
+      "dem": 86,
+      "rep": 62,
+      "overall": 70
+    },
     "source": "YouGov",
-    "year": 2024
+    "year": 2024,
+    "url": "https://yougov.com/en-us/articles/50159-most-americans-support-term-limits-poll"
   },
   {
     "id": "data-privacy-regulation",
     "proposal": "More government regulation of what companies do with personal data",
     "amendment": "privacy",
-    "support": { "dem": 78, "rep": 68, "overall": 72 },
+    "support": {
+      "dem": 78,
+      "rep": 68,
+      "overall": 72
+    },
     "source": "Pew Research Center",
-    "year": 2023
+    "year": 2023,
+    "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/"
   },
   {
     "id": "federal-data-protection-priority",
     "proposal": "Congress should prioritize federal data-protection legislation",
     "amendment": "privacy",
-    "support": { "dem": 86, "rep": 81, "overall": 83 },
+    "support": {
+      "dem": 86,
+      "rep": 81,
+      "overall": 83
+    },
     "source": "Morning Consult",
-    "year": 2023
+    "year": 2023,
+    "url": "https://pro.morningconsult.com/instant-intel/state-privacy-congress-priority-poll"
   },
   {
     "id": "executive-lobbying-five-year-wait",
     "proposal": "Five-year lobbying wait for senior executive-branch officials",
     "amendment": "lobbying",
-    "support": { "dem": 72, "rep": 72, "overall": 71 },
+    "support": {
+      "dem": 72,
+      "rep": 72,
+      "overall": 71
+    },
     "source": "Program for Public Consultation, University of Maryland",
-    "year": 2022
+    "year": 2022,
+    "url": "https://publicconsultation.org/united-states/large-bipartisan-majority-favors-increasing-lobbying-restrictions-on-former-members-of-congress-and-other-government-officials/"
   },
   {
     "id": "foreign-lobbying-lifetime-ban",
     "proposal": "Lifetime ban on former senior officials lobbying for foreign governments",
     "amendment": "lobbying",
-    "support": { "dem": 74, "rep": 71, "overall": 71 },
+    "support": {
+      "dem": 74,
+      "rep": 71,
+      "overall": 71
+    },
     "source": "Program for Public Consultation, University of Maryland",
-    "year": 2022
+    "year": 2022,
+    "url": "https://publicconsultation.org/united-states/large-bipartisan-majority-favors-increasing-lobbying-restrictions-on-former-members-of-congress-and-other-government-officials/"
   },
   {
     "id": "ex-member-lobbying-wait",
     "proposal": "Extend former members of Congress's lobbying wait from two to five years",
     "amendment": "lobbying",
-    "support": { "dem": 67, "rep": 65, "overall": 65 },
+    "support": {
+      "dem": 67,
+      "rep": 65,
+      "overall": 65
+    },
     "source": "Program for Public Consultation, University of Maryland",
-    "year": 2022
+    "year": 2022,
+    "url": "https://publicconsultation.org/united-states/large-bipartisan-majority-favors-increasing-lobbying-restrictions-on-former-members-of-congress-and-other-government-officials/"
   },
   {
     "id": "lobbyist-influence",
     "proposal": "Lobbyists have too much influence on Congress",
     "amendment": "lobbying",
-    "support": { "dem": 72, "rep": 78, "overall": 73 },
+    "support": {
+      "dem": 72,
+      "rep": 78,
+      "overall": 73
+    },
     "source": "Pew Research Center",
-    "year": 2023
+    "year": 2023,
+    "url": "https://www.pewresearch.org/short-reads/2023/10/23/7-facts-about-americans-views-of-money-in-politics/"
   },
   {
     "id": "president-obey-scotus",
     "proposal": "A president is required to obey a Supreme Court ruling",
     "amendment": "executive-compliance",
-    "support": { "dem": 92, "rep": 78, "ind": 76, "overall": 84 },
+    "support": {
+      "dem": 92,
+      "rep": 78,
+      "ind": 76,
+      "overall": 84
+    },
     "source": "Marquette Law School Poll",
-    "year": 2025
+    "year": 2025,
+    "url": "https://law.marquette.edu/poll/2025/11/20/mlspsc29-court/"
   },
   {
     "id": "administration-obey-scotus",
     "proposal": "The administration must stop an action the Supreme Court rules illegal",
     "amendment": "executive-compliance",
-    "support": { "dem": 95, "rep": 82, "overall": 88 },
+    "support": {
+      "dem": 95,
+      "rep": 82,
+      "overall": 88
+    },
     "source": "Pew Research Center",
-    "year": 2025
+    "year": 2025,
+    "url": "https://www.pewresearch.org/politics/2025/04/23/views-of-how-the-trump-administration-governs/"
   },
   {
     "id": "obey-any-federal-court",
     "proposal": "The administration must obey a ruling by any federal court",
     "amendment": "executive-compliance",
-    "support": { "dem": 91, "rep": 65, "overall": 78 },
+    "support": {
+      "dem": 91,
+      "rep": 65,
+      "overall": 78
+    },
     "source": "Pew Research Center",
-    "year": 2025
+    "year": 2025,
+    "url": "https://www.pewresearch.org/politics/2025/04/23/views-of-how-the-trump-administration-governs/"
   },
   {
     "id": "pardon-family-ban",
     "proposal": "Presidents should not be able to pardon their own family members",
     "amendment": "pardon-reform",
-    "support": { "dem": 88, "rep": 64, "ind": 77, "overall": 77 },
+    "support": {
+      "dem": 88,
+      "rep": 64,
+      "ind": 77,
+      "overall": 77
+    },
     "source": "YouGov for Protect Democracy",
-    "year": 2024
+    "year": 2024,
+    "url": "https://protectdemocracy.org/work/survey-jan-6-pardon-opposition/"
   },
   {
     "id": "pardon-power-generic-limit",
     "proposal": "Amend the Constitution to limit the pardon power",
     "amendment": "pardon-reform",
-    "support": { "dem": 76, "rep": 34, "overall": 56 },
+    "support": {
+      "dem": 76,
+      "rep": 34,
+      "overall": 56
+    },
     "source": "Economist/YouGov",
-    "year": 2025
+    "year": 2025,
+    "url": "https://yougov.com/en-us/articles/53702-majorities-americans-say-donald-trump-gives-too-many-pardons-want-to-limit-pardon-power-december-5-8-2025-economist-yougov-poll"
   },
   {
     "id": "pardon-associates-ban",
     "proposal": "Presidents should not be able to pardon their staff and associates",
     "amendment": "pardon-reform",
-    "support": { "dem": 84, "rep": 50, "overall": 69 },
+    "support": {
+      "dem": 84,
+      "rep": 50,
+      "overall": 69
+    },
     "source": "YouGov for Protect Democracy",
-    "year": 2024
+    "year": 2024,
+    "url": "https://protectdemocracy.org/work/survey-jan-6-pardon-opposition/"
   },
   {
     "id": "pardon-self-ban",
     "proposal": "Presidents should not be able to pardon themselves",
     "amendment": "pardon-reform",
-    "support": { "dem": 96, "rep": 59, "ind": 76, "overall": 78 },
+    "support": {
+      "dem": 96,
+      "rep": 59,
+      "ind": 76,
+      "overall": 78
+    },
     "source": "YouGov for Protect Democracy",
-    "year": 2024
+    "year": 2024,
+    "url": "https://protectdemocracy.org/work/survey-jan-6-pardon-opposition/"
   }
 ]

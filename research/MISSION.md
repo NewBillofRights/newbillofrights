@@ -31,7 +31,7 @@ We do not pursue amendments for policy preferences, partisan advantage, or symbo
 
 ### 4. Rules That Bind Everyone
 
-Every amendment we advance is written behind a veil of ignorance: it binds all future presidents, all future majorities, and both parties equally, forever. We pair each side's abuses in the same sentence, and we ask each side to give up a weapon at the same moment the other side does. Consensus is possible not because Americans happen to agree, but because no one knows who a fair rule will bind next — and a fair rule protects everyone from everyone.
+Every amendment we advance is written behind a veil of ignorance: it binds all future presidents, all future majorities, and both parties equally, forever. We never cite one side's abuses without the other's, and we ask each side to give up a weapon at the same moment the other side does. Consensus is possible, not because Americans happen to agree, but because no one knows who a fair rule will bind next — and a fair rule protects everyone from everyone.
 
 ## How We Work
 
