@@ -1,57 +1,57 @@
 # Editor's Notes for Michael's Review
 
-Generated 2026-08-17 from the editorial voice pass on the eight amendment pages. Each page got an outside review (Gemini, briefed on the mission and [COPY_VOICE_GUIDE.md](COPY_VOICE_GUIDE.md)); only unambiguous violations were applied. Everything below is a **judgment call deliberately left for you** — nothing here is a defect. Delete lines as you resolve them; delete the file when done.
+Updated 2026-08-17 after a second editorial pass using Gemini's strongest model (`gemini-3.1-pro-preview`) on all eight amendment pages. That pass both re-critiqued each page and **adjudicated the open items from the first (Flash-model) pass** — most were resolved and applied. What remains below is genuinely a matter of your judgment. Delete lines as you resolve them; delete the file when done.
 
-Legend: ✏️ = a wording choice · ⚖️ = a neutrality/fairness call · 🔍 = a factual gloss worth a second look
+Legend: ✏️ = wording preference · ⚖️ = neutrality call · 🔍 = factual gloss / data gap
 
-## Cross-cutting
+## Resolved by the Pro pass (for your awareness — already applied)
 
-- ⚖️ **Names in footnotes.** The prose never names a current officeholder, but some footnotes must cite sources by their real titles or sponsors — e.g., Pew's report *"Views of How the Trump Administration Governs"* (executive-compliance), the Arpaio 2017 pardon (executive-compliance), bill sponsors like "Rep. Tom Barrett (R-MI)" (campaign-finance), Durbin/Whitehouse press releases. A reader of the footnotes can date the pages. Options: accept (they're citations, not examples); or trim sponsor names from footnotes where the bill number suffices.
-- ✏️ **"Landslides"** is used on privacy and (formerly) redistricting for 56–89% ballot results. Redistricting was changed to "wide margins" (its numbers were 56–75%); privacy still says "landslides" for 75–89%. Pick a house rule.
-- ✏️ **"This is amendment territory"** appears on several pages as the closing move of "The problem." Gemini flags it as colloquial; the voice guide uses the phrase itself. Keep or standardize.
+- **House rules settled:** ballot results are "wide margins," never "landslides" (now enforced by the integrity check); "This is amendment territory" / "only an amendment can" closers are KEEP (a structural claim, not a colloquialism); names in **footnotes** are KEEP — citations must be accurate and traceable, and the nonpartisan rule governs prose framing, not sourcing.
+- Campaign finance: all three open items changed ("would face the same review here"; "incumbency machine" cut; "rival drafting camp" → "the other major drafting approach").
+- Ethics: five open items changed ("historically been the only way"; 27th Amendment → "limit Congress's control over its own pay" — note "stop Congress from raising its own pay" would have been *inaccurate*, the 27th delays raises; "sharply reduced"; "scoped to that concern"; casual "kept out to keep this article short" dropped).
+- Privacy: "a ninth attempt" → "another attempt"; "with the hedge stated" → "with a caveat"; a second metaphor ("The path is unworn") replaced with plain statement.
+- Lobbying: card blurb changed to "sell their public service to the highest bidder"; three metaphors ("firewall," "load-bearing," "exit door") trimmed to leave "advisory theater" as the page's one.
+- Redistricting: "The honest complication" → "The complication, however"; "take the weapon back" cut; the Ohio/California example pair equalized — **note:** the Pro pass proposed "Republican-majority Ballot Board," which is very likely true but *not in the research corpus*, so I used the research doc's own sourced framing, "the incumbent-controlled Ballot Board," instead.
+- Executive compliance: two date-tells removed ("recently," "current"); "not a reaction to any one presidency" → "spans presidencies of both parties"; "The honest design goal" → "The design goal."
+- Pardon reform: the "mercy in public, never for sale, never for family" tricolon rewritten to state mercy's protection outright; unsourced "most people expect" cut; "trades away" → "set aside"; **"bipartisan-era pedigree" → "a structural check proposed in the Watergate era."**
+- Term limits: my own earlier revision had left a defensive line ("will be criticized for sparing…"); now stated as a plain trade.
 
-## Campaign finance
+## Still open — your call
 
-- ✏️ "Limits written by incumbents to entrench incumbents … would not here" — unhedged prediction about U.S. courts; lighter: "would face the same review here."
-- ✏️ Two "sunlight" uses plus "incumbency machine" — if you want strictly one metaphor, "incumbency machine" → "an incumbency protection" is the smallest cut.
-- ✏️ "The rival drafting camp" — "rival" sets a slight us-vs-them frame; alt: "the other major drafting approach."
+### Cross-cutting
+- ✏️ **"clears the bar" / "fails our gate"** — used on ethics and pardon reform; the mission itself uses "bar," so it's house vocabulary, but Pro flags it as idiom. Keep or standardize to "passes the full-spectrum test."
+- ✏️ **"wide margins" vs. "large majorities"** for ballot results — either satisfies the guide; pick one site-wide term if you care.
 
-## Term limits
+### Campaign finance
+- ⚖️ "the major disclosure bill has passed the House and died by Senate filibuster three times" — names no party, but the filibusters were one party's; the page pairs it later (2014 all-D-yes vote vs. 2026 first Republican-introduced resolution). Optional softening: "has repeatedly passed the House and stalled in the Senate" (loses precision).
+- ✏️ "The record among officeholders is harder, and we state it plainly." — smallest cut is dropping the clause; left because the transparency note is deliberate.
+- ✏️ "The amendment guarantees sunlight on substantial money" — "guarantees" is on the banned list for *evidence* claims; this describes the text's operation and matches the frontmatter's "guarantee the right to know." If changed, "secures."
 
-- (Reviewed earlier via Gemini; the applied changes are already in. No open notes.)
+### Term limits
+- ✏️ "Loosening the rules for your successors is legitimate constitutional politics; loosening them for yourself is not." — reads close to a moral verdict; Pro says it grounds the anti-evasion rule well.
+- ✏️ "amateurizing Congress" — borders on political-science jargon; "Very short limits drain expertise" may carry the point alone.
 
-## Ethics
+### Ethics
+- 🔍 **Three polling numbers lack party breakdowns** (92% "argument convincing," UMD 2023; 40% all-federal-employees, UMD 2023; 69% "goes too far," Bloomberg 2016) because the sources don't publish them. Options: accept for secondary numbers, or add "(no party breakdown published)."
+- ✏️ "Self-policing performs the way its design predicts." — Pro calls it an unhedged verdict; the rewrite offered was duller. Your call.
+- ✏️ "The one legitimate reason for the current carve-out" — "legitimate" is a mild verdict; alt "structural."
 
-- ✏️ "Only constitutional text can bind officials who otherwise write their own rules" — reads as a verdict; hedge option: "has historically been the only way to."
-- ✏️ 27th Amendment bullet: "stop Congress from enriching itself" — historically accurate and party-neutral; milder: "from raising its own pay."
-- ✏️ "collapsed the bipartisan vote" — footnoted fact supports it; "broke" or "reduced" is milder.
-- ✏️ "kept out to keep this article short" — casual/self-referential; alt: "covered separately."
-- 🔍 "The public's theory of this problem … the amendment follows that theory" — honest statement of the full-spectrum method, but could read as design-for-appeal; alt: "the amendment is scoped to that concern."
+### Privacy
+- (Nothing substantive open — two preference-only flags rejected as stiffer.)
 
-## Privacy
+### Lobbying
+- ✏️ "is essential:" (for the limiting phrase) is slightly generic; alt "is what narrows it:".
 
-- ✏️ "a ninth attempt at the same statute" — slightly dismissive of prior bills; does the required job, your call.
-- ✏️ "Warrant requirements poll high … with the hedge stated" — "with the hedge stated" is a bit insider.
+### Redistricting
+- ⚖️ "California voters suspended their own independent commission … to answer another state's redraw" — the single clause on the page that states a response sequence; factual and paired in-sentence with a Missouri repeal, but the closest thing to a who-moved-first cue.
+- ✏️ "it is where ratification opposition would concentrate" — unhedged prediction; light hedge "is likeliest to concentrate."
 
-## Lobbying
+### Executive compliance
+- ✏️ "The tiering is load-bearing, not a detail" — a near-dead analytic idiom; alt "structural."
+- ✏️ "This answers the oldest objection: Jefferson, Jackson, and Lincoln…" — Pro reads "answers the objection" as debate mode; lighter alt: "This preserves a claim as old as the presidency: …"
+- ⚖️ Jackson (D) and Lincoln (R) are paired for defiance but their parties aren't stated; "not new to either party" carries it implicitly. Add "(a Democrat)/(a Republican)" only if you want it explicit.
 
-- ✏️ **Frontmatter** `problemSummary`: "cash out their public service to the highest bidder" — colloquial; alt: "sell their public service to the highest bidder — including foreign governments." (Frontmatter was off-limits to the pass; it's the card blurb on the home page.)
-- ✏️ "advisory theater" — the page's one metaphor now; swap if you dislike it.
-
-## Redistricting
-
-- ✏️ The arms-race cluster (arms race / weapon / fires first / disarm / take the weapon back) is one extended metaphor mirroring the mission's "give up a weapon" language. If you want it thinner, drop "take the weapon back" in the peer-democracy bullet.
-- ✏️ "The honest complication…" — "honest" may sound self-congratulatory; alt: "The complication, however…"
-- ⚖️ Democratic example ("only 18% of Democrats would keep California's commission if it cost their party seats") is more explicit than its Republican pair (Ohio's incumbent-written ballot language, party unnamed). Symmetric in substance; not in vividness.
-
-## Executive compliance
-
-- ✏️ "Obey while you object." — second-person imperative closing "The principle"; summarizes the rule rather than exhorting, but it is the closest thing to slogan cadence on the page.
-- ⚖️ "The consensus is not a reaction to any one presidency." — borders on pre-empting an attack, but is backed by the 2019–2025 Marquette series.
-
-## Pardon reform
-
-- ✏️ "Five sections, four jobs — … mercy in public, never for sale, never for family" — the tricolon reads slightly like a slogan; it's also the clearest statement that mercy is protected.
-- ✏️ "the first provision this package trades away" — frames the associates ban as a bargaining chip rather than a set-aside; alt: "sets aside."
-- ✏️ "The provision most people expect to lead this amendment" — unsourced claim about expectations; alt: "most readers will expect," or cut.
-- 🔍 **"genuine bipartisan-era pedigree"** for the 1974 Mondale proposal — a Democratic senator's response to a Republican president's pardon; a hostile reader could call the gloss one-sided. Footnote is accurate; the adjective is the softest spot on an otherwise well-paired page.
+### Pardon reform
+- ⚖️ Section 2 examples ("blanket grants to unnamed thousands" / "a decade of unspecified conduct") are recognizable recent controversies even unnamed — correctly paired one per party and footnoted. Softest edit if recognizability bothers you: drop "in recent years."
+- ✏️ "every version added complexity faster than value" — business-speak; alt "added more complexity than it was worth."
+- ✏️ "That ends blanket grants…" — describes legal effect, not a prediction; "bars" is the more precise verb if you want it.
