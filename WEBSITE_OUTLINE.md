@@ -48,7 +48,7 @@ Small enough to hold in a single top nav: **Mission · Amendments · Evidence ·
 - **Footer:** signup form (again), contact, social, eventual 501(c) disclosures.
 
 ### Mission
-- Adaptation of [MISSION.md](MISSION.md), lightly restructured for the web: Who We Are → The Four Pillars → Founding Principles (bipartisanship as fundamental; the full-spectrum test as a measurement; only existential problems; rules that bind everyone / veil of ignorance) → How We Work → What Success Looks Like.
+- Adaptation of [MISSION.md](research/MISSION.md), lightly restructured for the web: Who We Are → The Four Pillars → Founding Principles (bipartisanship as fundamental; the full-spectrum test as a measurement; only existential problems; rules that bind everyone / veil of ignorance) → How We Work → What Success Looks Like.
 - The "veil of ignorance" framing ("no one knows who a fair rule will bind next") is the most persuasive paragraph in the repo — give it visual prominence.
 
 ### The Amendments (index)
@@ -60,13 +60,13 @@ One template, eight instances: Campaign Finance, Term Limits, Ethics, Privacy, L
 
 1. **The problem** — plain-English, one short section, sourced from the intro of the category's research doc.
 2. **The principle** — what the amendment does, in plain English, before any legal text.
-3. **The draft text** — the article from [PROPOSED_AMENDMENTS.md](PROPOSED_AMENDMENTS.md), formatted as constitutional sections, with expandable plain-English annotation per section (pattern: the National Constitution Center's Interactive Constitution).
-4. **Why it can pass** — the bipartisan evidence: key polling numbers with party breakdowns, state precedents, cross-party votes (from the research docs and [POLLING_RESEARCH.md](POLLING_RESEARCH.md)).
+3. **The draft text** — the article from [PROPOSED_AMENDMENTS.md](research/PROPOSED_AMENDMENTS.md), formatted as constitutional sections, with expandable plain-English annotation per section (pattern: the National Constitution Center's Interactive Constitution).
+4. **Why it can pass** — the bipartisan evidence: key polling numbers with party breakdowns, state precedents, cross-party votes (from the research docs and [POLLING_RESEARCH.md](research/POLLING_RESEARCH.md)).
 5. **What we left out** — formulations held back for failing the gate, with reasons (each research doc's held-back list). This is the transparency signature applied at the amendment level.
 
 ### The Evidence
-- **Polling:** distilled from [POLLING_RESEARCH.md](POLLING_RESEARCH.md). Ideal presentation: per-proposal chart showing D/R/I support with the "bipartisan floor" highlighted. Start with a table; charts can come in phase 2.
-- **Rejected Categories:** from the Rejected section of [CATEGORIES.md](CATEGORIES.md) — each with its rejection date and reasoning. Frame explicitly: "These aren't judgments that the issues don't matter — they're judgments that they can't pass the full-spectrum test."
+- **Polling:** distilled from [POLLING_RESEARCH.md](research/POLLING_RESEARCH.md). Ideal presentation: per-proposal chart showing D/R/I support with the "bipartisan floor" highlighted. Start with a table; charts can come in phase 2.
+- **Rejected Categories:** from the Rejected section of [CATEGORIES.md](research/CATEGORIES.md) — each with its rejection date and reasoning. Frame explicitly: "These aren't judgments that the issues don't matter — they're judgments that they can't pass the full-spectrum test."
 - **Candidate Categories:** the under-consideration list, framed as an open pipeline ("what would move each one in or out").
 
 ### Get Involved
@@ -76,7 +76,7 @@ One template, eight instances: Campaign Finance, Term Limits, Ethics, Privacy, L
   - Membership in the **invite-only online salon series**.
   - **Permanent recognition** as a founding donor on the website.
 - **Survey** — placeholder/teaser until the survey (Roadmap step 3) is live; then embed or link.
-- **Salons** — two tracks, presented together: the public LA monthly salon (what it is, format, upcoming topic from [SALON_TOPICS.md](SALON_TOPICS.md), RSVP via **Luma** as the primary embed/link, with each event also cross-listed on **Eventbrite** for discoverability) and a mention of the invite-only online salon series reserved for founding donors, linking to the seed donor page.
+- **Salons** — two tracks, presented together: the public LA monthly salon (what it is, format, upcoming topic from [SALON_TOPICS.md](research/SALON_TOPICS.md), RSVP via **Luma** as the primary embed/link, with each event also cross-listed on **Eventbrite** for discoverability) and a mention of the invite-only online salon series reserved for founding donors, linking to the seed donor page.
 - **General donations** — smaller-dollar giving stays off the site until incorporation and 501(c)(3) status land (entity formation planned for 2026); the seed donor interest page carries the fundraising load until then.
 
 ### About
@@ -89,12 +89,12 @@ Anticipate the recurring objections: "Isn't amending the Constitution impossible
 
 | Site section | Repo source | Transformation needed |
 |---|---|---|
-| Mission page | MISSION.md | Light edit for web headings |
-| Amendment pages (problem/evidence) | 8 × *_RESEARCH.md | Heavy distillation — research docs are internal-grade |
-| Amendment pages (draft text) | PROPOSED_AMENDMENTS.md | Format + add plain-English annotations |
-| Evidence: polling | POLLING_RESEARCH.md | Distill to per-proposal numbers |
-| Evidence: rejected/candidates | CATEGORIES.md | Light edit |
-| Salons | SALON_TOPICS.md | Extract upcoming topics only |
+| Mission page | research/MISSION.md | Light edit for web headings |
+| Amendment pages (problem/evidence) | 8 × research/*_RESEARCH.md | Heavy distillation — research docs are internal-grade |
+| Amendment pages (draft text) | research/PROPOSED_AMENDMENTS.md | Format + add plain-English annotations |
+| Evidence: polling | research/POLLING_RESEARCH.md | Distill to per-proposal numbers |
+| Evidence: rejected/candidates | research/CATEGORIES.md | Light edit |
+| Salons | research/SALON_TOPICS.md | Extract upcoming topics only |
 | Home copy | HOME.md | Read at build time by index.astro — edit the Markdown, headings are the lookup keys |
 | FAQ | — | Net-new writing (in faq.astro) |
 
@@ -233,9 +233,9 @@ Five workstreams. **A** gates visual polish, **C (copy) is the critical path** �
 
 ### Workstream C — Copy (critical path)
 
-- **C1.** Mission page: light restructuring of MISSION.md; veil-of-ignorance paragraph given visual prominence.
+- **C1.** Mission page: light restructuring of research/MISSION.md; veil-of-ignorance paragraph given visual prominence.
 - **C2.** Amendment page template proven on one category end-to-end (draft → Michael's review → publish), then the remaining seven through the same pipeline. Launch allows abbreviated "Why it can pass" / "What we left out" sections; full depth is Phase 2 polish.
-- **C3.** Evidence pages: rejected categories and candidates from CATEGORIES.md; polling numbers extracted from POLLING_RESEARCH.md into the data collection (table presentation at launch).
+- **C3.** Evidence pages: rejected categories and candidates from research/CATEGORIES.md; polling numbers extracted from research/POLLING_RESEARCH.md into the data collection (table presentation at launch).
 - **C4.** Net-new writing: Home copy, FAQ, About, seed donor page, salon page.
 - **Review rule (decision 9):** nothing ships without Michael's voice pass.
 - **Exit:** all Phase 1 pages have reviewed, publishable copy.

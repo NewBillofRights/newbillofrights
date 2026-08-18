@@ -11,11 +11,14 @@ const amendments = (await getCollection('amendments')).sort(
 );
 const rejectedCount = (await getCollection('rejected')).length;
 const spotlight = (await getCollection('polling'))[0];
-const copy = loadHomeCopy();
+// HOME.md sections, in order: Thesis, Pillars, Full-spectrum test,
+// We show our work, then a closing section whose heading is free-form.
+const { sections, byHeading: copy } = loadHomeCopy();
 const showWork = copy['We show our work'].replace(
   '{rejectedCount}',
   String(rejectedCount)
 );
+const closing = sections[sections.length - 1];
 ---
 
 <Base title="Home">
@@ -80,8 +83,8 @@ const showWork = copy['We show our work'].replace(
 
   <div class="container">
     <section>
-      <h2>The bar is the point</h2>
-      <p set:html={copy['The bar is the point']} />
+      <h2>{closing.heading}</h2>
+      <p set:html={closing.body} />
       <p><a href="/mission">Read the mission →</a></p>
     </section>
   </div>

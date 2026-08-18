@@ -1,6 +1,6 @@
 # Public Copy Voice Guide
 
-How public-facing site copy is written. Distilled from the mission (MISSION.md), the
+How public-facing site copy is written. Distilled from the mission (research/MISSION.md), the
 editorial constraints in WEBSITE_OUTLINE.md, and an external voice review (2026-08-14).
 The reference implementation is [site/src/content/amendments/term-limits.mdx](site/src/content/amendments/term-limits.mdx).
 
@@ -46,7 +46,7 @@ The reference implementation is [site/src/content/amendments/term-limits.mdx](si
    territory (not legislation).
 2. **The principle** — what the amendment does and why each design choice was
    made, before any legal text.
-3. **The draft text** — VERBATIM from PROPOSED_AMENDMENTS.md; never edit
+3. **The draft text** — VERBATIM from research/PROPOSED_AMENDMENTS.md; never edit
    constitutional text in a copy pass.
 4. **Why it can pass** — polling with party breakdowns (FullSpectrumChart for
    the 1–2 strongest numbers), precedents, near-misses.
