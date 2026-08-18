@@ -21,7 +21,7 @@ export const OG_DEFAULT = {
 
 export const ogPages: OgPage[] = [
   { slug: 'mission', path: '/mission/', title: 'Mission', summary: 'Bipartisanship as a fundamental, not a tactic. Only amendments that pass the full-spectrum test.' },
-  { slug: 'amendments', path: '/amendments/', title: 'The Amendments', summary: 'Eight proposed amendments, each with a bipartisan floor measured before it made the list.' },
+  { slug: 'amendments', path: '/amendments/', title: 'The Amendments', summary: 'Nine proposed amendments, each with a bipartisan floor measured before it made the list.' },
   { slug: 'after-ratification', path: '/amendments/after-ratification/', kicker: 'The amendments', title: 'After ratification', summary: 'What happens to the laws already on the books when an amendment passes — and what it leaves to statute.' },
   { slug: 'polling', path: '/polling/', title: 'Polling', summary: 'Support among Democrats, Republicans, and independents for every proposal — and each proposal’s bipartisan floor.' },
   { slug: 'rejected', path: '/rejected/', title: 'Rejected Categories', summary: 'What could not pass the full-spectrum test, the test each failed, and what would bring it back.' },
