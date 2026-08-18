@@ -4,6 +4,14 @@
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "cleanUrls": true,
     "trailingSlash": false,
+    "redirects": [
+      { "source": "/evidence/candidates/:slug", "destination": "/candidates/:slug", "type": 301 },
+      { "source": "/evidence/candidates", "destination": "/candidates", "type": 301 },
+      { "source": "/evidence/rejected/:slug", "destination": "/rejected/:slug", "type": 301 },
+      { "source": "/evidence/rejected", "destination": "/rejected", "type": 301 },
+      { "source": "/evidence/polling", "destination": "/polling", "type": 301 },
+      { "source": "/evidence", "destination": "/candidates", "type": 301 }
+    ],
     "rewrites": [
       {
         "source": "/api/submit",

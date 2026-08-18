@@ -2,6 +2,8 @@
 
 *Rejected 2026-08-06. Memo written 2026-08-17 to substantiate the rejection under [SELECTION_METHOD.md](../SELECTION_METHOD.md). Every figure below was verified against the linked source on the date of writing.*
 
+*Changelog: 2026-08-18 — figures re-verified; 1 correction applied in place (git history has the diff).*
+
 **Verdict in one line:** 32% (Republicans) on no-excuse mail voting, Pew August 2025 — Weak; the affirmative right-to-vote amendment itself is unpolled — fails high-topline/low-floor on every access mechanism and every verification mechanism except photo ID and early in-person voting, is regime/salience-coded (Democratic support for photo ID fell from 71% to 51% across the 2026 SAVE America Act fight), and fails the symmetry test because each party's package is written against the other's — path back: poll one paired proposal (an ID guarantee and an access guarantee in the same clause) and clear a 60% floor in both parties.
 
 ## 1. The proposal as commonly framed
@@ -110,5 +112,4 @@ Commission, with an independent pollster, a single proposal worded roughly: *"Ev
 
 *Added after an outside completeness review; every item below was verified against the linked source before inclusion.*
 
-- Corrected: the §2 legislative-votes lead-in said "every federal package of the last five years has been a party-line vote." Qualified to voter-access and voter-verification packages, because the Electoral Count Reform and Presidential Transition Improvement Act of 2022 — enacted as Division P of the Consolidated Appropriations Act, 2023 (H.R. 2617, Pub. L. 117-328, Dec. 29, 2022; [govinfo](https://www.govinfo.gov/content/pkg/PLAW-117publ328/html/PLAW-117publ328.htm)) — passed the Senate **68–29 (R 18–20, D 49–0, I 2–0)** on Dec. 22, 2022 ([Senate Vote 421](https://www.senate.gov/legislative/LIS/roll_call_votes/vote1172/vote_117_2_00421.xml)) and the House **225–201 (R 9–200, D 216–1)** on Dec. 23, 2022 ([Clerk, Roll 549](https://clerk.house.gov/evs/2022/roll549.xml)). Both votes were on the omnibus, so they measure the package rather than the ECRA alone; the ECRA governs the counting of electoral votes and the Vice President's role in it, not registration, ballot access or voter verification. No change to the gate result.
 - ***Shelby County v. Holder*, 570 U.S. 529 (June 25, 2013)** — held that "Section 4 of the Voting Rights Act is unconstitutional; its formula can no longer be used as a basis for subjecting jurisdictions to preclearance" — [Cornell LII](https://www.law.cornell.edu/supremecourt/text/12-96). This is the struck statute behind the Democratic package's preclearance-restoration provisions (John Lewis VRAA) and is now named in §3's why-an-amendment line. It does not change the §5.3 result (passes narrowly) or the rejection, which rests on the gate and the symmetry test.

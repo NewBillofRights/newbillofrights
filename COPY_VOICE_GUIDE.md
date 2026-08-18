@@ -66,7 +66,7 @@ The reference implementation is [site/src/content/amendments/term-limits.mdx](si
 
 ## Rejected-category page structure (fixed)
 
-Pages under `/evidence/rejected/<slug>` (MDX in `site/src/content/rejected/`, drafted
+Pages under `/rejected/<slug>` (MDX in `site/src/content/rejected/`, drafted
 from the memo in `research/rejected/`; facts and URLs come only from that memo):
 
 1. **The proposal** — as commonly framed as an amendment, and its variants. No contributor names.
@@ -85,7 +85,7 @@ symmetric treatment, no contested labels, no view on the merits.
 
 ## Candidate-category page structure (fixed)
 
-Pages under `/evidence/candidates/<slug>` (MDX in `site/src/content/candidates/`, drafted
+Pages under `/candidates/<slug>` (MDX in `site/src/content/candidates/`, drafted
 from the memo in `research/candidates/`; facts and URLs come only from that memo). A candidate
 is neither accepted nor rejected — the page says where it stands and what would move it, in
 either direction. **The memo's recommendation (accept / fold / hold / reject) is internal to the
@@ -106,6 +106,9 @@ founder and never appears on the page**; no "we recommend," no prediction of the
 
 Frontmatter: `candidateSince` (date it entered CATEGORIES.md) and `gate` (2–6 words naming what
 it is waiting on) take the place of the rejected pages' `rejectedOn` / `failedTest`.
+
+Length: 700–1,100 words of body (rejected pages: 550–850) — decided 2026-08-18; candidate pages carry
+both directions of "what would move it" and the open tests, so they run longer.
 
 ## Draft-text annotations (`<Note>`)
 

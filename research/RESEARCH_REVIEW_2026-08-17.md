@@ -1,6 +1,6 @@
 # Research Corpus Review — 2026-08-17
 
-An outside completeness-and-accuracy review of the nine research documents (eight category memos plus POLLING_RESEARCH.md), run with Gemini's strongest model (`gemini-3.1-pro-preview`) as reviewer. **Every proposed addition was independently verified against a fetched source before it entered the corpus**; Gemini's own URLs and claims were rejected wherever they could not be verified or turned out to be wrong (this happened often — see "Reviewer errors caught" below). Additions were appended to each doc in a `## Review Additions (2026-08-17)` section, grouped by the memo section they extend; **no existing text was altered**. Verified corrections to existing text are listed in each doc under `### Flagged corrections` for you to apply.
+An outside completeness-and-accuracy review of the nine research documents (eight category memos plus POLLING_RESEARCH.md), run with Gemini's strongest model (`gemini-3.1-pro-preview`) as reviewer. **Every proposed addition was independently verified against a fetched source before it entered the corpus**; Gemini's own URLs and claims were rejected wherever they could not be verified or turned out to be wrong (this happened often — see "Reviewer errors caught" below). Additions were appended to each doc in a `## Review Additions (2026-08-17)` section, grouped by the memo section they extend; **no existing text was altered**. Verified corrections to existing text were listed in each doc under `### Flagged corrections` for the founder to apply. *(All of those were applied in place on 2026-08-18, and the flagged sections were removed with them; corrections are no longer queued — see SELECTION_METHOD.md §8. This ledger is preserved unchanged as the record of which reviewer claims were verified and which were wrong.)*
 
 Totals: **~130 verified additions**, **~20 verified corrections flagged**, across 9 docs.
 
@@ -41,5 +41,5 @@ Gemini's review was valuable for *finding gaps* but unreliable on *facts*: it ca
 ## Suggested next steps for you
 
 1. Decide the two flagged design questions: the **foreign-money principle** (campaign finance) and the **state-court remedy wording** (redistricting Section 2).
-2. Apply the "Flagged corrections" in each doc when you next revise it (they're listed at the end of each Review Additions section; original passages were left untouched so you can see both).
+2. ~~Apply the "Flagged corrections" in each doc when you next revise it.~~ *Done 2026-08-18: all applied in place and the flagged sections removed.*
 3. Consider commissioning: forward-looking pardon poll; standalone lifetime-lobbying-ban poll; principle-level impoundment poll.

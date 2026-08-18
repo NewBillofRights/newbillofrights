@@ -1,0 +1,210 @@
+---
+/**
+ * Registry-driven status list for an amendment's "What we left out" section.
+ *
+ * The prose below this component is the footnoted "why"; this list is the
+ * tracked status — one row per registry entry attached to this amendment,
+ * carrying the bucket it now sits in and the gate or failed test that put it
+ * there. Entries attach either by `parent` (a clause drafted for this
+ * amendment) or by `alsoListedUnder` (a standalone category whose held-back
+ * clause twin was merged into it — see research/REGISTRY_INVENTORY §B).
+ *
+ * Renders nothing when the registry has no entries for the amendment, so the
+ * component is safe to place on every amendment page before the registry is
+ * populated.
+ */
+import { getCollection } from 'astro:content';
+
+interface Props {
+  /** Amendment slug, e.g. "term-limits". */
+  amendment: string;
+}
+
+const { amendment } = Astro.props;
+
+type Bucket = 'proposed' | 'candidate' | 'rejected';
+
+const LABEL: Record<Bucket, string> = {
+  proposed: 'In the text',
+  candidate: 'Candidate',
+  rejected: 'Rejected',
+};
+
+const registry = await getCollection('registry').catch(() => []);
+
+const attached = registry.filter((e) => {
+  const d = e.data as any;
+  const alsoUnder: string[] = d.alsoListedUnder ?? [];
+  return d.parent === amendment || alsoUnder.includes(amendment);
+});
+
+// Proposed clauses are folded in and marked with the section they now sit in;
+// candidates and rejections carry their gate or failed test.
+const order: Record<Bucket, number> = { candidate: 0, rejected: 1, proposed: 2 };
+
+type Row = {
+  key: string;
+  title: string;
+  status: Bucket;
+  reason: string | null;
+  section: string | null;
+  href: string | null;
+  memo: string | null;
+  subItems: Row[];
+};
+
+const rowFor = (d: any, key: string): Row => {
+  const status = d.status as Bucket;
+  const reason =
+    status === 'candidate'
+      ? (d.gate ?? null)
+      : status === 'rejected'
+        ? (d.failedTest ?? null)
+        : null;
+  return {
+    key,
+    title: d.title ?? key,
+    status,
+    reason,
+    section: status === 'proposed' ? (d.section ?? null) : null,
+    href: d.page ?? (d.parent && d.parent !== amendment ? `/amendments/${d.parent}` : null),
+    memo: d.page ? null : (d.memo ?? null),
+    subItems: [],
+  };
+};
+
+const rows: Row[] = attached
+  .map((e) => {
+    const d = e.data as any;
+    const row = rowFor(d, e.id);
+    row.subItems = (d.subItems ?? [])
+      .filter((s: any) => s && s.status)
+      .map((s: any) => rowFor({ ...s, title: s.title ?? s.id }, s.id));
+    return row;
+  })
+  .sort((a, b) => order[a.status] - order[b.status] || a.title.localeCompare(b.title));
+---
+
+{
+  rows.length > 0 && (
+    <div class="left-out">
+      <p class="left-out-caption">
+        Where each of these now sits, and what it is waiting on:
+      </p>
+      <ul class="left-out-list">
+        {rows.map((row) => (
+          <li>
+            <span class={`badge badge-${row.status}`}>{LABEL[row.status]}</span>
+            <span class="title">
+              {row.href ? <a href={row.href}>{row.title}</a> : row.title}
+            </span>
+            {row.section && <span class="reason">now in the draft text, {row.section}</span>}
+            {row.reason && <span class="reason">{row.reason}</span>}
+            {!row.href && row.memo && <span class="memo">{row.memo}</span>}
+            {row.subItems.length > 0 && (
+              <ul class="sub-list">
+                {row.subItems.map((sub) => (
+                  <li>
+                    <span class={`badge badge-${sub.status}`}>{LABEL[sub.status]}</span>
+                    <span class="title">
+                      {sub.href ? <a href={sub.href}>{sub.title}</a> : sub.title}
+                    </span>
+                    {sub.section && (
+                      <span class="reason">now in the draft text, {sub.section}</span>
+                    )}
+                    {sub.reason && <span class="reason">{sub.reason}</span>}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
+<style>
+  .left-out {
+    max-width: var(--measure);
+    border-left: 2px solid var(--rule);
+    padding-left: var(--space-2);
+    margin-bottom: var(--space-3);
+  }
+
+  .left-out-caption {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin: 0 0 var(--space-1);
+  }
+
+  .left-out-list,
+  .sub-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .left-out-list > li {
+    padding-block: 0.35rem;
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .sub-list {
+    margin-top: 0.25rem;
+    padding-left: var(--space-2);
+    border-left: 1px solid var(--rule);
+  }
+
+  .sub-list > li {
+    padding-block: 0.2rem;
+    font-size: 0.88rem;
+  }
+
+  .badge {
+    display: inline-block;
+    font-family: var(--font-sans);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    padding: 0.05rem 0.4rem;
+    margin-inline-end: 0.5rem;
+    white-space: nowrap;
+    color: var(--ink-soft);
+  }
+
+  .badge-candidate {
+    border-color: var(--accent);
+    color: var(--accent-text);
+  }
+
+  .badge-proposed {
+    border-color: var(--ink-soft);
+    color: var(--ink);
+  }
+
+  .title {
+    font-weight: 600;
+  }
+
+  .reason::before,
+  .memo::before {
+    content: ' — ';
+    color: var(--ink-soft);
+  }
+
+  .reason,
+  .memo {
+    color: var(--ink-soft);
+    font-weight: 400;
+  }
+
+  .memo {
+    font-family: var(--font-mono, monospace);
+    font-size: 0.85em;
+  }
+</style>

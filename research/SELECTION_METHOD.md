@@ -2,6 +2,8 @@
 
 **How the foundation decides which amendment categories to pursue, hold, or reject — written so a fresh agent can re-run the process and land on the same slate.**
 
+*Changelog: 2026-08-18 — figures re-verified; 2 corrections applied in place (git history has the diff).*
+
 This document was reconstructed on 2026-08-17 from the archived working sessions in [`docs/conversations/`](../docs/conversations/) (2026-08-06 through 2026-08-18) and the research corpus they produced. It is *descriptive first* — it records the process as it was actually run — and *prescriptive second* — Section 9 turns it into an operating checklist. Where the founder made a judgment call that the evidence alone would not force, that call is recorded as a rule so it is applied the same way next time.
 
 If you are a new agent: read [Section 9](#9-operating-instructions-for-a-new-agent) first, then come back for the reasoning.
@@ -89,7 +91,7 @@ These are the tests actually applied. Each has a real casualty.
 
 | Test | Question | Casualty / example |
 | --- | --- | --- |
-| **High-topline / low-floor** | Is the overall number hiding a party split? | Direct popular vote 63% overall but 46R/80D → Electoral College rejected. Self-pardon ban 82D/43R → rejected. |
+| **High-topline / low-floor** | Is the overall number hiding a party split? | Direct popular vote 63% overall but 46R/80D → Electoral College rejected. Self-pardon ban 81D/43R (YouGov, Aug. 15–19, 2024) → rejected. |
 | **Depth (trade-off collapse)** | Does support survive when costs are named? | Balanced budget 69–80% abstract → 31% when entitlement cuts specified (Fox 2011) → rejected. |
 | **Staleness** | Is the data from a peak-salience moment? | Qualified immunity: all credible data 2020–21, already declining → rejected. |
 | **Incumbent / regime coding** | Does each party's floor flip depending on who currently holds power? | Filibuster reform ("positions flip with Senate control") → unstable. Civil-service independence: R support 87→66 and 64% of R now back loyalty firing → regime-coded. Family-pardon ban's D floor fell 88→42 after a Democratic president used it → kept, but flagged for forward-looking re-poll. |
@@ -143,7 +145,7 @@ Once a category is a target, it gets a research doc built to a fixed template so
 7. **Amendment-grade principles** — the subset that is *general, cross-ideological, and court-testable* **and** clears the full-spectrum bar, with a one-line gate-check note per principle.
 8. **Held back — does not yet clear the full-spectrum bar** — full drafting retained; each item states *what evidence would bring it back*. This doubles as the commissioned-polling to-do list.
 9. **Package skeleton** — how the surviving clauses assemble.
-10. **Review Additions (dated)** — appended by outside review; never edits existing text (Section 8).
+10. **Review Additions (dated)** — appended by outside review for substantive additions only; verified factual errors are fixed in place with a changelog line (Section 8).
 
 Research is done by fanning out one deep-research agent per category in parallel, then compiling.
 
@@ -191,7 +193,9 @@ Amendments succeed when they **lock in agreement the country has already reached
 
 - After the corpus is built, run an **outside completeness-and-accuracy review** with the strongest available non-Claude model (Gemini's top model was used).
 - **Every proposed addition is independently verified against a fetched source** before it enters the corpus; the reviewer's own URLs and claims are rejected when they can't be verified (this happened often — see "Reviewer errors caught" in [RESEARCH_REVIEW_2026-08-17.md](RESEARCH_REVIEW_2026-08-17.md)).
-- Additions are **appended** in a dated `## Review Additions` section, grouped by the section they extend. **Existing text is never altered by the reviewer.** Verified corrections go in `### Flagged corrections` for the founder to apply.
+- **Verified factual errors are fixed in place** (rule changed 2026-08-18; before that, corrections were queued under `### Flagged corrections` for the founder to apply and existing text was never altered). Once a correction has been verified at its source, the wrong number, date, or attribution is edited where it appears — in this corpus, in POLLING_RESEARCH.md, and in the site's footnotes — and the file gets **one dated changelog line** near the top: `*Changelog: YYYY-MM-DD — figures re-verified; N corrections applied in place (git history has the diff).*` Git history is the audit trail; no inline "Corrected: old → new" bullets and no founder-to-apply queues.
+- **Appending is reserved for substantive additions** — new evidence, changed gate results, reviewer disagreements — in a dated `## Review Additions` section grouped by the section it extends. Typo and number fixes are not logged there.
+- **The reviewer ledgers stay as written** ([RESEARCH_REVIEW_2026-08-17.md](RESEARCH_REVIEW_2026-08-17.md), [candidates/REVIEW_LOG_2026-08-18.md](candidates/REVIEW_LOG_2026-08-18.md)): they record which reviewer claims were verified and which were wrong, which is a different question from what the corpus now says.
 - Gate-check impacts are stated explicitly ("none change a verdict; three sharpen one").
 
 ---
@@ -224,7 +228,7 @@ Write the rationale in the CATEGORIES.md house style: bold name, italic date, on
 
 **Step 8 — Log open questions** as SALON_TOPICS.md entries with an argument map. Log polling gaps as the survey spec.
 
-**Step 9 — Outside review** per Section 8; verify everything; append, never edit.
+**Step 9 — Outside review** per Section 8; verify everything against a fetched source; **fix verified factual errors in place and add one dated changelog line to each file touched**; append only substantive additions (new evidence, changed gate results, reviewer disagreements); leave the reviewer ledger as written.
 
 **Step 10 — Re-sync.** After the founder edits CATEGORIES.md, renumber and re-sync AMENDMENT_IDEAS.md, POLLING_RESEARCH.md, and the research doc index; keep rejected material retitled ("Rejected YYYY-MM-DD") rather than deleted.
 
@@ -255,9 +259,18 @@ Age limits (76% floor — strongest candidate; likely rides with term limits) ·
 
 ### Rejected (10) — and the test each failed
 
-Abortion (no consensus framing) · Voting rights (access-vs-integrity partisan split) · Electoral College (46R/80D) · SCOTUS expansion (not bipartisan) · Senate structure (not bipartisan) · Election technology (not bipartisan, not popular) · Civic information/AI (existential test — a nonprofit, not an amendment) · Self-pardon ban (82D/43R) · Qualified immunity (39–46R, stale; path back = accountability framing + fresh poll) · Balanced budget (depth test — 31% under trade-offs).
+Abortion (no consensus framing) · Voting rights (access-vs-integrity partisan split) · Electoral College (46R/80D) · SCOTUS expansion (not bipartisan) · Senate structure (not bipartisan) · Election technology (not bipartisan, not popular) · Civic information/AI (existential test — a nonprofit, not an amendment) · Self-pardon ban (81D/43R, YouGov Aug. 2024) · Qualified immunity (28–46R, stale; path back = accountability framing + fresh poll) · Balanced budget (depth test — 31% under trade-offs).
 
 ---
+
+### Decision log update — 2026-08-18 (candidate pass)
+
+After one memo per candidate (research/candidates/, same criteria as targets and rejects; recommendations to the founder in CATEGORIES.md), the founder decided:
+
+- **Targets (9):** Target 9 added — **Striking the 13th Amendment's exception clause** (66% R / 85% D on state-measure wording, YouGov Oct 2024; four Republican-voting states passed state versions at 61–80%; symmetric by construction; the clause is constitutional text, so only an amendment removes it). Target 2 (Term Limits) absorbs two clauses: a **judicial retirement age** (68% R / 82% D Pew 2023; 71% R / 92% D Fox 2024; five certified state ballot results refusing to loosen judicial retirement ages) and the **confirmation-refusal default** (appointment-default rule, knock-out variant — folded as the drafting that closes the staggering-trap gap; symmetric by construction; unpolled).
+- **Candidates (11) — each with a named poll:** age limits for Congress (78% D / 83% R on the concept; the number unpolled) · executive lawfulness (37% R appropriations; symmetric clause unasked) · FBI/DOJ independence (remedy unpolled since 2018) · independent-agency insulation (42–54% R, moving) · civil-service independence (regime-coded; remedy unpolled) · fair single-member districting (76% R / 92% D commissions, NBC 2025 — trade-off untested) · proportional representation, fusion voting, good-government data (unpolled; §5.3 open) · eminent domain (79% D / 85% R, 2005 — stale; §5.1 open) · SCOTUS supermajority (unpolled).
+- **Rejected (13):** the ten of 2026-08-06 plus **DC/Puerto Rico statehood** (13% R; PR statutory under Art. IV §3), **filibuster reform** (8% R eliminate / 19% D keep as is; regime-coded both ways — symmetry), **House expansion** (23% R; 11% R costs-named; statutory).
+- New failure-mode language surfaced by the pass and worth adding to §4.3 next revision: **principle-vs-parameter gap** (age limits: every party split is on the *concept*, none on the *number*) and **abstract-vs-live gap** (appointment default: 78% reject party-of-the-president as grounds when no seat is open; ~50-point flip when one is).
 
 ## 11. Traps catalog (things that have fooled us or nearly did)
 

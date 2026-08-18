@@ -1,0 +1,1968 @@
+[
+  {
+    "id": "campaign-finance",
+    "title": "Campaign Finance",
+    "kind": "category",
+    "parent": null,
+    "status": "proposed",
+    "tags": [],
+    "floor": {
+      "rep": 71,
+      "dem": 76,
+      "ind": null,
+      "overall": 72,
+      "pollster": "Pew Research Center",
+      "year": 2023,
+      "url": "https://www.pewresearch.org/short-reads/2023/10/23/7-facts-about-americans-views-of-money-in-politics/"
+    },
+    "verdict": "Strong",
+    "failedTest": null,
+    "gate": null,
+    "section": null,
+    "summary": "Restore the power to set reasonable, viewpoint-neutral limits on election money, guarantee the right to know who funds it, and allow bans on foreign money.",
+    "pollQuestion": null,
+    "pathBack": null,
+    "memo": "research/CAMPAIGN_FINANCE_RESEARCH.md",
+    "page": "/amendments/campaign-finance",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": null,
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": []
+  },
+  {
+    "id": "term-limits",
+    "title": "Term Limits",
+    "kind": "category",
+    "parent": null,
+    "status": "proposed",
+    "tags": [],
+    "floor": {
+      "rep": 90,
+      "dem": 86,
+      "ind": null,
+      "overall": 87,
+      "pollster": "Pew Research Center",
+      "year": 2023,
+      "url": "https://www.pewresearch.org/short-reads/2026/07/28/most-americans-favor-big-changes-to-the-political-system-that-likely-would-require-amending-the-constitution/"
+    },
+    "verdict": "Strong — the smallest partisan gap of any structural reform in the corpus",
+    "failedTest": null,
+    "gate": null,
+    "section": null,
+    "summary": "Limit senators to two terms and representatives to six, move the Supreme Court to staggered eighteen-year terms, and set a judicial retirement age — applying only to future officeholders.",
+    "pollQuestion": null,
+    "pathBack": null,
+    "memo": "research/TERM_LIMITS_RESEARCH.md",
+    "page": "/amendments/term-limits",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": []
+  },
+  {
+    "id": "ethics",
+    "title": "Ethics",
+    "kind": "category",
+    "parent": null,
+    "status": "proposed",
+    "tags": [],
+    "floor": {
+      "rep": 87,
+      "dem": 88,
+      "ind": 81,
+      "overall": 86,
+      "pollster": "University of Maryland Program for Public Consultation",
+      "year": 2023,
+      "url": "https://publicconsultation.org/united-states/stock-trading-by-members-of-congress/"
+    },
+    "verdict": "Strong on the trading ban; the presidential-emoluments piece is thinner and framing-dependent",
+    "failedTest": null,
+    "gate": null,
+    "section": null,
+    "summary": "Ban covered officials from holding individual securities, bind every branch to enforceable ethics rules, and put enforcement outside the officers it governs.",
+    "pollQuestion": null,
+    "pathBack": null,
+    "memo": "research/ETHICS_RESEARCH.md",
+    "page": "/amendments/ethics",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": null,
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": []
+  },
+  {
+    "id": "privacy",
+    "title": "Privacy",
+    "kind": "category",
+    "parent": null,
+    "status": "proposed",
+    "tags": [],
+    "floor": {
+      "rep": 68,
+      "dem": 78,
+      "ind": null,
+      "overall": 72,
+      "pollster": "Pew Research Center",
+      "year": 2023,
+      "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/"
+    },
+    "verdict": "Strong on the data-privacy framing; the constitutional right itself is unpolled",
+    "failedTest": null,
+    "gate": null,
+    "section": null,
+    "summary": "A constitutional right to be secure against unreasonable governmental intrusion into private life — closing the data-purchase loophole and prohibiting suspicionless mass collection.",
+    "pollQuestion": null,
+    "pathBack": null,
+    "memo": "research/PRIVACY_RESEARCH.md",
+    "page": "/amendments/privacy",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": null,
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": []
+  },
+  {
+    "id": "lobbying",
+    "title": "Lobbying",
+    "kind": "category",
+    "parent": null,
+    "status": "proposed",
+    "tags": [],
+    "floor": {
+      "rep": 72,
+      "dem": 72,
+      "ind": null,
+      "overall": 71,
+      "pollster": "Program for Public Consultation, University of Maryland",
+      "year": 2022,
+      "url": "https://publicconsultation.org/united-states/large-bipartisan-majority-favors-increasing-lobbying-restrictions-on-former-members-of-congress-and-other-government-officials/"
+    },
+    "verdict": "Strong — Republican support matches Democratic support on the foreign-lobbying ban",
+    "failedTest": null,
+    "gate": null,
+    "section": null,
+    "summary": "A five-year wait before senior officials can lobby for pay, and a lifetime ban on lobbying for foreign governments.",
+    "pollQuestion": null,
+    "pathBack": null,
+    "memo": "research/LOBBYING_RESEARCH.md",
+    "page": "/amendments/lobbying",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": null,
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": []
+  },
+  {
+    "id": "redistricting",
+    "title": "Redistricting",
+    "kind": "category",
+    "parent": null,
+    "status": "proposed",
+    "tags": [],
+    "floor": {
+      "rep": 70,
+      "dem": 73,
+      "ind": 68,
+      "overall": 71,
+      "pollster": "Marquette Law School Poll",
+      "year": 2025,
+      "url": "https://law.marquette.edu/poll/wp-content/uploads/2025/11/MLSPSC29PressReleaseNationalIssues.pdf"
+    },
+    "verdict": "Strong on the mid-decade rule; the wider fairness standard remains a separately gated candidate",
+    "failedTest": null,
+    "gate": null,
+    "section": null,
+    "summary": "Districts are drawn once per census, to serve the equal suffrage of the people, and cannot be redrawn for advantage until the next one.",
+    "pollQuestion": null,
+    "pathBack": null,
+    "memo": "research/REDISTRICTING_RESEARCH.md",
+    "page": "/amendments/redistricting",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": null,
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": []
+  },
+  {
+    "id": "executive-compliance",
+    "title": "Executive Compliance with the Courts",
+    "kind": "category",
+    "parent": null,
+    "status": "proposed",
+    "tags": [],
+    "floor": {
+      "rep": 78,
+      "dem": 92,
+      "ind": 76,
+      "overall": 84,
+      "pollster": "Marquette Law School Poll",
+      "year": 2025,
+      "url": "https://law.marquette.edu/poll/2025/11/20/mlspsc29-court/"
+    },
+    "verdict": "Strong — stable across ten Marquette waves since 2019, never below 76% among Republicans",
+    "failedTest": null,
+    "gate": null,
+    "section": null,
+    "summary": "Make explicit that court judgments bind every officer of the United States, including the President, while preserving the right to appeal.",
+    "pollQuestion": null,
+    "pathBack": null,
+    "memo": "research/EXECUTIVE_COMPLIANCE_RESEARCH.md",
+    "page": "/amendments/executive-compliance",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": null,
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": []
+  },
+  {
+    "id": "pardon-reform",
+    "title": "Limited Presidential Pardon Reform",
+    "kind": "category",
+    "parent": null,
+    "status": "proposed",
+    "tags": [],
+    "floor": {
+      "rep": 64,
+      "dem": 88,
+      "ind": 77,
+      "overall": 77,
+      "pollster": "YouGov for Protect Democracy (advocacy-commissioned)",
+      "year": 2024,
+      "url": "https://protectdemocracy.org/work/survey-jan-6-pardon-opposition/"
+    },
+    "verdict": "Moderate to Strong — the publication requirement now reads 79% (79% R / 83% D), YouGov May 2026",
+    "failedTest": null,
+    "gate": null,
+    "section": null,
+    "summary": "Require every pardon to be published with the recipient, offenses, and reasons; bar pardons to family, for payment, or to shield the President.",
+    "pollQuestion": null,
+    "pathBack": null,
+    "memo": "research/PARDON_RESEARCH.md",
+    "page": "/amendments/pardon-reform",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": null,
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": []
+  },
+  {
+    "id": "thirteenth-exception",
+    "title": "Abolition of the Punishment Exception",
+    "kind": "category",
+    "parent": null,
+    "status": "proposed",
+    "tags": [],
+    "floor": {
+      "rep": 66,
+      "dem": 85,
+      "ind": 69,
+      "overall": 73,
+      "pollster": "YouGov",
+      "year": 2024,
+      "url": "https://yougov.com/en-us/articles/50840-poll-2024-state-ballot-measures-workers-rights-abortion-drugs"
+    },
+    "verdict": "Strong — the narrowest party gap in the corpus at 19 points; the federal clause itself has never been polled",
+    "failedTest": null,
+    "gate": null,
+    "section": null,
+    "summary": "Remove the exception so the prohibition is unqualified, while preserving voluntary and authorized prison work programs with pay and conditions set by law.",
+    "pollQuestion": null,
+    "pathBack": null,
+    "memo": "research/THIRTEENTH_EXCEPTION_RESEARCH.md",
+    "page": "/amendments/thirteenth-exception",
+    "parentPage": null,
+    "since": "2026-08-18",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "Accepted as Target 9 on 2026-08-18. Article 9, Sections 1-3 are the category itself, not separate clause entries."
+  },
+  {
+    "id": "judicial-retirement-age",
+    "title": "A retirement age for federal judges",
+    "kind": "clause",
+    "parent": "term-limits",
+    "status": "proposed",
+    "tags": [],
+    "floor": {
+      "rep": 68,
+      "dem": 82,
+      "ind": null,
+      "overall": 74,
+      "pollster": "Pew Research Center",
+      "year": 2023,
+      "url": "https://www.pewresearch.org/short-reads/2023/10/04/most-americans-favor-maximum-age-limits-for-federal-elected-officials-supreme-court-justices/"
+    },
+    "verdict": "Strong — corroborated at 71% R / 92% D (Fox News crosstabs, 2024)",
+    "failedTest": null,
+    "gate": null,
+    "section": "Term Limits, Section 3",
+    "summary": "No person may exercise the judicial power of the United States after the end of the calendar year in which they turn seventy-five, with sitting judges exempt.",
+    "pollQuestion": null,
+    "pathBack": null,
+    "memo": "research/candidates/AGE_LIMITS_CANDIDATE.md",
+    "page": null,
+    "parentPage": "/amendments/term-limits",
+    "since": "2026-08-18",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [
+      "term-limits"
+    ],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "Folded from the age-limits candidate category by founder decision 2026-08-18 as a backstop to the eighteen-year term, which does not by itself reach incapacity. The congressional half of age limits stays a candidate."
+  },
+  {
+    "id": "appointment-default",
+    "title": "Confirmation-refusal default for Supreme Court seats",
+    "kind": "clause",
+    "parent": "term-limits",
+    "status": "proposed",
+    "tags": [],
+    "floor": null,
+    "verdict": "Unpolled — folded on symmetry and drafting-necessity grounds, not on a number",
+    "failedTest": null,
+    "gate": null,
+    "section": "Term Limits, Section 2",
+    "summary": "Each Supreme Court seat's eighteen-year term runs from its fixed calendar date whether or not the seat is filled, and the Court sits as constituted until the Senate acts.",
+    "pollQuestion": {
+      "wording": "When any president nominates someone to a federal office or judgeship, should the Senate be required to hold an up-or-down vote within a set period — say 120 days — or should the Senate be able to decline to vote at all?",
+      "followUps": [
+        "If the Senate does not vote within that period, should the nominee be considered confirmed, or should the position stay vacant until the Senate votes? (report separately)",
+        "Deliberative counterargument: a president could seat a judge the Senate never approved",
+        "Field when no seat is contested; carry Marquette's party-of-the-president item in the same instrument"
+      ],
+      "threshold": "60% bipartisan floor on the forced-vote variant to draft it; the deemed-confirmed variant held to the same 60% floor before being drafted at all",
+      "verbatim": true
+    },
+    "pathBack": null,
+    "memo": "research/candidates/APPOINTMENT_DEFAULT_CANDIDATE.md",
+    "page": null,
+    "parentPage": "/amendments/term-limits",
+    "since": "2026-08-18",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [
+      "term-limits"
+    ],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [
+      {
+        "id": "appointment-default-knockout",
+        "title": "Knock-out variant (adopted)",
+        "status": "proposed",
+        "gate": null,
+        "section": "Term Limits, Section 2",
+        "note": "The variant folded on 2026-08-18: the Court sits as constituted until the Senate acts, and the seat's eighteen-year term clock runs from its calendar start date regardless, so refusing to confirm subtracts from the eventual Justice's tenure rather than preserving the seat."
+      },
+      {
+        "id": "appointment-default-deemed-confirmed",
+        "title": "Deemed-confirmed variant (not adopted)",
+        "status": "candidate",
+        "gate": "Unpolled; explicitly not folded",
+        "pollQuestion": null,
+        "note": "Do not draft on the present record (memo section 5). Also excluded: extending any default rule to executive officers, ambassadors, or other judgeships."
+      }
+    ],
+    "note": "Unpolled and not claimed otherwise; folded as required drafting to close the staggering trap that TERM_LIMITS_RESEARCH.md named, and symmetric by construction."
+  },
+  {
+    "id": "age-limits",
+    "title": "Age limits for Congress",
+    "kind": "category",
+    "parent": null,
+    "status": "candidate",
+    "tags": [],
+    "floor": {
+      "rep": 83,
+      "dem": 78,
+      "ind": 79,
+      "overall": 80,
+      "pollster": "NPR/PBS News/Marist",
+      "year": 2026,
+      "url": "https://maristpoll.marist.edu/wp-content/uploads/2026/05/NPR_PBS-News_Marist-Poll_USA-NOS-and-Tables_202605011058.pdf"
+    },
+    "verdict": "Strong on the concept — the highest floor of any candidate category — but the specific age has never been polled with a party split",
+    "failedTest": null,
+    "gate": "Concept Strong; named age unpolled",
+    "section": null,
+    "summary": "A maximum age for candidates for Congress drew 78% of Democrats and 83% of Republicans (Marist, 2026), but no poll has tested a named age by party.",
+    "pollQuestion": {
+      "wording": "Would you favor or oppose amending the Constitution so that no person who has reached the age of 75 may be elected to the House or Senate? The rule would apply to every future candidate of both parties, and no one currently in office would be removed before the end of their term.",
+      "followUps": [
+        "Repeat the item at ages 70 and 80 to establish the curve",
+        "Counter-argument in the same sample: 'some say voters should be free to elect anyone they judge capable, regardless of age'"
+      ],
+      "threshold": "60% in both parties on a named age, with the counter-argument in the field",
+      "verbatim": true
+    },
+    "pathBack": null,
+    "memo": "research/candidates/AGE_LIMITS_CANDIDATE.md",
+    "page": "/candidates/age-limits",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "The judicial half was folded into term-limits on 2026-08-18 as the judicial-retirement-age clause; this entry is the congressional half only."
+  },
+  {
+    "id": "executive-lawfulness",
+    "title": "Stopping unlawful executive action",
+    "kind": "category",
+    "parent": null,
+    "status": "candidate",
+    "tags": [],
+    "floor": {
+      "rep": 37,
+      "dem": 88,
+      "ind": 64,
+      "overall": 62,
+      "pollster": "Marquette Law School Poll",
+      "year": 2025,
+      "url": "https://law.marquette.edu/poll/2025/05/22/new-marquette-law-school-poll-national-survey-finds-strong-support-for-authority-of-courts-in-cases-involving-president/"
+    },
+    "verdict": "Weak on appropriations; executive privilege unpolled; immunity Moderate at 54% R (Ipsos 2024) and regime-coded",
+    "failedTest": null,
+    "gate": "Symmetric appropriations poll unrun; sub-items gated separately",
+    "section": null,
+    "summary": "Spending fidelity polls at 37% of Republicans (Marquette, 2025); privilege is unpolled, immunity reaches 54%, and the symmetric two-directions question has never been asked.",
+    "pollQuestion": {
+      "wording": "Some propose a constitutional rule that any future president must spend the money Congress has appropriated — no more and no less — and may not withhold, delay, or cancel funds without Congress voting to change the law. This would bind future presidents of both parties equally: it would bar a president from freezing funds Congress approved, and equally bar a president from spending or forgiving money Congress never appropriated. Do you favor or oppose?",
+      "followUps": [
+        "A costs-named follow-up; the floor must hold within the Moderate band",
+        "A cross-party roll call: any recorded vote in which majorities of both parties back a pocket-rescission ban"
+      ],
+      "threshold": "60% among Republicans on the appropriations sub-item; at that result it folds into executive-compliance as the Appropriations Fidelity Clause",
+      "verbatim": true
+    },
+    "pathBack": null,
+    "memo": "research/candidates/EXECUTIVE_LAWFULNESS_CANDIDATE.md",
+    "page": "/candidates/executive-lawfulness",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [
+      "executive-compliance"
+    ],
+    "supersedes": [
+      "exec-appropriations-fidelity"
+    ],
+    "twinOf": null,
+    "subItems": [
+      {
+        "id": "executive-lawfulness-appropriations",
+        "title": "Appropriations fidelity",
+        "status": "candidate",
+        "gate": "Symmetric forward-looking poll clearing 60% R",
+        "pollQuestion": {
+          "wording": "Some propose a constitutional rule that any future president must spend the money Congress has appropriated — no more and no less — and may not withhold, delay, or cancel funds without Congress voting to change the law. This would bind future presidents of both parties equally: it would bar a president from freezing funds Congress approved, and equally bar a president from spending or forgiving money Congress never appropriated. Do you favor or oppose?",
+          "followUps": [
+            "Costs named; the floor must hold within the Moderate band"
+          ],
+          "threshold": "60% among Republicans; below 45% R rejects it on high-topline/low-floor and routes it to the statutory list",
+          "verbatim": true
+        },
+        "note": "Twin of the Appropriations Fidelity Clause drafted and held back in EXECUTIVE_COMPLIANCE_RESEARCH.md; the destination on success is the executive-compliance article, not a standalone amendment."
+      },
+      {
+        "id": "executive-lawfulness-privilege",
+        "title": "Limits on executive privilege",
+        "status": "candidate",
+        "gate": "Genuinely unpolled; no why-an-amendment answer",
+        "pollQuestion": null,
+        "note": "No poll wording exists. The memo's condition is 'any national poll at all: the first task is not clearing a threshold but establishing that a measurable opinion exists.' Named the weakest of the three and the one to drop first."
+      },
+      {
+        "id": "executive-lawfulness-immunity",
+        "title": "Narrowing executive immunity",
+        "status": "candidate",
+        "gate": "Regime-coded; single-sourced campaign-window fieldwork",
+        "pollQuestion": {
+          "wording": "enacting a Constitutional amendment to make clear that no person is above the law, even the President of the United States",
+          "followUps": [
+            "Re-ask outside a presidential campaign, with full party breakdowns published"
+          ],
+          "threshold": "60% R on a re-ask of the USA Today/Ipsos amendment wording with full party breakdowns published, fielded outside a presidential campaign",
+          "verbatim": true
+        },
+        "note": "54% R on the amendment framing (USA Today/Ipsos, Aug 2024) against 32% R opposing the Trump v. United States holding (Marquette, 2025). The highest-value item in this category's commissioned-survey queue."
+      }
+    ]
+  },
+  {
+    "id": "fbi-doj-independence",
+    "title": "FBI / DOJ independence",
+    "kind": "category",
+    "parent": null,
+    "status": "candidate",
+    "tags": [],
+    "floor": {
+      "rep": 44,
+      "dem": 76,
+      "ind": 65,
+      "overall": 62,
+      "pollster": "Monmouth University Polling Institute",
+      "year": 2018,
+      "url": "https://www.monmouth.edu/polling-institute/reports/MonmouthPoll_US_020118_B/"
+    },
+    "verdict": "Weak — the only structural remedy ever polled is eight years old; the diagnosis now runs 53% R / 58% D (Marquette, 2026)",
+    "failedTest": null,
+    "gate": "Remedy unpolled since 2018",
+    "section": null,
+    "summary": "The only structural remedy ever polled — judicial approval before a special counsel is fired — drew 44% of Republicans and 76% of Democrats (Monmouth, 2018); nothing independent since.",
+    "pollQuestion": {
+      "wording": "Should any future president be able to remove the Attorney General or FBI Director only for cause — such as misconduct or neglect of duty — rather than at will?",
+      "followUps": [
+        "Should any future president be prohibited from directing the Justice Department to investigate or prosecute a specific person for reasons unrelated to law enforcement?",
+        "An actor-named control arm, to price the 47-point wording effect",
+        "Costs named: 'even if that means a president cannot remove prosecutors voters disapprove of'"
+      ],
+      "threshold": "60% Republican support on the conduct-rule version and 55% on the removal version, surviving the costs-named follow-up",
+      "verbatim": true
+    },
+    "pathBack": null,
+    "memo": "research/candidates/DOJ_INDEPENDENCE_CANDIDATE.md",
+    "page": "/candidates/fbi-doj-independence",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "Top of the commissioned-survey list. Trump v. Slaughter (2026) makes the why-an-amendment test pass more strongly here than in any other candidate examined."
+  },
+  {
+    "id": "civil-servant-independence",
+    "title": "Civil servant independence",
+    "kind": "category",
+    "parent": null,
+    "status": "candidate",
+    "tags": [
+      "statutory"
+    ],
+    "floor": {
+      "rep": 95,
+      "dem": 96,
+      "ind": 94,
+      "overall": null,
+      "pollster": "Partnership for Public Service / Impact Research",
+      "year": 2024,
+      "url": "https://ourpublicservice.org/publications/the-state-of-public-trust-in-government-2024/"
+    },
+    "verdict": "Strong on merit hiring, which is not in dispute; the operative removal protection is unpolled and the contested item swung 87-66-78 among Republicans across three years",
+    "failedTest": null,
+    "gate": "Regime-coded; operative remedy unpolled",
+    "section": null,
+    "summary": "Merit hiring drew 95% of Republicans and 96% of Democrats (Partnership for Public Service, 2024), but the contested nonpartisan-civil-service item swung by regime and the removal protection is unpolled.",
+    "pollQuestion": {
+      "wording": "Would you favor or oppose a constitutional amendment providing that career federal employees — those not appointed by the president — may be hired, promoted, and dismissed only on the basis of merit and conduct, and never because of their political beliefs or party, binding every future president of either party?",
+      "followUps": [
+        "Costs named: 'even if this makes it harder for a president to remove career officials who are performing poorly or resisting lawful policy'",
+        "Symmetry probe: ask the same of a president of the respondent's own party and of the other party"
+      ],
+      "threshold": "60% in both parties on the base question and the costs-named follow-up, with less than a 10-point swing across the symmetry probe — and it must hold across an administration that changes hands",
+      "verbatim": true
+    },
+    "pathBack": null,
+    "memo": "research/candidates/CIVIL_SERVICE_CANDIDATE.md",
+    "page": "/candidates/civil-servant-independence",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "The memo's why-an-amendment analysis says this is a statute rather than an amendment (Free Enterprise Fund fn.10; Elrod/Branti; the 1883 and 1978 statutes) — hence the statutory tag alongside candidate status."
+  },
+  {
+    "id": "fair-districting",
+    "title": "Fair single-member districting",
+    "kind": "category",
+    "parent": null,
+    "status": "candidate",
+    "tags": [],
+    "floor": {
+      "rep": 76,
+      "dem": 92,
+      "ind": 79,
+      "overall": 82,
+      "pollster": "NBC News Decision Desk / SurveyMonkey",
+      "year": 2025,
+      "url": "https://www.nbcnews.com/politics/politics-news/poll-americans-oppose-political-parties-drawing-election-lines-rcna229257"
+    },
+    "verdict": "Strong on the neutral-authority layer; the anti-favoritism wording remains unpolled in constitutional form",
+    "failedTest": null,
+    "gate": "Strong floor; trade-off untested",
+    "section": null,
+    "summary": "76% of Republicans and 92% of Democrats prefer nonpartisan commissions to the party in power (NBC News, 2025), held by an untested seats-priced trade-off and an unmeasured federalism question.",
+    "pollQuestion": {
+      "wording": "Should the Constitution provide that no congressional district may be drawn with the intent to favor or disfavor a political party — applying to every state and every future legislature, whichever party controls it?",
+      "followUps": [
+        "Costs named, Citrin Center style: 'even if it means your party wins fewer seats in your state'"
+      ],
+      "threshold": "60% Republican floor on each of the two questions, surviving the costs-named follow-up without dropping below Moderate",
+      "verbatim": true
+    },
+    "pathBack": null,
+    "memo": "research/candidates/FAIR_DISTRICTING_CANDIDATE.md",
+    "page": "/candidates/fair-districting",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [
+      "redistricting"
+    ],
+    "supersedes": [
+      "redistricting-anti-favoritism",
+      "redistricting-neutral-authority"
+    ],
+    "twinOf": null,
+    "subItems": [
+      {
+        "id": "fair-districting-anti-favoritism",
+        "title": "Anti-favoritism floor",
+        "status": "candidate",
+        "gate": "Federalized Florida wording, 60% R",
+        "pollQuestion": {
+          "wording": "Should the Constitution provide that no congressional district may be drawn with the intent to favor or disfavor a political party — applying to every state and every future legislature, whichever party controls it?",
+          "followUps": [
+            "Costs named, Citrin Center style: 'even if it means your party wins fewer seats in your state'"
+          ],
+          "threshold": "60% Republican floor, surviving the costs-named follow-up without dropping below Moderate",
+          "verbatim": true
+        },
+        "note": "Twin of the anti-favoritism floor held back in REDISTRICTING_RESEARCH.md. Destination on success: a third clause in the redistricting package, using Florida's wording rather than 'unduly favoring,' which would hand its meaning to the Court that decided Rucho."
+      },
+      {
+        "id": "fair-districting-neutral-authority",
+        "title": "Neutral districting authority",
+        "status": "candidate",
+        "gate": "Constitutional and costs-named 'who may not draw' wording, 60% R",
+        "pollQuestion": {
+          "wording": "Should the Constitution require that the officeholders whose own districts are being drawn be barred from drawing them, in every state?",
+          "followUps": [
+            "Costs named: 'even if it means your party wins fewer seats in your state'"
+          ],
+          "threshold": "60% R, surviving the costs-named follow-up",
+          "verbatim": true
+        },
+        "note": "Twin of the neutral-authority principle held back in REDISTRICTING_RESEARCH.md. The memo says to hold this layer separately and longer: its why-an-amendment answer is durability rather than necessity, and Ohio 2024 is the only place this category has lost a clean fight."
+      }
+    ]
+  },
+  {
+    "id": "proportional-representation",
+    "title": "Proportional representation",
+    "kind": "category",
+    "parent": null,
+    "status": "candidate",
+    "tags": [
+      "statutory"
+    ],
+    "floor": null,
+    "verdict": "Unpolled — no independent national poll with a party breakdown asks the mechanism; framings on the same idea spread from 24% to 63%",
+    "failedTest": null,
+    "gate": "Unpolled; statutory route open",
+    "section": null,
+    "summary": "No independent survey with a party breakdown asks the mechanism, and single-member districts are a 1967 statute Congress can repeal; waiting on both a poll and a why-an-amendment answer.",
+    "pollQuestion": {
+      "wording": "Congress currently requires each House district to elect one member. Would you favor or oppose electing House members from larger districts that each choose three to five members, so that a party winning 40% of the vote in an area wins about 40% of that area's seats?",
+      "followUps": [
+        "Costs-named follow-up naming larger districts, more parties in Congress, and coalition bargaining — not optional, because depth is the untested risk",
+        "Statewide adoption of multi-member legislative districts by ballot measure, or any cross-party roll call"
+      ],
+      "threshold": "60% in both parties, surviving the costs-named follow-up; none of this cures the why-an-amendment test, which needs its own answer",
+      "verbatim": true
+    },
+    "pathBack": null,
+    "memo": "research/candidates/PROPORTIONAL_REPRESENTATION_CANDIDATE.md",
+    "page": "/candidates/proportional-representation",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "2 U.S.C. 2c is a statute and the why-an-amendment test has no answer; the memo's cleaner disposition is to move this to the statutory list rather than spend survey money."
+  },
+  {
+    "id": "good-government-data",
+    "title": "Good-government data",
+    "kind": "category",
+    "parent": null,
+    "status": "candidate",
+    "tags": [
+      "statutory"
+    ],
+    "floor": null,
+    "verdict": "Unpolled as a mandate — the nearest party-split proxy is 45% R / 58% D on open data (Pew 2014), and the trust series flips by regime",
+    "failedTest": null,
+    "gate": "Unpolled mandate; regime-coded",
+    "section": null,
+    "summary": "Never polled as a mandate; waiting on a mechanism-specific poll clearing a 60% floor framed to bind any future administration, plus a why-an-amendment answer the Evidence Act does not already supply.",
+    "pollQuestion": {
+      "wording": "The Constitution should require the federal government to publish accurate and complete accounts of what it takes in, what it spends, and the size and condition of the population, on a regular schedule set by law.",
+      "followUps": [
+        "Integrity guarantee, written behind the veil: 'The head of a federal statistical agency should be removable only for cause, and never because of the substance, conclusions, or timing of a statistical release — this rule would apply to every future president of either party.'",
+        "Depth check: re-ask the integrity item after naming the cost — 'even if that means the president cannot replace an agency head whose numbers he believes are wrong'"
+      ],
+      "threshold": "60% floor in the less-supportive party on both framings; the depth check must stay out of the Weak band",
+      "verbatim": true
+    },
+    "pathBack": null,
+    "memo": "research/candidates/GOOD_GOVERNMENT_DATA_CANDIDATE.md",
+    "page": "/candidates/good-government-data",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "The memo says that if the specified poll comes back Weak, or the existential-problem test is resolved as it was for civic information, this should move to rejected rather than continue to sit."
+  },
+  {
+    "id": "fcc-independence",
+    "title": "FCC and independent-agency independence",
+    "kind": "category",
+    "parent": null,
+    "status": "candidate",
+    "tags": [],
+    "floor": {
+      "rep": 42,
+      "dem": 61,
+      "ind": 50,
+      "overall": null,
+      "pollster": "Marquette Law School Poll",
+      "year": 2026,
+      "url": "https://law.marquette.edu/assets/community/poll/MLSPSC34/MLSPSC34PressRlease_CourtTopics.pdf"
+    },
+    "verdict": "Weak at the newest reading, moving — 54% R in prospective wording eight weeks earlier; the floor oscillates across the Weak/Moderate boundary within one quarter",
+    "failedTest": null,
+    "gate": "Regime-coded; forward-looking re-poll",
+    "section": null,
+    "summary": "Opposing the 2026 decision that ended for-cause removal protection drew 42% of Republicans and 61% of Democrats (Marquette, 2026), down from 54% of Republicans in prospective wording eight weeks earlier.",
+    "pollQuestion": {
+      "wording": "Should the Constitution be amended to say that Congress may set fixed terms for members of federal regulatory commissions and may require a stated cause before any president removes them — a rule applying to every future president of either party?",
+      "followUps": [
+        "Costs named: 'even if that means officials appointed by a previous president keep setting policy for years after an election'",
+        "A cross-party roll call on a bill restoring for-cause protection would count as corroborating evidence"
+      ],
+      "threshold": "Republican floor at or above 60%, holding at or above the Moderate band under the costs-named follow-up; fielded no earlier than 2027 so it is not read in the immediate wake of the ruling",
+      "verbatim": true
+    },
+    "pathBack": null,
+    "memo": "research/candidates/AGENCY_INDEPENDENCE_CANDIDATE.md",
+    "page": "/candidates/fcc-independence",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "The why-an-amendment test now passes cleanly and did not before: Trump v. Slaughter (June 29, 2026) removed the statutory route. Memo caution: if the floor rises only on the Federal Reserve question, the consensus is about central banking, not agency independence."
+  },
+  {
+    "id": "fusion-voting",
+    "title": "Fusion voting",
+    "kind": "category",
+    "parent": null,
+    "status": "candidate",
+    "tags": [],
+    "floor": {
+      "rep": 55,
+      "dem": 61,
+      "ind": 62,
+      "overall": 56,
+      "pollster": "Fairleigh Dickinson University (New Jersey only)",
+      "year": 2023,
+      "url": "https://www.fdu.edu/news/fdu-poll-majority-in-new-jersey-support-fusion-ticket-laws/"
+    },
+    "verdict": "Unpolled nationally — the best direct reading is one state, three years old, and would be Moderate rather than Strong even if it were national",
+    "failedTest": null,
+    "gate": "Unpolled nationally; existential test open",
+    "section": null,
+    "summary": "Nationally unpolled: the only direct polls are both New Jersey (51-55% of Republicans, 57-61% of Democrats), the national proxies swap parties with the presidency, and the existential-problem test is open.",
+    "pollQuestion": {
+      "wording": "Some states allow more than one party to nominate the same candidate, so that a candidate can appear on more than one party's line and the votes are added together. Would you favor or oppose a constitutional amendment guaranteeing that right in every state — including for a new party to the right of the Republican Party and a new party to the left of the Democratic Party?",
+      "followUps": [
+        "Costs named: ballots grow longer; the same candidate's name appears more than once; small parties may trade their nomination for policy concessions",
+        "A state-constitutional ruling striking an anti-fusion law, or a fusion-restoring statute enacted with cross-party majorities in a state that currently bans it"
+      ],
+      "threshold": "Republican floor of 60% or better, holding at 55% R on the costs-named follow-up",
+      "verbatim": true
+    },
+    "pathBack": null,
+    "memo": "research/candidates/FUSION_VOTING_CANDIDATE.md",
+    "page": "/candidates/fusion-voting",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "The memo says the existential-test call is worth making before any survey money is spent: if the answer is no, this becomes a rejection on that test regardless of what the polling returns."
+  },
+  {
+    "id": "eminent-domain",
+    "title": "Eminent domain limits for private development",
+    "kind": "category",
+    "parent": null,
+    "status": "candidate",
+    "tags": [],
+    "floor": {
+      "rep": 85,
+      "dem": 79,
+      "ind": 83,
+      "overall": 81,
+      "pollster": "Saint Index / UMass Lowell Center for Economic and Civic Opinion",
+      "year": 2005,
+      "url": "https://www.govinfo.gov/content/pkg/CRPT-113hrpt357/html/CRPT-113hrpt357.htm"
+    },
+    "verdict": "Strong — but stale; the only national party split is from autumn 2005",
+    "failedTest": null,
+    "gate": "Strong but stale; existential test open",
+    "section": null,
+    "summary": "79% of Democrats and 85% of Republicans opposed the Kelo holding (Saint Index / UMass Lowell, 2005) and twelve state constitutions followed; the number is two decades old.",
+    "pollQuestion": {
+      "wording": "Would you favor or oppose a constitutional amendment providing that no government — federal, state, or local — may take a person's home, business, farm, or land in order to transfer it to another private owner for economic development, even if the owner is paid fair market value?",
+      "followUps": [
+        "With the exceptions named: 'except to remove a specific danger to public health or safety, or for roads, utilities, and pipelines open to the public'",
+        "Costs named: 'even if this means some redevelopment projects, stadiums, or shopping centers cannot be built'",
+        "A Kelo re-ask in the 2005 wording, for a trend line"
+      ],
+      "threshold": "60% in both parties on the exceptions-named and costs-named follow-ups",
+      "verbatim": true
+    },
+    "pathBack": null,
+    "memo": "research/candidates/EMINENT_DOMAIN_CANDIDATE.md",
+    "page": "/candidates/eminent-domain",
+    "parentPage": null,
+    "since": "2026-08-18",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "The memo lays out three options rather than one recommendation: accept as a target, hold for fresh polling, or reject on the existential test. The 2026-08-18 decision was to hold and commission polling. The Saint Index figures are reported in House Reports 113-357 and 115-859 and in Somin's Limits of Backlash; the survey itself has no public URL."
+  },
+  {
+    "id": "scotus-supermajority",
+    "title": "Supermajority for the Supreme Court to strike down federal laws",
+    "kind": "category",
+    "parent": null,
+    "status": "candidate",
+    "tags": [],
+    "floor": null,
+    "verdict": "Unpolled — no independent national poll with a party breakdown asks the mechanism; proxies are regime-coded (Court approval 75% R / 11% D, Gallup 2025)",
+    "failedTest": null,
+    "gate": "Unpolled; regime-coded proxies",
+    "section": null,
+    "summary": "No independent national poll has ever asked the mechanism with a party breakdown; every measurable attitude toward the Court's power is regime-coded, and the coverage question is unsettled.",
+    "pollQuestion": {
+      "wording": "Some people say the Supreme Court should be able to strike down a law passed by Congress and signed by the President only if at least six of the nine justices agree, instead of five. This rule would apply to any future Court and any future law. Do you favor or oppose it?",
+      "followUps": [
+        "Priced: 'even if that meant a law five justices believed was unconstitutional stayed in force?'",
+        "Replicate once after a change in the Court's appointing-party majority, or else the draft must carry a prospective effective date",
+        "Coverage must be settled: federal statutes only is the sole version whose blast radius is defensible on current evidence"
+      ],
+      "threshold": "60% in both parties on the priced version; below 45% in either party is a rejection on the floor",
+      "verbatim": true
+    },
+    "pathBack": null,
+    "memo": "research/candidates/SCOTUS_SUPERMAJORITY_CANDIDATE.md",
+    "page": "/candidates/scotus-supermajority",
+    "parentPage": null,
+    "since": "2026-08-18",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "Suggested by Alex MacGregor. The Presidential Commission (2021) and CRS (2026) both treat the statutory route as open, so the why-an-amendment answer is weak."
+  },
+  {
+    "id": "term-limits-uniformity",
+    "title": "Uniformity and the Thornton settlement",
+    "kind": "clause",
+    "parent": "term-limits",
+    "status": "candidate",
+    "tags": [
+      "drafting-counsel"
+    ],
+    "floor": null,
+    "verdict": "Unpolled — and, unusually, unpollable in a form that would carry a verdict; it adds no rule, only a canon of construction",
+    "failedTest": null,
+    "gate": "Drafting counsel, not a poll; the state-election-power half risks being read against the redistricting article",
+    "section": null,
+    "summary": "A clause declaring the article's term limits the sole such limitation, while preserving state power over the manner of holding elections.",
+    "pollQuestion": {
+      "wording": "If the Constitution were amended to limit members of Congress to twelve years in each chamber, should those limits be the same in every state — so that no state could set a shorter limit for its own senators and representatives — or should each state be free to set stricter limits for the people it sends to Congress?",
+      "followUps": [
+        "Costs named: a state that limits its members more tightly gives away seniority and influence in Congress to states that do not",
+        "The savings half, asked separately and never bundled: 'Should an amendment on term limits also say that it does not change any other power states have over how elections are run?'"
+      ],
+      "threshold": "60% in both parties on the uniformity half, sustained through the costs-named follow-up — though even clearing it would leave the drafting-counsel question, which is the one that governs",
+      "verbatim": true
+    },
+    "pathBack": null,
+    "memo": "research/candidates/clauses/TERM_LIMITS_UNIFORMITY_CLAUSE.md",
+    "page": null,
+    "parentPage": "/amendments/term-limits",
+    "since": "2026-08-12",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [
+      "term-limits"
+    ],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "The memo recommends no poll be commissioned and that the clause be split in two before anyone drafts it again: the uniformity half is close to costless, the savings half carries a collision risk with the redistricting article."
+  },
+  {
+    "id": "ethics-emoluments-remedy",
+    "title": "An enforceable emoluments clause",
+    "kind": "clause",
+    "parent": "ethics",
+    "status": "candidate",
+    "tags": [],
+    "floor": {
+      "rep": 33,
+      "dem": 82,
+      "ind": 69,
+      "overall": 61,
+      "pollster": "Economist/YouGov (conduct framing; the remedy itself has no published party split)",
+      "year": 2026,
+      "url": "https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_ZMy1Zxu.pdf"
+    },
+    "verdict": "Unpolled on the remedy (71% overall, no crosstabs) — Weak on every fielded framing of the underlying conduct, and the newest reading is worse, not better",
+    "failedTest": null,
+    "gate": "Neutral both-parties polling on emoluments enforcement",
+    "section": null,
+    "summary": "A clause making the article's prohibitions and the Constitution's existing emoluments clauses enforceable in court, answering the article's open question of who may sue.",
+    "pollQuestion": {
+      "wording": "The Constitution bars presidents and other federal officials from accepting payments or gifts from foreign governments, but courts have never ruled on whether anyone can sue to enforce that ban. Would you favor or oppose a constitutional amendment stating that this ban is enforceable in court — so that any future president of either party who accepts payments from a foreign government could be required to answer for it in a lawsuit?",
+      "followUps": [
+        "Costs named: 'Supporters say a rule no one can enforce is not a rule. Opponents say it would let a hostile Congress or a state attorney general drag any president into court over ordinary business dealings.'",
+        "Separating conduct from remedy, asked after the core item: 'Regardless of whether anyone should be able to sue, do you think it is acceptable or unacceptable for a president of either party to accept valuable gifts from a foreign government while in office?'"
+      ],
+      "threshold": "60% in both parties on the core item, and 55% in both parties surviving the costs-named follow-up; below 45% in either party, or a drop of more than 15 points, moves it to rejected with a path back",
+      "verbatim": true
+    },
+    "pathBack": null,
+    "memo": "research/candidates/clauses/ETHICS_EMOLUMENTS_REMEDY_CLAUSE.md",
+    "page": null,
+    "parentPage": "/amendments/ethics",
+    "since": "2026-08-12",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [
+      "ethics"
+    ],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "The best why-an-amendment answer of any held-back item in the corpus and the worst reception evidence. The enforcement authorization and the emoluments cross-reference can be severed; on a Moderate result the memo recommends drafting the first half and holding the second. Cheapest first step: request the party crosstabs for the Brennan/Verasight item, which were collected but not published."
+  },
+  {
+    "id": "lobbying-lifetime-ban",
+    "title": "A lifetime ban on all compensated lobbying",
+    "kind": "clause",
+    "parent": "lobbying",
+    "status": "candidate",
+    "tags": [],
+    "floor": {
+      "rep": 47.5,
+      "dem": 54.4,
+      "ind": 47.5,
+      "overall": 50.3,
+      "pollster": "UMD Program for Public Consultation (Q37 acceptability)",
+      "year": 2022,
+      "url": "https://vop.org/wp-content/uploads/2022/12/Lobbying_Quaire_0622.pdf"
+    },
+    "verdict": "Moderate — and measured on the wrong instrument; the five-year door out-polls it by 18 points in the less-supportive party",
+    "failedTest": null,
+    "gate": "Standalone favor/oppose re-test clearing 60% in both parties",
+    "section": null,
+    "summary": "A permanent bar on paid advocacy before the federal government by former members of Congress and senior officials, in place of the article's five-year wait.",
+    "pollQuestion": {
+      "wording": "Would you favor or oppose a constitutional amendment providing that anyone who has served in Congress or in a senior federal office may never, at any time after leaving office, be paid to advocate before the federal government on behalf of someone else? The rule would apply to everyone who takes office in the future, from either party, and would not restrict anyone from petitioning the government on their own behalf or without pay.",
+      "followUps": [
+        "Costs named: a former official who is an expert on an issue should not be barred for life from being paid to advocate for it, and a lifetime rule would discourage capable people from entering public service",
+        "Head-to-head against the surviving clause: 'If the choice were between a five-year wait and a permanent ban, and both were equally likely to become law, which would you favor?'",
+        "The unpriced scope split: a permanent ban limited to the specific matters a person personally worked on, with a five-year wait for everything else",
+        "Anchor: carry the foreign-government item (2022 Q46 wording) in the same instrument"
+      ],
+      "threshold": "60% in both parties on the core item, holding at 60% in both parties on the costs-named follow-up; below 45% in either party it should be re-filed as rejected",
+      "verbatim": true
+    },
+    "pathBack": null,
+    "memo": "research/candidates/clauses/LOBBYING_LIFETIME_BAN_CLAUSE.md",
+    "page": null,
+    "parentPage": "/amendments/lobbying",
+    "since": "2026-08-12",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [
+      "lobbying"
+    ],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "Evidence re-based on 2026-08-17/18 after the '32%' figure was found to be a forced-choice share rather than standalone opposition. What holds the clause is not opposition but that the five-year door is 18 points more popular in both parties and does most of the same work."
+  },
+  {
+    "id": "exec-independent-enforcement",
+    "title": "Independent enforcement of court judgments",
+    "kind": "clause",
+    "parent": "executive-compliance",
+    "status": "candidate",
+    "tags": [],
+    "floor": null,
+    "verdict": "Unpolled — the mechanism has never been measured in any independent survey, and the design work behind it is unfinished",
+    "failedTest": null,
+    "gate": "Unpolled; separation-of-powers design unfinished",
+    "section": null,
+    "summary": "A clause placing the execution of federal court judgments under the direction of the judicial branch, so no officer whose conduct is at issue directs their enforcement.",
+    "pollQuestion": {
+      "wording": "Today, the officers who carry out federal court orders — serving them, and enforcing them when someone refuses — work for the Justice Department, part of the executive branch. So when a court rules against the executive branch, the officers who would enforce the ruling report to the same branch the ruling is against. Some people say these officers should instead report to the courts, so that no future president can block enforcement of a ruling against his own administration. Others say officers taking orders from judges rather than elected officials would give courts too much power. Which comes closer to your view?",
+      "followUps": [
+        "Costs named: 'If officers reporting to judges could arrest or detain senior executive branch officials — including, in principle, cabinet secretaries — on a judge's order, would you still favor moving them under the courts, or not?'",
+        "The narrower variant, the clause's second sentence alone: officers stay in the executive branch but may not take direction about enforcing a court order from any official whose own conduct is the subject of that order",
+        "Symmetry check: 'Would your answer be different depending on which party held the presidency?'",
+        "Benchmark anchor, unreworded: Marquette's obey-the-Court item"
+      ],
+      "threshold": "A bipartisan floor of 60% on the core item, with the costs-named follow-up holding at 50% in both parties — both, not either",
+      "verbatim": true
+    },
+    "pathBack": null,
+    "memo": "research/candidates/clauses/EXEC_INDEPENDENT_ENFORCEMENT_CLAUSE.md",
+    "page": null,
+    "parentPage": "/amendments/executive-compliance",
+    "since": "2026-08-12",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [
+      "executive-compliance"
+    ],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "The one held-back clause where a good poll result would not close the gate: the parent memo concedes the circularity never fully closes. The memo recommends pairing the survey with drafting work on the narrower conflict-of-interest variant, which creates no judicial corps. If both variants return a Republican floor below 45%, it should move to rejected with the statutory list as its path back."
+  },
+  {
+    "id": "exec-consequences",
+    "title": "Consequences for willful defiance of a court order",
+    "kind": "clause",
+    "parent": "executive-compliance",
+    "status": "candidate",
+    "tags": [],
+    "floor": null,
+    "verdict": "Unpolled — the parent article's 76-80% Republican floor covers the duty and says nothing about the penalty; the nearest measurement of an appetite for penalties runs the other way (70% oppose impeaching judges, 52% R)",
+    "failedTest": null,
+    "gate": "Three separate favor/oppose items, 60% floor each; must state who adjudicates after Trump v. Anderson",
+    "section": null,
+    "summary": "Three severable consequences for an officer found by final judgment to have willfully refused compliance: disqualification from office, a pardon carve-out for contempts of court, and salary suspension during certified noncompliance.",
+    "pollQuestion": {
+      "wording": "Suppose a federal court finds, after a full hearing and a final judgment, that a senior official in any future administration — of either party — has deliberately refused to obey a court order that applies to that official. Should that official be removed from office as a result, or should removal be left to the president and Congress to decide?",
+      "followUps": [
+        "Item 2, pardon carve-out: 'Today a president may pardon someone convicted of contempt of court, including an official held in contempt for disobeying a court order. Should any future president be able to pardon a contempt-of-court conviction, or should contempt of court be outside the pardon power?'",
+        "Item 3, salary suspension: 'If a federal court certifies that an official is deliberately refusing to comply with a court order, should that official's government salary be suspended for as long as the refusal continues, or should the salary continue to be paid?'",
+        "Costs named, asked once after all three: some say a rule like this is the only way to make a court order mean anything against the government; others say it lets judges remove or defund officials the voters chose, over disputes about what an order actually required",
+        "The tier trap, asked on item 1: 'Would your answer change if the finding came from a single district judge rather than from a final judgment upheld on appeal?'"
+      ],
+      "threshold": "60% in both parties, on the costs-named version, item by item. A piece clearing 60R/60D is drafted as its own section; 45-59% in either party is held and re-tested; below 45% in either party drops to rejected-clause status. The three are severable, so a failure on one does not hold back the others.",
+      "verbatim": true
+    },
+    "pathBack": null,
+    "memo": "research/candidates/clauses/EXEC_CONSEQUENCES_CLAUSE.md",
+    "page": null,
+    "parentPage": "/amendments/executive-compliance",
+    "since": "2026-08-12",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [
+      "executive-compliance"
+    ],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [
+      {
+        "id": "exec-consequences-disqualification",
+        "title": "Disqualification on a final judgment of willful defiance",
+        "status": "candidate",
+        "gate": "Unpolled; 60% floor in both parties on the costs-named item",
+        "pollQuestion": {
+          "wording": "Suppose a federal court finds, after a full hearing and a final judgment, that a senior official in any future administration — of either party — has deliberately refused to obey a court order that applies to that official. Should that official be removed from office as a result, or should removal be left to the president and Congress to decide?",
+          "followUps": [
+            "Costs named, asked once after all three items",
+            "The tier trap: 'Would your answer change if the finding came from a single district judge rather than from a final judgment upheld on appeal?'"
+          ],
+          "threshold": "60% in both parties on the costs-named version",
+          "verbatim": true
+        },
+        "note": "The riskiest of the three. Trump v. Anderson (2024) means the clause must say who adjudicates before it is worth fielding, and the nearest adjacent number — 70% oppose impeaching judges, 52% R — cuts against it. Only text can disqualify a federal officer, so its why-an-amendment answer is independently strong."
+      },
+      {
+        "id": "exec-consequences-pardon-carveout",
+        "title": "Pardon carve-out for contempts of court",
+        "status": "candidate",
+        "gate": "Unpolled; 60% floor in both parties on the costs-named item",
+        "pollQuestion": {
+          "wording": "Today a president may pardon someone convicted of contempt of court, including an official held in contempt for disobeying a court order. Should any future president be able to pardon a contempt-of-court conviction, or should contempt of court be outside the pardon power?",
+          "followUps": [
+            "Costs named, asked once after all three items"
+          ],
+          "threshold": "60% in both parties on the costs-named version",
+          "verbatim": true
+        },
+        "note": "Cannot be done by statute at all: Ex parte Grossman reads the pardon power to reach contempts, and only text can change that. Adjacent reading: limiting the pardon power in the abstract draws 56% support with Republicans net +22 (Strength In Numbers/Verasight, 2026), though no party percentages were published."
+      },
+      {
+        "id": "exec-consequences-salary-suspension",
+        "title": "Salary suspension during certified noncompliance",
+        "status": "candidate",
+        "gate": "Unpolled; 60% floor in both parties on the costs-named item",
+        "pollQuestion": {
+          "wording": "If a federal court certifies that an official is deliberately refusing to comply with a court order, should that official's government salary be suspended for as long as the refusal continues, or should the salary continue to be paid?",
+          "followUps": [
+            "Costs named, asked once after all three items"
+          ],
+          "threshold": "60% in both parties on the costs-named version",
+          "verbatim": true
+        },
+        "note": "The weakest on the why-an-amendment test — Congress can and does condition appropriations, so a statute could plausibly do this, which argues for dropping it first if the package needs trimming."
+      }
+    ],
+    "note": "Resolves the registry inventory's open question 2 in favor of keeping the clause rather than re-filing it as rejected: its symmetry passes by construction and two of the three pieces have independently strong why-an-amendment answers. Mitigating evidence for the framing: the obey-the-Court supermajority is stable across a change of administration (79% in 2024, Marquette)."
+  },
+  {
+    "id": "pardon-conspirators",
+    "title": "No clemency for the president's own conspirators",
+    "kind": "clause",
+    "parent": "pardon-reform",
+    "status": "candidate",
+    "tags": [],
+    "floor": {
+      "rep": 43,
+      "dem": 79,
+      "ind": 63,
+      "overall": 61,
+      "pollster": "YouGov (independent national)",
+      "year": 2026,
+      "url": "https://d3nkl3psvxxpe9.cloudfront.net/documents/Presidential_Pardons_poll_results_P22Pm9s.pdf"
+    },
+    "verdict": "Weak — the number moved down, not up, when the advocacy poll was replaced by an independent one; the three adjacent framings cluster at 42-44% R",
+    "failedTest": null,
+    "gate": "Forward-looking both-parties wording on the coordination mechanism, not the 'allies' relationship",
+    "section": null,
+    "summary": "A clause barring a pardon for an offense committed at the president's direction or in knowing coordination with the president, or one of which the president was an intended beneficiary.",
+    "pollQuestion": {
+      "wording": "Suppose a future president — of either party — asks someone to commit a federal crime on the president's behalf, and that person is later convicted of it. Should the president be allowed to pardon that person, or should the Constitution prohibit a president from pardoning someone for a crime the president directed them to commit?",
+      "followUps": [
+        "Costs named: opponents say a judge or jury would have to decide what a president secretly directed, which puts courts in the middle of the president's decisions and could tie up ordinary pardons in lawsuits",
+        "Severed second limb: 'Should the Constitution prohibit a president from granting a pardon when the president is a direct beneficiary of the offense being pardoned?'",
+        "Relationship replication, carried unchanged as the anchor: the verbatim YouGov May 2026 item on pardoning political allies",
+        "Symmetry probe: the same core item in split samples, once naming no president and once as 'including presidents you voted for'"
+      ],
+      "threshold": "60% in both parties on the core item, holding at 55% in both parties after the costs-named follow-up. Below 60% but at or above 45% in both parties keeps it a candidate and moves the drafting effort to the severed second limb. A repeat Weak reading moves it to rejected.",
+      "verbatim": true
+    },
+    "pathBack": null,
+    "memo": "research/candidates/clauses/PARDON_CONSPIRATORS_CLAUSE.md",
+    "page": null,
+    "parentPage": "/amendments/pardon-reform",
+    "since": "2026-08-12",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [
+      "pardon-reform"
+    ],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "Its gate has been run once and failed. This is not yet a rejection only because every published number measures a relationship while the drafted clause measures a mechanism no one has asked about — that single unasked question is now the whole gate. The parent memo's 'first provision to trade away' should be treated as settled."
+  },
+  {
+    "id": "pardon-congressional-disapproval",
+    "title": "Congressional disapproval of pardons",
+    "kind": "clause",
+    "parent": "pardon-reform",
+    "status": "rejected",
+    "tags": [],
+    "floor": {
+      "rep": 30,
+      "dem": 73,
+      "ind": null,
+      "overall": 48,
+      "pollster": "YouGov (independent national)",
+      "year": 2026,
+      "url": "https://d3nkl3psvxxpe9.cloudfront.net/documents/Presidential_Pardons_poll_results_P22Pm9s.pdf"
+    },
+    "verdict": "Weak — the worst-performing item in the same battery that gives the ratified article its strongest number",
+    "failedTest": "High topline, low floor; abuse-vs-remedy gap; the mercy-destruction trap",
+    "gate": null,
+    "section": null,
+    "summary": "A clause voiding a pardon if two-thirds of each House of Congress votes to disapprove it within ninety days of its publication — the Mondale check.",
+    "pollQuestion": null,
+    "pathBack": {
+      "wording": "Some have proposed that any future president's pardon could be canceled if two-thirds of both the House and the Senate vote to disapprove it within ninety days — a threshold high enough that it would require large majorities of both parties. This would apply to every president of either party, and to every pardon, including ordinary commutations for people already in prison. Would you support or oppose adding this to the Constitution?",
+      "threshold": "60% support in both parties on the core item, holding at 50% in both parties after the follow-up asking whether they would still support it if a president of their own party could have a pardon canceled by a Congress controlled by the other party. A repeat below a 45% Republican floor would move it out permanently."
+    },
+    "memo": "research/candidates/clauses/PARDON_CONGRESSIONAL_DISAPPROVAL_CLAUSE.md",
+    "page": null,
+    "parentPage": "/amendments/pardon-reform",
+    "since": "2026-08-12",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [
+      "pardon-reform"
+    ],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "Moved from candidate to rejected on 2026-08-18: the clause is no longer unpolled, and the registry inventory's 'never polled; procedurally complex' entry is superseded. Two grounds converge with the polling: the mercy-destruction trap Rhode Island demonstrates in practice, and the fact that this is the one provision in the package the Convention specifically voted down (Sherman's motion failed 1-8 on August 25, 1787). The memo recommends the path-back poll be fielded only to close the question definitively."
+  },
+  {
+    "id": "ethics-civil-service-coverage",
+    "title": "Extending the trading ban to all federal employees",
+    "kind": "clause",
+    "parent": "ethics",
+    "status": "rejected",
+    "tags": [],
+    "floor": {
+      "rep": 41.6,
+      "dem": 37.1,
+      "ind": 42.2,
+      "overall": 39.9,
+      "pollster": "UMD Program for Public Consultation (Q12, deliberative)",
+      "year": 2023,
+      "url": "https://publicconsultation.org/wp-content/uploads/2023/06/StockTradesQuaire_0623.pdf"
+    },
+    "verdict": "Weak in both parties — support drops from 86% to 40% when the covered class is widened, and the party split is five points wide",
+    "failedTest": "Depth (trade-off collapse); blast radius; no why-an-amendment answer of its own",
+    "gate": null,
+    "section": null,
+    "summary": "Extending the ban on trading individual securities beyond elected and appointed constitutional officers to the entire federal civil service.",
+    "pollQuestion": null,
+    "pathBack": null,
+    "memo": "research/candidates/clauses/ETHICS_CIVIL_SERVICE_COVERAGE_CLAUSE.md",
+    "page": null,
+    "parentPage": "/amendments/ethics",
+    "since": "2026-08-12",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [
+      "ethics"
+    ],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "pathBackNote": "No path back identified, and the memo states this as a recommendation rather than an omission. The clause's failure is an affirmative finding, not a gap: asked deliberatively and given the strongest argument in its favor, both parties said no at nearly the same rate, Democrats lowest. Reopening would require a different proposal rather than a different framing, a demonstrated failure of the statutory floor under 18 U.S.C. 208, and a national reading clearing 60% in both parties on the operative breadth — none of which the 2026 record supplies.",
+    "note": "The corpus's cleanest rejection and the only item rejected by consensus rather than by party split. The party breakdown is published, contrary to the earlier registry draft's note. Worth keeping visible precisely because it demonstrates that the gate measures something real rather than filtering for partisan comfort."
+  },
+  {
+    "id": "ethics-forced-divestment",
+    "title": "Forced sale of existing holdings",
+    "kind": "clause",
+    "parent": "ethics",
+    "status": "rejected",
+    "tags": [],
+    "floor": {
+      "rep": null,
+      "dem": null,
+      "ind": null,
+      "overall": 26,
+      "pollster": "Bloomberg News / Selzer & Co. (no party breakdown published)",
+      "year": 2016,
+      "url": "https://assets.bwbx.io/documents/users/iqjWHBFdfxIU/rOrpGo837s3s/v0"
+    },
+    "verdict": "Unpolled by party — the one direct measurement puts the mechanism at 26% against 69% saying it goes too far, from the same respondents who endorsed the underlying principle by 67%",
+    "failedTest": "Abuse-vs-remedy gap and depth, failing together in one instrument; blast radius; staleness",
+    "gate": null,
+    "section": null,
+    "summary": "Requiring covered officers to sell existing holdings outright, in place of the article's blind-trust and diversified-fund safe harbor.",
+    "pollQuestion": null,
+    "pathBack": {
+      "wording": "Federal officials — the President, Vice President, members of Congress, and federal judges — would be barred from owning individual stocks and similar investments while in office. There are two ways to do that. One: they must sell those investments and may hold only broad index funds, government bonds, or similar diversified holdings. Two: they may either sell, or place the investments in a blind trust managed by an independent trustee who can buy and sell without telling them what they own. Which comes closer to your view — should the rule require them to sell, or should the blind-trust option also be allowed?",
+      "threshold": "60% in both parties for the sale-only option, holding above 60% in both parties after the costs-named follow-up. A Moderate result would not reopen the clause; at most it would justify a narrower rewrite reaching securities and speculative contracts only. Under 45% in either party closes the file."
+    },
+    "memo": "research/candidates/clauses/ETHICS_FORCED_DIVESTMENT_CLAUSE.md",
+    "page": null,
+    "parentPage": "/amendments/ethics",
+    "since": "2026-08-12",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [
+      "ethics"
+    ],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "The safe harbor is load-bearing, not a concession: it is what makes the section a rule against self-dealing rather than a condition on who may serve, and removing it would put the platform's strongest measured proposal at risk. The memo recommends fielding the path-back question only if it rides free in an ethics instrument already being commissioned."
+  },
+  {
+    "id": "privacy-deletion-right",
+    "title": "A constitutional right to deletion",
+    "kind": "clause",
+    "parent": "privacy",
+    "status": "rejected",
+    "tags": [
+      "statutory"
+    ],
+    "floor": {
+      "rep": 30,
+      "dem": 41,
+      "ind": null,
+      "overall": 39,
+      "pollster": "Pew Research Center (deletion applied to law-enforcement records)",
+      "year": 2019,
+      "url": "https://www.pewresearch.org/short-reads/2020/01/27/most-americans-support-right-to-have-some-personal-info-removed-from-online-searches/"
+    },
+    "verdict": "Weak on the piece that distinguishes this clause from the adopted text — deletion polls as a consumer right and collapses as a records right, along the line the First Amendment already draws",
+    "failedTest": "High topline, low floor; blast radius (First Amendment collision); framing dependency",
+    "gate": null,
+    "section": null,
+    "summary": "A constitutional right to deletion of personal information, in place of the article's guarantee of access and correction plus an express legislative power over commercial deletion.",
+    "pollQuestion": null,
+    "pathBack": {
+      "wording": "Would you favor or oppose adding to the Constitution a right for every person to require that personal information about them be deleted — a right any person could enforce in court against companies and against government agencies alike? The right would not reach anything lawfully published by the press, court and legislative records, or records the law requires to be kept for historical or statistical purposes.",
+      "threshold": "60% in both parties on the costs-named item, and the government-inclusive version within 10 points of the split-sample companion. The second condition matters as much as the first. Below 60% in either party, or a repeat of the 2019 gradient, closes it permanently. Step 1 is a drafting condition: the exclusions must be writable without the right swallowing itself."
+    },
+    "memo": "research/candidates/clauses/PRIVACY_DELETION_RIGHT_CLAUSE.md",
+    "page": null,
+    "parentPage": "/amendments/privacy",
+    "since": "2026-08-12",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [
+      "privacy"
+    ],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "The article instead guarantees access and correction against government and makes commercial access, correction, and deletion an express legislative power, so the idea survives as a delegated power rather than a right. The one clause in the privacy article whose why-an-amendment answer does not transfer from the parent."
+  },
+  {
+    "id": "thirteenth-wage-floor",
+    "title": "A constitutional wage floor for prison work",
+    "kind": "clause",
+    "parent": "thirteenth-exception",
+    "status": "candidate",
+    "tags": [],
+    "floor": null,
+    "verdict": "Unpolled — never asked in any form",
+    "failedTest": null,
+    "gate": "Unpolled; would convert a deletion into a fiscal mandate on all fifty states",
+    "section": null,
+    "summary": "Requiring that a person working under lawful sentence be compensated at not less than the minimum wage established by law.",
+    "pollQuestion": null,
+    "pathBack": null,
+    "memo": "research/THIRTEENTH_EXCEPTION_RESEARCH.md",
+    "page": null,
+    "parentPage": "/amendments/thirteenth-exception",
+    "since": "2026-08-18",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [
+      "thirteenth-exception"
+    ],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "pollQuestionNote": "No wording is written in the memo. The path back is stated as a condition rather than a drafted question: independent national polling with party crosstabs on a compensation requirement clearing a 60% Republican floor, and a costs-named version that holds, plus at least one state adopting a constitutional or statutory pay standard after a contested campaign.",
+    "note": "The FLSA exclusion it would override is a live legislative question Congress has repeatedly declined to resolve (S. 516, 118th Cong.), and Canada's frozen 1981 pay scale is the further argument against fixing any number in durable text. The article instead routes compensation and conditions to law: the principle is constitutional, the number is statutory."
+  },
+  {
+    "id": "thirteenth-work-requirement-ban",
+    "title": "A ban on work requirements as such",
+    "kind": "clause",
+    "parent": "thirteenth-exception",
+    "status": "candidate",
+    "tags": [],
+    "floor": null,
+    "verdict": "Unpolled — this is the maximal reading of the amendment and is not what any ballot measure asked",
+    "failedTest": null,
+    "gate": "Unpolled; goes beyond both the polled proposition and the international norm",
+    "section": null,
+    "summary": "Providing that no person may be required to work as a condition of confinement, classification, or release.",
+    "pollQuestion": null,
+    "pathBack": null,
+    "memo": "research/THIRTEENTH_EXCEPTION_RESEARCH.md",
+    "page": null,
+    "parentPage": "/amendments/thirteenth-exception",
+    "since": "2026-08-18",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [
+      "thirteenth-exception"
+    ],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "pollQuestionNote": "No wording is written in the memo. The path back is a resolved answer, in litigation under the nine amended state constitutions, on where incentive ends and compulsion begins — and then polling on that specific line.",
+    "note": "The United Kingdom's Rule 31 shows a jurisdiction with an absolute servitude ban that still requires convicted prisoners to work, and Floroiu shows Europe accepting sentence-credit compensation. Constitutionalizing a ban on requirements would make the rigidity trap real rather than rhetorical."
+  },
+  {
+    "id": "thirteenth-private-hire-prohibition",
+    "title": "A private-hire prohibition",
+    "kind": "clause",
+    "parent": "thirteenth-exception",
+    "status": "candidate",
+    "tags": [],
+    "floor": null,
+    "verdict": "Unpolled — never asked in the United States in any form",
+    "failedTest": null,
+    "gate": "Unpolled; a new substantive rule rather than a deletion",
+    "section": null,
+    "summary": "Barring a person confined under sentence from being hired to or placed at the disposal of private individuals, companies, or associations — the ILO Convention 29 proviso.",
+    "pollQuestion": null,
+    "pathBack": null,
+    "memo": "research/THIRTEENTH_EXCEPTION_RESEARCH.md",
+    "page": null,
+    "parentPage": "/amendments/thirteenth-exception",
+    "since": "2026-08-18",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [
+      "thirteenth-exception"
+    ],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "pollQuestionNote": "No wording is written in the memo. The path back is national polling with party crosstabs above the 60% Republican floor, plus a state adopting the private-hire limit in its own constitution and surviving the operational aftermath.",
+    "note": "Intellectually the strongest addition available — it targets the exception's actual historical abuse, convict leasing, and it is the international standard — but it would reach existing private-partnership prison industries in many states and it breaks the category's greatest asset, that the proposal creates nothing and merely removes."
+  },
+  {
+    "id": "thirteenth-prospective-effective-date",
+    "title": "A prospective effective date",
+    "kind": "clause",
+    "parent": "thirteenth-exception",
+    "status": "proposed",
+    "tags": [],
+    "floor": null,
+    "verdict": "Adopted — offered as an optional section and adopted by the founder on 2026-08-18",
+    "failedTest": null,
+    "gate": null,
+    "section": "Article 9, Section 4",
+    "summary": "A section providing that the article takes effect two years after ratification, giving corrections departments time to convert compelled work programs to a voluntary basis.",
+    "pollQuestion": null,
+    "pathBack": null,
+    "memo": "research/THIRTEENTH_EXCEPTION_RESEARCH.md",
+    "page": null,
+    "parentPage": "/amendments/thirteenth-exception",
+    "since": "2026-08-18",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [
+      "thirteenth-exception"
+    ],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "pollQuestionNote": "Not polled; adopted as a drafting choice. The memo framed it as the concession corrections-state legislators are most likely to ask for during ratification, against the argument that a delayed effective date on a slavery prohibition is a hard sentence to defend in public — which the page now states plainly.",
+    "note": "Unlike redistricting or term limits there is no incumbent to grandfather and no map to freeze, so the veil-of-ignorance problem the other articles solve with delayed effect does not arise here; what does arise is operational. The Colorado experience suggests the transition is manageable without one."
+  },
+  {
+    "id": "abortion",
+    "title": "Abortion",
+    "kind": "category",
+    "parent": null,
+    "status": "rejected",
+    "tags": [],
+    "floor": {
+      "rep": 25,
+      "dem": 87,
+      "ind": 50,
+      "overall": 56,
+      "pollster": "UMass Amherst/YouGov",
+      "year": 2024,
+      "url": "https://www.umass.edu/poll/media/113/download"
+    },
+    "verdict": "Weak — no consensus framing exists in either direction",
+    "failedTest": "High topline, low floor; no symmetric rule",
+    "gate": null,
+    "section": null,
+    "summary": "Weak floor in both directions: 25% of Republicans and 87% of Democrats support a federal amendment protecting a right to abortion (UMass Amherst/YouGov, 2024), and a national ban draws 7% of Democrats.",
+    "pollQuestion": null,
+    "pathBack": null,
+    "memo": "research/rejected/ABORTION_REJECTED.md",
+    "page": "/rejected/abortion",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": "2026-08-06",
+    "alsoListedUnder": [
+      "privacy"
+    ],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "pathBackNote": "No specific poll named. The memo's condition: an independent national poll showing at least 45% support in both parties for one specific amendment text a drafting committee would actually adopt, sustained across two waves under different administrations. None has appeared 2022-2026, and the party gap is widening.",
+    "note": "Listed under privacy because this memo is the stated reason the privacy draft is written in informational and electronic-data terms only."
+  },
+  {
+    "id": "voting-rights",
+    "title": "Voting Rights",
+    "kind": "category",
+    "parent": null,
+    "status": "rejected",
+    "tags": [],
+    "floor": {
+      "rep": 32,
+      "dem": 83,
+      "ind": null,
+      "overall": 58,
+      "pollster": "Pew Research Center",
+      "year": 2025,
+      "url": "https://www.pewresearch.org/politics/2025/08/22/majority-of-americans-continue-to-back-expanded-early-voting-voting-by-mail-voter-id/"
+    },
+    "verdict": "Weak — each party's package is a remedy for the other party's conduct",
+    "failedTest": "High topline, low floor; fails symmetry",
+    "gate": null,
+    "section": null,
+    "summary": "Weak floor on both sides: 32% of Republicans back no-excuse mail voting (Pew, 2025) and 37% of Democrats back proof of citizenship to register (Marist, 2026).",
+    "pollQuestion": null,
+    "pathBack": {
+      "wording": "Every citizen has the right to vote in federal elections; states may require free government-issued photo identification, and every citizen shall have at least two weeks of early in-person voting and a paper record of the ballot",
+      "threshold": "Tested as one favor/oppose item at a low-salience moment and re-tested after the next change in House control. Reopen if the lower party's support is 60% or better on the paired wording and the gap between the two parties is under 20 points in two independent polls."
+    },
+    "memo": "research/rejected/VOTING_RIGHTS_REJECTED.md",
+    "page": "/rejected/voting-rights",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": "2026-08-06",
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "Suggested by Ryan Ward as a target area."
+  },
+  {
+    "id": "electoral-college",
+    "title": "Electoral College and Presidential Elections",
+    "kind": "category",
+    "parent": null,
+    "status": "rejected",
+    "tags": [],
+    "floor": {
+      "rep": 46,
+      "dem": 80,
+      "ind": null,
+      "overall": 63,
+      "pollster": "Pew Research Center",
+      "year": 2024,
+      "url": "https://www.pewresearch.org/short-reads/2024/09/25/majority-of-americans-continue-to-favor-moving-away-from-electoral-college/"
+    },
+    "verdict": "Weak — borderline Moderate on the general question and far below it in amendment wording (26-43% R)",
+    "failedTest": "Low floor that moves with outcomes",
+    "gate": null,
+    "section": null,
+    "summary": "A national popular vote drew 46% of Republicans and 80% of Democrats (Pew, 2024), and 26-43% of Republicans under amendment wording; each party's support has moved with who last won the presidency.",
+    "pollQuestion": null,
+    "pathBack": null,
+    "memo": "research/rejected/ELECTORAL_COLLEGE_REJECTED.md",
+    "page": "/rejected/electoral-college",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": "2026-08-06",
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "pathBackNote": "No specific poll wording named. The memo's condition: an independent pollster showing 55% or more of Republicans favoring an amendment to elect the president by national popular vote in head-to-head wording, and the number holding in a poll fielded after a presidential election the Democratic nominee won. Republican support has climbed since 2020, so a re-check after 2028 is warranted."
+  },
+  {
+    "id": "court-expansion",
+    "title": "Supreme Court Expansion",
+    "kind": "category",
+    "parent": null,
+    "status": "rejected",
+    "tags": [],
+    "floor": {
+      "rep": 39,
+      "dem": 62,
+      "ind": 52,
+      "overall": 50,
+      "pollster": "Marquette Law School Poll",
+      "year": 2026,
+      "url": "https://law.marquette.edu/assets/community/poll/MLSPSC32/MLSPSC32PressRelease_CourtIssues.pdf"
+    },
+    "verdict": "Weak — a Weak floor under every independent measurement since 2019",
+    "failedTest": "High topline, low floor; statutory; fails symmetry for expansion",
+    "gate": null,
+    "section": null,
+    "summary": "Adding justices draws 39% of Republicans and 62% of Democrats (Marquette, 2026); it also needs no amendment and cannot be written to bind both parties.",
+    "pollQuestion": null,
+    "pathBack": {
+      "wording": "the number of justices may be changed only by a two-thirds vote of both houses, effective after the next presidential election",
+      "threshold": "45% support or better in each party, plus replication after the Court's appointing-party majority changes hands, plus a version introduced with cosponsors from both parties. All three are required."
+    },
+    "memo": "research/rejected/COURT_EXPANSION_REJECTED.md",
+    "page": "/rejected/court-expansion",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": "2026-08-06",
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "Adjacent to the scotus-supermajority candidate. The path back describes a size rule binding both parties, not expansion itself, which fails the why-an-amendment test outright."
+  },
+  {
+    "id": "congressional-structure",
+    "title": "Senate and Congressional Structure",
+    "kind": "category",
+    "parent": null,
+    "status": "rejected",
+    "tags": [],
+    "floor": {
+      "rep": 19,
+      "dem": 45,
+      "ind": 32,
+      "overall": 32,
+      "pollster": "Pew Research Center",
+      "year": 2023,
+      "url": "https://www.pewresearch.org/politics/2023/09/19/how-americans-view-proposals-to-change-the-political-system/"
+    },
+    "verdict": "Weak — the topline itself is a minority, and the Republican floor has never exceeded 19% in three independent measurements across five years",
+    "failedTest": "Low floor; symmetry; Article V equal-suffrage bar",
+    "gate": null,
+    "section": null,
+    "summary": "More senators for larger states drew 19% of Republicans and 45% of Democrats (Pew, 2023); Article V's equal-suffrage clause bars proportionality without every losing state's consent.",
+    "pollQuestion": null,
+    "pathBack": null,
+    "memo": "research/rejected/CONGRESSIONAL_STRUCTURE_REJECTED.md",
+    "page": "/rejected/congressional-structure",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": "2026-08-06",
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "pathBackNote": "No path back for proportional representation in the Senate or abolition: even a Strong floor could not produce ratification without every losing state's consent under Article V's equal-suffrage proviso. One narrower variant has a stated threshold — an item on senators chosen by state legislatures rather than by voters would need a Democratic floor of at least 45%, and no such figure is known."
+  },
+  {
+    "id": "election-technology",
+    "title": "Election Technology and Modernization",
+    "kind": "category",
+    "parent": null,
+    "status": "rejected",
+    "tags": [
+      "statutory"
+    ],
+    "floor": {
+      "rep": 15,
+      "dem": 39,
+      "ind": null,
+      "overall": 28,
+      "pollster": "AP-NORC",
+      "year": 2020,
+      "url": "https://apnorc.org/wp-content/uploads/2020/09/topline_september_pdf.pdf"
+    },
+    "verdict": "Weak — not bipartisan and not popular; no majority in either party since 2022",
+    "failedTest": "Not popular; statutory",
+    "gate": null,
+    "section": null,
+    "summary": "Allowing people to vote entirely online drew 28% support overall (AP-NORC, 2020) and no majority in either party since 2022; the technology items that are popular are statutory standards Congress already sets.",
+    "pollQuestion": null,
+    "pathBack": null,
+    "memo": "research/rejected/ELECTION_TECHNOLOGY_REJECTED.md",
+    "page": "/rejected/election-technology",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": "2026-08-06",
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "pathBackNote": "No path back as an amendment; the category belongs on the statutory track. Reopening even the polling question would need the internet-voting item at 60% or better in both parties across two consecutive federal cycles, plus a reversal of the National Academies and CISA/EAC/FBI/NIST findings.",
+    "note": "The bipartisan technology items — paper backups, audits, nonpartisan administration — can be pursued statutorily without touching the slate."
+  },
+  {
+    "id": "civic-information",
+    "title": "Civic Information and Informed Citizenry",
+    "kind": "category",
+    "parent": null,
+    "status": "rejected",
+    "tags": [
+      "statutory"
+    ],
+    "floor": null,
+    "verdict": "Unpolled — no credible national data on any version of the proposal",
+    "failedTest": "Existential test; statutory, not constitutional",
+    "gate": null,
+    "section": null,
+    "summary": "Never polled as an amendment; it fails the existential-problem and why-an-amendment tests, and both parties distrust the AI mechanism (54% of Republicans and 49% of Democrats expect AI to harm the news, Pew, 2024).",
+    "pollQuestion": null,
+    "pathBack": {
+      "wording": "a constitutional right of every person to access the records and proceedings of the federal government, with exemptions set by law",
+      "threshold": "A floor of 60% or better in the less-supportive party, together with a demonstrated statutory failure. Both are required."
+    },
+    "memo": "research/rejected/CIVIC_INFORMATION_REJECTED.md",
+    "page": "/rejected/civic-information",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": "2026-08-06",
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "The founder's framing: a great idea for a new company or non-profit. If good-government data is ever pursued, this rides with it under a transparency heading rather than an AI heading."
+  },
+  {
+    "id": "self-pardon-ban",
+    "title": "Presidential self-pardon ban",
+    "kind": "clause",
+    "parent": "pardon-reform",
+    "status": "candidate",
+    "tags": [],
+    "floor": {
+      "rep": 61,
+      "dem": 85,
+      "ind": 71,
+      "overall": 72,
+      "pollster": "YouGov (independent national)",
+      "year": 2026,
+      "url": "https://d3nkl3psvxxpe9.cloudfront.net/documents/Presidential_Pardons_poll_results_P22Pm9s.pdf"
+    },
+    "verdict": "Strong (2026) / Weak (2024) — instrument-dependent",
+    "failedTest": null,
+    "gate": "Reopened; one independent forward-looking replication clearing 60% R",
+    "section": null,
+    "summary": "A single sentence barring the President from granting a reprieve or pardon to himself or herself — rejected as a category on 2026-08-06 at a 43% Republican floor, reopened on 2026-08-18 as a candidate clause after an independent reading of the same wording at 61% R / 85% D.",
+    "pollQuestion": {
+      "wording": "Some have proposed adding a sentence to the Constitution reading: 'The President may not grant a reprieve or pardon to himself or herself.' This would apply to every future president, of either party, including presidents you vote for. Would you support or oppose adding this to the Constitution?",
+      "followUps": [
+        "Costs named: supporters say no one should be able to pardon himself and that leaving the question unsettled invites a crisis no court has ever resolved; opponents say the Constitution may already forbid it, no president has ever tried, and amending the Constitution over a hypothetical is a poor use of the process",
+        "Symmetry probe: the core item in split samples, one naming no president and one reading 'including a president of your own party who you believe was prosecuted unfairly'",
+        "Norm anchor, carried unchanged: 'Do you think it is appropriate or inappropriate for a president to pardon themself?'",
+        "Remedy anchor, carried unchanged: 'Would you support or oppose prohibiting a president from pardoning themself?' — the verbatim YouGov 6B/7B item, so the commissioned instrument extends the two-point series to three"
+      ],
+      "threshold": "60% among Republicans and 60% among Democrats on the core item, holding at 55% in both parties after the costs-named follow-up. A 45-59% Republican result keeps it a candidate and argues for drafting it as a severable section, given the family ban already in the article reads 57% R. Below 45% among Republicans moves it back to rejected.",
+      "verbatim": true
+    },
+    "pathBack": null,
+    "memo": "research/candidates/clauses/PARDON_SELF_PARDON_CLAUSE.md",
+    "page": "/candidates/self-pardon-ban",
+    "parentPage": "/amendments/pardon-reform",
+    "since": "2026-08-18",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [
+      "pardon-reform"
+    ],
+    "supersedes": [
+      "pardon-self-pardon"
+    ],
+    "twinOf": null,
+    "subItems": [],
+    "note": "Rejected as a category on 2026-08-06 (43% R / 81% D, YouGov Aug 15-19 2024) on the polling alone — the category passed all three non-polling tests then and passes them now. Reopened on 2026-08-18 on the founder's decision after the independent YouGov survey of May 13-15 2026 read the identical wording at 61% R / 85% D / 72% overall, clearing the ~60% R reopening threshold the rejection memo set. The rejection record is retained at research/rejected/SELF_PARDON_BAN_REJECTED.md. The abuse-vs-remedy gap narrowed from twenty points to three between the two waves; the open failure mode is instrument dependence, since one reading cannot show the eighteen-point Republican move is durable."
+  },
+  {
+    "id": "qualified-immunity",
+    "title": "Eliminate Qualified Immunity for Policing",
+    "kind": "category",
+    "parent": null,
+    "status": "rejected",
+    "tags": [
+      "statutory"
+    ],
+    "floor": {
+      "rep": 42,
+      "dem": 79,
+      "ind": 64,
+      "overall": 63,
+      "pollster": "Cato Institute/YouGov",
+      "year": 2020,
+      "url": "https://www.cato.org/survey-reports/poll-63-americans-favor-eliminating-qualified-immunity-police"
+    },
+    "verdict": "Weak and stale — every credible number is from June 2020 to May 2022, and the one re-poll declined",
+    "failedTest": "High topline, low floor; stale; statutory",
+    "gate": null,
+    "section": null,
+    "summary": "Eliminating qualified immunity so police can be sued drew 42% of Republicans and 79% of Democrats (Cato/YouGov, 2020); no fresh independent poll exists, and Congress could end the doctrine by statute.",
+    "pollQuestion": null,
+    "pathBack": {
+      "wording": "A government official who violates a person's constitutional rights may be sued for damages, and not knowing the law is not a defense.",
+      "threshold": "60% of Republicans with 2026-or-later fieldwork, surviving a costs-named follow-up ('even if some officers say they will fear lawsuits') without dropping into the Moderate band — and even then a Strong floor moves it to the statutory list rather than to a target, because a statute can end the doctrine."
+    },
+    "memo": "research/rejected/QUALIFIED_IMMUNITY_REJECTED.md",
+    "page": "/rejected/qualified-immunity",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": "2026-08-06",
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "The one framing that works — hold officers accountable for misconduct — polls at 84% (64% R). One of the founder's original four seed categories."
+  },
+  {
+    "id": "balanced-budget",
+    "title": "Balanced Budget",
+    "kind": "category",
+    "parent": null,
+    "status": "rejected",
+    "tags": [],
+    "floor": {
+      "rep": 84,
+      "dem": 68,
+      "ind": 65,
+      "overall": 72,
+      "pollster": "Economist/YouGov (abstract question)",
+      "year": 2026,
+      "url": "https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_GpnDRNm.pdf"
+    },
+    "verdict": "Strong but shallow — 72% in the abstract collapsing to 31% overall when entitlement cuts are specified (Fox News, 2011)",
+    "failedTest": "Depth: collapses under trade-offs",
+    "gate": null,
+    "section": null,
+    "summary": "Requiring a balanced federal budget draws 84% of Republicans and 68% of Democrats in the abstract (Economist/YouGov, 2026), but support fell to 31% in the one poll that named entitlement cuts.",
+    "pollQuestion": null,
+    "pathBack": {
+      "wording": "a constitutional amendment requiring a balanced federal budget, even if that meant [a specified mix of spending cuts to major programs and tax increases], with a supermajority waiver for war or recession",
+      "threshold": "About 60% in both parties, with the Democratic number surviving the benefit-cut condition and the Republican number surviving the tax condition. A weaker but useful signal is a rerun in which the drop from unconditioned to conditioned support is under 15 points in each party."
+    },
+    "memo": "research/rejected/BALANCED_BUDGET_REJECTED.md",
+    "page": "/rejected/balanced-budget",
+    "parentPage": null,
+    "since": "2026-08-06",
+    "decidedOn": "2026-08-06",
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "Democrats defect on benefit cuts, Republicans on tax increases: each half of any binding rule loses a party. On the corpus's commissioned-polling list."
+  },
+  {
+    "id": "statehood",
+    "title": "Statehood for DC and Puerto Rico",
+    "kind": "category",
+    "parent": null,
+    "status": "rejected",
+    "tags": [
+      "statutory"
+    ],
+    "floor": {
+      "rep": 13,
+      "dem": 64,
+      "ind": 32,
+      "overall": null,
+      "pollster": "Yahoo News/YouGov (DC)",
+      "year": 2021,
+      "url": "https://yougov.com/en-us/articles/35011-democrats-support-washington-dc-statehood"
+    },
+    "verdict": "Weak — DC at 13% R, the weakest floor anywhere in the corpus; Puerto Rico at 41% R with admission available by statute",
+    "failedTest": "Weak floor and symmetry (DC); why-an-amendment (Puerto Rico, since admission is a statute under Article IV Section 3)",
+    "gate": null,
+    "section": null,
+    "summary": "Two jurisdictions, two results: DC statehood drew 13% of Republicans and 64% of Democrats (Yahoo News/YouGov, 2021); Puerto Rico drew 41% and 79% (YouGov, 2024) and can be admitted by statute.",
+    "pollQuestion": null,
+    "pathBack": {
+      "wording": "Whether the roughly 700,000 U.S. citizens who live in the District should have voting representation in the House and Senate — with a follow-up naming the mechanism: statehood; representation by constitutional amendment without statehood; or retrocession to Maryland.",
+      "threshold": "The remedy, not merely the grievance, must clear 60% among Republicans. No poll reopens Puerto Rico as an amendment category: the failing test there is why-an-amendment, not the floor."
+    },
+    "memo": "research/rejected/STATEHOOD_REJECTED.md",
+    "page": "/rejected/statehood",
+    "parentPage": null,
+    "since": "2026-08-18",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "Moved candidate to rejected by founder decision 2026-08-18. The path back for DC — representation without statehood — has never been polled."
+  },
+  {
+    "id": "filibuster-reform",
+    "title": "Filibuster reform",
+    "kind": "category",
+    "parent": null,
+    "status": "rejected",
+    "tags": [],
+    "floor": {
+      "rep": 8,
+      "dem": 30,
+      "ind": 16,
+      "overall": 17,
+      "pollster": "Monmouth University Polling Institute",
+      "year": 2022,
+      "url": "https://www.monmouth.edu/polling-institute/reports/monmouthpoll_us_012722/"
+    },
+    "verdict": "Weak — both directions fail; 8% R for elimination and 19% D for keeping it as is",
+    "failedTest": "Regime-coded; both directions fail symmetry",
+    "gate": null,
+    "section": null,
+    "summary": "Ending the filibuster drew 8% of Republicans and 30% of Democrats (Monmouth, 2022), and keeping it as is drew 19% of Democrats; every reading and every roll call has tracked Senate control.",
+    "pollQuestion": null,
+    "pathBack": {
+      "wording": "a supermajority should be required to block a bill from receiving a vote — asked alongside: Should the Constitution require that a bill can pass the Senate with a simple majority, no matter which party holds the majority?",
+      "threshold": "At least 45% in both parties on the same design, holding across two waves fielded under different Senate majorities."
+    },
+    "memo": "research/rejected/FILIBUSTER_REFORM_REJECTED.md",
+    "page": "/rejected/filibuster-reform",
+    "parentPage": null,
+    "since": "2026-08-18",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "Moved candidate to rejected by founder decision 2026-08-18. The two 48-52 votes on the decision of the chair (2013, 2017) with the parties exchanged are the cleanest regime-coding case in the corpus."
+  },
+  {
+    "id": "expand-house",
+    "title": "Expanding the House of Representatives",
+    "kind": "category",
+    "parent": null,
+    "status": "rejected",
+    "tags": [
+      "statutory"
+    ],
+    "floor": {
+      "rep": 23,
+      "dem": 35,
+      "ind": null,
+      "overall": 29,
+      "pollster": "Pew Research Center",
+      "year": 2023,
+      "url": "https://www.pewresearch.org/politics/2023/09/19/how-americans-view-proposals-to-change-the-political-system/"
+    },
+    "verdict": "Weak — 23% R on the plain question and 11% R when the costs are named (2006)",
+    "failedTest": "Weak floor; depth tested and failed; why-an-amendment (the size of the House has been a statute since 1929)",
+    "gate": null,
+    "section": null,
+    "summary": "Increasing the size of the House drew 23% of Republicans and 35% of Democrats (Pew, 2023), and 11% of Republicans when the costs were named; its size has been a statute since 1929.",
+    "pollQuestion": null,
+    "pathBack": {
+      "wording": "The number of House seats has been fixed at 435 by law since 1929, while the average district has grown to about 760,000 people. Would you favor or oppose setting the size of the House by a fixed formula tied to population — for instance, so that the average district is about the size of the smallest state — which would add roughly 140 seats?",
+      "threshold": "A Republican floor of 45% or better, asked alongside a costs-named follow-up naming the added members and their salaries and offices; 60% or better in both parties would make it a target on the polling. A statutory enlargement must be tried first."
+    },
+    "memo": "research/rejected/HOUSE_EXPANSION_REJECTED.md",
+    "page": "/rejected/expand-house",
+    "parentPage": null,
+    "since": "2026-08-18",
+    "decidedOn": "2026-08-18",
+    "alsoListedUnder": [],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "Moved candidate to rejected by founder decision 2026-08-18. Sourced from the r/PoliticalDiscussion thread mining; symmetric by simulation, which is the category's strongest result."
+  }
+]

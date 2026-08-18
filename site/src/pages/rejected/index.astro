@@ -1,0 +1,228 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+const registry = await getCollection('registry').catch(() => []);
+const mdx = (await getCollection('rejected')).sort(
+  (a, b) => a.data.order - b.data.order
+);
+const amendments = await getCollection('amendments');
+const titleOf = (slug: string) =>
+  amendments.find((a) => a.id === slug)?.data.title ?? slug;
+
+type Row = {
+  key: string;
+  title: string;
+  failedTest: string | null;
+  summary: string | null;
+  href: string | null;
+};
+
+const rejectedEntries = registry.filter((e) => (e.data as any).status === 'rejected');
+
+const rowFromRegistry = (d: any, id: string): Row => ({
+  key: id,
+  title: d.title ?? id,
+  failedTest: d.failedTest ?? null,
+  summary: d.summary ?? d.verdict ?? null,
+  href: d.page ?? (d.parent ? `/amendments/${d.parent}` : null),
+});
+
+const categories: Row[] = rejectedEntries.length
+  ? rejectedEntries
+      .filter((e) => (e.data as any).kind === 'category')
+      .map((e) => rowFromRegistry(e.data as any, e.id))
+      .sort((a, b) => a.title.localeCompare(b.title))
+  : mdx.map((r) => ({
+      key: r.id,
+      title: r.data.title,
+      failedTest: r.data.failedTest,
+      summary: r.data.summary,
+      href: `/rejected/${r.id}`,
+    }));
+
+const clauseRows = rejectedEntries
+  .filter((e) => (e.data as any).kind === 'clause')
+  .map((e) => ({ parent: (e.data as any).parent as string | null, row: rowFromRegistry(e.data as any, e.id) }));
+
+const clauseGroups = [...new Set(clauseRows.map((c) => c.parent).filter(Boolean))]
+  .map((parent) => ({
+    parent: parent as string,
+    title: titleOf(parent as string),
+    rows: clauseRows.filter((c) => c.parent === parent).map((c) => c.row),
+  }))
+  .sort((a, b) => a.title.localeCompare(b.title));
+---
+
+<Base
+  title="Rejected"
+  description="What couldn't pass the full-spectrum test — the evidence, the test each failed, and what would bring it back."
+>
+  <div class="container">
+    <h1>Rejected</h1>
+    <p class="intro">
+      These aren't judgments that the issues don't matter — they're judgments
+      that a proposal can't pass the full-spectrum test, and that including it
+      would code the whole project as partisan. Each category below has its own
+      page: the proposal as commonly framed, the best available evidence with
+      party breakdowns, the specific test it failed, the framings we tested,
+      and the path back. A rejection can be revisited if survey or salon work
+      reveals an unexpected consensus framing.
+    </p>
+
+    <section class="group" aria-labelledby="categories-heading">
+      <h2 id="categories-heading">Rejected categories</h2>
+      {
+        categories.length ? (
+          <ul class="entry-list">
+            {categories.map((r) => (
+              <li>
+                <h3>{r.href ? <a href={r.href}>{r.title}</a> : r.title}</h3>
+                {r.failedTest && <p class="meta"><span class="test">{r.failedTest}</span></p>}
+                {r.summary && <p>{r.summary}</p>}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p class="empty">No categories have been rejected yet.</p>
+        )
+      }
+    </section>
+
+    <section class="group" aria-labelledby="clause-heading">
+      <h2 id="clause-heading">Rejected provisions inside proposed amendments</h2>
+      <p class="group-note">
+        Clauses drafted for an amendment already on the list and kept out of its
+        text, for the same reasons a whole category is kept off it.
+      </p>
+      {
+        clauseGroups.length ? (
+          clauseGroups.map((group) => (
+            <div class="clause-group">
+              <h3>
+                <a href={`/amendments/${group.parent}`}>{group.title}</a>
+              </h3>
+              <ul class="entry-list">
+                {group.rows.map((r) => (
+                  <li>
+                    <h4>{r.href ? <a href={r.href}>{r.title}</a> : r.title}</h4>
+                    {r.failedTest && <p class="meta"><span class="test">{r.failedTest}</span></p>}
+                    {r.summary && <p>{r.summary}</p>}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        ) : (
+          <p class="empty">
+            No rejected provisions are recorded yet. Each amendment page lists
+            what was kept out of its text under “What we left out.”
+          </p>
+        )
+      }
+    </section>
+
+    <p class="see-also">
+      Also see the <a href="/candidates">candidates</a> — the open pipeline of
+      proposals under consideration — the wording that would resolve them on
+      the <a href="/candidates/polling-questions">polling questions</a> page,
+      and the <a href="/polling">polling evidence</a>. How proposals are
+      accepted, held, or rejected is described on the
+      <a href="/mission">mission page</a>.
+    </p>
+  </div>
+</Base>
+
+<style>
+  .intro,
+  .group-note,
+  .see-also,
+  .empty {
+    max-width: var(--measure);
+  }
+
+  .group {
+    margin-top: var(--space-4);
+  }
+
+  .group > h2 {
+    font-size: var(--step-2);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: var(--space-1);
+  }
+
+  .group-note {
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+  }
+
+  .clause-group {
+    margin-top: var(--space-3);
+  }
+
+  .clause-group > h3 {
+    font-size: var(--step-1);
+    margin-bottom: 0;
+  }
+
+  .clause-group > h3 a {
+    text-decoration: none;
+  }
+
+  .clause-group > h3 a:hover {
+    text-decoration: underline;
+  }
+
+  .entry-list {
+    list-style: none;
+    padding: 0;
+    max-width: var(--measure);
+  }
+
+  .entry-list > li {
+    border-bottom: 1px solid var(--rule);
+    padding-block: var(--space-3);
+  }
+
+  .entry-list h3,
+  .entry-list h4 {
+    font-size: var(--step-1);
+    margin-bottom: 0.25rem;
+  }
+
+  .entry-list h4 {
+    font-size: var(--step-0);
+  }
+
+  .entry-list h3 a,
+  .entry-list h4 a {
+    text-decoration: none;
+  }
+
+  .entry-list h3 a:hover,
+  .entry-list h4 a:hover {
+    text-decoration: underline;
+  }
+
+  .meta {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin: 0 0 var(--space-1);
+  }
+
+  .test {
+    font-family: var(--font-serif);
+    color: var(--accent-text);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+
+  .empty {
+    color: var(--ink-soft);
+  }
+
+  .see-also {
+    margin-top: var(--space-4);
+  }
+</style>

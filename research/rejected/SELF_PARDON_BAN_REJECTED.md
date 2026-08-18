@@ -1,6 +1,10 @@
 # Presidential Self-Pardon Ban — Rejected Category Memo
 
+*Reopened 2026-08-18 as a candidate clause — see [candidates/clauses/PARDON_SELF_PARDON_CLAUSE.md](../candidates/clauses/PARDON_SELF_PARDON_CLAUSE.md); this memo is retained as the 2026-08-06 rejection record.*
+
 *Rejected 2026-08-06. Memo written 2026-08-17 to substantiate the rejection under [SELECTION_METHOD.md](../SELECTION_METHOD.md). Every figure below was verified against the linked source on the date of writing.*
+
+*Changelog: 2026-08-18 — figures re-verified; 3 corrections applied in place (git history has the diff).*
 
 **Verdict in one line:** 43% R (YouGov, Aug 2024, "prohibiting a president from pardoning themself") — Weak floor; fails high-topline/low-floor, incumbent/beneficiary coding, and abuse-vs-remedy gap (§4.3) — path back is a forward-looking, both-parties re-poll clearing ~60% R, the first poll the foundation intends to commission on the pardon package.
 
@@ -96,11 +100,3 @@ Absent those, the category stays rejected: the principle rides inside the pardon
 - [SELECTION_METHOD.md](../SELECTION_METHOD.md) · [CATEGORIES.md](../CATEGORIES.md) · [POLLING_RESEARCH.md](../POLLING_RESEARCH.md) · [AMENDMENT_IDEAS.md](../AMENDMENT_IDEAS.md) · [PARDON_RESEARCH.md](../PARDON_RESEARCH.md)
 - [Cornell LII, U.S. Constitution, Article II §2 ("Power to grant Reprieves and Pardons")](https://www.law.cornell.edu/constitution/articleii)
 - [Cornell LII, Constitution Annotated, ArtII.S2.C1.3.9 — Presidential Self-Pardons](https://www.law.cornell.edu/constitution-conan/article-2/section-2/clause-1/presidential-self-pardons)
-
-## Review Additions (2026-08-17)
-
-*Added after an outside completeness review; every item below was verified against the linked source before inclusion.*
-
-- Corrected: §1 and §3 said the constitutional text "is silent" on self-pardons; the passages now say the text "does not expressly address" a self-pardon, because there is a textual argument on each side. The Constitution Annotated (ArtII.S2.C1.3.9): "Whether Presidents may pardon themselves is an unresolved legal question for which there is no judicial precedent"; one side argues that a "grant is something given to another person" (the President's power is to "grant Reprieves and Pardons" — [Cornell LII, Article II §2](https://www.law.cornell.edu/constitution/articleii)), the other that "a textual interpretation of the Pardon Clause provides the strongest argument that a self-pardon is not prohibited by the Constitution" — [Cornell LII, Constitution Annotated, Presidential Self-Pardons](https://www.law.cornell.edu/constitution-conan/article-2/section-2/clause-1/presidential-self-pardons). Bearing on §5.3: none — an unresolved question with no judicial precedent is still one only an amendment can settle; the fourth accepted answer stands.
-- Tone: §4's closing sentence ("a remedy-and-timing failure, the most recoverable kind") was reworded to state the two §4.3 failure modes and their named paths back without characterizing the proposal's prospects.
-- Label: §3's failure-mode label now reads "incumbent / regime coding — here, beneficiary coding," matching the mission's standard name; the explanation is unchanged.

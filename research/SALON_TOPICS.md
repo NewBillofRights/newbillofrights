@@ -1,6 +1,6 @@
 # Salon Topics
 
-Running list of discussion topics for the monthly Los Angeles salon ([Roadmap step 4](ROADMAP.md)). Each topic should be a genuine open question where discussion changes a decision — not a briefing. Mark topics with the date discussed and the outcome once held.
+Running list of discussion topics for the monthly Los Angeles salon ([Roadmap step 4](ROADMAP.md)). Each topic should be a genuine open question where discussion changes a decision — not a briefing. Mark topics with the date discussed and the outcome once held. Who to invite and how: [SALON_OUTREACH_PLAN.md](SALON_OUTREACH_PLAN.md).
 
 ## Queued
 

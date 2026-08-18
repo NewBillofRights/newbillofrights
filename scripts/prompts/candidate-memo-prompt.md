@@ -29,7 +29,7 @@ Unlike a rejected memo, this memo ends with a **recommendation** (Section 5) —
 - Traps to avoid (SELECTION_METHOD §11): a cumulative or forced-choice figure is not a standalone favor/oppose number; broad-battery numbers are not evidence for a specific mechanism; a floor measured while "your side" holds the power flips when the other side holds it — say when a number is regime-coded and, where the data exist, show the flip.
 - Overlap discipline: if part of your category already lives in a target amendment (see CATEGORIES.md targets and the named research doc), say precisely which part is already covered and evaluate only the remainder; a recommendation to "fold into Target N" must name the target and the clause-level idea.
 - Nonpartisan discipline: never characterize either party's position as right or wrong; when a category has abuse examples, pair both sides' or use none; do not use "populist / elites / establishment / woke / radical / weaponized / landslide" (say "wide margin"). Names of officeholders belong in citations, not in prose as examples.
-- Length: roughly 1,800–2,600 words of body (the rejected-memo depth). Depth over breadth; every sentence load-bearing.
+- Length: no target. Depth over breadth; every sentence load-bearing; include every verified figure that bears on a test, and nothing that does not.
 
 ## Memo template (use these exact H2 headings, in this order)
 

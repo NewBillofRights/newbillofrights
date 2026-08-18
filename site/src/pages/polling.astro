@@ -1,0 +1,282 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import FullSpectrumChart from '../components/FullSpectrumChart.astro';
+
+const polling = await getCollection('polling');
+const amendments = (await getCollection('amendments')).sort(
+  (a, b) => a.data.order - b.data.order
+);
+const hasPlaceholders = polling.some((p) => p.data.placeholder);
+
+// Group by amendment, in amendment order; within an amendment, follow the
+// page's own pollingKeys order (its "Why it can pass" ordering), then the rest.
+const groups = amendments.map((a) => {
+  const keys = a.data.pollingKeys;
+  const entries = polling
+    .filter((p) => p.data.amendment === a.id)
+    .sort((x, y) => {
+      const ix = keys.indexOf(x.id);
+      const iy = keys.indexOf(y.id);
+      return (ix === -1 ? 99 : ix) - (iy === -1 ? 99 : iy);
+    });
+  return { amendment: a, entries };
+});
+const ungrouped = polling.filter(
+  (p) => !amendments.some((a) => a.id === p.data.amendment)
+);
+
+const floorOf = (s: { dem: number; rep: number }) =>
+  s.rep <= s.dem ? { value: s.rep, party: 'R' } : { value: s.dem, party: 'D' };
+
+const rows = [...groups.flatMap((g) => g.entries), ...ungrouped];
+---
+
+<Base
+  title="Polling"
+  description="Cross-party polling support for each proposed amendment, with party breakdowns and each proposal's bipartisan floor."
+>
+  <div class="container">
+    <h1>Polling</h1>
+    <p class="intro">
+      The evidence behind the full-spectrum test. For each proposal: support
+      among Democrats, Republicans, and independents, and the proposal's
+      <strong>bipartisan floor</strong> — the lower of the two parties' support,
+      which is the number we judge a proposal by. Sources are linked wherever
+      they are public; where a poll was commissioned by an advocacy
+      organization, the amendment page says so.
+    </p>
+    {
+      hasPlaceholders && (
+        <p class="placeholder-note">
+          Some numbers below are placeholders pending final sourcing.
+        </p>
+      )
+    }
+
+    {
+      groups.map(({ amendment, entries }) =>
+        entries.length ? (
+          <section class="group">
+            <h2>
+              <a href={`/amendments/${amendment.id}`}>{amendment.data.title}</a>
+            </h2>
+            <div class="chart-grid">
+              {entries.map((p) => (
+                <div class="chart-cell">
+                  <FullSpectrumChart
+                    proposal={`${p.data.proposal} — ${p.data.source}, ${p.data.year}${p.data.placeholder ? ' (placeholder)' : ''}`}
+                    support={p.data.support}
+                  />
+                </div>
+              ))}
+            </div>
+          </section>
+        ) : null
+      )
+    }
+
+    <section class="table-section" aria-labelledby="table-heading">
+      <h2 id="table-heading">All numbers</h2>
+      <p class="table-note">
+        The same data as a table. Click a column heading to sort.
+      </p>
+      <div class="table-wrap">
+        <table id="polling-table">
+          <thead>
+            <tr>
+              <th scope="col" data-sort="text">Proposal</th>
+              <th scope="col" data-sort="text">Amendment</th>
+              <th scope="col" data-sort="num">Dem</th>
+              <th scope="col" data-sort="num">Rep</th>
+              <th scope="col" data-sort="num">Ind</th>
+              <th scope="col" data-sort="num">Overall</th>
+              <th scope="col" data-sort="num">Floor</th>
+              <th scope="col" data-sort="text">Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              rows.map((p) => {
+                const floor = floorOf(p.data.support);
+                const a = amendments.find((x) => x.id === p.data.amendment);
+                return (
+                  <tr>
+                    <td>{p.data.proposal}</td>
+                    <td class="amendment">
+                      {a ? <a href={`/amendments/${a.id}`}>{a.data.title}</a> : p.data.amendment}
+                    </td>
+                    <td data-value={p.data.support.dem}>{p.data.support.dem}%</td>
+                    <td data-value={p.data.support.rep}>{p.data.support.rep}%</td>
+                    <td data-value={p.data.support.ind ?? -1}>
+                      {p.data.support.ind != null ? `${p.data.support.ind}%` : '—'}
+                    </td>
+                    <td data-value={p.data.support.overall ?? -1}>
+                      {p.data.support.overall != null ? `${p.data.support.overall}%` : '—'}
+                    </td>
+                    <td data-value={floor.value} class="floor">
+                      {floor.value}% <span class="party">({floor.party})</span>
+                    </td>
+                    <td class="source">
+                      {p.data.url ? (
+                        <a href={p.data.url} rel="noopener">
+                          {p.data.source}
+                        </a>
+                      ) : (
+                        p.data.source
+                      )}{' '}
+                      ({p.data.year})
+                    </td>
+                  </tr>
+                );
+              })
+            }
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <p>
+      How these numbers are used to accept, hold, or reject a category is
+      described on the <a href="/mission">mission page</a>; the categories that
+      failed the test are on the
+      <a href="/rejected">rejected categories</a> page.
+    </p>
+  </div>
+</Base>
+
+<script>
+  // Progressive enhancement: sortable columns. The table is complete and
+  // readable without this.
+  const table = document.getElementById('polling-table');
+  if (table) {
+    const tbody = table.tBodies[0];
+    table.querySelectorAll('th[data-sort]').forEach((th, index) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'sort-button';
+      button.textContent = th.textContent ?? '';
+      th.textContent = '';
+      th.appendChild(button);
+      button.addEventListener('click', () => {
+        const type = th.getAttribute('data-sort');
+        const current = th.getAttribute('aria-sort');
+        const dir = current === 'ascending' ? 'descending' : 'ascending';
+        table.querySelectorAll('th').forEach((h) => h.removeAttribute('aria-sort'));
+        th.setAttribute('aria-sort', dir);
+        const rows = Array.from(tbody.rows);
+        rows.sort((a, b) => {
+          const ca = a.cells[index];
+          const cb = b.cells[index];
+          let cmp: number;
+          if (type === 'num') {
+            cmp = Number(ca.getAttribute('data-value')) - Number(cb.getAttribute('data-value'));
+          } else {
+            cmp = (ca.textContent ?? '').localeCompare(cb.textContent ?? '');
+          }
+          return dir === 'ascending' ? cmp : -cmp;
+        });
+        rows.forEach((r) => tbody.appendChild(r));
+      });
+    });
+  }
+</script>
+
+<style>
+  .intro {
+    max-width: var(--measure);
+  }
+
+  .group {
+    margin-top: var(--space-4);
+  }
+
+  .group h2 {
+    font-size: var(--step-2);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: var(--space-1);
+  }
+
+  .group h2 a {
+    text-decoration: none;
+  }
+
+  .group h2 a:hover {
+    text-decoration: underline;
+  }
+
+  .chart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    gap: var(--space-3) var(--space-4);
+    margin-top: var(--space-2);
+  }
+
+  .table-section {
+    margin-top: var(--space-5);
+  }
+
+  .table-note {
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    margin-top: var(--space-2);
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.92rem;
+  }
+
+  th,
+  td {
+    text-align: left;
+    padding: var(--space-1) var(--space-2);
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+
+  th {
+    font-family: var(--font-serif);
+    white-space: nowrap;
+  }
+
+  th :global(.sort-button) {
+    all: unset;
+    cursor: pointer;
+    font: inherit;
+  }
+
+  th :global(.sort-button):hover,
+  th :global(.sort-button):focus-visible {
+    text-decoration: underline;
+  }
+
+  th[aria-sort='ascending'] :global(.sort-button)::after {
+    content: ' ↑';
+  }
+
+  th[aria-sort='descending'] :global(.sort-button)::after {
+    content: ' ↓';
+  }
+
+  .floor {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .party {
+    font-weight: 400;
+    color: var(--ink-soft);
+  }
+
+  .amendment,
+  .source {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+  }
+</style>

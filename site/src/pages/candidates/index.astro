@@ -1,0 +1,305 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+// Registry-driven when the registry is populated; the MDX collection is the
+// fallback so the page renders the standalone candidates either way.
+const registry = await getCollection('registry').catch(() => []);
+const mdx = (await getCollection('candidates')).sort(
+  (a, b) => a.data.order - b.data.order
+);
+const amendments = await getCollection('amendments');
+const titleOf = (slug: string) =>
+  amendments.find((a) => a.id === slug)?.data.title ?? slug;
+
+type Row = {
+  key: string;
+  title: string;
+  gate: string | null;
+  summary: string | null;
+  href: string | null;
+  subItems: { key: string; title: string; gate: string | null; href: string | null }[];
+};
+
+const rowFromRegistry = (d: any, id: string): Row => ({
+  key: id,
+  title: d.title ?? id,
+  gate: d.gate ?? null,
+  summary: d.summary ?? d.verdict ?? null,
+  href: d.page ?? (d.parent ? `/amendments/${d.parent}` : null),
+  subItems: (d.subItems ?? [])
+    .filter((s: any) => s && s.status === 'candidate')
+    .map((s: any) => ({
+      key: s.id,
+      title: s.title ?? s.id,
+      gate: s.gate ?? null,
+      href: s.page ?? null,
+    })),
+});
+
+const candidateEntries = registry.filter((e) => (e.data as any).status === 'candidate');
+
+const standalone: Row[] = candidateEntries.length
+  ? candidateEntries
+      .filter((e) => (e.data as any).kind === 'category')
+      .map((e) => rowFromRegistry(e.data as any, e.id))
+      .sort((a, b) => a.title.localeCompare(b.title))
+  : mdx.map((c) => ({
+      key: c.id,
+      title: c.data.title,
+      gate: c.data.gate,
+      summary: c.data.summary,
+      href: `/candidates/${c.id}`,
+      subItems: [],
+    }));
+
+// Clause candidates, grouped by the proposed amendment they were drafted for.
+const clauseRows = candidateEntries
+  .filter((e) => (e.data as any).kind === 'clause')
+  .map((e) => ({ parent: (e.data as any).parent as string | null, row: rowFromRegistry(e.data as any, e.id) }));
+
+const clauseGroups = [...new Set(clauseRows.map((c) => c.parent).filter(Boolean))]
+  .map((parent) => ({
+    parent: parent as string,
+    title: titleOf(parent as string),
+    rows: clauseRows.filter((c) => c.parent === parent).map((c) => c.row),
+  }))
+  .sort((a, b) => a.title.localeCompare(b.title));
+
+const hasPollQuestions = candidateEntries.some(
+  (e) =>
+    (e.data as any).pollQuestion ||
+    ((e.data as any).subItems ?? []).some((s: any) => s?.pollQuestion)
+);
+---
+
+<Base
+  title="Candidates"
+  description="The open pipeline: proposals under consideration, evaluated by the same criteria as the amendments we pursue and the categories we rejected — and the evidence that would move each one."
+>
+  <div class="container">
+    <h1>Candidates</h1>
+    <p class="intro">
+      A candidate is neither accepted nor rejected. It has not yet cleared — or
+      failed — the full-spectrum test, and is waiting on specific evidence,
+      usually fresh polling with party breakdowns of the exact proposal. Every
+      candidate below is held to the same criteria as the amendments we pursue
+      and the categories we rejected. Some are whole categories with their own
+      page; others are single provisions drafted for an amendment already on
+      the list and held back from its text. When the evidence arrives, a
+      candidate moves — to an amendment, into an existing amendment, or to the
+      rejected list — and the record of why stays here.
+    </p>
+
+    <section class="group" aria-labelledby="standalone-heading">
+      <h2 id="standalone-heading">Standalone candidates</h2>
+      {
+        standalone.length ? (
+          <ul class="entry-list">
+            {standalone.map((row) => (
+              <li>
+                <h3>{row.href ? <a href={row.href}>{row.title}</a> : row.title}</h3>
+                {row.gate && <p class="meta"><span class="gate">{row.gate}</span></p>}
+                {row.summary && <p>{row.summary}</p>}
+                {row.subItems.length > 0 && (
+                  <ul class="sub-list">
+                    {row.subItems.map((sub) => (
+                      <li>
+                        <span class="sub-title">
+                          {sub.href ? <a href={sub.href}>{sub.title}</a> : sub.title}
+                        </span>
+                        {sub.gate && <span class="sub-gate">{sub.gate}</span>}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p class="empty">No standalone candidates are on the list yet.</p>
+        )
+      }
+    </section>
+
+    <section class="group" aria-labelledby="clause-heading">
+      <h2 id="clause-heading">Candidate provisions inside proposed amendments</h2>
+      <p class="group-note">
+        Clauses drafted for an amendment already on the list and held back from
+        its text. Each waits on the same kind of evidence a whole category does.
+      </p>
+      {
+        clauseGroups.length ? (
+          clauseGroups.map((group) => (
+            <div class="clause-group">
+              <h3>
+                <a href={`/amendments/${group.parent}`}>{group.title}</a>
+              </h3>
+              <ul class="entry-list">
+                {group.rows.map((row) => (
+                  <li>
+                    <h4>{row.href ? <a href={row.href}>{row.title}</a> : row.title}</h4>
+                    {row.gate && <p class="meta"><span class="gate">{row.gate}</span></p>}
+                    {row.summary && <p>{row.summary}</p>}
+                    {row.subItems.length > 0 && (
+                      <ul class="sub-list">
+                        {row.subItems.map((sub) => (
+                          <li>
+                            <span class="sub-title">
+                              {sub.href ? <a href={sub.href}>{sub.title}</a> : sub.title}
+                            </span>
+                            {sub.gate && <span class="sub-gate">{sub.gate}</span>}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        ) : (
+          <p class="empty">
+            No candidate provisions are recorded yet. Each amendment page lists
+            what was set aside from its text under “What we left out.”
+          </p>
+        )
+      }
+    </section>
+
+    <p class="see-also">
+      {hasPollQuestions ? (
+        <>
+          The exact wording each candidate is waiting on is set out on the
+          <a href="/candidates/polling-questions">polling questions</a> page.{' '}
+        </>
+      ) : (
+        <>
+          Wording for the surveys these candidates wait on is collected on the
+          <a href="/candidates/polling-questions">polling questions</a> page.{' '}
+        </>
+      )}
+      Also see the <a href="/rejected">rejected categories</a> — what has
+      already moved out, and why — and the <a href="/polling">polling
+      evidence</a>. How proposals are accepted, held, or rejected is described
+      on the <a href="/mission">mission page</a>.
+    </p>
+  </div>
+</Base>
+
+<style>
+  .intro,
+  .group-note,
+  .see-also,
+  .empty {
+    max-width: var(--measure);
+  }
+
+  .group {
+    margin-top: var(--space-4);
+  }
+
+  .group > h2 {
+    font-size: var(--step-2);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: var(--space-1);
+  }
+
+  .group-note {
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+  }
+
+  .clause-group {
+    margin-top: var(--space-3);
+  }
+
+  .clause-group > h3 {
+    font-size: var(--step-1);
+    margin-bottom: 0;
+  }
+
+  .clause-group > h3 a {
+    text-decoration: none;
+  }
+
+  .clause-group > h3 a:hover {
+    text-decoration: underline;
+  }
+
+  .entry-list {
+    list-style: none;
+    padding: 0;
+    max-width: var(--measure);
+  }
+
+  .entry-list > li {
+    border-bottom: 1px solid var(--rule);
+    padding-block: var(--space-3);
+  }
+
+  .entry-list h3,
+  .entry-list h4 {
+    font-size: var(--step-1);
+    margin-bottom: 0.25rem;
+  }
+
+  .entry-list h4 {
+    font-size: var(--step-0);
+  }
+
+  .entry-list h3 a,
+  .entry-list h4 a {
+    text-decoration: none;
+  }
+
+  .entry-list h3 a:hover,
+  .entry-list h4 a:hover {
+    text-decoration: underline;
+  }
+
+  .meta {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin: 0 0 var(--space-1);
+  }
+
+  .gate {
+    font-family: var(--font-serif);
+    color: var(--accent-text);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+
+  .sub-list {
+    list-style: disc;
+    margin: var(--space-1) 0 0;
+    padding-left: var(--space-3);
+    font-size: 0.9rem;
+  }
+
+  .sub-list > li {
+    padding-block: 0.15rem;
+  }
+
+  .sub-title {
+    font-weight: 600;
+  }
+
+  .sub-gate {
+    color: var(--ink-soft);
+  }
+
+  .sub-gate::before {
+    content: ' — ';
+  }
+
+  .empty {
+    color: var(--ink-soft);
+  }
+
+  .see-also {
+    margin-top: var(--space-4);
+  }
+</style>

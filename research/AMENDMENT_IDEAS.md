@@ -2,6 +2,8 @@
 
 Working list of candidate amendment ideas with contributor attribution. Every idea has to pass the mission's test: appeal across the full spectrum from MAGA Republicans to socialist Democrats, and address a problem that threatens the future of the country.
 
+*Changelog: 2026-08-18 — figures re-verified; 1 correction applied in place (git history has the diff). Presidential Self-Pardon Ban un-struck and annotated as reopened (candidate clause of Target 8).*
+
 The category list (target, candidate, and rejected) lives in [CATEGORIES.md](CATEGORIES.md); section numbers below match its Target Categories numbering. Polling evidence and sources live in [POLLING_RESEARCH.md](POLLING_RESEARCH.md). Rejected ideas are kept at the bottom for the record, with attribution.
 
 ## Ideas by Target Category
@@ -17,6 +19,8 @@ The category list (target, candidate, and rejected) lives in [CATEGORIES.md](CAT
 - **Ryan Ward:** Add term limits for the Supreme Court or for all federal appointments; ethics and conflict-of-interest rules.
 - **Michael Hamilton:** Ban on stock trading or prediction-market participation by federal judges.
 - **Ryan Ward:** Recommended the book *Lawless* — about how the Supreme Court lost its way and enshrined minority rule. ("The writing style was a bit annoying... but the legal analysis was spot on IMO.")
+
+- *Folded into Target 2 on 2026-08-18 (confirmation-refusal default, knock-out variant — see [candidates/APPOINTMENT_DEFAULT_CANDIDATE.md](candidates/APPOINTMENT_DEFAULT_CANDIDATE.md)):* **u/musashisamurai, u/mypoliticalvoice, u/Ind132 (Reddit):** Appointment-default rule — nominations not voted on within ~90 days are confirmed by default (or trigger a forced-vote/knockout process); companion clause for the Term Limits package's confirmation-refusal gap; see [REDDIT_THREAD_IDEAS.md](REDDIT_THREAD_IDEAS.md).
 
 ### 3. Term Limits and Ethics Rules for Congress
 
@@ -47,17 +51,22 @@ Added 2026-08-06 from polling research — cooling-off periods poll at 65–74% 
 
 ### 8. Presidential Pardon Transparency and Public Benefit
 
-- Added 2026-08-06 from polling research: bans on pardons for family benefit poll at 77% (64% R / 88% D); an amendment limiting unilateral pardon power at 56–69% depending on source. (Self-pardon ban rejected as a standalone category — see below — though it appears as a component in the draft below.)
-- **Michael Hamilton — Restricting Self-Serving Pardons:** Amend Article II to explicitly ban self-pardons and prohibit presidential clemency for immediate family, co-defendants, campaign associates, or individuals involved in investigations where the president is a subject or target. *(Note: the family/co-defendant components are the bipartisan core per polling; the self-pardon component alone was rejected as partisan-coded in the current alignment.)*
+- Added 2026-08-06 from polling research: bans on pardons for family benefit poll at 77% (64% R / 88% D); an amendment limiting unilateral pardon power at 56–69% depending on source. (Self-pardon ban rejected as a standalone category on 2026-08-06, reopened 2026-08-18 as a candidate clause of this target — see below; it also appears as a component in the draft below.)
+- **Michael Hamilton — Restricting Self-Serving Pardons:** Amend Article II to explicitly ban self-pardons and prohibit presidential clemency for immediate family, co-defendants, campaign associates, or individuals involved in investigations where the president is a subject or target. *(Note: the family/co-defendant components are the bipartisan core per polling; the self-pardon component alone was rejected on 2026-08-06 as partisan-coded in the alignment then measured, and reopened on 2026-08-18 as a candidate clause after an independent 2026 reading at 61% R.)*
 - **Michael Hamilton — Congressional Overrides and Lame-Duck Limits:** Permit a two-thirds vote of Congress to overturn specific executive pardons, or prohibit pardons issued during the post-election "lame-duck" transition period.
 - **Michael Hamilton — Pardon Bribery and Obstruction Clarification:** Enact statutes explicitly establishing that offering or granting a pardon in exchange for witness silence, non-cooperation with prosecutors, or political favors constitutes criminal obstruction of justice and bribery. *(Statutory, not constitutional.)*
 
+### 9. Striking the 13th Amendment's Exception Clause *(accepted as Target 9, 2026-08-18)*
+
+- **u/Hwttdzhwttdz (Reddit):** Strike the 13th Amendment's exception clause ("Slavery is cruel and unusual") — state versions passed by landslides in deep-red states; see [REDDIT_THREAD_IDEAS.md](REDDIT_THREAD_IDEAS.md).
+- Accepted 2026-08-18 after the candidate memo ([candidates/THIRTEENTH_EXCEPTION_CANDIDATE.md](candidates/THIRTEENTH_EXCEPTION_CANDIDATE.md)): 66% R / 85% D on state-measure wording (YouGov 2024); state versions at 61–80% in Republican-voting states. Research memo: [THIRTEENTH_EXCEPTION_RESEARCH.md](THIRTEENTH_EXCEPTION_RESEARCH.md).
+
+---
+
 ## Candidate Ideas (under consideration)
 
-- **Michael Hamilton:** Statehood for DC and Puerto Rico?
-- **Michael Hamilton:** Filibuster reform?
 - **Michael Hamilton:** FBI/DOJ independence?
-- **Michael Hamilton:** Age limits for judiciary and Congress? (Polls at 74–79% with bipartisan support — see [POLLING_RESEARCH.md](POLLING_RESEARCH.md).)
+- **Michael Hamilton:** Age limits for judiciary and Congress? (Polls at 74–79% with bipartisan support — see [POLLING_RESEARCH.md](POLLING_RESEARCH.md).) *2026-08-18: the judicial half (a retirement age for justices) was folded into Target 2 (Term Limits); the congressional half remains a candidate — see [candidates/AGE_LIMITS_CANDIDATE.md](candidates/AGE_LIMITS_CANDIDATE.md).*
 - **Michael Hamilton:** Restrict gerrymandering via fair single-member districting?
 - **Michael Hamilton:** Proportional representation?
 - **Michael Hamilton:** Civil servant independence?
@@ -65,9 +74,6 @@ Added 2026-08-06 from polling research — cooling-off periods poll at 65–74% 
 - **Michael Hamilton:** FCC independence or reform?
 - **Michael Hamilton:** Stopping the Executive Branch from doing unlawful things / avoiding the will of Congress?
 - **Michael Hamilton:** Fusion voting?
-- **u/averageduder (Reddit, top comment 173 pts):** Expand/uncap the House — repeal the 1929 Reapportionment Act, ~1 rep per 300k or the Wyoming Rule; supported by u/musashisamurai, u/One_Term2162 (the "Article the First" angle), u/MorganWick (cube-root rule), u/VaelinX. Full extraction in [REDDIT_THREAD_IDEAS.md](REDDIT_THREAD_IDEAS.md).
-- **u/Hwttdzhwttdz (Reddit):** Strike the 13th Amendment's exception clause ("Slavery is cruel and unusual") — state versions passed by landslides in deep-red states; see [REDDIT_THREAD_IDEAS.md](REDDIT_THREAD_IDEAS.md).
-- **u/musashisamurai, u/mypoliticalvoice, u/Ind132 (Reddit):** Appointment-default rule — nominations not voted on within ~90 days are confirmed by default (or trigger a forced-vote/knockout process); companion clause for the Term Limits package's confirmation-refusal gap; see [REDDIT_THREAD_IDEAS.md](REDDIT_THREAD_IDEAS.md).
 
 - **Alex MacGregor (text message, 2026-08-18):** Raise the threshold for the Supreme Court to strike down an existing federal law — a supermajority of justices (e.g., 6–3 or more) rather than a bare 5–4. His reasoning: a statute has already been passed by the House and Senate and signed by the President, so two branches sworn to uphold the Constitution are in concurrence; letting five justices override all of that against four is "kind of insane." Framing note from Alex: it can be pitched in a right-friendly way — "limiting the power of activist judges." Michael's response: saved, but "the problem is it is new and not popular yet" — no polling with party breakdowns exists, so it can't clear the full-spectrum gate today. Adjacent to the rejected Supreme Court Expansion category (structure of the Court) and to Target 2 (judicial term limits/ethics); would need a poll before it moves.
 
@@ -133,10 +139,11 @@ Rationale for each rejection is in the [CATEGORIES.md](CATEGORIES.md) rejected t
 - **Austin Burns:** Incorporate **bias-free AI systems** to keep citizens informed of changing legislation and how it directly impacts their lives — a game changer for a completely democratic electoral process.
 - Rejected: great idea for a new company or non-profit, but doesn't yet meet the bar for popular support. Adding good-government ideas is interesting, but unclear how to build enough popular support to pass an amendment.
 
-### Presidential Self-Pardon Ban
+### Presidential Self-Pardon Ban — reopened 2026-08-18 (no longer rejected)
 
 - Surfaced in polling research (2026-08-06).
-- Rejected: not bipartisan enough — splits 82% D / 43% R (YouGov, Aug 15–19, 2024; 81/43 unrounded). [corrected 2026-08-18; was: "in the current alignment" (fieldwork is mid-2024, not Dec 2025)] (Pardon transparency and public-benefit limits remain a target — see category 8 above.)
+- Rejected 2026-08-06: not bipartisan enough — split 81% D / 43% R (YouGov, Aug 15–19, 2024; the write-up rounds to 82/65).
+- **Reopened 2026-08-18** as a **candidate clause of Target 8 (Limited Presidential Pardon Reform)**, on the founder's decision: the independent YouGov *Presidential Pardons* survey of May 13–15, 2026 (n=1,127) reads the identical wording at **72% overall / 61% R / 85% D**, clearing the ~60% R reopening threshold the rejection memo set. Gate: one independent forward-looking, both-parties replication clearing 60% R. Clause memo: [candidates/clauses/PARDON_SELF_PARDON_CLAUSE.md](candidates/clauses/PARDON_SELF_PARDON_CLAUSE.md); the 2026-08-06 rejection record is retained at [rejected/SELF_PARDON_BAN_REJECTED.md](rejected/SELF_PARDON_BAN_REJECTED.md).
 
 ### Eliminate Qualified Immunity for Policing
 
@@ -147,6 +154,21 @@ Rationale for each rejection is in the [CATEGORIES.md](CATEGORIES.md) rejected t
 
 - Surfaced in polling research (2026-08-06): 69–80% abstract support including majorities of both parties.
 - Rejected 2026-08-06: strong but shallow — the only trade-off experiment ever run (Fox 2011) shows support collapsing to 31% when entitlement cuts are specified; Democrats defect on benefit cuts, Republicans on tax increases.
+
+### Statehood for DC and Puerto Rico
+
+- ~~**Michael Hamilton:** Statehood for DC and Puerto Rico?~~
+- Rejected 2026-08-18 (from the candidate list, after the candidate memo): DC 13% R / 39% D at best; PR 41–45% R and admission is a statute (Art. IV §3). Memo: [rejected/STATEHOOD_REJECTED.md](rejected/STATEHOOD_REJECTED.md).
+
+### Filibuster Reform
+
+- ~~**Michael Hamilton:** Filibuster reform?~~
+- Rejected 2026-08-18 (from the candidate list): 8% R for elimination, 19% D for the status quo; regime-coded both directions (48–52 twice, parties exchanged). Memo: [rejected/FILIBUSTER_REFORM_REJECTED.md](rejected/FILIBUSTER_REFORM_REJECTED.md).
+
+### Expanding the House of Representatives
+
+- ~~**u/averageduder (Reddit, top comment 173 pts):** Expand/uncap the House — repeal the 1929 Reapportionment Act, ~1 rep per 300k or the Wyoming Rule; supported by u/musashisamurai, u/One_Term2162 (the "Article the First" angle), u/MorganWick (cube-root rule), u/VaelinX. Full extraction in [REDDIT_THREAD_IDEAS.md](REDDIT_THREAD_IDEAS.md).~~
+- Rejected 2026-08-18 (from the candidate list): 23% R / 35% D (Pew 2023), 11% R costs-named (2006); House size is statutory. Memo: [rejected/HOUSE_EXPANSION_REJECTED.md](rejected/HOUSE_EXPANSION_REJECTED.md).
 
 ## Contributors
 

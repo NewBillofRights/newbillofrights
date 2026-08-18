@@ -1,0 +1,331 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+const registry = await getCollection('registry').catch(() => []);
+const amendments = await getCollection('amendments');
+const titleOf = (slug: string) =>
+  amendments.find((a) => a.id === slug)?.data.title ?? slug;
+
+type Block = {
+  key: string;
+  title: string;
+  parent: string | null;
+  gate: string | null;
+  wording: string;
+  followUps: string[];
+  threshold: string | null;
+  verbatim: boolean;
+  href: string | null;
+  memo: string | null;
+};
+
+const blockFrom = (d: any, id: string, parent: string | null): Block | null => {
+  const q = d.pollQuestion;
+  if (!q || !q.wording) return null;
+  return {
+    key: id,
+    title: d.title ?? id,
+    parent,
+    gate: d.gate ?? null,
+    wording: q.wording,
+    followUps: q.followUps ?? [],
+    threshold: q.threshold ?? null,
+    verbatim: q.verbatim !== false,
+    href: d.page ?? (parent ? `/amendments/${parent}` : null),
+    memo: d.page ? null : (d.memo ?? null),
+  };
+};
+
+// One block per candidate entry that has a written question, plus one per
+// separately-gated subItem. The registry holds exactly one gate per idea, so
+// this list has no duplicates.
+const blocks: Block[] = [];
+for (const entry of registry) {
+  const d = entry.data as any;
+  if (d.status !== 'candidate') continue;
+  const parent = d.kind === 'clause' ? (d.parent ?? null) : null;
+  const own = blockFrom(d, entry.id, parent);
+  if (own) blocks.push(own);
+  for (const sub of d.subItems ?? []) {
+    if (!sub || sub.status !== 'candidate') continue;
+    const subBlock = blockFrom(
+      { ...sub, title: sub.title ?? `${d.title}: ${sub.id}` },
+      sub.id,
+      parent ?? d.parent ?? null
+    );
+    if (subBlock) blocks.push(subBlock);
+  }
+}
+blocks.sort(
+  (a, b) =>
+    Number(Boolean(a.parent)) - Number(Boolean(b.parent)) ||
+    a.title.localeCompare(b.title)
+);
+
+// Rejected categories that name a path back: the wording that would reopen them.
+const pathBacks = registry
+  .filter((e) => {
+    const d = e.data as any;
+    return d.status === 'rejected' && (d.pathBack || d.pathBackNote);
+  })
+  .map((e) => {
+    const d = e.data as any;
+    const pb = d.pathBack;
+    return {
+      key: e.id,
+      title: d.title ?? e.id,
+      failedTest: d.failedTest ?? null,
+      wording: typeof pb === 'string' ? pb : (pb?.wording ?? null),
+      threshold: typeof pb === 'object' && pb ? (pb.threshold ?? null) : null,
+      note: d.pathBackNote ?? null,
+      href: d.page ?? null,
+    };
+  })
+  .sort((a, b) => a.title.localeCompare(b.title));
+---
+
+<Base
+  title="Polling questions"
+  description="The survey spec: the exact wording each candidate is waiting on, the follow-ups that test it, and the bipartisan floor it must clear."
+>
+  <div class="container">
+    <h1>Polling questions</h1>
+    <p class="intro">
+      Every candidate on this site is waiting on a measurement, and this page
+      says exactly what the measurement is. Each block below gives the wording
+      of the question that would resolve one candidate, the follow-ups that
+      test whether support survives the costs and trade-offs being named, and
+      the bipartisan floor the result must clear before the proposal is
+      drafted. The wording is written to be forward-looking rather than tied to
+      any current officeholder, to describe a rule that applies to whichever
+      party holds power, and to name the mechanism rather than the slogan —
+      because a question that fails any of those three measures something other
+      than the proposal.
+    </p>
+    <p class="intro">
+      Anyone commissioning or fielding these should keep the wording as written
+      and report crosstabs by party. A topline without a party breakdown cannot
+      answer the question we are asking, which is whether support exists in
+      both parties at once.
+    </p>
+
+    <section aria-labelledby="candidates-heading">
+      <h2 id="candidates-heading">Questions by candidate</h2>
+      {
+        blocks.length ? (
+          blocks.map((b) => (
+            <article class="q-block">
+              <h3>{b.href ? <a href={b.href}>{b.title}</a> : b.title}</h3>
+              <p class="meta">
+                {b.parent && (
+                  <>
+                    A provision drafted for{' '}
+                    <a href={`/amendments/${b.parent}`}>{titleOf(b.parent)}</a>
+                    {b.gate ? ' · ' : ''}
+                  </>
+                )}
+                {b.gate && <span class="gate">{b.gate}</span>}
+              </p>
+              <blockquote class="wording">
+                <p>{b.wording}</p>
+              </blockquote>
+              {!b.verbatim && (
+                <p class="note-line">Working draft — wording not yet finalised.</p>
+              )}
+              {b.followUps.length > 0 && (
+                <>
+                  <p class="label">Follow-ups</p>
+                  <ul class="follow-ups">
+                    {b.followUps.map((f) => (
+                      <li>{f}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+              {b.threshold && (
+                <p class="threshold">
+                  <span class="label-inline">Threshold</span> {b.threshold}
+                </p>
+              )}
+              {!b.href && b.memo && (
+                <p class="note-line">Memo: <code>{b.memo}</code></p>
+              )}
+            </article>
+          ))
+        ) : (
+          <p class="empty">
+            No question wording has been published yet. Each candidate's page
+            states what evidence would move it; the wording is added here as it
+            is written.
+          </p>
+        )
+      }
+    </section>
+
+    <section class="path-back" aria-labelledby="path-back-heading">
+      <h2 id="path-back-heading">Path-back questions for rejected categories</h2>
+      <p class="intro">
+        A rejection is a reading of the present evidence, not a permanent
+        verdict. These categories name the finding that would reopen them, and
+        the same rules apply: keep the wording, report the party crosstabs.
+      </p>
+      {
+        pathBacks.length ? (
+          <ul class="path-back-list">
+            {pathBacks.map((p) => (
+              <li>
+                <h3>{p.href ? <a href={p.href}>{p.title}</a> : p.title}</h3>
+                {p.failedTest && <p class="meta"><span class="gate">{p.failedTest}</span></p>}
+                {p.wording && <blockquote>{p.wording}</blockquote>}
+                {p.threshold && <p class="threshold"><strong>To reopen:</strong> {p.threshold}</p>}
+                {!p.wording && p.note && <p>{p.note}</p>}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p class="empty">
+            No path-back wording is recorded yet. Each rejected category's page
+            states what would bring it back.
+          </p>
+        )
+      }
+    </section>
+
+    <p class="see-also">
+      The candidates themselves are listed on the
+      <a href="/candidates">candidates page</a>; the categories that failed the
+      test are on the <a href="/rejected">rejected categories</a> page; the
+      numbers already in hand are on the <a href="/polling">polling page</a>.
+    </p>
+  </div>
+</Base>
+
+<style>
+  .intro,
+  .empty,
+  .see-also {
+    max-width: var(--measure);
+  }
+
+  section {
+    margin-top: var(--space-4);
+  }
+
+  section > h2 {
+    font-size: var(--step-2);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: var(--space-1);
+  }
+
+  .q-block {
+    border-bottom: 1px solid var(--rule);
+    padding-block: var(--space-3);
+    max-width: var(--measure);
+  }
+
+  .q-block h3 {
+    font-size: var(--step-1);
+    margin-bottom: 0.25rem;
+  }
+
+  .q-block h3 a,
+  .path-back-list h3 a {
+    text-decoration: none;
+  }
+
+  .q-block h3 a:hover,
+  .path-back-list h3 a:hover {
+    text-decoration: underline;
+  }
+
+  .meta {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin: 0 0 var(--space-2);
+  }
+
+  .gate {
+    font-family: var(--font-serif);
+    color: var(--accent-text);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+
+  .wording {
+    border-left: 2px solid var(--accent);
+    margin: 0 0 var(--space-2);
+    padding-left: var(--space-2);
+  }
+
+  .wording p {
+    font-family: var(--font-serif);
+    font-size: var(--step-1);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .label {
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0 0 0.25rem;
+  }
+
+  .label-inline {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-inline-end: 0.4rem;
+  }
+
+  .follow-ups {
+    margin: 0 0 var(--space-2);
+    padding-left: var(--space-3);
+    font-size: 0.95rem;
+  }
+
+  .follow-ups li {
+    padding-block: 0.15rem;
+  }
+
+  .threshold {
+    font-size: 0.95rem;
+    margin: 0;
+  }
+
+  .note-line {
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+  }
+
+  .path-back-list {
+    list-style: none;
+    padding: 0;
+    max-width: var(--measure);
+  }
+
+  .path-back-list > li {
+    border-bottom: 1px solid var(--rule);
+    padding-block: var(--space-3);
+  }
+
+  .path-back-list h3 {
+    font-size: var(--step-0);
+    margin-bottom: 0.25rem;
+  }
+
+  .empty {
+    color: var(--ink-soft);
+  }
+
+  .see-also {
+    margin-top: var(--space-4);
+  }
+</style>

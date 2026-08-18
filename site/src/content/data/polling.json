@@ -334,5 +334,19 @@
     "source": "University of Maryland Program for Public Consultation",
     "url": "https://publicconsultation.org/united-states/foreign-funding-of-ballot-initiatives/",
     "year": 2021
+  },
+  {
+    "id": "thirteenth-state-measure",
+    "proposal": "A state ballot measure ensuring the constitution does not legalize slavery and involuntary servitude as punishments for crime",
+    "amendment": "thirteenth-exception",
+    "support": {
+      "dem": 85,
+      "rep": 66,
+      "ind": 69,
+      "overall": 73
+    },
+    "source": "YouGov",
+    "year": 2024,
+    "url": "https://yougov.com/en-us/articles/50840-poll-2024-state-ballot-measures-workers-rights-abortion-drugs"
   }
 ]

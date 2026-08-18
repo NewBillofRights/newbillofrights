@@ -2,6 +2,8 @@
 
 *Rejected 2026-08-06. Memo written 2026-08-17 to substantiate the rejection under [SELECTION_METHOD.md](../SELECTION_METHOD.md). Every figure below was verified against the linked source on the date of writing.*
 
+*Changelog: 2026-08-18 — figures re-verified; 1 correction applied in place (git history has the diff).*
+
 **Verdict in one line:** 42% (Republicans) on "eliminate qualified immunity so police can be sued," Cato/YouGov July 2020 — Weak; fails high-topline/low-floor, staleness, and framing-dependency, and the why-an-amendment test is weak because the doctrine is statutory — path back is fresh independent fieldwork showing the accountability framing holds ≥60% among Republicans when attached to the actual mechanism.
 
 ## 1. The proposal as commonly framed
@@ -111,6 +113,5 @@ Searched for and not found (2026-08-17): any 2023–2026 national poll on qualif
 
 *Added after an outside completeness review; every item below was verified against the linked source before inclusion.*
 
-- Corrected: §1 and §3 described qualified immunity only as a construction of § 1983. The defense applies equally to *Bivens* damages suits against federal officers — *Harlow v. Fitzgerald* itself was a damages action against senior White House aides, not a § 1983 case ([Cornell LII, 457 U.S. 800](https://www.law.cornell.edu/supremecourt/text/457/800)) — and the passages now say so. No change to the gate result.
 - **The federal-officer side (*Bivens*).** *Bivens v. Six Unknown Named Agents*, 403 U.S. 388 (June 21, 1971), held that a complaint "states a federal cause of action under the Fourth Amendment for which damages are recoverable" against federal agents — a judge-made remedy, not a statute — [Cornell LII](https://www.law.cornell.edu/supremecourt/text/403/388). *Egbert v. Boule* (June 8, 2022) declined to extend *Bivens* to Fourth Amendment excessive-force and First Amendment retaliation claims against a Border Patrol agent, asking "whether there is any reason to think that Congress might be better equipped" to create a damages remedy — [Cornell LII](https://www.law.cornell.edu/supremecourt/text/21-147). Bearing on §5.3: the reviewer suggested this makes the federal-officer half of the problem constitutional rather than statutory. It does not change the answer — the Court's own reasoning treats the remedy as Congress's to supply, and a statute creating a damages action against federal officers without a clearly-established-law defense would reach the same result an amendment would; no court has held that Congress lacks that power. The why-an-amendment test remains weak.
 - Reviewer tone note on "the framing that clears the bar is not the thing an 'eliminate qualified immunity' amendment would draft": not applied — the sentence states the framing-dependency finding, not a view on the merits.
