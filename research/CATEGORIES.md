@@ -26,27 +26,51 @@ In-depth research per target category (US landscape, international models, amend
 
 ## Candidate Categories
 
-Under consideration — not yet accepted or rejected.
+Under consideration — not yet accepted or rejected. Each candidate now has an evidence memo in [`candidates/`](candidates/) written to the same criteria as the target and rejected memos (evidence with party breakdowns · gate result · framings tested · what would resolve it · a **recommendation to the founder**) — added 2026-08-18. Bucket assignments below are unchanged pending the founder's decisions; the recommendations table follows the list.
 
 
-- **Statehood for DC and Puerto Rico?**
-- **Filibuster reform?**
-- **FBI/DOJ independence?**
-- **Civil servant independence?**
-- **Age limits for judiciary and Congress?**
-- **Restrict gerrymandering via fair single-member districting?**
-- **Proportional representation?**
-- **Good government data (Steve Ballmer / USAFacts-style)?**
-- **FCC independence or reform?**
-- **Stopping the Executive Branch from doing unlawful things / avoiding the will of Congress?**
+- **Statehood for DC and Puerto Rico?** *(memo: [candidates/STATEHOOD_CANDIDATE.md](candidates/STATEHOOD_CANDIDATE.md))*
+- **Filibuster reform?** *(memo: [candidates/FILIBUSTER_REFORM_CANDIDATE.md](candidates/FILIBUSTER_REFORM_CANDIDATE.md))*
+- **FBI/DOJ independence?** *(memo: [candidates/DOJ_INDEPENDENCE_CANDIDATE.md](candidates/DOJ_INDEPENDENCE_CANDIDATE.md))*
+- **Civil servant independence?** *(memo: [candidates/CIVIL_SERVICE_CANDIDATE.md](candidates/CIVIL_SERVICE_CANDIDATE.md))*
+- **Age limits for judiciary and Congress?** *(memo: [candidates/AGE_LIMITS_CANDIDATE.md](candidates/AGE_LIMITS_CANDIDATE.md))*
+- **Restrict gerrymandering via fair single-member districting?** *(memo: [candidates/FAIR_DISTRICTING_CANDIDATE.md](candidates/FAIR_DISTRICTING_CANDIDATE.md))*
+- **Proportional representation?** *(memo: [candidates/PROPORTIONAL_REPRESENTATION_CANDIDATE.md](candidates/PROPORTIONAL_REPRESENTATION_CANDIDATE.md))*
+- **Good government data (Steve Ballmer / USAFacts-style)?** *(memo: [candidates/GOOD_GOVERNMENT_DATA_CANDIDATE.md](candidates/GOOD_GOVERNMENT_DATA_CANDIDATE.md))*
+- **FCC independence or reform?** *(memo: [candidates/AGENCY_INDEPENDENCE_CANDIDATE.md](candidates/AGENCY_INDEPENDENCE_CANDIDATE.md))*
+- **Stopping the Executive Branch from doing unlawful things / avoiding the will of Congress?** *(memo: [candidates/EXECUTIVE_LAWFULNESS_CANDIDATE.md](candidates/EXECUTIVE_LAWFULNESS_CANDIDATE.md))*
   - Clarify power-of-the-purse dominance
   - Limit executive privilege for oversight
   - Narrowing executive immunity
-- **Fusion voting?**
-- **Expand / uncap the House of Representatives?** *(added 2026-08-12 from Reddit thread research — see [REDDIT_THREAD_IDEAS.md](REDDIT_THREAD_IDEAS.md); founding-era pedigree via "Article the First"; gate on new polling of Wyoming Rule / cube-root framings)*
-- **Strike the 13th Amendment's exception clause?** *(added 2026-08-12 — red-state landslide ballot precedents (AL ~76%, TN ~79%, UT ~80% for state versions — verify); completes the Bill of Rights arc; see [REDDIT_THREAD_IDEAS.md](REDDIT_THREAD_IDEAS.md))*
-- **Appointment-default rule?** *(added 2026-08-12 — nominations not voted on within a fixed window are confirmed by default, or a forced-vote/knockout process applies; symmetric by construction, answers the Garland-scenario gap in the Term Limits staggering design — likely rides as a companion clause in that package rather than a standalone amendment; unpolled; see [REDDIT_THREAD_IDEAS.md](REDDIT_THREAD_IDEAS.md))*
+- **Fusion voting?** *(memo: [candidates/FUSION_VOTING_CANDIDATE.md](candidates/FUSION_VOTING_CANDIDATE.md))*
+- **Expand / uncap the House of Representatives?** *(added 2026-08-12 from Reddit thread research — see [REDDIT_THREAD_IDEAS.md](REDDIT_THREAD_IDEAS.md); founding-era pedigree via "Article the First"; gate on new polling of Wyoming Rule / cube-root framings; memo: [candidates/HOUSE_EXPANSION_CANDIDATE.md](candidates/HOUSE_EXPANSION_CANDIDATE.md))*
+- **Strike the 13th Amendment's exception clause?** *(added 2026-08-12 — red-state landslide ballot precedents (AL ~76%, TN ~79%, UT ~80% for state versions — verify); completes the Bill of Rights arc; see [REDDIT_THREAD_IDEAS.md](REDDIT_THREAD_IDEAS.md); memo: [candidates/THIRTEENTH_EXCEPTION_CANDIDATE.md](candidates/THIRTEENTH_EXCEPTION_CANDIDATE.md))*
+- **Appointment-default rule?** *(added 2026-08-12 — nominations not voted on within a fixed window are confirmed by default, or a forced-vote/knockout process applies; symmetric by construction, answers the Garland-scenario gap in the Term Limits staggering design — likely rides as a companion clause in that package rather than a standalone amendment; unpolled; see [REDDIT_THREAD_IDEAS.md](REDDIT_THREAD_IDEAS.md); memo: [candidates/APPOINTMENT_DEFAULT_CANDIDATE.md](candidates/APPOINTMENT_DEFAULT_CANDIDATE.md))*
 - **Eminent domain limits for private development (post-*Kelo*)?** *(added 2026-08-18 — suggested by Alex MacGregor as a "layup": very high cross-party support after* Kelo v. City of New London *(2005) — 2006 ballot wave, 40+ state reforms, House 376–38 — but he himself flags it as less important than campaign finance; the open question is the existential-problem test. Research memo: [candidates/EMINENT_DOMAIN_CANDIDATE.md](candidates/EMINENT_DOMAIN_CANDIDATE.md).)*
+
+
+### Candidate memo recommendations (2026-08-18) — awaiting founder decision
+
+Recommendations are the memo authors'; the founder decides and moves the entry. Floors are the lower of R/D on the best-polled core proposal (Strong ≥60 · Moderate 45–59 · Weak <45 · Unpolled). See each memo's §3–§5 and [candidates/REVIEW_LOG_2026-08-18.md](candidates/REVIEW_LOG_2026-08-18.md).
+
+| Candidate | Floor / verdict | What holds it | Recommendation |
+| --- | --- | --- | --- |
+| Age limits | 78% D congressional (Marist 2026); 68% R judicial (Pew 2023) — Strong on the concept; the specific age unpolled | Named cutoff never polled with a party split; §5.1 open for Congress | **Fold** judicial retirement age into Target 2; hold congressional half on a named-age poll |
+| Appointment-default rule | Unpolled mechanism; proxies flip ~50 pts by party 2016→2020 | Never asked; regime-coded proxies | **Fold** knock-out variant into Target 2 as confirmation-refusal default; poll before extending |
+| Executive lawfulness | 37% R appropriations (Marquette 2025) — Weak; privilege unpolled; immunity 54% R (Ipsos 2024) regime-coded | Symmetric two-directions appropriations question never run | **Hold**; gate sub-items separately (appropriations → Target 7 if symmetric poll clears 60% R; drop privilege first) |
+| FBI/DOJ independence | 39–44% R on the only remedy poll (Monmouth 2018) — Weak; diagnosis 53R/58D (Marquette 2026) | Remedy unpolled since 2018; abuse-vs-remedy gap; *Trump v. Slaughter* (2026) makes why-an-amendment pass | **Hold**; top of the commissioned-survey list |
+| Independent-agency insulation (FCC) | 42% R (Marquette July 2026), 54% R eight weeks earlier — Weak, moving | Regime-coded; §5.1 open | **Hold**; forward-looking re-poll after *Slaughter* settles |
+| Civil servant independence | 94% merit-entry principle; contested item R 87→66→78 (2024–26) | Remedy unpolled; §5.3 fails as framed (*Free Enterprise Fund* fn.10; *Elrod/Branti*) | **Hold**; likely statutory list |
+| Statehood — DC | 13% R (YouGov 2021); 39% D (Gallup 2019) — Weak | Floor + symmetry | **Reject** (path back: "representation without statehood," unpolled) |
+| Statehood — Puerto Rico | 41% R (YouGov 2024) — Weak | Admission is a statute (Art. IV §3) | **Reject as amendment category**; statutory list |
+| Filibuster reform | 8% R eliminate (Monmouth 2022) — Weak; both directions fail | Regime-coded (48–52 votes 2013/2017, parties exchanged) | **Hold**; only the inversion framing is unpolled — or reject on symmetry |
+| Fair single-member districting | 57% R diagnosis (Common Cause 2025, advocacy) — Moderate; mechanisms unpolled | Held-back layers of Target 6; support collapses when priced | **Hold**; poll Florida anti-favoritism wording; if ≥60% R, third clause of Target 6 |
+| Proportional representation | Unpolled | 2 U.S.C. §2c is a statute — §5.3 has no answer | **Hold** (or statutory list) |
+| Fusion voting | Unpolled nationally; NJ 55R/61D (FDU 2023) | §5.1 open; statutory path exists (NY, CT) | **Hold** |
+| Good-government data | Unpolled as a mandate; trust in statistics regime-flips (67R/22D 2026) | §5.1 deciding; Evidence Act 2018 answers §5.3 | **Hold** |
+| Expand the House | 23% R (Pew 2023) — Weak; named framings unpolled | Statutory (1929 Act); symmetric by simulation | **Hold**; one poll of Wyoming-Rule / cube-root, then decide |
+| 13th Amendment exception | 66% R (YouGov 2024, state-measure wording) — Strong | §5.1 open; federal clause never polled; wording-sensitive (CA 2024 defeat) | **Hold**; a mission-pillar question for the founder |
+| Eminent domain (post-*Kelo*) | 79% D / 85% R (2005) — Strong but 21 years stale | §5.1 open | Options laid out in memo (accept / hold for fresh poll / reject on §5.1) |
 
 ## Rejected Categories
 

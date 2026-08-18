@@ -4,6 +4,8 @@ Draft constitutional text compiled from the eight category research documents. O
 
 *Revision 2026-08-17: (a) Campaign Finance gains a new Section 5 (power to exclude foreign money; former Section 5 becomes Section 6) after the corpus review found the principle clears the full-spectrum bar (PPC 2021: 77% R / 84% D; Maine Question 2, 86%; H.R. 3535 unanimous House voice vote, July 2026) and that* Citizens United *expressly reserved the question for foreign-controlled domestic entities. (b) Redistricting Section 2's court exception now reaches violations of state constitutions and laws, so state courts keep the mid-decade remedy they used against a Republican map (Pennsylvania 2018) and a Democratic map (New York 2022).*
 
+*Revision 2026-08-18 (founder-directed, after the implementation pass surfaced the gaps — see each memo's "Implementation" §3(f) and HANDOFF §1c): (a) Campaign Finance §5 now names elections on ballot measures (the foreign-money evidence — Maine Question 2, PPC 2021 — is ballot-measure evidence); §6 adds that no law held invalid before ratification is revived by the article. (b) Term Limits §2 adds an early-vacancy rule (the appointee serves the remainder of the term) and exempts Justices in office at ratification, matching the "What we left out" commitment. (c) Ethics §1 defines "covered officers"; new §6 gives Section 1 a one-year effective date and a one-year compliance window for anyone who later assumes a covered office (Congress may shorten it) — the divestment window. (d) Privacy: new §8 makes the article govern retention and use after ratification without making pre-ratification acquisitions unlawful. (e) Lobbying: new §5 confines §§1–2 to persons who leave office after ratification. (f) Redistricting §2 adds "by whatever authority the law provides" (court-drawn maps count as established); §3 now keys to the 2030 enumeration and later — the prior wording deferred the article a decade if ratification landed after Census Day — and its voiding clause is scoped to those districts, so pre-2030 maps are neither reached nor disturbed. (g) Executive Compliance §1 binds "the United States and all its officers" (agencies as well as officers). (h) Pardon Reform §§1, 2, 4 say "granted by the President"; §1 names the President as publisher; §5 defines "reprieve or pardon" to include commutations.*
+
 ## 1. Campaign Finance
 
 **Section 1.** To secure political equality, the integrity of government, and free and fair elections, Congress and the States may regulate and set reasonable, viewpoint-neutral limits on the raising and spending of money to influence elections, including contributions to candidates and expenditures made in their support or opposition.
@@ -14,21 +16,21 @@ Draft constitutional text compiled from the eight category research documents. O
 
 **Section 4.** In the regulation of contributions and expenditures to influence elections, Congress and the States may distinguish between natural persons and corporations or other artificial entities created by law.
 
-**Section 5.** Congress and the States may prohibit foreign governments, foreign nationals, and any entity owned or controlled by them from contributing or spending money to influence elections in the United States.
+**Section 5.** Congress and the States may prohibit foreign governments, foreign nationals, and any entity owned or controlled by them from contributing or spending money to influence elections in the United States, including elections on ballot measures.
 
-**Section 6.** Nothing in this article shall be construed to grant any power to abridge the freedom of speech or of the press, including news reporting, commentary, and editorial content, regardless of the speaker's form of organization. Congress and the States shall have power to enforce this article by appropriate legislation.
+**Section 6.** Nothing in this article shall be construed to grant any power to abridge the freedom of speech or of the press, including news reporting, commentary, and editorial content, regardless of the speaker's form of organization; nor shall any law held invalid before the ratification of this article be revived by it. Congress and the States shall have power to enforce this article by appropriate legislation.
 
 ## 2. Term Limits
 
 **Section 1.** No person shall be elected to the Senate more than twice, nor to the House of Representatives more than six times; and no term to which a person was elected before the ratification of this article shall be counted.
 
-**Section 2.** Justices of the Supreme Court shall be appointed as heretofore, and shall hold their offices during good behaviour, but shall exercise the judicial power of the Supreme Court for a single term of eighteen years, one such term commencing in each odd-numbered year; thereafter they may continue in judicial office as Congress shall by law provide.
+**Section 2.** Justices of the Supreme Court shall be appointed as heretofore, and shall hold their offices during good behaviour, but shall exercise the judicial power of the Supreme Court for a single term of eighteen years, one such term commencing in each odd-numbered year; a Justice appointed to fill a vacancy shall serve the remainder of the term; thereafter they may continue in judicial office as Congress shall by law provide. This section shall not apply to any Justice holding office at the time of its ratification.
 
 **Section 3.** No amendment to, or law affecting, the limitations of this article shall apply to any person holding office at the time of its adoption, nor to any person elected or appointed within four years thereafter.
 
 ## 3. Ethics
 
-**Section 1.** No person holding the office of President or Vice President, no Senator or Representative, and no Justice or judge of the United States shall, during their continuance in office, purchase, sell, or hold any individual security, digital asset, or contract of speculation whose value their official conduct may affect, other than through a diversified fund or qualified blind trust as Congress shall by law provide.
+**Section 1.** No person holding the office of President or Vice President, no Senator or Representative, and no Justice or judge of the United States (in this article, "covered officers") shall, during their continuance in office, purchase, sell, or hold any individual security, digital asset, or contract of speculation whose value their official conduct may affect, other than through a diversified fund or qualified blind trust as Congress shall by law provide.
 
 **Section 2.** The President and Vice President shall be subject to the laws of the United States governing conflicts of interest and financial disclosure to the same extent as other civil officers, except that recusal shall not be required of the President where the duty to execute the office admits of no substitute.
 
@@ -37,6 +39,8 @@ Draft constitutional text compiled from the eight category research documents. O
 **Section 4.** Ethics rules for covered officers shall be administered and enforced by processes independent of the officers they govern; no chamber, court, or officer shall be the final judge of their own compliance.
 
 **Section 5.** Covered officers shall annually make public disclosure of their finances, and of every gift or benefit above a minimal value, as Congress shall by law provide; willful concealment shall be punishable by law.
+
+**Section 6.** Section 1 shall take effect one year after the ratification of this article; a person who thereafter assumes a covered office shall comply with Section 1 within one year of assuming it, or within such shorter period as Congress shall by law provide.
 
 ## 4. Privacy
 
@@ -54,6 +58,8 @@ Draft constitutional text compiled from the eight category research documents. O
 
 **Section 7.** Nothing in this article shall abridge the freedom of speech or of the press. Congress shall have power to enforce this article by appropriate legislation.
 
+**Section 8.** This article governs the retention and use, after its ratification, of personal information however acquired; it does not render unlawful any acquisition completed before its ratification.
+
 ## 5. Lobbying
 
 **Section 1.** No person who has served as a Senator, Representative, or officer of the United States in a senior position defined by law shall, within five years after leaving such office, receive compensation for advocating before, or advising others in advocating before, the Congress or the executive agencies of the United States on behalf of any other person or entity. This section shall not be construed to abridge the right of any person to petition the Government on their own behalf, or without compensation on behalf of others.
@@ -64,28 +70,30 @@ Draft constitutional text compiled from the eight category research documents. O
 
 **Section 4.** The Congress shall enforce this article by appropriate legislation, which shall provide civil and criminal penalties and shall vest investigative authority in an officer whose independence is protected by law; and no provision of this article may be waived, exempted, or suspended by executive order or by rule of either House.
 
+**Section 5.** Sections 1 and 2 shall apply only to persons who leave the offices named therein after the ratification of this article.
+
 ## 6. Redistricting
 
 **Section 1.** The right of the people to choose their representatives being prior to the power of representatives to choose their voters, districts shall be drawn to serve the equal suffrage of the people and not the advantage of any incumbent or party.
 
-**Section 2.** Districts for the election of Representatives in Congress, and for the election of members of any State legislature, shall be established once following each decennial enumeration, and shall not thereafter be altered until the next enumeration, except as a court of competent jurisdiction shall require to remedy a violation of this Constitution, of the laws of the United States, or of the constitution or laws of the State.
+**Section 2.** Districts for the election of Representatives in Congress, and for the election of members of any State legislature, shall be established once following each decennial enumeration, by whatever authority the law provides, and shall not thereafter be altered until the next enumeration, except as a court of competent jurisdiction shall require to remedy a violation of this Constitution, of the laws of the United States, or of the constitution or laws of the State.
 
-**Section 3.** This article shall apply to all districts established following the first decennial enumeration conducted after its ratification; no district established or altered other than in conformity with this article shall thereafter be given effect.
+**Section 3.** This article shall apply to all districts established on the basis of the decennial enumeration of 2030 or of any later enumeration; no such district established or altered other than in conformity with this article shall be given effect.
 
 ## 7. Executive Compliance with the Courts
 
-**Section 1.** A judgment or order of the Supreme Court of the United States binds all officers of the United States, including the President, to whom it applies. A judgment or order of any other court of the United States likewise binds the officers to whom it applies unless and until it is stayed, reversed, or modified by a court of competent jurisdiction; no officer may suspend, disregard, or refuse to execute such a judgment or order on the ground of the officer's own view of its lawfulness.
+**Section 1.** A judgment or order of the Supreme Court of the United States binds the United States and all its officers, including the President, to whom it applies. A judgment or order of any other court of the United States likewise binds the United States and the officers to whom it applies unless and until it is stayed, reversed, or modified by a court of competent jurisdiction; no officer may suspend, disregard, or refuse to execute such a judgment or order on the ground of the officer's own view of its lawfulness.
 
 **Section 2.** Nothing in this article shall be construed to abridge the right of any officer to appeal, to seek a stay or modification of any judgment or order, or to advocate in good faith for a change in law.
 
 ## 8. Limited Presidential Pardon Reform
 
-**Section 1.** Every reprieve or pardon granted shall be published, together with the name of the recipient, the offenses covered, and a statement of the reasons for the grant, and shall be reported to Congress. No reprieve or pardon shall take effect until so published.
+**Section 1.** Every reprieve or pardon granted by the President shall be published by the President, together with the name of the recipient, the offenses covered, and a statement of the reasons for the grant, and shall be reported to Congress. No reprieve or pardon shall take effect until so published.
 
-**Section 2.** Every reprieve or pardon shall name the individual to whom it is granted and specify the offenses to which it applies; no reprieve or pardon shall extend to offenses not yet committed at the time of the grant.
+**Section 2.** Every reprieve or pardon granted by the President shall name the individual to whom it is granted and specify the offenses to which it applies; no reprieve or pardon shall extend to offenses not yet committed at the time of the grant.
 
 **Section 3.** The President may not grant a reprieve or pardon to his or her spouse, or to any relative of the President or the President's spouse within the third degree of kinship, or to the spouse of any such relative.
 
-**Section 4.** A reprieve or pardon granted in exchange for anything of value, or for the purpose of shielding the President from legal liability or advancing the President's private financial interest, is void; and the acceptance of anything of value in return for the grant of a reprieve or pardon may be punished as bribery notwithstanding any grant.
+**Section 4.** A reprieve or pardon granted by the President in exchange for anything of value, or for the purpose of shielding the President from legal liability or advancing the President's private financial interest, is void; and the acceptance of anything of value in return for the grant of a reprieve or pardon may be punished as bribery notwithstanding any grant.
 
-**Section 5.** Nothing in this article shall be construed to diminish the power to grant reprieves, pardons, or commutations to any person not described herein.
+**Section 5.** In this article, "reprieve or pardon" includes a commutation of sentence. Nothing in this article shall be construed to diminish the power to grant reprieves, pardons, or commutations to any person not described herein.

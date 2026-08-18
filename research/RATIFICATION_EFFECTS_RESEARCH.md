@@ -103,10 +103,11 @@ Legislatures do not have to wait for ratification to prepare for it.
   article." Twentieth Amendment §5: "Sections 1 and 2 shall take effect on the 15th day of October
   following the ratification of this article." Twenty-second: exempted the sitting President. —
   [National Archives, Amendments 11–27](https://www.archives.gov/founding-docs/amendments-11-27)
-- The Foundation's drafts (research/PROPOSED_AMENDMENTS.md) use the same tools: Term Limits §1
-  counts no term "to which a person was elected before the ratification of this article";
-  Redistricting §3 applies "to all districts established following the first decennial enumeration
-  conducted after its ratification"; Pardon Reform §1 makes publication a condition of a pardon
+- The Foundation's drafts (research/PROPOSED_AMENDMENTS.md, as revised 2026-08-18) use the same tools: Term Limits §1
+  counts no term "to which a person was elected before the ratification of this article" and §2 exempts
+  Justices in office at ratification; Ethics §6 delays §1 one year; Redistricting §3 applies from districts
+  established on the 2030 enumeration; Lobbying §5 reaches only those who leave office after ratification;
+  Privacy §8 governs retention and use going forward; Pardon Reform §1 makes publication a condition of a pardon
   taking effect; Campaign Finance §6, Privacy §7, and Lobbying §4 carry enforcement clauses
   (Lobbying §4 additionally directs that the enforcement statute "shall provide civil and criminal
   penalties" and an independent investigator).

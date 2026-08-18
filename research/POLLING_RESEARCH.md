@@ -135,16 +135,16 @@ Rejected on this evidence (2026-08-06): **Eliminate Qualified Immunity** (floor 
 
 - Eliminate QI so police can be sued: **63% (42% R / 79% D / 64% I)** — [Cato/YouGov, July 2020](https://www.cato.org/survey-reports/poll-63-americans-favor-eliminating-qualified-immunity-police); 58% of Republicans *oppose*.
 - Civilians need the power to sue police for misconduct: **66% (45% R / 84% D)** — [Pew, June 2020 (n=4,708)](https://www.pewresearch.org/politics/2020/07/09/majority-of-public-favors-giving-civilians-the-power-to-sue-police-officers-for-misconduct/).
-- End QI: **59% (46% R / 73% D / 59% I)** — [Vox/Data for Progress, April 2021, via Reason](https://reason.com/2021/06/07/can-republicans-be-persuaded-to-restrict-qualified-immunity/); as part of the George Floyd Justice in Policing Act: 56% (39% R / 73% D) — [Data for Progress, March 2021](https://www.dataforprogress.org/blog/2021/3/12/voters-support-justice-in-policing-act) (progressive pollster).
-- UMD PPC deliberative (July 2020): ~62% (40% R), though 61% of R rated it at least "tolerable" — [via Reason](https://reason.com/2021/06/07/can-republicans-be-persuaded-to-restrict-qualified-immunity/).
-- KEY REFRAME: officers should be "held accountable for misconduct, even if unaware their actions were illegal": **84% (64% R / 91% D / 75% I)** — [Cato/YouGov 2020](https://www.cato.org/survey-reports/poll-63-americans-favor-eliminating-qualified-immunity-police). Accountability framing wins Republicans; "eliminate QI"/"sue police" loses them.
-- Academic retest (Oct 2020, pub. Jan 2026): ~45/46 split on keeping QI; support for suits highly scenario-dependent — [*Policing* (Oxford)](https://academic.oup.com/policing/article/doi/10.1093/police/paag021/8688018) (MTurk convenience sample).
+- End QI: **59% (46% R / 73% D / 59% I)** — [Vox/Data for Progress, April 2021, via Reason](https://reason.com/2021/06/07/can-republicans-be-persuaded-to-restrict-qualified-immunity/); QI asked standalone: 56% (39% R / 73% D) — Data for Progress/The Appeal, April 23–25, 2021, a separate poll from [DFP's March 2021 Justice in Policing Act release](https://www.dataforprogress.org/blog/2021/3/12/voters-support-justice-in-policing-act) (progressive pollster). [corrected 2026-08-18; was: "as part of the George Floyd Justice in Policing Act", "March 2021"]
+- UMD PPC deliberative (July 2020): 63% (~40–41% R / 64% I / 84% D; 58% R oppose), though 56% of R rated it at least "tolerable" — PPC's own report; [via Reason](https://reason.com/2021/06/07/can-republicans-be-persuaded-to-restrict-qualified-immunity/), whose 61% does not match. [corrected 2026-08-18; was: ~62% (40% R); 61% of R "tolerable"]
+- KEY REFRAME: officers should be "held accountable for misconduct, even if unaware their actions were illegal": **79% (64% R / 91% D / 75% I)** — [Cato/YouGov 2020](https://www.cato.org/survey-reports/poll-63-americans-favor-eliminating-qualified-immunity-police). Accountability framing wins Republicans; "eliminate QI"/"sue police" loses them. [corrected 2026-08-18; was: 84% overall]
+- Academic retest (Oct 2020, pub. May 20, 2026 [corrected 2026-08-18; was: pub. Jan 2026]): ~45/46 split on keeping QI; support for suits highly scenario-dependent — [*Policing* (Oxford)](https://academic.oup.com/policing/article/doi/10.1093/police/paag021/8688018) (MTurk convenience sample).
 
 #### Nuances & caveats
 
-- **Least bipartisan target category.** R support for elimination is 39–46% in every credible poll; gaps run 34–39 pts.
-- All headline numbers are from the post-George Floyd window (2020–21). UMass Amherst found support already sliding by [April 2021](https://www.umass.edu/news/article/new-national-umass-amherst-poll-finds-decreasing-support-police-reform-black-lives) (59%→54%), and **no major national poll has re-asked since** — current support is likely lower than every number above.
-- Strategic implication: as framed ("eliminate qualified immunity"), this fails the full-spectrum test on current evidence. The accountability framing (84%, 64% R) is the only version that clears the bar. **The category was rejected 2026-08-06 on this evidence**; it can return if reframed around accountability and validated with fresh polling.
+- **Least bipartisan target category.** R support for elimination is 28–46% in every credible poll; gaps run 34–39 pts. [corrected 2026-08-18; was: 39–46%]
+- All headline numbers are from the post-George Floyd window (2020–21). UMass Amherst found support already sliding from 59% in [April 2021](https://www.umass.edu/news/article/new-national-umass-amherst-poll-finds-decreasing-support-police-reform-black-lives) to 54% by May 5–9, 2022 (R 30%→28%, D 84%→77%), and **no major national poll has re-asked since** [corrected 2026-08-18; was: "by April 2021 (59%→54%)"] — current support is likely lower than every number above.
+- Strategic implication: as framed ("eliminate qualified immunity"), this fails the full-spectrum test on current evidence. The accountability framing (79%, 64% R) is the only version that clears the bar. [corrected 2026-08-18; was: 84%] **The category was rejected 2026-08-06 on this evidence**; it can return if reframed around accountability and validated with fresh polling.
 
 ### 6. Lobbying / Revolving-Door Restrictions
 
@@ -170,9 +170,9 @@ Corroboration and context:
 
 ### Rejected 2026-08-06: Balanced Budget
 
-- BBA: **80% (83% R / 79% D / 76% I)** — Harvard CAPS/Harris, July 2023, via [NSJ/Gingrich summary](https://nsjonline.com/article/2025/07/gingrich-the-american-people-want-a-balanced-budget/) (party split not verifiable on pollster's own site).
-- BBA: **70% (74% R / 67% D / 70% I)** — [America's New Majority Project, 2025](https://americasnewmajorityproject.com/analysis-americans-want-a-return-to-balanced-budgets/) (Gingrich-affiliated advocacy); companion release: voters want balance [without raising taxes or cutting benefits](https://americasnewmajorityproject.com/voters-want-congress-to-balance-the-budget-without-raising-taxes-or-cutting-benefits/).
-- BBA: **69%** — [Morning Consult/Cato via Newsweek, June 2026](https://www.newsweek.com/how-americans-would-change-the-constitution-new-poll-12152648) (no party split); **72%** — [Economist/YouGov, June 2026](https://yougov.com/en-us/articles/54990-trumps-job-approval-rebounds-americans-lack-confidence-in-elections-abortion-views-and-more-june-13-15-2026-economist-yougov-poll).
+- BBA: **80% (83% R / 79% D / 77% I)** — Harvard CAPS/Harris, July 2023, via [NSJ/Gingrich summary](https://nsjonline.com/article/2025/07/gingrich-the-american-people-want-a-balanced-budget/) (party split verified on the pollster's own crosstab, table 143). [corrected 2026-08-18; was: 76% I; "party split not verifiable on pollster's own site"]
+- BBA: **70% (74% R / 67% D / 70% I)** — [America's New Majority Project, Feb 4, 2022 report (McLaughlin, Jan 13–18, 2022)](https://americasnewmajorityproject.com/analysis-americans-want-a-return-to-balanced-budgets/) (Gingrich-affiliated advocacy); ANMP's 2025 poll (July 21–24, 2025) is 69% (80% R / 62% D / 65% I) [corrected 2026-08-18; was: figures dated "2025"]; companion release: voters want balance [without raising taxes or cutting benefits](https://americasnewmajorityproject.com/voters-want-congress-to-balance-the-budget-without-raising-taxes-or-cutting-benefits/).
+- BBA: **69% (77% R / 69% D / 62% I)** — [Morning Consult/Cato via Newsweek, June 2026](https://www.newsweek.com/how-americans-would-change-the-constitution-new-poll-12152648) (party split in Cato's crosstabs); **72% (84% R / 68% D / 65% I)** — [Economist/YouGov, June 2026](https://yougov.com/en-us/articles/54990-trumps-job-approval-rebounds-americans-lack-confidence-in-elections-abortion-views-and-more-june-13-15-2026-economist-yougov-poll) (table 13C). [corrected 2026-08-18; was: "(no party split)" for Cato; no split for Economist/YouGov]
 - ⚠️ THE TRADE-OFF TEST: BBA favored 72–20 in the abstract → **31% favor / 63% oppose** if it required major Medicare/Social Security cuts (R: 82% → 47/46; D: 62% → 79% oppose); 62% oppose if it meant major tax increases — [Fox News, June 2011](https://www.foxnews.com/politics/fox-news-poll-balanced-budget-amendment-favored-obamas-stimulus-panned.amp). Old, but the only rigorous trade-off experiment found; **no 2020s pollster has rerun it**.
 - Debt as top-3 priority: **77% (87% R / 73% D / 70% I)** — [Peterson Foundation, Sept 2024](https://www.pgpf.org/press/2024-9-fci-press-release/); Feb 2025: 88% R / 62% D / 71% I — [Peterson](https://www.pgpf.org/press/2025-02-fci-press-release/) (fiscal-hawk foundation).
 - Deficit reduction a "top priority": 57% (71% R / 44% D) Jan 2023; 54% (68% R / 40% D) Jan 2024 — [Pew](https://www.pewresearch.org/short-reads/2023/05/24/6-facts-about-americans-views-of-government-spending-and-the-deficit/), [Pew Feb 2024](https://www.pewresearch.org/politics/2024/02/29/americans-top-policy-priority-for-2024-strengthening-the-economy/).
@@ -205,7 +205,7 @@ Corroboration and context:
 
 - Amend the Constitution to limit pardon power: **56% / 25% opposed (34% R / 76% D)** — [Economist/YouGov, Dec 2025](https://yougov.com/en-us/articles/53702-majorities-americans-say-donald-trump-gives-too-many-pardons-want-to-limit-pardon-power-december-5-8-2025-economist-yougov-poll); **69%** in [Brennan Center, April–May 2026](https://www.brennancenter.org/our-work/analysis-opinion/poll-voters-want-solutions-government-corruption) (advocacy-adjacent, no split).
 - Presidents should NOT pardon **family members**: **77% (64% R / 88% D / 77% I)**; staff/associates: **69% (50% R / 84% D)**; themselves: **78% (59% R / 96% D / 76% I)** — [YouGov for Protect Democracy, May–June 2024](https://protectdemocracy.org/work/survey-jan-6-pardon-opposition/) (advocacy-commissioned; battleground-district sample).
-- Self-pardon norm predates current politics: ~75% of Republicans said a president shouldn't self-pardon if charged — [PBS/NPR/Marist, 2018](https://www.pbs.org/newshour/politics/most-americans-oppose-presidential-self-pardons-poll-finds).
+- Self-pardon norm predates current politics: ~75% of Republicans said a president shouldn't self-pardon if charged — [AP-NORC, June 13–18, 2018 (n=1,109), via AP/PBS](https://www.pbs.org/newshour/politics/most-americans-oppose-presidential-self-pardons-poll-finds); the party split appears only in the AP write-up, not AP-NORC's topline (85% "unacceptable" overall). [corrected 2026-08-18; was: attributed to "PBS/NPR/Marist, 2018"]
 - Both parties' recent pardons are unpopular: Hunter Biden pardon 32% approve (12% R / 65% D) — [Monmouth, Dec 2024](https://www.monmouth.edu/polling-institute/reports/monmouthpoll_us_121124/), ~22% in AP-NORC ([The Hill](https://thehill.com/homenews/administration/5034478-hunter-biden-pardon-approval-poll/)); Trump associate pardons 29% approve — same Monmouth; Jan 6 blanket pardons ~60% oppose — [AP-NORC Jan 2025 via PBS](https://www.pbs.org/newshour/amp/politics/who-supports-trumps-agenda-heres-what-an-ap-norc-poll-shows); violent-crime Jan 6 pardons 83% disapprove — [WaPo/Ipsos via The Hill, Feb 2025](https://thehill.com/homenews/administration/5157765-donald-trump-jan-6-pardons-wapo-survey/); deadly-weapon cases 75% oppose (55% R) — [Protect Democracy/YouGov, Jan 2025](https://protectdemocracy.org/work/new-poll-republicans-oppose-jan-6-pardons/).
 - Specific 2025 pardons: Cuellar 66% disapprove, Hernández 66% disapprove; "Trump gives out too many pardons": 58% (23% R / 88% D) — [Economist/YouGov, Dec 2025](https://yougov.com/en-us/articles/53702-majorities-americans-say-donald-trump-gives-too-many-pardons-want-to-limit-pardon-power-december-5-8-2025-economist-yougov-poll).
 
@@ -275,17 +275,17 @@ Corroboration and context:
 ## Evidence Supporting Rejections
 
 - Direct popular vote for president: **63% overall but 46% R / 80% D** — [Pew, Aug–Sept 2024 survey via July 2026 roundup](https://www.pewresearch.org/short-reads/2026/07/28/most-americans-favor-big-changes-to-the-political-system-that-likely-would-require-amending-the-constitution/). Confirms Electoral College rejection.
-- Court expansion: ~40% overall; 59% D / 18% R — [YouGov July 2024](https://yougov.com/en-us/articles/50159-most-americans-support-term-limits-poll), Navigator May 2026. Confirms rejection.
-- Presidential self-pardon ban: 82% D / 43% R in the Dec 2025 alignment — [YouGov/Economist](https://yougov.com/en-us/articles/53702-majorities-americans-say-donald-trump-gives-too-many-pardons-want-to-limit-pardon-power-december-5-8-2025-economist-yougov-poll) — though note Protect Democracy 2024 found 59% R for the same ban; support moves with whose president benefits.
+- Court expansion: 37% support / 42% oppose / 21% not sure; 59% D / 18% R — [YouGov July 2024](https://yougov.com/en-us/articles/50159-most-americans-support-term-limits-poll) (~40% is Navigator's figure), Navigator May 2026. Confirms rejection. [corrected 2026-08-18; was: "~40% overall" attributed to YouGov]
+- Presidential self-pardon ban: 64% overall, 81% D / 43% R / 67% I — YouGov standalone Presidential Pardons survey, Aug 15–19, 2024 (n=1,130; write-up rounds to 82/65); the [Dec 2025 Economist/YouGov pardons poll](https://yougov.com/en-us/articles/53702-majorities-americans-say-donald-trump-gives-too-many-pardons-want-to-limit-pardon-power-december-5-8-2025-economist-yougov-poll) contains no self-pardon item — though note Protect Democracy 2024 found 59% R on the norm statement; both readings are mid-2024 fieldwork, so the gap is wording/sample, not movement over time. [corrected 2026-08-18; was: "82% D / 43% R in the Dec 2025 alignment", attributed to Economist/YouGov Dec 2025]
 
 ## High-Topline but Partisan-Coded (caution list)
 
 From [Newsweek / Cato / Morning Consult, June 2026](https://www.newsweek.com/how-americans-would-change-the-constitution-new-poll-12152648) and others — ideas that poll well overall but are strongly coded to one side:
 
 - Right to health care amendment: 73% (coded left)
-- Photo ID to vote: 66% (coded right)
+- Photo ID to vote: 66% (80% R / 61% I / 58% D per Cato/Morning Consult crosstabs, Table CATO20_5 — a 22-point gap but a Democratic majority; coded right) [corrected 2026-08-18; was: no party split shown]
 - English as national language: 65% (coded right)
-- Equal Rights Amendment: 78% in a 2020 Pew survey; party breakdown unavailable, currently coded left.
+- Equal Rights Amendment: 78% (66% R / 88% D) in a 2020 Pew survey (March 18–April 1, 2020); currently coded left. [corrected 2026-08-18; was: "party breakdown unavailable"]
 - General warning from the same poll: respondents say yes to nearly every amendment idea in isolation — toplines without party splits and trade-offs are close to meaningless for our purposes.
 
 ## Standing Resources
@@ -311,6 +311,8 @@ From [Newsweek / Cato / Morning Consult, June 2026](https://www.newsweek.com/how
 7. Proportional representation, single-member districting, fusion voting, government-data mandates — all effectively unpolled.
 
 ## Review Additions (2026-08-17)
+
+*Corrections from the 2026-08-17 review passes applied in place on 2026-08-18 (founder-authorized); each corrected line carries a bracketed note.*
 
 *Added after an outside completeness review; every item below was verified against the linked source before inclusion. Items are grouped by the memo section they extend.*
 
@@ -364,7 +366,7 @@ From [Newsweek / Cato / Morning Consult, June 2026](https://www.newsweek.com/how
 
 - Equal Rights Amendment: Pew *did* publish the party split (see flagged correction below): **78% (66% R / 88% D)**, March 18–April 1, 2020; only 16% of Republicans "strongly" favor vs. 51% of Democrats, and Republican women (75%) far outpace Republican men (58%) — [Pew, July 2020](https://www.pewresearch.org/social-trends/2020/07/07/a-century-after-women-gained-the-right-to-vote-majority-of-americans-see-work-to-do-on-gender-equality/). On the memo's rubric a 66% R floor would be "Strong," but the data predate the 2023–25 ratification-deadline fight and are six years old; treat as a candidate for fresh polling, not a verdict.
 
-### Flagged corrections (verified — founder to apply)
+### Flagged corrections (verified — applied 2026-08-18)
 
 - **Caution list, ERA line.** Memo: "78% in a 2020 Pew survey; party breakdown unavailable, currently coded left." Source shows Pew published the split — 66% R / 88% D (March 18–April 1, 2020) — [Pew](https://www.pewresearch.org/social-trends/2020/07/07/a-century-after-women-gained-the-right-to-vote-majority-of-americans-see-work-to-do-on-gender-equality/).
 - **Rejected: Qualified Immunity, "KEY REFRAME" line.** Memo: accountability framing "84% (64% R / 91% D / 75% I)." Cato's page states **79%** overall for "held accountable … even if unaware at the time that their actions were illegal" (a separate 77% say ignorance of the law should not be a lawsuit defense); the party figures 64% R / 75% I / 91% D match — [Cato/YouGov, July 2020](https://www.cato.org/survey-reports/poll-63-americans-favor-eliminating-qualified-immunity-police). Verdict unaffected (R floor unchanged at 64%).
@@ -374,7 +376,7 @@ From [Newsweek / Cato / Morning Consult, June 2026](https://www.newsweek.com/how
 
 *Added while writing the ten rejected-category memos in [`rejected/`](rejected/); each memo verified every figure against its source. Items below are corrections to existing lines in this document, found in that pass. Existing text is left unchanged — founder to apply. Full evidence and links are in the named memo.*
 
-### Flagged corrections (verified — founder to apply)
+### Flagged corrections (verified — applied 2026-08-18)
 
 - **"Evidence Supporting Rejections," self-pardon line, and "Rejected: Balanced Budget"/pardon sections that repeat it.** The 82% D / 43% R self-pardon-ban figure is attributed to Economist/YouGov Dec 5–8, 2025; that poll's crosstabs contain no self-pardon item. The figure is YouGov's standalone Presidential Pardons survey, **Aug 15–19, 2024** (n=1,130): prohibiting a president from pardoning themself — 64% overall, **81% D / 43% R / 67% I** (write-up rounds to 82/65). Same misattribution appears in CATEGORIES.md, PARDON_RESEARCH.md (line 167 narrative "59% → 43% across an administration change" is therefore unsupported — both readings are mid-2024 fieldwork; the gap is wording/sample), SELECTION_METHOD.md §4.3/§10, and AMENDMENT_IDEAS.md. The site's pardon page was corrected 2026-08-17. See [rejected/SELF_PARDON_BAN_REJECTED.md](rejected/SELF_PARDON_BAN_REJECTED.md).
 - **Section 8, "self-pardon norm predates current politics" line.** Attributed to "PBS/NPR/Marist"; the source is **AP-NORC, June 13–18, 2018** (n=1,109), reported by AP via PBS; the party split (~75% R) appears only in the AP write-up, not AP-NORC's topline (85% "unacceptable" overall). See SELF_PARDON_BAN memo.

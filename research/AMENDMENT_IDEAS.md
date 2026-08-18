@@ -136,7 +136,7 @@ Rationale for each rejection is in the [CATEGORIES.md](CATEGORIES.md) rejected t
 ### Presidential Self-Pardon Ban
 
 - Surfaced in polling research (2026-08-06).
-- Rejected: not bipartisan enough — splits 82% D / 43% R in the current alignment. (Pardon transparency and public-benefit limits remain a target — see category 8 above.)
+- Rejected: not bipartisan enough — splits 82% D / 43% R (YouGov, Aug 15–19, 2024; 81/43 unrounded). [corrected 2026-08-18; was: "in the current alignment" (fieldwork is mid-2024, not Dec 2025)] (Pardon transparency and public-benefit limits remain a target — see category 8 above.)
 
 ### Eliminate Qualified Immunity for Policing
 
@@ -155,3 +155,7 @@ Rationale for each rejection is in the [CATEGORIES.md](CATEGORIES.md) rejected t
 - **Alex MacGregor** — supermajority threshold for the Supreme Court to strike down federal statutes (candidate, 2026-08-18); eminent-domain limits for private development, post-*Kelo* (candidate, 2026-08-18)
 - **Austin Burns** — electoral modernization via quantum cryptography / secure mobile voting; bias-free AI for civic information
 - **Polling research (2026-08-06)** — lobbying/revolving-door restrictions, mid-decade redistricting ban, pardon reform, balanced budget (later rejected); evidence in [POLLING_RESEARCH.md](POLLING_RESEARCH.md)
+
+## Corrections applied (2026-08-18)
+
+*Corrections from the 2026-08-17 review passes applied in place on 2026-08-18 (founder-authorized); each corrected line carries a bracketed note.*

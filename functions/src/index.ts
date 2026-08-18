@@ -1,5 +1,7 @@
 import { onRequest } from 'firebase-functions/v2/https';
+import { defineSecret } from 'firebase-functions/params';
 import * as logger from 'firebase-functions/logger';
+import nodemailer from 'nodemailer';
 import { initializeApp } from 'firebase-admin/app';
 import { getFirestore, FieldValue } from 'firebase-admin/firestore';
 import { z } from 'zod';
@@ -7,6 +9,55 @@ import { createHash } from 'node:crypto';
 
 initializeApp();
 const db = getFirestore();
+
+// Seed-donor notifications go out through Google Workspace SMTP. The app
+// password lives in Secret Manager (`firebase functions:secrets:set
+// SMTP_APP_PASSWORD`); the sending account and recipient are plain config.
+const SMTP_APP_PASSWORD = defineSecret('SMTP_APP_PASSWORD');
+const SMTP_USER = process.env.SMTP_USER ?? 'michael@newbillofrights.net';
+const NOTIFY_TO = process.env.NOTIFY_TO ?? 'contact@newbillofrights.net';
+
+async function notifySeedDonor(data: {
+  name: string;
+  email: string;
+  amount?: number | null;
+  note?: string | null;
+  source?: string | null;
+}): Promise<void> {
+  const pass = SMTP_APP_PASSWORD.value();
+  if (!pass) {
+    logger.warn('SMTP_APP_PASSWORD not set; skipping seed-donor notification');
+    return;
+  }
+  const transport = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
+    auth: { user: SMTP_USER, pass },
+  });
+  const amount =
+    data.amount != null ? `$${Number(data.amount).toLocaleString('en-US')}` : '(not given)';
+  await transport.sendMail({
+    from: `"New Bill of Rights" <${SMTP_USER}>`,
+    to: NOTIFY_TO,
+    replyTo: data.email,
+    subject: `Founding-donor interest: ${data.name} — ${amount}`,
+    text: [
+      `A founding-donor interest form was submitted on newbillofrights.net.`,
+      ``,
+      `Name:    ${data.name}`,
+      `Email:   ${data.email}`,
+      `Amount:  ${amount}`,
+      `Source:  ${data.source ?? '(none)'}`,
+      ``,
+      `Note:`,
+      data.note?.trim() || '(none)',
+      ``,
+      `Reply to this message to reply to the donor. The submission is also in Firestore (seedDonorInterest).`,
+    ].join('\n'),
+  });
+  logger.info('seed donor notification sent');
+}
 
 const MIN_FILL_MS = 3000;
 const RATE_LIMIT = 5; // submissions per IP per minute (per instance, best-effort)
@@ -85,7 +136,7 @@ function safeRedirect(path: string | undefined): string {
 }
 
 export const submitForm = onRequest(
-  { region: 'us-central1', maxInstances: 5 },
+  { region: 'us-central1', maxInstances: 5, secrets: [SMTP_APP_PASSWORD] },
   async (req, res) => {
     if (req.method !== 'POST') {
       res.status(405).json({ error: 'method not allowed' });
@@ -154,10 +205,13 @@ export const submitForm = onRequest(
         source: data.source ?? null,
         createdAt: FieldValue.serverTimestamp(),
       });
-      // TODO(D3): notify contact@newbillofrights.net via Workspace SMTP once
-      // an app password is provisioned; until then submissions are read in
-      // the Firebase console.
       logger.info('seed donor interest received');
+      // Notification failures must never fail the submission itself.
+      try {
+        await notifySeedDonor(data);
+      } catch (err) {
+        logger.error('seed donor notification failed', { err: String(err) });
+      }
     }
 
     if (wantsRedirect) {
