@@ -4,14 +4,18 @@ interface Props {
   title: string;
   problemSummary: string;
   href: string;
+  /** Heading level for the card title — match the surrounding outline
+      (h3 under an h2 section on Home; h2 directly under the h1 on /amendments). */
+  headingLevel?: 'h2' | 'h3';
 }
 
-const { order, title, problemSummary, href } = Astro.props;
+const { order, title, problemSummary, href, headingLevel = 'h3' } = Astro.props;
+const Heading = headingLevel;
 ---
 
 <a class="card" href={href}>
   <span class="num">{String(order).padStart(2, '0')}</span>
-  <h3>{title}</h3>
+  <Heading class="card-title">{title}</Heading>
   <p>{problemSummary}</p>
 </a>
 
@@ -38,7 +42,7 @@ const { order, title, problemSummary, href } = Astro.props;
     letter-spacing: 0.1em;
   }
 
-  .card h3 {
+  .card .card-title {
     font-size: var(--step-1);
     margin: var(--space-1) 0;
   }

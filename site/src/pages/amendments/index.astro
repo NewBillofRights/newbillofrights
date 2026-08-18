@@ -28,6 +28,7 @@ const amendments = (await getCollection('amendments')).sort(
             title={a.data.title}
             problemSummary={a.data.problemSummary}
             href={`/amendments/${a.id}`}
+            headingLevel="h2"
           />
         ))
       }

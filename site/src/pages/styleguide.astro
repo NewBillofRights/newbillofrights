@@ -108,6 +108,18 @@ const swatches = [
     max-width: none;
   }
 
+  /* Narrow screens: the role description drops to its own row instead of
+     forcing the grid wider than the viewport. */
+  @media (max-width: 40rem) {
+    .swatches li {
+      grid-template-columns: 2.5rem auto auto;
+      row-gap: 0.25rem;
+    }
+    .swatches .role {
+      grid-column: 1 / -1;
+    }
+  }
+
   .chip {
     width: 2.5rem;
     height: 2rem;
