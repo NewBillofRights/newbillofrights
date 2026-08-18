@@ -4,22 +4,25 @@ import Base from '../layouts/Base.astro';
 import AmendmentCard from '../components/AmendmentCard.astro';
 import SeedDonorBand from '../components/SeedDonorBand.astro';
 import FullSpectrumChart from '../components/FullSpectrumChart.astro';
+import { loadHomeCopy } from '../lib/homeCopy';
 
 const amendments = (await getCollection('amendments')).sort(
   (a, b) => a.data.order - b.data.order
 );
 const rejectedCount = (await getCollection('rejected')).length;
 const spotlight = (await getCollection('polling'))[0];
+const copy = loadHomeCopy();
+const showWork = copy['We show our work'].replace(
+  '{rejectedCount}',
+  String(rejectedCount)
+);
 ---
 
 <Base title="Home">
   <div class="container">
     <section class="hero">
-      <h1>
-        A new set of constitutional amendments that Americans across the entire
-        political spectrum already agree on.
-      </h1>
-      <p class="pillars">Freedom · Democracy · Rule of Law · Good Government</p>
+      <h1>{copy['Thesis']}</h1>
+      <p class="pillars">{copy['Pillars']}</p>
       <p class="hero-ctas">
         <a class="cta-primary" href="/get-involved#join">Join the mailing list</a>
         <a class="cta-secondary" href="/amendments">Read the amendments</a>
@@ -29,11 +32,7 @@ const spotlight = (await getCollection('polling'))[0];
     <section class="spectrum">
       <div class="spectrum-copy">
         <h2>The full-spectrum test</h2>
-        <p>
-          Every proposal must clear a support floor in <em>both</em> parties —
-          from MAGA Republicans to socialist Democrats — before it makes the
-          list. If it can't, it doesn't matter how good the idea is: it's out.
-        </p>
+        <p set:html={copy['Full-spectrum test']} />
         <p>
           <a href="/evidence/polling">See the polling behind every proposal →</a>
         </p>
@@ -72,12 +71,7 @@ const spotlight = (await getCollection('polling'))[0];
 
     <section class="work">
       <h2>We show our work</h2>
-      <p>
-        We've rejected {rejectedCount} categories that couldn't pass the
-        full-spectrum bar — not because the issues don't matter, but because
-        they can't yet clear it. Transparency about what didn't make the list
-        is the point.
-      </p>
+      <p set:html={showWork} />
       <p><a href="/evidence/rejected">See what we rejected, and why →</a></p>
     </section>
   </div>
@@ -87,12 +81,7 @@ const spotlight = (await getCollection('polling'))[0];
   <div class="container">
     <section>
       <h2>The bar is the point</h2>
-      <p>
-        Amending the Constitution takes two-thirds of Congress and three-quarters
-        of the states. That bar is why we only advance proposals with genuine
-        support across the whole spectrum — anything less can't ratify, and
-        shouldn't.
-      </p>
+      <p set:html={copy['The bar is the point']} />
       <p><a href="/mission">Read the mission →</a></p>
     </section>
   </div>

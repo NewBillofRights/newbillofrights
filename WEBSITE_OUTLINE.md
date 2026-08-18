@@ -95,7 +95,8 @@ Anticipate the recurring objections: "Isn't amending the Constitution impossible
 | Evidence: polling | POLLING_RESEARCH.md | Distill to per-proposal numbers |
 | Evidence: rejected/candidates | CATEGORIES.md | Light edit |
 | Salons | SALON_TOPICS.md | Extract upcoming topics only |
-| FAQ, Home copy | — | Net-new writing |
+| Home copy | HOME.md | Read at build time by index.astro — edit the Markdown, headings are the lookup keys |
+| FAQ | — | Net-new writing (in faq.astro) |
 
 The biggest content task is distilling eight research docs into public-facing pages — that's a writing project, not a build project, and the build plan should schedule it as its own workstream.
 
