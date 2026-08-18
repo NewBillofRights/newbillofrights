@@ -1,6 +1,6 @@
 /**
  * Build-time social share images (1200×630) — "official brief" look:
- * parchment ground, ink type, one gold rule, the typographic wordmark.
+ * parchment ground, ink type, one gold rule, the seal + wordmark.
  * satori lays out a small element tree; resvg rasterizes the SVG to PNG.
  * Used by the endpoints under src/pages/og/.
  */
@@ -48,6 +48,18 @@ const h = (type: string, props: Record<string, unknown>, ...children: unknown[])
   },
 });
 
+// The seal mark, drawn from primitives (same geometry as scripts/make-seal.mjs).
+function seal(size: number) {
+  const k = size / 300;
+  return h(
+    'div',
+    { style: { position: 'relative', width: `${size}px`, height: `${size}px`, borderRadius: `${size / 2}px`, background: INK, alignItems: 'center', justifyContent: 'center' } },
+    h('div', { style: { position: 'absolute', left: `${14 * k}px`, top: `${14 * k}px`, width: `${272 * k}px`, height: `${272 * k}px`, borderRadius: `${136 * k}px`, border: `${Math.max(1, 2 * k)}px solid ${ACCENT}` } }),
+    h('div', { style: { fontFamily: 'Libre Caslon Text', fontWeight: 700, fontSize: `${200 * k}px`, color: PAPER, paddingBottom: `${14 * k}px`, paddingRight: `${30 * k}px` } }, 'N'),
+    h('div', { style: { position: 'absolute', right: `${74 * k}px`, bottom: `${76 * k}px`, width: `${34 * k}px`, height: `${34 * k}px`, background: ACCENT, transform: 'rotate(45deg)' } })
+  );
+}
+
 function titleSize(title: string): number {
   if (title.length <= 24) return 84;
   if (title.length <= 40) return 68;
@@ -72,12 +84,12 @@ export async function renderOg(spec: OgSpec): Promise<Buffer> {
         fontFamily: 'Public Sans',
       },
     },
-    // wordmark
+    // wordmark: the seal + name (identity direction B)
     h(
       'div',
-      { style: { display: 'flex', alignItems: 'center', gap: '14px' } },
-      h('div', { style: { fontFamily: 'Libre Caslon Text', fontWeight: 700, fontSize: '34px', color: INK } }, 'New Bill of Rights'),
-      h('div', { style: { width: '12px', height: '12px', background: ACCENT, transform: 'rotate(45deg)' } })
+      { style: { display: 'flex', alignItems: 'center', gap: '16px' } },
+      seal(48),
+      h('div', { style: { fontFamily: 'Libre Caslon Text', fontWeight: 700, fontSize: '34px', color: INK } }, 'New Bill of Rights')
     ),
     // title block
     h(

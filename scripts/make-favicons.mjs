@@ -1,6 +1,6 @@
 // Generate the favicon set into site/public/ from the brand tokens and fonts.
-// Ink square, parchment Caslon "N", the gold diamond mark. Text is rendered to
-// paths (satori), so the SVG needs no font at display time.
+// The seal mark (ink disc, gold ring, Caslon "N", gold diamond) — text is
+// rendered to paths (satori), so the SVG needs no font at display time.
 //
 // Usage (from repo root):  node scripts/make-favicons.mjs
 // Outputs: favicon.svg, favicon.ico (16+32), favicon-32.png, apple-touch-icon.png (180),
@@ -18,61 +18,33 @@ mkdirSync(out, { recursive: true });
 const PAPER = '#faf7f1';
 const INK = '#1c2b3a';
 const ACCENT = '#a97d1c';
-const caslonBold = readFileSync(resolve(root, 'site/src/og/fonts/LibreCaslonText-Bold.ttf'));
 
-// One design at a 64-unit canvas; rasterized at every size from the same SVG.
+// The seal mark (identity direction B) on a transparent ground for the
+// browser tab; launcher icons get a parchment square behind it (iOS masks its
+// own corners; Android maskable safe zone is the centre 80%, which the disc
+// respects at 84% of the tile).
+import { sealTree } from './make-seal.mjs';
 const S = 64;
 const tree = {
   type: 'div',
-  props: {
-    style: {
-      width: `${S}px`, height: `${S}px`, display: 'flex',
-      background: INK, position: 'relative',
-    },
-    children: [
-      {
-        type: 'div',
-        props: {
-          style: {
-            position: 'absolute', left: '0px', top: '0px', width: `${S}px`, height: `${S}px`,
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontFamily: 'Libre Caslon Text', fontWeight: 700, fontSize: '46px',
-            color: PAPER, paddingBottom: '2px', paddingRight: '6px',
-          },
-          children: 'N',
-        },
-      },
-      {
-        // the gold diamond from the wordmark, tucked at the lower right
-        type: 'div',
-        props: {
-          style: {
-            position: 'absolute', right: '9px', bottom: '11px', width: '9px', height: '9px',
-            background: ACCENT, transform: 'rotate(45deg)',
-          },
-        },
-      },
-    ],
-  },
+  props: { style: { display: 'flex', width: `${S}px`, height: `${S}px`, alignItems: 'center', justifyContent: 'center' }, children: sealTree(S) },
 };
-
-const svg = await satori(tree, {
-  width: S, height: S,
-  fonts: [{ name: 'Libre Caslon Text', data: caslonBold, weight: 700, style: 'normal' }],
-});
+import { sealFonts } from './make-seal.mjs';
+const svg = await satori(tree, { width: S, height: S, fonts: sealFonts });
 writeFileSync(resolve(out, 'favicon.svg'), svg);
 
-function png(size, radius = 0) {
-  // Apple/Android launcher icons look better with the corner radius baked in
-  // (iOS masks its own; Android maskable wants square + safe zone — we keep
-  // the glyph well inside the center 80%, so square works for both).
-  const r = new Resvg(svg, { fitTo: { mode: 'width', value: size }, background: INK });
-  return r.render().asPng();
+// Tab icons: transparent ground. Launcher icons: parchment square, seal at 84%.
+function png(size, background) {
+  const opts = { fitTo: { mode: 'width', value: size } };
+  if (background) opts.background = background;
+  return new Resvg(svg, opts).render().asPng();
 }
+const launcherSvg = svg.replace(/^<svg([^>]*)>/, (m, attrs) => `<svg${attrs}><rect width="${S}" height="${S}" fill="${PAPER}"/><g transform="translate(${S * 0.08} ${S * 0.08}) scale(0.84)">`).replace(/<\/svg>$/, '</g></svg>');
+const launcher = (size) => new Resvg(launcherSvg, { fitTo: { mode: 'width', value: size } }).render().asPng();
 writeFileSync(resolve(out, 'favicon-32.png'), png(32));
-writeFileSync(resolve(out, 'apple-touch-icon.png'), png(180));
-writeFileSync(resolve(out, 'icon-192.png'), png(192));
-writeFileSync(resolve(out, 'icon-512.png'), png(512));
+writeFileSync(resolve(out, 'apple-touch-icon.png'), launcher(180));
+writeFileSync(resolve(out, 'icon-192.png'), launcher(192));
+writeFileSync(resolve(out, 'icon-512.png'), launcher(512));
 
 // ICO container holding PNG-encoded 16 and 32 px images (valid since Vista).
 function ico(pngs) {

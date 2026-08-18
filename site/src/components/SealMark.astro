@@ -1,0 +1,45 @@
+---
+/**
+ * The seal mark (identity direction B, chosen 2026-08-17): ink disc, gold
+ * inner ring, Libre Caslon Text "N" (outlined — no font dependency), the gold
+ * diamond from the wordmark. Geometry from scripts/make-seal.mjs, simplified
+ * to id-free primitives so it can be inlined more than once per page.
+ * Decorative by default (aria-hidden); pass a `label` to expose it.
+ */
+interface Props {
+  /** CSS size, e.g. "2rem" (square) */
+  size?: string;
+  label?: string;
+  class?: string;
+}
+const { size = '2rem', label, class: className } = Astro.props;
+---
+
+<svg
+  class:list={['seal', className]}
+  viewBox="0 0 300 300"
+  width="300"
+  height="300"
+  style={`width:${size};height:${size}`}
+  xmlns="http://www.w3.org/2000/svg"
+  role={label ? 'img' : undefined}
+  aria-label={label}
+  aria-hidden={label ? undefined : 'true'}
+  focusable="false"
+>
+  <circle cx="150" cy="150" r="150" fill="var(--seal-ink, #1c2b3a)"></circle>
+  <circle cx="150" cy="150" r="136" fill="none" stroke="var(--seal-accent, #a97d1c)" stroke-width="4"></circle>
+  <path
+    fill="var(--seal-paper, #faf7f1)"
+    d="M198.6 216L184.8 216L86.4 92L86.4 202.8L104 206.6L104 214L54.8 214L54.8 206.6L72.6 202.8L72.6 71.2L55 67.4L55 60L109.2 60L184.8 155L184.8 71.2L167.2 67.4L167.2 60L216.4 60L216.4 67.4L198.6 71.2L198.6 216Z"
+  ></path>
+  <rect x="192" y="190" width="34" height="34" fill="var(--seal-accent, #a97d1c)" transform="rotate(45 209 207)"></rect>
+</svg>
+
+<style>
+  .seal {
+    display: inline-block;
+    flex: none;
+    vertical-align: middle;
+  }
+</style>

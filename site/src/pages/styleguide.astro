@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import FullSpectrumChart from '../components/FullSpectrumChart.astro';
 import AmendmentCard from '../components/AmendmentCard.astro';
+import SealMark from '../components/SealMark.astro';
 
 const swatches = [
   { name: '--paper', hex: '#faf7f1', role: 'Page background (parchment)' },
@@ -56,6 +57,42 @@ const swatches = [
         both parties before it makes the
         list. <strong>Emphasis is Public Sans 600.</strong>
       </p>
+    </div>
+
+    <h2>Logo</h2>
+    <p>
+      The seal: an ink disc with a gold inner ring, the Caslon capital N, and
+      the gold diamond from the wordmark. It sits left of the name in the
+      header, alone as the favicon and app icon, and with the stacked name on
+      share images and print. Minimum size 24&nbsp;px; clear space of half the
+      disc on every side; never recolored (the reverse below is the one
+      alternate). Assets: <a href="/brand/seal.svg">seal.svg</a>,
+      <code>site/src/components/SealMark.astro</code>.
+    </p>
+    <div class="logo-demo">
+      <div class="logo-lockup">
+        <SealMark size="4.5rem" />
+        <div class="logo-name">
+          <span class="line">New Bill</span>
+          <span class="line">of Rights</span>
+          <span class="foundation">Foundation</span>
+        </div>
+      </div>
+      <div class="logo-lockup logo-inline">
+        <SealMark size="2.25rem" />
+        <span class="inline-name">New&nbsp;Bill&nbsp;of&nbsp;Rights</span>
+      </div>
+      <div class="logo-lockup logo-reverse">
+        <SealMark size="4.5rem" />
+        <div class="logo-name">
+          <span class="line">New Bill</span>
+          <span class="line">of Rights</span>
+          <span class="foundation">Foundation</span>
+        </div>
+      </div>
+      <div class="logo-sizes">
+        <SealMark size="1.5rem" /><SealMark size="2rem" /><SealMark size="3rem" /><SealMark size="4rem" />
+      </div>
     </div>
 
     <h2>The document is the brand</h2>
@@ -131,6 +168,68 @@ const swatches = [
   .role {
     color: var(--ink-soft);
     font-size: 0.9rem;
+  }
+
+  .logo-demo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: var(--space-2);
+    margin-block: var(--space-3);
+  }
+
+  .logo-lockup {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: var(--paper-raised);
+  }
+
+  .logo-name {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: var(--step-2);
+    line-height: 1;
+  }
+
+  .logo-name .foundation {
+    margin-top: 0.5rem;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  .inline-name {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: var(--step-1);
+  }
+
+  .logo-reverse {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+
+  .logo-reverse .foundation {
+    color: var(--rule);
+  }
+
+  .logo-sizes {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: var(--band);
   }
 
   .specimen {
