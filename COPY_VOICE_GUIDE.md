@@ -83,6 +83,30 @@ from the memo in `research/rejected/`; facts and URLs come only from that memo):
 Nonpartisan discipline matters most on these pages: pollster wording for each side's position,
 symmetric treatment, no contested labels, no view on the merits.
 
+## Candidate-category page structure (fixed)
+
+Pages under `/evidence/candidates/<slug>` (MDX in `site/src/content/candidates/`, drafted
+from the memo in `research/candidates/`; facts and URLs come only from that memo). A candidate
+is neither accepted nor rejected — the page says where it stands and what would move it, in
+either direction. **The memo's recommendation (accept / fold / hold / reject) is internal to the
+founder and never appears on the page**; no "we recommend," no prediction of the outcome.
+
+1. **The proposal** — as commonly framed as an amendment, and its variants. No contributor names.
+   If part of the idea already lives in a target amendment, say which and link it.
+2. **The evidence** — best polling with party breakdowns (independent pollsters first; ballots
+   and roll calls; advocacy polls labeled; proxies labeled as proxies), with a `FullSpectrumChart`
+   of the decisive number where one exists (none for unpolled candidates — say what was searched).
+3. **Where it stands** — the bipartisan floor and verdict (or "unpolled") and, plainly, which
+   tests it has cleared, failed, or is at risk on, and which are open, with the numbers.
+4. **Framings we tested** — alternatives and their numbers; whether any clears honestly, and if
+   so why it does or does not resolve the category.
+5. **What would move it** — the evidence that would move it in (named poll wording, both-parties,
+   forward-looking, mechanism-specific, with the floor it must clear; or a ballot/roll-call
+   pattern) and the evidence that would move it out (and the test it would fail). Even-handed.
+
+Frontmatter: `candidateSince` (date it entered CATEGORIES.md) and `gate` (2–6 words naming what
+it is waiting on) take the place of the rejected pages' `rejectedOn` / `failedTest`.
+
 ## Draft-text annotations (`<Note>`)
 
 Each `**Section N.**` paragraph in an amendment's draft text is followed by a `<Note>` block

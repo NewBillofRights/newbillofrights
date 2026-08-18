@@ -33,11 +33,24 @@ const rejected = defineCollection({
   }),
 });
 
+// Candidate categories: one MDX page per category, drafted from the memo in
+// research/candidates/<SLUG>_CANDIDATE.md (footnoted to the same sources).
+// Same shape as `rejected` so the two evidence sections stay parallel.
 const candidates = defineCollection({
-  loader: file('./src/content/data/candidates.json'),
+  loader: glob({ pattern: '**/*.mdx', base: './src/content/candidates' }),
   schema: z.object({
     title: z.string(),
-    note: z.string().optional(),
+    order: z.number().int(),
+    // Date the category entered the candidate list (CATEGORIES.md)
+    candidateSince: z.string(),
+    // What the category is waiting on, in a few words (index + page kicker)
+    gate: z.string(),
+    // One-line status for the index (the floor/verdict and the open test)
+    summary: z.string(),
+    // Repo-relative path of the research memo the page is drafted from
+    memo: z.string(),
+    // 'draft' until Michael's read (decision 9), then 'reviewed'
+    status: z.enum(['draft', 'reviewed']).default('draft'),
   }),
 });
 

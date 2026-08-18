@@ -1,0 +1,91 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+
+const candidates = (await getCollection('candidates')).sort(
+  (a, b) => a.data.order - b.data.order
+);
+---
+
+<Base
+  title="Candidate Categories"
+  description="The open pipeline: categories under consideration, evaluated by the same criteria as the amendments we pursue and the categories we rejected — and the evidence that would move each one."
+>
+  <div class="container">
+    <h1>Candidate Categories</h1>
+    <p>
+      A candidate is neither accepted nor rejected. It is a category that has
+      not yet cleared — or failed — the full-spectrum test, and is waiting on
+      specific evidence, usually fresh polling with party breakdowns of the
+      exact proposal. Every candidate below is held to the same criteria as
+      the amendments we pursue and the categories we rejected, and each has
+      its own page: the proposal as commonly framed, the best available
+      evidence with party breakdowns, where it stands against the tests, the
+      framings we tested, and what would move it in or out. When the evidence
+      arrives, a candidate moves — to an amendment, into an existing
+      amendment, or to the rejected list — and the record of why stays here.
+    </p>
+    <ul class="candidate-list">
+      {
+        candidates.map((c) => (
+          <li>
+            <h2>
+              <a href={`/evidence/candidates/${c.id}`}>{c.data.title}</a>
+            </h2>
+            <p class="meta">
+              Candidate since {c.data.candidateSince} · <span class="gate">{c.data.gate}</span>
+            </p>
+            <p>{c.data.summary}</p>
+          </li>
+        ))
+      }
+    </ul>
+    <p>
+      Also see the <a href="/evidence/rejected">rejected categories</a> — what
+      has already moved out, and why — and the
+      <a href="/evidence/polling">polling evidence</a>. How categories are
+      accepted, held, or rejected is described on the
+      <a href="/mission">mission page</a>.
+    </p>
+  </div>
+</Base>
+
+<style>
+  .candidate-list {
+    list-style: none;
+    padding: 0;
+    max-width: var(--measure);
+  }
+
+  .candidate-list li {
+    border-bottom: 1px solid var(--rule);
+    padding-block: var(--space-3);
+  }
+
+  .candidate-list h2 {
+    font-size: var(--step-1);
+    margin-bottom: 0.25rem;
+  }
+
+  .candidate-list h2 a {
+    text-decoration: none;
+  }
+
+  .candidate-list h2 a:hover {
+    text-decoration: underline;
+  }
+
+  .meta {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin: 0 0 var(--space-1);
+  }
+
+  .gate {
+    font-family: var(--font-serif);
+    color: var(--accent-text);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+</style>

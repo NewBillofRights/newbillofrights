@@ -6,8 +6,9 @@
 //   2. every footnote reference has a definition and vice versa
 //   3. every URL on the page appears somewhere in the research corpus (no invented sources)
 //   4. no banned vocabulary (COPY_VOICE_GUIDE.md) and no "landslide" (house rule: "wide margins")
-// and, for every rejected-category page (site/src/content/rejected), checks 2–4
-// (the corpus includes research/rejected/*.md). Standalone MDX under site/src/copy/ is
+// and, for every rejected-category page (site/src/content/rejected) and candidate-category
+// page (site/src/content/candidates), checks 2–4 (the corpus includes research/rejected/*.md
+// and research/candidates/*.md). Standalone MDX under site/src/copy/ is
 //   checked the same way (footnotes, provenance, banned words).
 // Exits non-zero on any failure.
 import { readFileSync, readdirSync } from 'node:fs';
@@ -20,6 +21,7 @@ const canonical = readFileSync(resolve(root, 'research/PROPOSED_AMENDMENTS.md'),
 const corpusFiles = [
   ...readdirSync(resolve(root, 'research')).filter((f) => f.endsWith('.md')).map((f) => resolve(root, 'research', f)),
   ...readdirSync(resolve(root, 'research/rejected')).filter((f) => f.endsWith('.md')).map((f) => resolve(root, 'research/rejected', f)),
+  ...readdirSync(resolve(root, 'research/candidates')).filter((f) => f.endsWith('.md')).map((f) => resolve(root, 'research/candidates', f)),
 ];
 const corpus = corpusFiles.map((f) => readFileSync(f, 'utf8')).join('\n');
 const decode = (u) => u.replace(/%28/g, '(').replace(/%29/g, ')');
@@ -57,6 +59,7 @@ for (const f of readdirSync(dir).filter((f) => f.endsWith('.mdx')).sort()) {
 }
 checkDir('amendments', { draftText: true });
 checkDir('rejected', { draftText: false });
+checkDir('candidates', { draftText: false });
 // Standalone MDX copy rendered by .astro pages (e.g. /amendments/after-ratification)
 checkDir('copy', { draftText: false, base: 'site/src' });
 console.log(`${total} footnotes; ${ok ? 'ALL CHECKS PASS' : 'FIX NEEDED'}`);
