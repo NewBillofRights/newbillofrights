@@ -25,7 +25,7 @@ Our amendments must appeal to the shared values of Americans across the entire p
 
 And we treat the test as a measurement, not a hope. Every proposal is judged by its **bipartisan floor** — the level of support in the *less* supportive party — using independent polling, real ballot results, and cross-party votes. Proposals that fail the test are set aside publicly, with their evidence, and can return only when the evidence changes.
 
-### 3. Only Existential Problems
+### 3. Only Problems That Threaten Our Democracy
 
 We do not pursue amendments for policy preferences, partisan advantage, or symbolic wins. We include only amendments that solve problems that genuinely threaten the future of our country. The Constitution is amended rarely and for the ages — our proposals must meet that standard.
 
