@@ -9,6 +9,7 @@ live at the repo root.
 
 - [MISSION.md](MISSION.md) — who we are, the four pillars, founding principles, how we work
 - [CATEGORIES.md](CATEGORIES.md) — target, candidate, and rejected categories (with reasons)
+- [SELECTION_METHOD.md](SELECTION_METHOD.md) — how categories are accepted, held, or rejected: the evidence gate, the non-polling tests, the drafting protocol, and step-by-step instructions for a new agent
 - [ROADMAP.md](ROADMAP.md) — the research → polling → salon → draft pipeline
 - [PROPOSED_AMENDMENTS.md](PROPOSED_AMENDMENTS.md) — compiled draft constitutional text (full-spectrum-passing clauses only)
 
