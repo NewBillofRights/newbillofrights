@@ -65,9 +65,29 @@ const seedDonorSchema = zod_1.z.object({
     note: zod_1.z.string().trim().max(5000).optional(),
     ...baseFields,
 });
+const VOLUNTEER_AREAS = [
+    'research',
+    'analytics',
+    'polling',
+    'salons',
+    'fundraising',
+];
+// Native form posts send a checked checkbox group as either a single string
+// or an array; fetch submissions always send an array. Normalize to an array.
+const areasField = zod_1.z.preprocess((v) => (v === undefined || v === '' ? [] : Array.isArray(v) ? v : [v]), zod_1.z.array(zod_1.z.enum(VOLUNTEER_AREAS)).max(VOLUNTEER_AREAS.length));
+const volunteerSchema = zod_1.z.object({
+    type: zod_1.z.literal('volunteer'),
+    name: zod_1.z.string().trim().min(1).max(200),
+    location: zod_1.z.string().trim().max(200).optional(),
+    areas: areasField,
+    howYouCanHelp: zod_1.z.string().trim().min(1).max(5000),
+    whyTheMission: zod_1.z.string().trim().min(1).max(5000),
+    ...baseFields,
+});
 const submissionSchema = zod_1.z.discriminatedUnion('type', [
     mailingListSchema,
     seedDonorSchema,
+    volunteerSchema,
 ]);
 function emailDocId(email) {
     return (0, node_crypto_1.createHash)('sha256').update(email).digest('hex');
@@ -125,6 +145,19 @@ exports.submitForm = (0, https_1.onRequest)({ region: 'us-central1', maxInstance
             createdAt: firestore_1.FieldValue.serverTimestamp(),
         }, { merge: true });
         logger.info('mailing list signup stored');
+    }
+    else if (data.type === 'volunteer') {
+        await db.collection('volunteerInterest').add({
+            name: data.name,
+            email: data.email,
+            location: data.location || null,
+            areas: data.areas,
+            howYouCanHelp: data.howYouCanHelp,
+            whyTheMission: data.whyTheMission,
+            source: data.source ?? null,
+            createdAt: firestore_1.FieldValue.serverTimestamp(),
+        });
+        logger.info('volunteer interest received', { areas: data.areas });
     }
     else {
         await db.collection('seedDonorInterest').add({

@@ -22,6 +22,10 @@ const faqs = [
     q: 'How is this funded?',
     a: 'Right now, it isn’t — the work is volunteer. Founding donors ($1,000+) will fund the foundation’s formal launch: incorporation, 501(c)(3) filing, and a founding board. No money is collected until the entity and its bank account exist.',
   },
+  {
+    q: 'How can I help?',
+    a: 'We need volunteers for research, analytics, polling, salon organizing, and fundraising. Tell us how you can help and why you believe in the mission on the <a href="/get-involved/volunteer">volunteer page</a>. If you can commit $1,000 or more, the <a href="/get-involved/seed-donors">founding donor round</a> is what starts the foundation itself.',
+  },
 ];
 ---
 
@@ -36,7 +40,7 @@ const faqs = [
         faqs.map((f) => (
           <>
             <dt>{f.q}</dt>
-            <dd>{f.a}</dd>
+            <dd set:html={f.a} />
           </>
         ))
       }

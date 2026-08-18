@@ -27,6 +27,7 @@ Home
 │   └── Candidate Categories     (under consideration)
 ├── Get Involved
 │   ├── Join the mailing list
+│   ├── Volunteer                (research, analytics, polling, salons, fundraising)
 │   ├── Become a seed donor      ($1,000+ founding-donor pledge)
 │   ├── Take the survey          (when live)
 │   └── Salons                   (LA monthly event info + RSVP)
@@ -75,6 +76,7 @@ One template, eight instances: Campaign Finance, Term Limits, Ethics, Privacy, L
   - A seat on the founding **board of directors** for at least one year (continuing thereafter if re-appointed).
   - Membership in the **invite-only online salon series**.
   - **Permanent recognition** as a founding donor on the website.
+- **Volunteer** — a call for volunteers in five areas: research, analytics, polling, salon organizing, fundraising. Dedicated page (`/get-involved/volunteer`) describing each area, with a form collecting name, email, optional location, areas of interest (checkboxes), and two required statements: *how you can help us with our work* and *why you believe in the mission*. Stored in Firestore like the other forms; linked from the Get Involved index, the FAQ, and the footer.
 - **Survey** — placeholder/teaser until the survey (Roadmap step 3) is live; then embed or link.
 - **Salons** — two tracks, presented together: the public LA monthly salon (what it is, format, upcoming topic from [SALON_TOPICS.md](research/SALON_TOPICS.md), RSVP via **Luma** as the primary embed/link, with each event also cross-listed on **Eventbrite** for discoverability) and a mention of the invite-only online salon series reserved for founding donors, linking to the seed donor page.
 - **General donations** — smaller-dollar giving stays off the site until incorporation and 501(c)(3) status land (entity formation planned for 2026); the seed donor interest page carries the fundraising load until then.
@@ -196,7 +198,7 @@ Amendment frontmatter schema (zod): `title`, `slug`, `order`, `problemSummary` (
 
 - A single HTTPS Cloud Function, **`submitForm`**, handles both form types. It validates the payload (zod, shared types with the site), applies spam controls — honeypot field, minimum-fill-time check, per-IP rate limit — normalizes the email, and writes to Firestore with a server timestamp and the source page.
 - **No-JS fallback contract:** the function distinguishes native form posts from `fetch` submissions (via the `Accept` header / a hidden `redirect` field) and answers native posts with a **`303 See Other`** redirect to a success URL (e.g. `/get-involved?submitted=true`) rather than raw JSON, so a non-JS user never lands on a JSON response page.
-- Collections: `mailingList` (doc ID = hash of normalized email, so duplicates upsert) with `{email, createdAt, source}`; `seedDonorInterest` with `{name, email, intendedAmount, note, createdAt, source}`.
+- Collections: `mailingList` (doc ID = hash of normalized email, so duplicates upsert) with `{email, createdAt, source}`; `seedDonorInterest` with `{name, email, intendedAmount, note, createdAt, source}`; `volunteerInterest` with `{name, email, location, areas[], howYouCanHelp, whyTheMission, createdAt, source}`.
 - **Firestore security rules deny all client access.** Only the function (Admin SDK) touches the database, and the client Firestore SDK is never shipped — this keeps the attack surface minimal and the JS bundle tiny.
 - Seed-donor submissions additionally trigger a notification email to the contact address via Workspace SMTP — these are high-value and rare, and shouldn't wait to be discovered in the console. Mailing-list signups are just stored (read via console or a small admin script when sending mail).
 

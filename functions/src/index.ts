@@ -35,9 +35,35 @@ const seedDonorSchema = z.object({
   ...baseFields,
 });
 
+const VOLUNTEER_AREAS = [
+  'research',
+  'analytics',
+  'polling',
+  'salons',
+  'fundraising',
+] as const;
+
+// Native form posts send a checked checkbox group as either a single string
+// or an array; fetch submissions always send an array. Normalize to an array.
+const areasField = z.preprocess(
+  (v) => (v === undefined || v === '' ? [] : Array.isArray(v) ? v : [v]),
+  z.array(z.enum(VOLUNTEER_AREAS)).max(VOLUNTEER_AREAS.length)
+);
+
+const volunteerSchema = z.object({
+  type: z.literal('volunteer'),
+  name: z.string().trim().min(1).max(200),
+  location: z.string().trim().max(200).optional(),
+  areas: areasField,
+  howYouCanHelp: z.string().trim().min(1).max(5000),
+  whyTheMission: z.string().trim().min(1).max(5000),
+  ...baseFields,
+});
+
 const submissionSchema = z.discriminatedUnion('type', [
   mailingListSchema,
   seedDonorSchema,
+  volunteerSchema,
 ]);
 
 function emailDocId(email: string): string {
@@ -107,6 +133,18 @@ export const submitForm = onRequest(
           { merge: true }
         );
       logger.info('mailing list signup stored');
+    } else if (data.type === 'volunteer') {
+      await db.collection('volunteerInterest').add({
+        name: data.name,
+        email: data.email,
+        location: data.location || null,
+        areas: data.areas,
+        howYouCanHelp: data.howYouCanHelp,
+        whyTheMission: data.whyTheMission,
+        source: data.source ?? null,
+        createdAt: FieldValue.serverTimestamp(),
+      });
+      logger.info('volunteer interest received', { areas: data.areas });
     } else {
       await db.collection('seedDonorInterest').add({
         name: data.name,

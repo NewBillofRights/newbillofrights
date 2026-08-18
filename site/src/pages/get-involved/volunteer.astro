@@ -1,0 +1,263 @@
+---
+import Base from '../../layouts/Base.astro';
+
+// Keys must match VOLUNTEER_AREAS in functions/src/index.ts.
+const areas = [
+  {
+    key: 'research',
+    label: 'Research',
+    detail:
+      'Building and checking the research corpus for each category: the legal landscape, state precedents, and how peer democracies solved the same problem. Legal or policy training helps; care with sources is required.',
+  },
+  {
+    key: 'analytics',
+    label: 'Analytics',
+    detail:
+      'Working with the polling data: compiling party breakdowns, checking every number against the pollster’s published tables, and building the charts that show whether a proposal clears the bar.',
+  },
+  {
+    key: 'polling',
+    label: 'Polling',
+    detail:
+      'Designing and fielding the national survey that will test amendment framings across the spectrum: questionnaire design, sampling, vendor selection, and analysis.',
+  },
+  {
+    key: 'salons',
+    label: 'Salon organizing',
+    detail:
+      'Running the monthly Los Angeles salon and, in time, salons in other cities: venues, invitations that reach across the spectrum, moderation, and follow-up.',
+  },
+  {
+    key: 'fundraising',
+    label: 'Fundraising',
+    detail:
+      'Founding-donor outreach now; grant writing and a broader giving program once the foundation is incorporated and its 501(c)(3) status is granted.',
+  },
+];
+---
+
+<Base
+  title="Volunteer"
+  description="The work is done by volunteers. We need help with research, analytics, polling, salon organizing, and fundraising."
+>
+  <div class="container">
+    <h1>Volunteer</h1>
+    <p class="lede">
+      The New Bill of Rights project runs on volunteer time. Until the
+      foundation is incorporated there is no staff: the research, the polling
+      analysis, the salons, and the fundraising are done by people who give a
+      few hours a week because they believe the work matters.
+    </p>
+
+    <h2>Where we need help</h2>
+    <dl class="areas">
+      {
+        areas.map((a) => (
+          <>
+            <dt>{a.label}</dt>
+            <dd>{a.detail}</dd>
+          </>
+        ))
+      }
+    </dl>
+
+    <h2>What we ask</h2>
+    <p>
+      Tell us how you can help and why you believe in the mission. The second
+      matters as much as the first. This project only works if the people doing
+      it hold to the full-spectrum bar — including when a proposal they like
+      fails it — and publish what fails alongside what passes.
+    </p>
+
+    <p class="form-success" id="volunteer-success" hidden>
+      <strong>Thank you.</strong> Your note is recorded — we read every one and
+      will be in touch.
+    </p>
+    <form
+      class="interest"
+      method="post"
+      action="/api/submit"
+      aria-label="Volunteer interest"
+      data-success="volunteer-success"
+    >
+      <input type="hidden" name="type" value="volunteer" />
+      <input type="hidden" name="source" value="/get-involved/volunteer" />
+      <input type="hidden" name="redirect" value="/get-involved/volunteer?submitted=volunteer" />
+      <input type="hidden" name="startedAt" value="" />
+      <p class="hp" aria-hidden="true">
+        <label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+      </p>
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required autocomplete="name" />
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required autocomplete="email" />
+      </div>
+      <div class="field">
+        <label for="location">Where you're based (city, state — optional)</label>
+        <input id="location" name="location" type="text" autocomplete="address-level2" />
+      </div>
+      <fieldset class="field">
+        <legend>Where you can help (check all that apply)</legend>
+        <div class="checks">
+          {
+            areas.map((a) => (
+              <label class="check">
+                <input type="checkbox" name="areas" value={a.key} />
+                {a.label}
+              </label>
+            ))
+          }
+        </div>
+      </fieldset>
+      <div class="field">
+        <label for="howYouCanHelp">How can you help us with our work?</label>
+        <p class="hint" id="how-hint">
+          Skills, relevant experience, and roughly how much time you can give.
+        </p>
+        <textarea
+          id="howYouCanHelp"
+          name="howYouCanHelp"
+          rows="5"
+          required
+          maxlength="5000"
+          aria-describedby="how-hint"
+        ></textarea>
+      </div>
+      <div class="field">
+        <label for="whyTheMission">Why do you believe in the mission?</label>
+        <textarea
+          id="whyTheMission"
+          name="whyTheMission"
+          rows="5"
+          required
+          maxlength="5000"
+        ></textarea>
+      </div>
+      <button type="submit">Offer to help</button>
+    </form>
+    <p>
+      Prefer email? Reach us at
+      <a href="mailto:contact@newbillofrights.net">contact@newbillofrights.net</a>
+      with the subject “Volunteer”.
+    </p>
+  </div>
+</Base>
+
+<script src="../../scripts/form-submit.ts"></script>
+
+<style>
+  .lede {
+    font-size: var(--step-1);
+    color: var(--ink-soft);
+  }
+
+  .areas {
+    max-width: var(--measure);
+  }
+
+  .areas dt {
+    font-family: var(--font-serif);
+    font-size: var(--step-1);
+    margin-top: var(--space-2);
+  }
+
+  .areas dd {
+    margin: 0.25rem 0 0;
+    color: var(--ink-soft);
+  }
+
+  .interest {
+    max-width: var(--measure);
+    display: grid;
+    gap: var(--space-2);
+    margin-block: var(--space-3);
+  }
+
+  .field {
+    display: grid;
+    gap: 0.25rem;
+  }
+
+  fieldset.field {
+    border: none;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+  }
+
+  label,
+  legend {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+
+  legend {
+    padding: 0;
+    margin-bottom: 0.25rem;
+  }
+
+  .hint {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  .checks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+  }
+
+  .check {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1rem;
+    color: var(--ink);
+  }
+
+  .check input {
+    width: 1.1rem;
+    height: 1.1rem;
+    accent-color: var(--accent-text);
+    margin: 0;
+  }
+
+  input:not([type='checkbox']),
+  textarea {
+    padding: 0.6rem 0.8rem;
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    font-size: 1rem;
+    font-family: inherit;
+    background: var(--paper-raised);
+  }
+
+  button {
+    justify-self: start;
+    padding: 0.6rem 1.4rem;
+    border: none;
+    border-radius: 3px;
+    background: var(--ink);
+    color: var(--paper);
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .hp {
+    position: absolute;
+    left: -9999px;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .form-success {
+    background: var(--band);
+    border-left: 3px solid var(--accent);
+    padding: var(--space-1) var(--space-2);
+    max-width: var(--measure);
+  }
+</style>

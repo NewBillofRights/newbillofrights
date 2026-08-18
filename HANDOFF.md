@@ -11,7 +11,7 @@
 
 ## 1. Where things stand
 
-- **Site is live at https://newbillofrights.net** (Firebase Hosting, project `newbillofrights-prod`, Blaze plan), **noindexed** (`X-Robots-Tag` header in `firebase.json` + `<meta name="robots">` in `site/src/layouts/Base.astro`; removing both is launch step E0). `www` redirects to apex. Forms (mailing list, founding-donor interest) work end-to-end via Cloud Function `submitForm` → Firestore.
+- **Site is live at https://newbillofrights.net** (Firebase Hosting, project `newbillofrights-prod`, Blaze plan), **noindexed** (`X-Robots-Tag` header in `firebase.json` + `<meta name="robots">` in `site/src/layouts/Base.astro`; removing both is launch step E0). `www` redirects to apex. Forms (mailing list, founding-donor interest, volunteer interest — added 2026-08-17 at `/get-involved/volunteer`, collection `volunteerInterest`) work end-to-end via Cloud Function `submitForm` → Firestore.
 - **All Phase 1 copy is written, sourced, and twice voice-reviewed**: 8 amendment pages (196 footnotes to primary sources), Mission, Home (text in [HOME.md](HOME.md)), About (founder bio), FAQ, salons. Every page still carries `status: draft` in frontmatter pending Michael's manual read.
 - **Research corpus** (`research/`): 8 category memos + polling compendium, each with a `## Review Additions (2026-08-17)` section of web-verified additions; report at [research/RESEARCH_REVIEW_2026-08-17.md](research/RESEARCH_REVIEW_2026-08-17.md). Canonical draft text: [research/PROPOSED_AMENDMENTS.md](research/PROPOSED_AMENDMENTS.md) (revised 2026-08-17: CF Section 5 foreign money; Redistricting Section 2 state-court clause).
 - Git: everything committed on `main`; last commit of the build conversation is the one adding this file.
