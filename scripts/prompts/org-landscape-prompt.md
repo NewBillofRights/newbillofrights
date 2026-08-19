@@ -34,3 +34,7 @@ For your assigned amendment area, find every significant organization advocating
 
 Write `research/orgs/<SLUG>_ORGS.md` (template order: Founder direction header · orgs table · per-org detail · language comparison · adversaries · partnership/conflict · sources). Then return JSON:
 {"file": "...", "orgs_found": n, "orgs_with_drafted_amendment_text": ["..."], "closest_language_match": "...", "adoption_recommendation": "1-3 sentences", "unverifiable": ["..."]}
+
+## Scrape cache (added 2026-08-19, applies to future runs)
+
+Before fetching any source page, grep `research/cache/index.jsonl` for the URL. On a miss, save the raw fetch to `research/cache/pages/<YYYYMMDD>-<slug>.md` with a `<!-- url · fetched date -->` header and append an index line. Cache hits still require live re-verification for time-sensitive claims. See research/cache/README.md.

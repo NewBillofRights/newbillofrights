@@ -18,6 +18,7 @@
 - **Corrections are applied in place** anywhere in the corpus with one dated changelog line per file touched (rule since 2026-08-18). "Review Additions" only for substantive additions.
 - **Gemini Pro reviews every piece of final public copy** (`scripts/gemini-review.sh`; system prompts in `scripts/prompts/`) — and **every Gemini factual claim is web-verified before it is applied**; it is often wrong.
 - **Fan-out with parallel subagents** (one per doc; prompt files in `scripts/prompts/`; require JSON returns). Firecrawl is allowed for 403 hosts.
+- **Scrape cache (2026-08-19):** every scraped/fetched source page is saved raw to `research/cache/pages/` (gitignored) and logged in `research/cache/index.jsonl` (committed) — grep the index before fetching; see `research/cache/README.md`. Cache hit ≠ verification for time-sensitive claims.
 - **Deploy:** `scripts/deploy.sh prod` (logged; may need `firebase login --reauth`), then curl the live URLs. Run check-site + build first.
 - Voice: COPY_VOICE_GUIDE.md. Every poll number carries party split + pollster + year. Card blurbs/ledes are Michael's (`problemSummary`/`principleSummary`, 15–25 words).
 

@@ -6,3 +6,5 @@ dist/
 .env
 .env.*
 .firebase/
+# Scraped raw page snapshots — local only (copyright); the index IS committed
+research/cache/pages/
