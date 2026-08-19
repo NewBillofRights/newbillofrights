@@ -24,12 +24,13 @@
 
 ## Queue
 
-1. **Commissioned polling:** `/candidates/polling-questions` is the spec. Missing: drafted questions for the four Article 9 held-back clauses (registry `pollQuestionNote`); a named-age poll (age limits, 70/75/80); a forward-looking appointment-default poll; the Article 9 compulsion sentence as a split-sample arm.
-2. **Salon outreach:** `research/SALON_OUTREACH_PLAN.md` + `research/SALON_OUTREACH_TARGETS.md` (committed 2026-08-18, **unread by Michael**). Next: his read; host-committee recruitment; the one-pager and privacy brief (Gemini-reviewed before use); the RSVP self-placement question. No venue research.
-3. **Firecrawl retry queue** — `research/candidates/FIRECRAWL_RETRY_QUEUE.md`; credits reset ~2026-08-20.
-4. **Launch gate (E0):** remove noindex in both places only when Michael says so. Before that: his read of the draft pages; flip the GitHub repo public if wanted.
-5. Optional: 301 `/rejected/self-pardon-ban` → `/candidates/self-pardon-ban` (page moved buckets 2026-08-18); build-time assertion that every registry `page` resolves to an MDX file; a scorecard page; restore length-cut items on the agency-independence candidate page (~850 words vs the 700–1,100 band); PARDON_RESEARCH.md's opening paragraph still reflects the 2024 reading (its Review Additions say why).
-6. After the November 2026 election: log the abortion ballot measures (Idaho, Missouri, Nevada, Virginia) in the ABORTION memo.
+1. **Org-landscape pass DONE 2026-08-19** — `research/orgs/` (9 per-amendment + cross-cutting memos + README digest; scrape cache live in `research/cache/`). Bottom line: adopt-100% fails everywhere (even American Promise and USTL); keep drafts, borrow named clauses; declare the congressional route; 501(h) at formation, c3/c4 pair. **Open:** Michael's read; apply the queued corpus corrections in the README (§Corrections) under the in-place rule; recheck KY SB 10 after Nov 3 2026.
+2. **Commissioned polling:** `/candidates/polling-questions` is the spec. Missing: drafted questions for the four Article 9 held-back clauses (registry `pollQuestionNote`); a named-age poll (age limits, 70/75/80); a forward-looking appointment-default poll; the Article 9 compulsion sentence as a split-sample arm.
+3. **Salon outreach:** `research/SALON_OUTREACH_PLAN.md` + `research/SALON_OUTREACH_TARGETS.md` (committed 2026-08-18, **unread by Michael**). Next: his read; host-committee recruitment; the one-pager and privacy brief (Gemini-reviewed before use); the RSVP self-placement question. No venue research.
+4. **Firecrawl retry queue** — `research/candidates/FIRECRAWL_RETRY_QUEUE.md`; credits reset ~2026-08-20.
+5. **Launch gate (E0):** remove noindex in both places only when Michael says so. Before that: his read of the draft pages; flip the GitHub repo public if wanted.
+6. Optional: 301 `/rejected/self-pardon-ban` → `/candidates/self-pardon-ban` (page moved buckets 2026-08-18); build-time assertion that every registry `page` resolves to an MDX file; a scorecard page; restore length-cut items on the agency-independence candidate page (~850 words vs the 700–1,100 band); PARDON_RESEARCH.md's opening paragraph still reflects the 2024 reading (its Review Additions say why).
+7. After the November 2026 election: log the abortion ballot measures (Idaho, Missouri, Nevada, Virginia) in the ABORTION memo.
 
 ## Founder decisions on record (don't re-litigate; details in CATEGORIES.md)
 

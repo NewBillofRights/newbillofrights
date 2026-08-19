@@ -1,0 +1,41 @@
+# Organization landscape — who else works our nine areas, and whose language is adoptable
+
+*Ten-memo pass, 2026-08-19 (nine per-amendment + one cross-cutting; parallel agents, every claim web-verified, raw fetches in `research/cache/`). Commissioned after Michael's direction to prefer adopting amendment language from orgs that have invested deeply (he named American Promise and U.S. Term Limits). Research docs — not public copy; no Gemini pass yet. Each memo ends with an adopt-100% gain/lose table and lists its unverifiable items.*
+
+## The one-line answer to the adoption question
+
+**Nowhere does adopt-100% survive contact with the evidence.** Only two areas have org-owned federal amendment text at all (campaign finance, term limits), and in both, wholesale adoption would delete provisions Michael has decided on or that carry our best polling. Everywhere else the field is statutory/litigation by deliberate choice — there is nothing to adopt, which also means no org is a competitor in the amendment lane. The recommended posture across all nine: **keep our drafts, borrow named clauses, cite ratified state text as evidence, and treat "adopt their text" and "join their campaign" as separate decisions.**
+
+## Adoption decision, per amendment
+
+| Article | Org text exists? | Closest match | Recommendation (details in memo) |
+| --- | --- | --- | --- |
+| 1 Campaign Finance | **Yes** — Am. Promise H.J.Res. 191; FSFP H.J.Res. 119; MTA H.J.Res. 54; H.J.Res. 122 | H.J.Res. 122 §1 (has "reasonable" + "viewpoint-neutral"); H.J.Res. 191 the only cross-partisan whole-article | Don't adopt wholesale: FOFA lacks disclosure (85R/88D), foreign money (77R/84D), any press/speech savings clause, and "viewpoint-neutral." Borrow their ballot-measure phrasing + express prohibition power. **FOFA exists in two differing versions (site vs H.J.Res. 191) — any decision must name one.** Ally regardless. |
+| 2 Term Limits | **Yes** — USTL S.J.Res. 1/H.J.Res. 12; Welch–Manchin; NCC Am. XXXI | Welch–Manchin for §2 (judicial); USTL for §1's structure | Don't adopt wholesale: USTL is 3/2 vs our 6/2 (pledge forecloses compromise), congressional-only, Article V route. Borrow USTL's **partial-term rule** (our §1 lacks one — real gap), Welch–Manchin's non-renewability + Chief Justice succession. State the 3-vs-6 disagreement plainly. |
+| 3 Ethics | **No** — zero constitutional text anywhere (verified 3 ways) | CREW coalition platform + H.R. 5106 (statutes) | Nothing to adopt. Borrow definitional detail only (asset taxonomy, spouse coverage, no-"knowingly" warning). H.R. 7008's gutted 232–198 passage is the live argument for the constitutional route. |
+| 4 Privacy | **No federal** — but ratified state text: MO 2014 (74.75%), MI 2020 (88.75%), NH 2018 (~81%) | ACLU model FANFSA statute ≈ our §2 sentence 1 | Adopt **vocabulary**: NH's "private or personal information," MO/MI's "electronic communications and data." NH's drafting history independently validates our decisional-autonomy narrowing and prices the abortion-shadow attack (small). MI's 38–0/106–0 + fiscal note answers the administrative objection. |
+| 5 Lobbying | **No** — AACA is a model statute, deliberately court-avoiding | AACA Prov. 3 (same 5-year number) + Prov. 13 | Nothing to adopt. Mine Prov. 13's "directing or supervising… strategic advice" formula. Our §2 (foreign lobbying, 70.5% R) has **no counterpart anywhere**. SD Measure 22's enjoin-and-repeal is the why-constitutional exhibit. |
+| 6 Redistricting | **No federal** — ratified state text: MI 61.3%, CO 71.4%, UT 50.3%; OH failed 46.3% | S.2885 §102 (statute) — independently matches our §2 state-constitution carve-out | Nothing to adopt; our draft corroborated. Decision point: "intent to favor" standard ratified 4×, strengthening the held-back anti-favoritism floor — but Ohio's ±3% proportionality defeat marks the trap our calendar design avoids. Common Cause is a coalition risk here (won't oppose CA retaliation); LWV is clean. |
+| 7 Executive Compliance | **No — nobody, anywhere** (NCC Drafting Project's 3 team constitutions all leave the 1787 gap) | SRL Statement of Principles (citizens' duty, not text) | **Origination, not adoption.** Our tiered §1/safe-harbor §2 is the only text reaching the traps. SRL = highest-value, lowest-risk association (R-administration lawyers). Heritage's "Against Judicial Supremacy" is the tradition to draft around — conduct-in-the-case vs interpretive supremacy must be load-bearing. |
+| 8 Pardon Reform | **Members only** — Cohen H.J.Res. 13 (5 introductions), Olszewski H.J.Res. 135; no org text | Cohen §≈ our §3 (both converged on third-degree kinship); KY SB 10 ≈ our §1 (state) | Keep ours; borrow phrase-level. **Kentucky SB 10** (Nov 2026 ballot, 36–0/82–12, R-sponsored) is the modern red-state exhibit for §1 — recheck post-election. Cato's veto attack lands on Olszewski's text and glances off ours. |
+| 9 Punishment Exception | **Yes but one sentence** — Abolition Amendment (Merkley/Williams, dormant since 2023) | Its sentence ≈ our §1 only | Keep ours; cite theirs as the §1 precedent. Their work-programs reassurance sits in unratified *whereas* clauses — ours is the only text answering it in the Constitution. **Cite-don't-join:** endorser bloc uniformly progressive (124 D / 5 R) on a category polling 60–80% in red states. |
+
+## Cross-cutting strategy (memo: CROSS_CUTTING_ORGS.md)
+
+- **Multi-issue reform orgs (Issue One, Unite America, RepresentUs, Protect Democracy, IRG, Leadership Now, RDI, Future Caucus) hold zero amendment texts** — partners, not competitors. Article V positions: unverified absence; ask directly before any coalition commitment.
+- **Declare the congressional-proposal route explicitly.** The ~230-org anti-convention coalition opposes the mechanism, not amendments (Common Cause's own words); the congressional route costs nothing and keeps the field available. Standing rule: adopt-their-text ≠ join-their-campaign.
+- **⚖️ verified at the regulation:** §56.4911-2(d)(1)(i) names "constitutional amendment" — amendment advocacy is lobbying for c3 purposes; the nonpartisan-analysis exception covers the current phase *unless* research is "timed or channeled" to a vote. **Take the 501(h) election at formation; plan the c3/c4 pair on American Promise's model** (EINs verified; field standard). Feeds COFOUNDER_SEARCH.md's flags.
+- Balance-model benchmark for the board: Future Caucus's mandatory D/R co-chair pairing; caution — funder composition drives the partisan read regardless of governance mechanics.
+
+## Corrections queued for the corpus (verified by agents; apply under the in-place rule after spot-check)
+
+1. TERM_LIMITS_RESEARCH.md — "five certified ballot results… one direction": NH 2024 judicial retirement age drew **65.6% support** and failed only on the two-thirds threshold; revise before public use. Also: deemed-confirmation (not our knock-out default) is the field's majority answer — pages shouldn't imply otherwise.
+2. PARDON_RESEARCH.md — H.J.Res. 135 cosponsors: **seven total, Bacon the sole original/Republican** (not "six further Democratic").
+3. THIRTEENTH_EXCEPTION_RESEARCH.md — five corrections listed in THIRTEENTH_EXCEPTION_ORGS.md, incl. Utah's ratified savings clause contradicting the "Louisiana trap" rule as stated, and three (not one) states ratifying savings clauses.
+4. CAMPAIGN_FINANCE category memo — quotes the FOFA website version (differs materially from H.J.Res. 191); the "25 states, near-unanimous" claim needs requalifying (Idaho SJM 109: Tenth Amendment framing, voice vote).
+5. New doctrine postdating the CF memo: *NRSC v. FEC* (June 30, 2026) overruled *Colorado II*.
+6. Misinformation flag: #EndTheException's claimed R sponsor (Rep. Malloy) — uncorroborated; never publish.
+
+## Association-risk ledger (before any outreach)
+
+Jeff Clements cofounded both American Promise **and** Free Speech For People (which runs impeachment/ICE campaigns from the same nav) · Common Cause on redistricting (retaliation carve-out) · Protect Democracy on pardons (unwithdrawn no-amendment-needed paper) and coding risk on Art. 7 · ASNN on Art. 9 (ActBlue) · Institute for Free Speech is a peer-scale adversary ($3.7M), not outgunned.
