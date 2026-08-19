@@ -8,6 +8,8 @@ Draft constitutional text compiled from the eight category research documents. O
 
 *Revision 2026-08-19 (founder-directed, after the organization-landscape pass — research/orgs/): the drafts now adopt, word for word, the language of the organizations that have invested most deeply in each area, augmented selectively where our decided provisions have no counterpart in their text. (a) Campaign Finance §§1–3 are the For Our Freedom Amendment as published on American Promise's website (which differs in arrangement from H.J.Res. 191 — the website version is the one adopted); a viewpoint-neutrality sentence carried over from the prior §1 is appended to §2; the prior disclosure, foreign-money, and press/speech savings sections continue as §§4–6, and the former §6 enforcement sentence is dropped as redundant with the FOFA §3 enforcement power. The prior §§1, 2, and 4 are superseded by the FOFA text. (b) Term Limits §§1–3 are the congressional term-limits amendment advanced by U.S. Term Limits (H.J.Res. 12 / S.J.Res. 1, 119th Congress) verbatim: the House limit changes from six terms to their three (the pledge number — a deliberate trade of the twelve-year state evidence for the movement's thirty-year investment, stated openly on the page), and their partial-term counting rules and prospective clause replace the prior single-sentence §1. The judicial sections continue as §§4–5 and anti-evasion as §6.*
 
+*Revision 2026-08-19b (founder-directed): Privacy vocabulary aligned to ratified state constitutional text — §1's enumeration now carries "electronic communications and data" (Missouri Art. I §15, 74.75%, 2014; Michigan Art. I §11, 88.75%, 2020) and the article's operative term is now "private or personal information" (New Hampshire Pt. I Art. 2-b, ~81%, 2018) throughout §§1–3, 5, and 8. The enumeration is illustrative ("including"), so no coverage narrows; the substance of every section is unchanged. Source: research/orgs/PRIVACY_ORGS.md.*
+
 ## 1. Campaign Finance
 
 **Section 1.** We the People have compelling sovereign interests in the freedom of speech, representative self-government, federalism, the integrity of the electoral process, and the political equality of natural persons.
@@ -52,21 +54,21 @@ Draft constitutional text compiled from the eight category research documents. O
 
 ## 4. Privacy
 
-**Section 1.** Every person has the right to be secure against unreasonable governmental intrusion into their private life, including their home, communications, movements, and personal information. This right is not diminished because information has been disclosed to another or is insignificant in isolation.
+**Section 1.** Every person has the right to be secure against unreasonable governmental intrusion into their private life, including their home, electronic communications and data, movements, and private or personal information. This right is not diminished because information has been disclosed to another or is insignificant in isolation.
 
-**Section 2.** Government may not acquire personal information for investigative or intelligence purposes — whether by compulsion, purchase, or exchange — that it could not lawfully obtain through search or seizure, except with judicial authorization, consent, or in exigent circumstances. Generalized, suspicionless collection or retention of the communications or movements of the people is prohibited.
+**Section 2.** Government may not acquire private or personal information for investigative or intelligence purposes — whether by compulsion, purchase, or exchange — that it could not lawfully obtain through search or seizure, except with judicial authorization, consent, or in exigent circumstances. Generalized, suspicionless collection or retention of the communications or movements of the people is prohibited.
 
-**Section 3.** Every person has the right to know what personal information the government holds about them and to obtain correction of material inaccuracies. Personal information acquired by government for one purpose may not be used for an unrelated purpose, except as provided by law consistent with this article. Congress and the States may by law secure rights of access, correction, and deletion of personal information held by others.
+**Section 3.** Every person has the right to know what private or personal information the government holds about them and to obtain correction of material inaccuracies. Private or personal information acquired by government for one purpose may not be used for an unrelated purpose, except as provided by law consistent with this article. Congress and the States may by law secure rights of access, correction, and deletion of private or personal information held by others.
 
 **Section 4.** The protection of this article applies with greatest force to information concerning a person's health, body, biometric and genetic identity, private communications, precise movements, and children, as further defined by law.
 
-**Section 5.** This right shall not be infringed except under authority of public, accessible, and foreseeable law; intrusions into a person's private communications, sensitive personal information, or continuous movements require a compelling public interest served by narrowly tailored means.
+**Section 5.** This right shall not be infringed except under authority of public, accessible, and foreseeable law; intrusions into a person's private communications, sensitive private or personal information, or continuous movements require a compelling public interest served by narrowly tailored means.
 
 **Section 6.** Any person aggrieved by a violation of this article may obtain redress in the courts, including equitable relief. Congress and the States may provide further remedies.
 
 **Section 7.** Nothing in this article shall abridge the freedom of speech or of the press. Congress shall have power to enforce this article by appropriate legislation.
 
-**Section 8.** This article governs the retention and use, after its ratification, of personal information however acquired; it does not render unlawful any acquisition completed before its ratification.
+**Section 8.** This article governs the retention and use, after its ratification, of private or personal information however acquired; it does not render unlawful any acquisition completed before its ratification.
 
 ## 5. Lobbying
 
