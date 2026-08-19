@@ -52,7 +52,7 @@
     "failedTest": null,
     "gate": null,
     "section": null,
-    "summary": "Limit senators to two terms and representatives to six, move the Supreme Court to staggered eighteen-year terms, and set a judicial retirement age — applying only to future officeholders.",
+    "summary": "Limit senators to two terms and representatives to three — the U.S. Term Limits amendment text —, move the Supreme Court to staggered eighteen-year terms, and set a judicial retirement age — applying only to future officeholders.",
     "pollQuestion": null,
     "pathBack": null,
     "memo": "research/TERM_LIMITS_RESEARCH.md",
@@ -316,7 +316,7 @@
     "verdict": "Strong — corroborated at 71% R / 92% D (Fox News crosstabs, 2024)",
     "failedTest": null,
     "gate": null,
-    "section": "Term Limits, Section 3",
+    "section": "Term Limits, Section 5",
     "summary": "No person may exercise the judicial power of the United States after the end of the calendar year in which they turn seventy-five, with sitting judges exempt.",
     "pollQuestion": null,
     "pathBack": null,
@@ -344,7 +344,7 @@
     "verdict": "Unpolled — folded on symmetry and drafting-necessity grounds, not on a number",
     "failedTest": null,
     "gate": null,
-    "section": "Term Limits, Section 2",
+    "section": "Term Limits, Section 4",
     "summary": "Each Supreme Court seat's eighteen-year term runs from its fixed calendar date whether or not the seat is filled, and the Court sits as constituted until the Senate acts.",
     "pollQuestion": {
       "wording": "When any president nominates someone to a federal office or judgeship, should the Senate be required to hold an up-or-down vote within a set period — say 120 days — or should the Senate be able to decline to vote at all?",
@@ -373,7 +373,7 @@
         "title": "Knock-out variant (adopted)",
         "status": "proposed",
         "gate": null,
-        "section": "Term Limits, Section 2",
+        "section": "Term Limits, Section 4",
         "note": "The variant folded on 2026-08-18: the Court sits as constituted until the Senate acts, and the seat's eighteen-year term clock runs from its calendar start date regardless, so refusing to confirm subtracts from the eventual Justice's tenure rather than preserving the seat."
       },
       {

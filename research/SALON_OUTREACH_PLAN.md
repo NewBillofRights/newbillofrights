@@ -178,6 +178,8 @@ Public-facing; follows the voice guide (no coded vocabulary, no officeholder nam
 
 Two lines that go in every version, in some form: *"We are not asking anyone to endorse anything,"* and *"Everything we publish shows its sources and its party breakdowns."*
 
+Before any organizational or academic outreach, consult the association-risk ledger in [orgs/README.md](orgs/README.md) (founder-adopted 2026-08-19) — it records the coding and conflict risks attached to named organizations and individuals in this field, and it governs who is approached and in what pairing.
+
 ## 8. Tracking and the balance rule
 
 - **Tracker:** one Google Sheet (or Airtable), one row per person: name · affiliation · constituency (§2) · source (who introduced) · lean (self-reported at RSVP, or "unknown") · tier · status (identified / invited / replied / RSVP / attended / follow-up sent) · ask-ladder rung · notes · date last touched. Organizations get their own tab with contact path and the matched-pair partner.

@@ -18,8 +18,8 @@ Every draft is written to bind both parties equally, forever — all future pres
 
 Each is a short statement of principle; the machinery is left to Congress and the states. The figure is the bipartisan floor — the lower of Republican and Democratic support — with the pollster and year.
 
-1. **Campaign Finance** — restore the power to set reasonable, viewpoint-neutral limits on election money; a right to know who funds it; bans on foreign money. *Floor 71% (Pew, 2023).*
-2. **Term Limits** — two terms for senators, six for representatives; staggered eighteen-year Supreme Court terms; a judicial retirement age — future officeholders only. *Floor 86% (Pew, 2023).*
+1. **Campaign Finance** — American Promise's For Our Freedom Amendment, word for word, plus a right to know who funds elections, bans on foreign money, and a press-and-speech savings clause. *Floor 71% (Pew, 2023).*
+2. **Term Limits** — three House terms and two Senate terms (the U.S. Term Limits amendment text, adopted word for word); staggered eighteen-year Supreme Court terms; a judicial retirement age — future officeholders only. *Floor 86% (Pew, 2023).*
 3. **Ethics** — no individual securities for covered officials in any branch; enforceable ethics rules, enforced from outside the officers they govern. *Floor 87% (University of Maryland, 2023).*
 4. **Privacy** — security against unreasonable governmental intrusion into private life; close the data-purchase loophole; no suspicionless mass collection. *Floor 68% (Pew, 2023).*
 5. **Lobbying** — a five-year wait before senior officials lobby for pay; a lifetime ban on lobbying for foreign governments. *Floor 71% (University of Maryland, 2022).*

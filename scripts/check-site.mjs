@@ -21,6 +21,7 @@ const canonical = readFileSync(resolve(root, 'research/PROPOSED_AMENDMENTS.md'),
 const corpusFiles = [
   ...readdirSync(resolve(root, 'research')).filter((f) => f.endsWith('.md')).map((f) => resolve(root, 'research', f)),
   ...readdirSync(resolve(root, 'research/rejected')).filter((f) => f.endsWith('.md')).map((f) => resolve(root, 'research/rejected', f)),
+  ...readdirSync(resolve(root, 'research/orgs')).filter((f) => f.endsWith('.md')).map((f) => resolve(root, 'research/orgs', f)),
   ...readdirSync(resolve(root, 'research/candidates')).filter((f) => f.endsWith('.md')).map((f) => resolve(root, 'research/candidates', f)),
   ...readdirSync(resolve(root, 'research/candidates/clauses')).filter((f) => f.endsWith('.md')).map((f) => resolve(root, 'research/candidates/clauses', f)),
 ];
