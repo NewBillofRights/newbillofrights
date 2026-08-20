@@ -1383,7 +1383,7 @@
     "failedTest": null,
     "gate": "Commissioned split-sample instrument: rights-in-the-data vs fiduciary-duty framings, each costs-named, each priced against an identical statutory companion",
     "section": null,
-    "summary": "A ninth section making the article's commercial rulebook — purpose limitation, minimization, accuracy, security, and access, correction, and deletion against private holders in commerce — a constitutional floor rather than the delegated legislative power Section 3 now provides, with machinery left to legislation in both candidate framings.",
+    "summary": "A ninth section making the article's commercial rulebook — purpose limitation, minimization, accuracy, security, and access, correction, and deletion against private holders in commerce — a constitutional floor rather than the delegated legislative power Section 3 now provides, with enforcement machinery routed to legislation in both candidate framings and the direct-enforceability question flagged for drafting counsel.",
     "pollQuestion": {
       "wording": "Would you favor or oppose adding to the Constitution a rule that companies collecting personal information may use it only for the purposes they stated, must keep it accurate and secure, and must let each person see, correct, and delete the information a company holds about them — with Congress and the states writing the enforcement rules?",
       "followUps": [
@@ -1406,7 +1406,7 @@
     "supersedes": [],
     "twinOf": null,
     "subItems": [],
-    "note": "The parent memo's strategic read names this fork: a California-style text reaching private actors, or an enumerated congressional power plus a floor of individual rights. The ratified article took the enumerated-power route (Section 3, third sentence; Section 7, second sentence); this clause is the other branch, registered on the founder's direction 2026-08-19. Distinct from the rejected privacy-deletion-right clause, which died on its government-records increment (30% R) and self-executing breadth: this clause is commerce-scoped, keeps remedies legislative, and carries deletion only in the form whose statutory twin reads 89% R / 77% D. Nothing here reopens that rejection; its path back remains the only route to a deletion right over government records."
+    "note": "The parent memo's strategic read names this fork: a California-style text reaching private actors, or an enumerated congressional power plus a floor of individual rights. The ratified article took the enumerated-power route (Section 3, third sentence; Section 7, second sentence); this clause is the other branch, registered on the founder's direction 2026-08-19. Distinct from the rejected privacy-deletion-right clause, which died on its government-records increment (30% R) and self-executing breadth: this clause is commerce-scoped, routes enforcement machinery to legislation, and carries deletion only in the form whose statutory twin reads 89% R / 77% D. Nothing here reopens that rejection; its path back remains the only route to a deletion right over government records."
   },
   {
     "id": "thirteenth-wage-floor",
