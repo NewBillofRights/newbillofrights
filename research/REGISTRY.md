@@ -6,7 +6,9 @@
 
 *Changelog: 2026-08-18 — `self-pardon-ban` moved from Rejected (category) to Candidate (clause of `pardon-reform`) on the founder's reopening decision; counts updated.*
 
-## Proposed (11)
+*Changelog: 2026-08-19 — mirror re-synced to the JSON: `thirteenth-prospective-effective-date` moved to Proposed (adopted 2026-08-18 as Article 9, Section 4); `redistricting-anti-favoritism` added as a candidate clause (registered by the 2026-08-19 movement-language pass); `privacy-data-protection` added as a candidate clause on the founder's direction; counts updated.*
+
+## Proposed (12)
 
 The nine target amendments and the clauses folded into them. For clauses, the last column gives the section of [PROPOSED_AMENDMENTS.md](PROPOSED_AMENDMENTS.md) the text now sits in.
 
@@ -23,10 +25,11 @@ The nine target amendments and the clauses folded into them. For clauses, the la
 | `thirteenth-exception` | Abolition of the Punishment Exception | category | **66R / 85D** (YouGov 2024) | — | [memo](THIRTEENTH_EXCEPTION_RESEARCH.md) | `/amendments/thirteenth-exception` |
 | `judicial-retirement-age` | A retirement age for federal judges | clause · term-limits | **68R / 82D** (Pew Research Center 2023) | Term Limits, Section 3 | [memo](candidates/AGE_LIMITS_CANDIDATE.md) | `/amendments/term-limits` |
 | `appointment-default` | Confirmation-refusal default for Supreme Court seats | clause · term-limits | Unpolled — folded on symmetry and drafting-necessity grounds, not on a number | Term Limits, Section 2 | [memo](candidates/APPOINTMENT_DEFAULT_CANDIDATE.md) | `/amendments/term-limits` |
+| `thirteenth-prospective-effective-date` | A prospective effective date | clause · thirteenth-exception | Adopted — offered as an optional section and adopted by the founder on 2026-08-18 | Article 9, Section 4 | [memo](THIRTEENTH_EXCEPTION_RESEARCH.md) | `/amendments/thirteenth-exception` |
 | ↳ `appointment-default-knockout` | Knock-out variant (adopted) | sub-item (proposed) | — | Term Limits, Section 2 | — | — |
 | ↳ `appointment-default-deemed-confirmed` | Deemed-confirmed variant (not adopted) | sub-item (candidate) | — | Unpolled; explicitly not folded | — | — |
 
-## Candidate (22)
+## Candidate (23)
 
 Under consideration, not accepted and not rejected. Each carries a **gate** — the specific evidence that would resolve it — and, where the corpus has written one, a survey specification with wording and a numeric threshold.
 
@@ -58,10 +61,11 @@ Under consideration, not accepted and not rejected. Each carries a **gate** — 
 | ↳ `exec-consequences-salary-suspension` | Salary suspension during certified noncompliance | sub-item (candidate) | — | Unpolled; 60% floor in both parties on the costs-named item | — | — |
 | `self-pardon-ban` | Presidential self-pardon ban | clause · pardon-reform | **61R / 85D** (YouGov (independent national) 2026) | Reopened; one independent forward-looking replication clearing 60% R | [memo](candidates/clauses/PARDON_SELF_PARDON_CLAUSE.md) | `/candidates/self-pardon-ban` |
 | `pardon-conspirators` | No clemency for the president's own conspirators | clause · pardon-reform | **43R / 79D** (YouGov (independent national) 2026) | Forward-looking both-parties wording on the coordination mechanism, not the 'allies' relationship | [memo](candidates/clauses/PARDON_CONSPIRATORS_CLAUSE.md) | `/amendments/pardon-reform` |
+| `privacy-data-protection` | A private-sector data-protection section | clause · privacy | Unpolled as constitutional text — adjacent statutory substance Strong (**68R / 78D** regulation, Pew 2023; **89R / 77D** company deletion tools, YouGov 2023) | Commissioned split-sample: rights-in-the-data vs fiduciary framings, costs-named, priced against a statutory companion | [memo](candidates/clauses/PRIVACY_DATA_PROTECTION_CLAUSE.md) | `/amendments/privacy` |
+| `redistricting-anti-favoritism` | An anti-favoritism standard for district maps | clause · redistricting | Unpolled federally — ratified state text four times over (FL 2010, CO 2018, MI 2018, UT 2018), but ballot totals do not yield a party floor | Held back from Article 6 pending a party-split poll | [memo](REDISTRICTING_RESEARCH.md) | `/amendments/redistricting` |
 | `thirteenth-wage-floor` | A constitutional wage floor for prison work | clause · thirteenth-exception | Unpolled — never asked in any form | Unpolled; would convert a deletion into a fiscal mandate on all fifty states | [memo](THIRTEENTH_EXCEPTION_RESEARCH.md) | `/amendments/thirteenth-exception` |
 | `thirteenth-work-requirement-ban` | A ban on work requirements as such | clause · thirteenth-exception | Unpolled — this is the maximal reading of the amendment and is not what any ballot measure asked | Unpolled; goes beyond both the polled proposition and the international norm | [memo](THIRTEENTH_EXCEPTION_RESEARCH.md) | `/amendments/thirteenth-exception` |
 | `thirteenth-private-hire-prohibition` | A private-hire prohibition | clause · thirteenth-exception | Unpolled — never asked in the United States in any form | Unpolled; a new substantive rule rather than a deletion | [memo](THIRTEENTH_EXCEPTION_RESEARCH.md) | `/amendments/thirteenth-exception` |
-| `thirteenth-prospective-effective-date` | A prospective effective date | clause · thirteenth-exception | Unpolled — offered as an optional section for the founder to decide, not held on evidence | Founder decision outstanding; unpolled | [memo](THIRTEENTH_EXCEPTION_RESEARCH.md) | `/amendments/thirteenth-exception` |
 
 ## Rejected (16)
 
@@ -90,11 +94,11 @@ Deliberately excluded. Each carries the **test it failed** and, where one exists
 
 | | category | clause | total |
 | --- | --- | --- | --- |
-| proposed | 9 | 2 | 11 |
-| candidate | 11 | 11 | 22 |
+| proposed | 9 | 3 | 12 |
+| candidate | 11 | 12 | 23 |
 | rejected | 12 | 4 | 16 |
-| **total** | **33** | **16** | **49** |
+| **total** | **33** | **18** | **51** |
 
-**Candidates with no poll wording written** (4): `thirteenth-wage-floor`, `thirteenth-work-requirement-ban`, `thirteenth-private-hire-prohibition`, `thirteenth-prospective-effective-date` — each carries a `pollQuestionNote` recording what the memo states instead of a drafted question.
+**Candidates with no poll wording written** (3): `thirteenth-wage-floor`, `thirteenth-work-requirement-ban`, `thirteenth-private-hire-prohibition` — each carries a `pollQuestionNote` recording what the memo states instead of a drafted question.
 
 *Generated 2026-08-18 from the corpus. Every figure is copied from the cited memo or page with its pollster, year, and source URL; `null` marks a value the corpus does not state.*

@@ -412,3 +412,7 @@ The founder decided on 2026-08-19 that Article 2 Sections 1 through 3 adopt the 
 The founder's instruction is that the trade is **stated openly on the page**: the evidence that favors twelve years is presented as this memo finds it, alongside the reason the shorter limit was adopted. Under [COPY_VOICE_GUIDE.md](../COPY_VOICE_GUIDE.md), that means describing the trade and the reason it was taken — not defending it against an anticipated objection.
 
 **Two drafting questions this decision leaves open.** First, USTL's text carries a seven-year ratification deadline; no amendment in our corpus does, and the landscape pass flags this as a corpus-wide question rather than an Article 2 one. Second, the anti-evasion clause is original to us — no drafted text in the field, USTL's included, does what it does, so its wording cannot be borrowed and must survive on this memo's own comparative evidence on evasion.
+
+## Review Additions (2026-08-19b — Welch–Manchin borrows, founder-adopted)
+
+Article 2 §4 now carries express non-renewability and seniority succession to the Chief Justiceship (ideas of Welch–Manchin §§8 and 7, drafted in our own words — their §7 text would have changed more of Article II than this article otherwise touches). Open litigation question 8 (Chief Justice elevation and the age cap) is resolved by the seniority rule: there is no elevation appointment, so no new clock can start. Source: research/orgs/TERM_LIMITS_ORGS.md.

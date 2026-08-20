@@ -1364,6 +1364,51 @@
     "note": "The article instead guarantees access and correction against government and makes commercial access, correction, and deletion an express legislative power, so the idea survives as a delegated power rather than a right. The one clause in the privacy article whose why-an-amendment answer does not transfer from the parent."
   },
   {
+    "id": "privacy-data-protection",
+    "title": "A private-sector data-protection section",
+    "kind": "clause",
+    "parent": "privacy",
+    "status": "candidate",
+    "tags": [],
+    "floor": {
+      "rep": 68,
+      "dem": 78,
+      "ind": null,
+      "overall": 72,
+      "pollster": "Pew Research Center (adjacent: more government regulation of what companies do with personal data — the statutory version, not constitutional text)",
+      "year": 2023,
+      "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/"
+    },
+    "verdict": "Unpolled as constitutional text — the statutory substance is Strong in every party split (68% R / 78% D regulation; 89% R / 77% D company deletion tools), but no survey has asked whether the rulebook belongs in the Constitution, and the two honest framings have never been tested against each other",
+    "failedTest": null,
+    "gate": "Commissioned split-sample instrument: rights-in-the-data vs fiduciary-duty framings, each costs-named, each priced against an identical statutory companion",
+    "section": null,
+    "summary": "A ninth section making the article's commercial rulebook — purpose limitation, minimization, accuracy, security, and access, correction, and deletion against private holders in commerce — a constitutional floor rather than the delegated legislative power Section 3 now provides, with machinery left to legislation in both candidate framings.",
+    "pollQuestion": {
+      "wording": "Would you favor or oppose adding to the Constitution a rule that companies collecting personal information may use it only for the purposes they stated, must keep it accurate and secure, and must let each person see, correct, and delete the information a company holds about them — with Congress and the states writing the enforcement rules?",
+      "followUps": [
+        "Split-sample framing arm (fiduciary): the identical item with the rule restated as duties of care, loyalty, and confidentiality owed by companies collecting personal information as a condition of a service — like the duties a bank or a lawyer owes a client — with Congress and the states writing the enforcement rules",
+        "Statutory companion, split-sampled against the core item to price the constitutional increment: the identical wording with 'adding to the Constitution a rule' replaced by 'a federal law requiring'",
+        "Costs named: supporters say people should have rights over data companies collect about them no matter which party writes the laws, and that every attempt to pass this by statute has failed for thirty years; opponents say constitutional rules on businesses would burden small companies, raise the cost of free online services, and put judges in charge of how websites work"
+      ],
+      "threshold": "60% in both parties on the costs-named core item, and the constitutional version within 10 points of the statutory companion — if constitutionalization costs more than 10 points, the public is endorsing the statute Section 3 already authorizes. Between framings, adopt whichever clears; if both, the rights-based text, which matches the article's Section 3 vocabulary. Below 45% in either party on both framings moves the clause to rejected with the statutory route noted.",
+      "verbatim": false
+    },
+    "pathBack": null,
+    "memo": "research/candidates/clauses/PRIVACY_DATA_PROTECTION_CLAUSE.md",
+    "page": null,
+    "parentPage": "/amendments/privacy",
+    "since": "2026-08-19",
+    "decidedOn": "2026-08-19",
+    "alsoListedUnder": [
+      "privacy"
+    ],
+    "supersedes": [],
+    "twinOf": null,
+    "subItems": [],
+    "note": "The parent memo's strategic read names this fork: a California-style text reaching private actors, or an enumerated congressional power plus a floor of individual rights. The ratified article took the enumerated-power route (Section 3, third sentence; Section 7, second sentence); this clause is the other branch, registered on the founder's direction 2026-08-19. Distinct from the rejected privacy-deletion-right clause, which died on its government-records increment (30% R) and self-executing breadth: this clause is commerce-scoped, keeps remedies legislative, and carries deletion only in the form whose statutory twin reads 89% R / 77% D. Nothing here reopens that rejection; its path back remains the only route to a deletion right over government records."
+  },
+  {
     "id": "thirteenth-wage-floor",
     "title": "A constitutional wage floor for prison work",
     "kind": "clause",
