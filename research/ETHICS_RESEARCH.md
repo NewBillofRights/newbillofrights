@@ -343,3 +343,7 @@ Reused from earlier in this memo:
 ## Draft revision note (2026-08-18)
 
 *PROPOSED_AMENDMENTS.md was revised today at the founder's direction after the implementation pass above surfaced the gaps.* §1 defines "covered officers"; new §6 gives Section 1 a one-year effective date and a one-year compliance window for later officeholders (Congress may shorten). Resolves the day-one/divestment gap and the undefined-term gap in §3(f) above. The site's draft text, annotations, and "If it passes" section were updated to match; Gemini Pro reviewed the revised clauses.
+
+## Review Additions (2026-08-19 — org-landscape pass, founder-adopted definitional detail)
+
+Adopted from research/orgs/ETHICS_ORGS.md for the **implementing legislation** Article 3 delegates (not for the draft text, which is unchanged): (1) the CREW-convened coalition's concrete asset taxonomy — individual securities including private equity, venture capital, hedge funds, and digital assets — as the coverage list a statute should name; (2) express coverage of spouses and dependent children; (3) the coalition's warning against a "knowingly" intent standard, which converts a bright-line holding rule into a litigable state-of-mind test. NTU's diversified-fund condition (the safe harbor our Section 1 carries) is the right-of-center validation of the same design. Source: research/orgs/ETHICS_ORGS.md; coalition letter cached at research/cache/.

@@ -10,6 +10,8 @@ Draft constitutional text compiled from the eight category research documents. O
 
 *Revision 2026-08-19b (founder-directed): Privacy vocabulary aligned to ratified state constitutional text — §1's enumeration now carries "electronic communications and data" (Missouri Art. I §15, 74.75%, 2014; Michigan Art. I §11, 88.75%, 2020) and the article's operative term is now "private or personal information" (New Hampshire Pt. I Art. 2-b, ~81%, 2018) throughout §§1–3, 5, and 8. The enumeration is illustrative ("including"), so no coverage narrows; the substance of every section is unchanged. Source: research/orgs/PRIVACY_ORGS.md.*
 
+*Revision 2026-08-19c (founder-directed, README rows 3–9 adoption): Lobbying §1 restructured to name the supervisory tier expressly — "or for directing or supervising the provision of such advice" — borrowing the formula of the American Anti-Corruption Act's shadow-lobbying provision (Provision 13), which the prior wording reached only by implication. No other draft text changed; the pardon and Article 9 pages gain evidence citations (Kentucky SB 10; the Abolition Amendment as the §1 precedent), the Ethics memo gains the coalition's definitional detail for implementing legislation, and the redistricting anti-favoritism floor enters the registry as a hold-and-poll candidate clause. Source: research/orgs/README.md.*
+
 ## 1. Campaign Finance
 
 **Section 1.** We the People have compelling sovereign interests in the freedom of speech, representative self-government, federalism, the integrity of the electoral process, and the political equality of natural persons.
@@ -72,7 +74,7 @@ Draft constitutional text compiled from the eight category research documents. O
 
 ## 5. Lobbying
 
-**Section 1.** No person who has served as a Senator, Representative, or officer of the United States in a senior position defined by law shall, within five years after leaving such office, receive compensation for advocating before, or advising others in advocating before, the Congress or the executive agencies of the United States on behalf of any other person or entity. This section shall not be construed to abridge the right of any person to petition the Government on their own behalf, or without compensation on behalf of others.
+**Section 1.** No person who has served as a Senator, Representative, or officer of the United States in a senior position defined by law shall, within five years after leaving such office, receive compensation for advocating before the Congress or the executive agencies of the United States on behalf of any other person or entity, or for advising others in such advocacy, or for directing or supervising the provision of such advice. This section shall not be construed to abridge the right of any person to petition the Government on their own behalf, or without compensation on behalf of others.
 
 **Section 2.** No person who has served as President, Vice President, Senator, Representative, judge of the United States, officer of the United States in a senior position defined by law, or commissioned officer of the armed forces in a general or flag rank shall at any time receive compensation from, or act as the agent of, a foreign government or foreign political party for the purpose of influencing any policy or action of the United States.
 

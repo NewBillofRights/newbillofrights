@@ -1964,5 +1964,25 @@
     "twinOf": null,
     "subItems": [],
     "note": "Moved candidate to rejected by founder decision 2026-08-18. Sourced from the r/PoliticalDiscussion thread mining; symmetric by simulation, which is the category's strongest result."
+  },
+  {
+    "id": "redistricting-anti-favoritism",
+    "title": "An anti-favoritism standard for district maps",
+    "kind": "clause",
+    "parent": "redistricting",
+    "status": "candidate",
+    "tags": [],
+    "floor": null,
+    "verdict": "Unpolled federally — the standard is ratified state text four times over (FL 2010, CO 2018, MI 2018, UT 2018), but ballot totals do not yield a party floor",
+    "failedTest": null,
+    "gate": "Held back from Article 6 pending a party-split poll; four state ratifications justify commissioning the question, not un-holding the clause",
+    "section": null,
+    "summary": "A rule that no district map may be drawn with the intent to favor or disfavor a political party or an incumbent — the standard voters have ratified in four state constitutions, held out of Article 6 until a national party-split reading exists.",
+    "pollQuestion": {
+      "wording": "Four states have added to their constitutions a rule that election district maps may not be drawn with the intent to favor or disfavor any political party or any incumbent. Would you support or oppose adding the same rule to the U.S. Constitution?",
+      "threshold": "Reopen for drafting at a 60% floor in the less supportive party; below 45%, record as tested and keep held",
+      "note": "Ohio's 2024 defeat shows the boundary: the question must carry no proportionality target, only the intent standard (research/orgs/REDISTRICTING_ORGS.md)."
+    },
+    "memo": "research/REDISTRICTING_RESEARCH.md"
   }
 ]
