@@ -335,3 +335,7 @@ Not cited (could not be opened): federalregister.gov (redirects to an unblock pa
 ## Draft revision note (2026-08-18)
 
 *PROPOSED_AMENDMENTS.md was revised today at the founder's direction after the implementation pass above surfaced the gaps.* §§1, 2, 4 say "granted by the President"; §1 names the President as publisher; §5 defines "reprieve or pardon" to include a commutation of sentence. Resolves the state-governor reading, the publisher gap, and the commutation asymmetry in §3(f) above; §4's bribery-statute presupposition remains (Congress can clarify by statute). The site's draft text, annotations, and "If it passes" section were updated to match; Gemini Pro reviewed the revised clauses.
+
+## Review Additions (2026-08-19 — machinery clause, founder-adopted)
+
+Article 8 gains §6: "Congress may by law provide for the manner of publication and reporting under this article." Narrow form chosen over a general enforcement clause: the article's strength is that §§1–4 are self-executing conditions with no congressional role in clemency (the design that answers the Cato-style second-decision-maker objection), and a general "power to enforce" would reopen that flank and interact unpredictably with the void/takes-effect structure. The narrow clause removes any doubt that Congress may designate the publication vehicle, deadline, and reporting format (the implementation section's item (d)). Prompt: Cohen's H.J.Res. 13 (119th) added a general enforcement clause. Source: research/orgs/PARDON_ORGS.md.

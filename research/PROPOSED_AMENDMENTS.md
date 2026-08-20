@@ -14,6 +14,8 @@ Draft constitutional text compiled from the eight category research documents. O
 
 *Revision 2026-08-19d (founder-directed): Term Limits §4 gains two sentences adopting the ideas of Welch–Manchin §§7–8 in this project's own words — the eighteen-year term is expressly non-renewable (a former Justice may not be reappointed; the prior text implied this through "a single term" but did not say it), and the Chief Justiceship passes by seniority without a further appointment, which resolves the memo's open litigation question 8 (whether elevating a sitting Justice to Chief restarts a clock — it cannot, because there is no elevation appointment). Source: research/orgs/TERM_LIMITS_ORGS.md.*
 
+*Revision 2026-08-19e (founder-directed): Pardon Reform gains a narrow machinery clause as new §6 — "Congress may by law provide for the manner of publication and reporting under this article" — publication mechanics only, not a general enforcement power, preserving the article's self-executing design and its lack of any congressional role in clemency decisions. Prompted by the org-landscape finding that Cohen's 119th-Congress text added a general enforcement clause (research/orgs/PARDON_ORGS.md); the general form was considered and declined.*
+
 ## 1. Campaign Finance
 
 **Section 1.** We the People have compelling sovereign interests in the freedom of speech, representative self-government, federalism, the integrity of the electoral process, and the political equality of natural persons.
@@ -111,6 +113,8 @@ Draft constitutional text compiled from the eight category research documents. O
 **Section 4.** A reprieve or pardon granted by the President in exchange for anything of value, or for the purpose of shielding the President from legal liability or advancing the President's private financial interest, is void; and the acceptance of anything of value in return for the grant of a reprieve or pardon may be punished as bribery notwithstanding any grant.
 
 **Section 5.** In this article, "reprieve or pardon" includes a commutation of sentence. Nothing in this article shall be construed to diminish the power to grant reprieves, pardons, or commutations to any person not described herein.
+
+**Section 6.** Congress may by law provide for the manner of publication and reporting under this article.
 
 ## 9. Abolition of the Punishment Exception (Thirteenth Amendment)
 
