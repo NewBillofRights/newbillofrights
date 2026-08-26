@@ -2,6 +2,8 @@
 
 *Ten-memo pass, 2026-08-19 (nine per-amendment + one cross-cutting; parallel agents, every claim web-verified, raw fetches in `research/cache/`). Commissioned after Michael's direction to prefer adopting amendment language from orgs that have invested deeply (he named American Promise and U.S. Term Limits). Research docs — not public copy; no Gemini pass yet. Each memo ends with an adopt-100% gain/lose table and lists its unverifiable items.*
 
+*Changelog: 2026-08-25 — added [PEOPLES_BILL_OF_RIGHTS_250.md](PEOPLES_BILL_OF_RIGHTS_250.md), an eleventh memo outside the original pass: The People's Bill of Rights 250 (Katie Fahey / The People) launched 2026-07-28, three weeks before this pass ran, and was missed. Name-adjacent, no amendment text of its own, convention-accepting. Ledger updated below.*
+
 *Changelog: 2026-08-19 — founder adopted the recommendations of all nine rows and the cross-cutting strategy. Rows 1–2: FOFA (website version) and USTL text adopted into Articles 1–2. Rows 3–9 executed: Lobbying §1 carries the AACA supervisory formula; Privacy vocabulary ratified-text swaps; Kentucky SB 10 and the Abolition Amendment cited as evidence/precedent on the pardon and Article 9 pages; Ethics definitional detail recorded for implementing legislation; the redistricting anti-favoritism floor entered the registry as a hold-and-poll candidate clause with a drafted question. Congressional route, adopt≠join rule, and 501(h)/c3-c4 structure accepted.*
 
 ## The one-line answer to the adoption question
@@ -40,4 +42,4 @@
 
 ## Association-risk ledger (before any outreach)
 
-Jeff Clements cofounded both American Promise **and** Free Speech For People (which runs impeachment/ICE campaigns from the same nav) · Common Cause on redistricting (retaliation carve-out) · Protect Democracy on pardons (unwithdrawn no-amendment-needed paper) and coding risk on Art. 7 · ASNN on Art. 9 (ActBlue) · Institute for Free Speech is a peer-scale adversary ($3.7M), not outgunned.
+Jeff Clements cofounded both American Promise **and** Free Speech For People (which runs impeachment/ICE campaigns from the same nav) · Common Cause on redistricting (retaliation carve-out) · Protect Democracy on pardons (unwithdrawn no-amendment-needed paper) and coding risk on Art. 7 · ASNN on Art. 9 (ActBlue) · Institute for Free Speech is a peer-scale adversary ($3.7M), not outgunned. · **The People's Bill of Rights 250** (memo: [PEOPLES_BILL_OF_RIGHTS_250.md](PEOPLES_BILL_OF_RIGHTS_250.md)) — name-adjacent, launched 2026-07-28; accepts an Article V convention *and* "sections of a modernized Constitution"; single-sided coalition (ERA Coalition, She Should Run, RepresentWomen, Alicia Keys) despite nonpartisan branding; operator The People is c3-only while fronting amendment advocacy. Cite Katie Fahey's Michigan work, do not associate with the campaign.

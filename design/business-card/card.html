@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Business card — Michael Hamilton</title>
+<style>
+  @font-face {
+    font-family: 'Libre Caslon Text';
+    font-style: normal; font-weight: 400;
+    src: url('libre-caslon-text-400.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Libre Caslon Text';
+    font-style: normal; font-weight: 700;
+    src: url('libre-caslon-text-700.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Public Sans';
+    font-style: normal; font-weight: 400 600;
+    src: url('public-sans-var.woff2') format('woff2');
+  }
+
+  :root {
+    --paper: #faf7f1;
+    --ink: #1c2b3a;
+    --ink-soft: #46566b;
+    --accent: #a97d1c;
+    --accent-text: #7c5c12;
+    --rule: #ddd6c8;
+    --font-serif: 'Libre Caslon Text', Georgia, serif;
+    --font-sans: 'Public Sans', system-ui, sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  @page { size: 3.75in 2.25in; margin: 0; }
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    font-family: var(--font-sans);
+  }
+
+  /* Each .card is the full-bleed page: trim 3.5x2, bleed 0.125 each side.
+     Safe zone: keep content 0.25in from page edge (0.125 in from trim). */
+  .card {
+    width: 3.75in; height: 2.25in;
+    page-break-after: always;
+    position: relative;
+    overflow: hidden;
+  }
+  .card:last-child { page-break-after: auto; }
+
+  /* ---------- FRONT ---------- */
+  .front { background: var(--paper); color: var(--ink); }
+  .front .inner {
+    position: absolute; inset: 0.25in;
+    display: flex; flex-direction: column;
+  }
+  .front .brand-row {
+    display: flex; align-items: center; gap: 7pt;
+  }
+  .front .brand-row img { width: 22pt; height: 22pt; }
+  .front .brand-row .org {
+    font-family: var(--font-serif); font-weight: 700; font-size: 9.5pt;
+    letter-spacing: 0.01em;
+  }
+  .front .name-block { margin-top: auto; }
+  .front .name {
+    font-family: var(--font-serif); font-weight: 700; font-size: 14.5pt;
+    line-height: 1.05;
+  }
+  .front .role {
+    font-size: 7pt; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--accent-text); margin-top: 3.5pt;
+  }
+  .front .rule {
+    height: 1.5pt; background: var(--accent); width: 34pt;
+    margin: 7pt 0 7pt; border-radius: 1pt;
+  }
+  .front .contact { font-size: 7.6pt; color: var(--ink-soft); line-height: 1.55; }
+  .front .contact strong { color: var(--ink); font-weight: 600; }
+
+  /* ---------- BACK ---------- */
+  .back { background: var(--ink); }
+  .back .inner {
+    position: absolute; inset: 0.25in;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+  }
+  .qr-row { display: flex; gap: 16pt; align-items: flex-start; }
+  .qr-unit { text-align: center; }
+  .qr-tile {
+    background: #ffffff; border-radius: 3pt;
+    padding: 5.5pt; /* quiet zone */
+    width: 66pt; height: 66pt;
+  }
+  .qr-tile img { width: 55pt; height: 55pt; display: block; }
+  .qr-letter {
+    font-family: var(--font-serif); font-weight: 700; font-size: 10.5pt;
+    color: var(--accent); margin-top: 4.5pt;
+  }
+</style>
+</head>
+<body>
+
+<!-- FRONT -->
+<div class="card front">
+  <div class="inner">
+    <div class="brand-row">
+      <img src="seal.svg" alt="" />
+      <div class="org">New Bill of Rights Foundation</div>
+    </div>
+    <div class="name-block">
+      <div class="name">Michael Hamilton</div>
+      <div class="role">Founder</div>
+      <div class="rule"></div>
+      <div class="contact">
+        <strong>michael@newbillofrights.net</strong><br />
+        404-218-8321 &nbsp;·&nbsp; newbillofrights.net
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BACK -->
+<div class="card back">
+  <div class="inner">
+    <div class="qr-row">
+      <div class="qr-unit">
+        <div class="qr-tile"><img src="qr-a.svg" alt="QR code A" /></div>
+        <div class="qr-letter">A</div>
+      </div>
+      <div class="qr-unit">
+        <div class="qr-tile"><img src="qr-b.svg" alt="QR code B" /></div>
+        <div class="qr-letter">B</div>
+      </div>
+      <div class="qr-unit">
+        <div class="qr-tile"><img src="qr-c.svg" alt="QR code C" /></div>
+        <div class="qr-letter">C</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
