@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>The New Bill of Rights — event handout</title>
+<style>
+  @font-face {
+    font-family: 'Libre Caslon Text';
+    font-style: normal; font-weight: 400;
+    src: url('libre-caslon-text-400.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Libre Caslon Text';
+    font-style: normal; font-weight: 700;
+    src: url('libre-caslon-text-700.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Public Sans';
+    font-style: normal; font-weight: 400 600;
+    src: url('public-sans-var.woff2') format('woff2');
+  }
+
+  :root {
+    --paper: #faf7f1;
+    --paper-raised: #ffffff;
+    --ink: #1c2b3a;
+    --ink-soft: #46566b;
+    --accent: #a97d1c;
+    --accent-text: #7c5c12;
+    --rule: #ddd6c8;
+    --band: #efe9dc;
+    --font-serif: 'Libre Caslon Text', 'Iowan Old Style', Palatino, Georgia, serif;
+    --font-sans: 'Public Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: var(--paper); }
+  body {
+    font-family: var(--font-sans);
+    color: var(--ink);
+    font-size: 9.15pt;
+    line-height: 1.38;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  @page { size: letter; margin: 0; }
+  .page {
+    width: 8.5in; height: 11in;
+    padding: 0.46in 0.58in 0.36in;
+    background: var(--paper);
+    page-break-after: always;
+    position: relative;
+    display: flex; flex-direction: column;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  h1, h2, h3 { font-family: var(--font-serif); font-weight: 700; color: var(--ink); }
+  h2 {
+    font-size: 11.5pt; margin-bottom: 3.5pt;
+    padding-bottom: 2.5pt; border-bottom: 1px solid var(--rule);
+  }
+  em { font-style: italic; }
+  strong { font-weight: 600; }
+  h1 strong, h2 strong, h3 strong { font-weight: 700; }
+
+  /* ---------- masthead ---------- */
+  .masthead {
+    display: flex; align-items: center; gap: 12pt;
+    padding-bottom: 7pt; border-bottom: 2.5px solid var(--accent);
+    margin-bottom: 9pt;
+  }
+  .masthead img.seal { width: 42pt; height: 42pt; }
+  .masthead .title-block h1 { font-size: 20pt; line-height: 1.1; }
+  .masthead .title-block .pillars {
+    font-family: var(--font-sans); font-size: 8pt; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--accent-text); margin-top: 3pt;
+  }
+  .tagline {
+    font-family: var(--font-serif); font-size: 11.3pt; line-height: 1.35;
+    margin-bottom: 8pt;
+  }
+
+  .section { margin-bottom: 6pt; }
+  .section p + p { margin-top: 4pt; }
+
+  /* ---------- amendments list ---------- */
+  .amendments { list-style: none; counter-reset: amd; margin-top: 2pt; line-height: 1.33; }
+  .amendments li {
+    counter-increment: amd;
+    position: relative;
+    padding-left: 15pt;
+    margin-bottom: 3.8pt;
+  }
+  .amendments li::before {
+    content: counter(amd);
+    position: absolute; left: 0; top: 0.5pt;
+    font-family: var(--font-serif); font-weight: 700;
+    font-size: 10pt; color: var(--accent-text);
+  }
+  .amendments .floor { color: var(--ink-soft); font-style: italic; }
+
+  /* ---------- footer ---------- */
+  .foot {
+    margin-top: auto; padding-top: 5pt; border-top: 1px solid var(--rule);
+    display: flex; justify-content: space-between; align-items: baseline; gap: 18pt;
+    font-size: 8.2pt; color: var(--ink-soft);
+  }
+  .foot .site { font-weight: 600; color: var(--ink); }
+  .foot .right { text-align: right; }
+
+  /* ---------- chart ---------- */
+  .chart-wrap { margin-top: 2pt; }
+  .chart-wrap svg { width: 86%; height: auto; display: block; }
+  .chart-caption { font-size: 8.2pt; color: var(--ink-soft); margin-top: 3pt; }
+
+  /* ---------- stat tiles ---------- */
+  .tiles { display: flex; gap: 7pt; margin: 3.5pt 0 3.5pt; }
+  .tile {
+    flex: 1; background: var(--band); border-radius: 4pt;
+    padding: 5.5pt 8pt 5pt;
+  }
+  .tile .num {
+    font-family: var(--font-serif); font-weight: 700; font-size: 16.5pt;
+    line-height: 1; color: var(--ink);
+  }
+  .tile .num .pct { font-size: 11pt; }
+  .tile .lbl { font-size: 8pt; color: var(--ink-soft); margin-top: 2.5pt; line-height: 1.3; }
+  .tile-src { font-size: 8pt; color: var(--ink-soft); margin-bottom: 5pt; }
+
+  /* ---------- two-column band ---------- */
+  .cols { display: flex; gap: 14pt; }
+  .cols > div { flex: 1; }
+
+  /* ---------- asks ---------- */
+  .asks { list-style: none; margin-top: 2pt; }
+  .asks li { position: relative; padding-left: 11pt; margin-bottom: 3pt; break-inside: avoid; }
+  .asks li::before {
+    content: ''; position: absolute; left: 0; top: 4.2pt;
+    width: 5pt; height: 5pt; border-radius: 1pt; background: var(--accent);
+  }
+  .asks.two-col { column-count: 2; column-gap: 16pt; }
+
+  /* ---------- QR band ---------- */
+  .qr-band {
+    background: var(--band); border-radius: 5pt;
+    padding: 7pt 10pt 7pt; margin-top: 4pt;
+  }
+  .qr-band h2 { border-bottom: none; margin-bottom: 5pt; padding-bottom: 0; }
+  .qr-cards { display: flex; gap: 10pt; }
+  .qr-card {
+    flex: 1; background: var(--paper-raised); border: 1px solid var(--rule);
+    border-radius: 4pt; padding: 7pt 6pt 6pt; text-align: center;
+  }
+  .qr-card img { width: 57pt; height: 57pt; display: block; margin: 0 auto 4pt; }
+  .qr-card .qr-title {
+    font-family: var(--font-serif); font-weight: 700; font-size: 10pt;
+  }
+  .qr-card .qr-sub { font-size: 7.8pt; color: var(--ink-soft); margin-top: 1.5pt; line-height: 1.3; }
+  .qr-card .qr-url { font-size: 7.1pt; color: var(--accent-text); margin-top: 3pt; }
+</style>
+</head>
+<body>
+
+<!-- ================= PAGE 1 (front) ================= -->
+<div class="page">
+  <div class="masthead">
+    <img class="seal" src="seal.svg" alt="New Bill of Rights seal" />
+    <div class="title-block">
+      <h1>The New Bill of Rights</h1>
+      <div class="pillars">Freedom &nbsp;·&nbsp; Democracy &nbsp;·&nbsp; Rule of Law &nbsp;·&nbsp; Good Government</div>
+    </div>
+  </div>
+
+  <p class="tagline"><strong>A nonpartisan project to advance a new group of constitutional
+  amendments — only the ones that Americans across the whole political spectrum
+  already support.</strong></p>
+
+  <div class="section">
+    <h2>The idea</h2>
+    <p>The Constitution can be amended only with overwhelming consensus: two-thirds
+    of Congress and three-fourths of the states. We treat that bar as the organizing
+    principle, not the obstacle. Every proposal is judged by its <strong>bipartisan
+    floor</strong> — the level of support in the <em>less</em> supportive party,
+    measured with independent polling, ballot results, and cross-party votes. The
+    working bar is sixty percent or better in the less supportive party. Proposals
+    that fail are set aside publicly, with their evidence, and can return only when
+    the evidence changes. Seventy-five percent support overall with a 40% floor is a
+    partisan idea with a good press release; we don't carry those.</p>
+    <p>Every draft is written to bind both parties equally, forever — all future
+    presidents, all future majorities. We never cite one side's abuses without the
+    other's, and each side gives up a weapon at the same moment the other does.</p>
+  </div>
+
+  <div class="section">
+    <h2>The nine amendments</h2>
+    <p>Each is a short statement of principle; the machinery is left to Congress and
+    the states. The figure is the bipartisan floor — the lower of Republican and
+    Democratic support — with the pollster and year.</p>
+    <ol class="amendments">
+      <li><strong>Campaign Finance</strong> — the For Our Freedom Amendment as
+      American Promise publishes it, with one viewpoint-neutrality sentence added;
+      plus a right to know who funds elections, bans on foreign money, and an
+      express guarantee that the press and political speech stay protected.
+      <span class="floor">Floor 71% (Pew, 2023).</span></li>
+      <li><strong>Term Limits</strong> — three House terms and two Senate terms (the
+      U.S. Term Limits amendment text, adopted word for word); staggered
+      eighteen-year Supreme Court terms; a judicial retirement age — future
+      officeholders only. <span class="floor">Floor 86% (Pew, 2023).</span></li>
+      <li><strong>Ethics</strong> — no owning or trading individual stocks for senior
+      officials in any branch; enforceable ethics rules, enforced from outside the
+      officers they govern. <span class="floor">Floor 87% (University of Maryland, 2023).</span></li>
+      <li><strong>Privacy</strong> — security against unreasonable governmental
+      intrusion into private life; the government may not buy its way around a
+      warrant by purchasing personal data; no suspicionless mass collection.
+      <span class="floor">Floor 68% (Pew, 2023, on data-privacy regulation — the nearest polled proxy).</span></li>
+      <li><strong>Lobbying</strong> — a five-year wait before senior officials lobby
+      for pay; a lifetime ban on lobbying for foreign governments.
+      <span class="floor">Floor 72% (University of Maryland, 2022).</span></li>
+      <li><strong>Redistricting</strong> — districts drawn once per census, never
+      redrawn mid-decade for advantage. <span class="floor">Floor 70% (Marquette, 2025).</span></li>
+      <li><strong>Executive Compliance with the Courts</strong> — court judgments
+      bind every officer of the United States, including the President; the right to
+      appeal preserved. <span class="floor">Floor 78% (Marquette, 2025).</span></li>
+      <li><strong>Limited Presidential Pardon Reform</strong> — every pardon
+      published with recipient, offenses, and reasons; no pardons to family, for
+      payment, or to shield the President.
+      <span class="floor">Floor 64% (YouGov for Protect Democracy, 2024).</span></li>
+      <li><strong>Abolition of the Punishment Exception</strong> — remove the
+      Thirteenth Amendment's exception so the prohibition on slavery and involuntary
+      servitude is unqualified; voluntary, paid prison work programs preserved.
+      <span class="floor">Floor 66% (YouGov, 2024).</span></li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <h2>How we work</h2>
+    <p><strong>Evidence before advocacy</strong> — every claim on the site is
+    footnoted to a primary source, with party breakdowns, pollster, and year.
+    <strong>Principles, not machinery</strong> — dollar amounts, thresholds, and
+    agency designs belong in legislation. <strong>Ratify consensus; don't
+    manufacture it</strong> — research, commissioned polling, salons, and
+    state-level work come first, so the amendment is asked to carry agreement the
+    country has already reached.</p>
+  </div>
+
+  <div class="foot">
+    <span><span class="site">newbillofrights.net</span> &nbsp;·&nbsp; contact@newbillofrights.net</span>
+    <span class="right">Every number on this page is published on the site with its party breakdown, pollster, and year.</span>
+  </div>
+</div>
+
+<!-- ================= PAGE 2 (back) ================= -->
+<div class="page">
+
+  <div class="section chart-wrap">
+    <h2>The nine floors at a glance</h2>
+    <svg viewBox="0 0 740 191.5" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bipartisan floors of the nine amendments, 64 to 87 percent"><line x1="168" y1="4" x2="168" y2="188.5" stroke="#ddd6c8" stroke-width="1"/><path d="M 168 9 L 405.4 9 Q 409.4 9 409.4 13 L 409.4 15.5 Q 409.4 19.5 405.4 19.5 L 168 19.5 Z" fill="#a97d1c"/><text x="158" y="17.85" text-anchor="end" font-family="Public Sans, sans-serif" font-size="11.5" fill="#1c2b3a">Campaign Finance</text><text x="415.4" y="18.05" font-family="Public Sans, sans-serif" font-size="11.5" font-weight="600" fill="#1c2b3a">71%</text><text x="740" y="17.85" text-anchor="end" font-family="Public Sans, sans-serif" font-size="9.6" fill="#46566b">71 R · 76 D — Pew 2023</text><path d="M 168 29.5 L 456.4 29.5 Q 460.4 29.5 460.4 33.5 L 460.4 36 Q 460.4 40 456.4 40 L 168 40 Z" fill="#a97d1c"/><text x="158" y="38.35" text-anchor="end" font-family="Public Sans, sans-serif" font-size="11.5" fill="#1c2b3a">Term Limits</text><text x="466.4" y="38.55" font-family="Public Sans, sans-serif" font-size="11.5" font-weight="600" fill="#1c2b3a">86%</text><text x="740" y="38.35" text-anchor="end" font-family="Public Sans, sans-serif" font-size="9.6" fill="#46566b">90 R · 86 D — Pew 2023</text><path d="M 168 50 L 459.8 50 Q 463.8 50 463.8 54 L 463.8 56.5 Q 463.8 60.5 459.8 60.5 L 168 60.5 Z" fill="#a97d1c"/><text x="158" y="58.85" text-anchor="end" font-family="Public Sans, sans-serif" font-size="11.5" fill="#1c2b3a">Ethics</text><text x="469.8" y="59.05" font-family="Public Sans, sans-serif" font-size="11.5" font-weight="600" fill="#1c2b3a">87%</text><text x="740" y="58.85" text-anchor="end" font-family="Public Sans, sans-serif" font-size="9.6" fill="#46566b">87 R · 88 D — Univ. of Maryland 2023</text><path d="M 168 70.5 L 395.20000000000005 70.5 Q 399.20000000000005 70.5 399.20000000000005 74.5 L 399.20000000000005 77 Q 399.20000000000005 81 395.20000000000005 81 L 168 81 Z" fill="#a97d1c"/><text x="158" y="79.35" text-anchor="end" font-family="Public Sans, sans-serif" font-size="11.5" fill="#1c2b3a">Privacy</text><text x="405.20000000000005" y="79.55" font-family="Public Sans, sans-serif" font-size="11.5" font-weight="600" fill="#1c2b3a">68%</text><text x="740" y="79.35" text-anchor="end" font-family="Public Sans, sans-serif" font-size="9.6" fill="#46566b">68 R · 78 D — Pew 2023 (proxy)</text><path d="M 168 91 L 408.79999999999995 91 Q 412.79999999999995 91 412.79999999999995 95 L 412.79999999999995 97.5 Q 412.79999999999995 101.5 408.79999999999995 101.5 L 168 101.5 Z" fill="#a97d1c"/><text x="158" y="99.85" text-anchor="end" font-family="Public Sans, sans-serif" font-size="11.5" fill="#1c2b3a">Lobbying</text><text x="418.79999999999995" y="100.05" font-family="Public Sans, sans-serif" font-size="11.5" font-weight="600" fill="#1c2b3a">72%</text><text x="740" y="99.85" text-anchor="end" font-family="Public Sans, sans-serif" font-size="9.6" fill="#46566b">72 R · 72 D — Univ. of Maryland 2022</text><path d="M 168 111.5 L 402 111.5 Q 406 111.5 406 115.5 L 406 118 Q 406 122 402 122 L 168 122 Z" fill="#a97d1c"/><text x="158" y="120.35" text-anchor="end" font-family="Public Sans, sans-serif" font-size="11.5" fill="#1c2b3a">Redistricting</text><text x="412" y="120.55" font-family="Public Sans, sans-serif" font-size="11.5" font-weight="600" fill="#1c2b3a">70%</text><text x="740" y="120.35" text-anchor="end" font-family="Public Sans, sans-serif" font-size="9.6" fill="#46566b">70 R · 73 D — Marquette 2025</text><path d="M 168 132 L 429.2 132 Q 433.2 132 433.2 136 L 433.2 138.5 Q 433.2 142.5 429.2 142.5 L 168 142.5 Z" fill="#a97d1c"/><text x="158" y="140.85" text-anchor="end" font-family="Public Sans, sans-serif" font-size="11.5" fill="#1c2b3a">Executive Compliance</text><text x="439.2" y="141.05" font-family="Public Sans, sans-serif" font-size="11.5" font-weight="600" fill="#1c2b3a">78%</text><text x="740" y="140.85" text-anchor="end" font-family="Public Sans, sans-serif" font-size="9.6" fill="#46566b">78 R · 92 D — Marquette 2025</text><path d="M 168 152.5 L 381.6 152.5 Q 385.6 152.5 385.6 156.5 L 385.6 159 Q 385.6 163 381.6 163 L 168 163 Z" fill="#a97d1c"/><text x="158" y="161.35" text-anchor="end" font-family="Public Sans, sans-serif" font-size="11.5" fill="#1c2b3a">Pardon Reform</text><text x="391.6" y="161.55" font-family="Public Sans, sans-serif" font-size="11.5" font-weight="600" fill="#1c2b3a">64%</text><text x="740" y="161.35" text-anchor="end" font-family="Public Sans, sans-serif" font-size="9.6" fill="#46566b">64 R · 88 D — YouGov/Protect Democracy 2024</text><path d="M 168 173 L 388.4 173 Q 392.4 173 392.4 177 L 392.4 179.5 Q 392.4 183.5 388.4 183.5 L 168 183.5 Z" fill="#a97d1c"/><text x="158" y="181.85" text-anchor="end" font-family="Public Sans, sans-serif" font-size="11.5" fill="#1c2b3a">Punishment Exception</text><text x="398.4" y="182.05" font-family="Public Sans, sans-serif" font-size="11.5" font-weight="600" fill="#1c2b3a">66%</text><text x="740" y="181.85" text-anchor="end" font-family="Public Sans, sans-serif" font-size="9.6" fill="#46566b">66 R · 85 D — YouGov 2024</text></svg>
+    <p class="chart-caption">The bar is each amendment's bipartisan floor — support in the
+    <em>less</em> supportive party. The full party breakdown, pollster, and question wording
+    for every figure are published at newbillofrights.net/polling.</p>
+  </div>
+
+  <div class="section">
+    <h2>Why now</h2>
+    <div class="tiles">
+      <div class="tile">
+        <div class="num">77<span class="pct">%</span></div>
+        <div class="lbl">say the political system needs major changes or complete reform</div>
+      </div>
+      <div class="tile">
+        <div class="num">27<span class="pct">%</span></div>
+        <div class="lbl">are confident that change can actually happen</div>
+      </div>
+      <div class="tile">
+        <div class="num">49<span class="pct">%</span></div>
+        <div class="lbl">are &ldquo;pessimistic reformers&rdquo; — want major change, don't believe it will come</div>
+      </div>
+    </div>
+    <p class="tile-src">Pew Research Center, spring 2025 survey; no party split published for these questions.</p>
+    <p>Over the past decade each party has held the presidency, and each has watched
+    powers it once defended used in ways it opposed. That experience shows up in the
+    numbers — and the numbers that held through changes of administration are the
+    ones this project is built on. Half the country wants structural change and does
+    not believe it can happen. The evidence that both parties already agree on
+    specific changes is the answer to that disbelief.</p>
+  </div>
+
+  <div class="section cols">
+    <div>
+      <h2>What we set aside, and why</h2>
+      <p>Twelve categories have been rejected on the evidence so far — among them
+      abortion, voting rights, the Electoral College, Supreme Court expansion, and a
+      balanced-budget requirement — and each has a public page naming the test it
+      failed and what would reopen it. Twenty-three further ideas are held as
+      candidates, each published with the specific evidence — for most, a drafted
+      poll question — that would resolve it. The point is not that these ideas are
+      wrong; it is that the evidence of full-spectrum support is not there yet.</p>
+      <h2 style="margin-top:7pt">Where the project stands</h2>
+      <p>Started by Michael Hamilton, who lives in Los Angeles. The research corpus
+      and all nine drafts are public at <strong>newbillofrights.net</strong>.
+      Incorporation as the New Bill of Rights Foundation and the founding-donor round
+      are next; the first monthly Los Angeles salon is planned for October 2026, with
+      the room built to be visibly full-spectrum.</p>
+    </div>
+    <div>
+      <h2>What we ask</h2>
+      <ul class="asks">
+        <li><strong>Come</strong> to a salon — and bring one person from the other side.</li>
+        <li><strong>Read one thing and tell us what's wrong with it.</strong> Corrections are recorded with attribution.</li>
+        <li><strong>Take a discussant seat</strong> — a named speaking role — at a future salon.</li>
+        <li><strong>Volunteer</strong> — research, polling, analytics, salon organizing, fundraising; lawyers: incorporation and 501(c)(3) filing pro bono.</li>
+        <li><strong>Found</strong> — join the founding-donor round or the founding board.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="qr-band">
+    <h2>Take it with you</h2>
+    <div class="qr-cards">
+      <div class="qr-card">
+        <img src="qr-site.svg" alt="QR code for newbillofrights.net" />
+        <div class="qr-title">Read the evidence</div>
+        <div class="qr-sub">All nine drafts, the polling, and everything we rejected — with reasons.</div>
+        <div class="qr-url">newbillofrights.net</div>
+      </div>
+      <div class="qr-card">
+        <img src="qr-volunteer.svg" alt="QR code for the volunteer form" />
+        <div class="qr-title">Volunteer</div>
+        <div class="qr-sub">Research, polling, analytics, salon organizing, fundraising, pro bono legal.</div>
+        <div class="qr-url">newbillofrights.net/get-involved/volunteer</div>
+      </div>
+      <div class="qr-card">
+        <img src="qr-donor.svg" alt="QR code for the founding donor page" />
+        <div class="qr-title">Become a founding donor</div>
+        <div class="qr-sub">Help incorporate the foundation — founding donors seat the first board.</div>
+        <div class="qr-url">newbillofrights.net/get-involved/seed-donors</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span><span class="site">newbillofrights.net</span> &nbsp;·&nbsp; contact@newbillofrights.net</span>
+    <span class="right">Figures verified 2026-08-25 · sources on the site</span>
+  </div>
+</div>
+
+</body>
+</html>
