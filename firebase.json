@@ -10,7 +10,10 @@
       { "source": "/evidence/rejected/:slug", "destination": "/rejected/:slug", "type": 301 },
       { "source": "/evidence/rejected", "destination": "/rejected", "type": 301 },
       { "source": "/evidence/polling", "destination": "/polling", "type": 301 },
-      { "source": "/evidence", "destination": "/candidates", "type": 301 }
+      { "source": "/evidence", "destination": "/candidates", "type": 301 },
+      { "source": "/q/a", "destination": "/", "type": 302 },
+      { "source": "/q/b", "destination": "/get-involved/volunteer", "type": 302 },
+      { "source": "/q/c", "destination": "https://www.linkedin.com/in/mrh2/", "type": 302 }
     ],
     "rewrites": [
       {
@@ -22,12 +25,6 @@
       }
     ],
     "headers": [
-      {
-        "source": "**",
-        "headers": [
-          { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
-        ]
-      },
       {
         "source": "**/*.@(woff2|png|jpg|jpeg|webp|avif|svg|ico)",
         "headers": [
