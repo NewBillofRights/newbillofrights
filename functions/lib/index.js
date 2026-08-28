@@ -36,8 +36,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.submitForm = void 0;
+exports.weeklySignupReport = exports.submitForm = void 0;
 const https_1 = require("firebase-functions/v2/https");
+const scheduler_1 = require("firebase-functions/v2/scheduler");
 const params_1 = require("firebase-functions/params");
 const logger = __importStar(require("firebase-functions/logger"));
 const nodemailer_1 = __importDefault(require("nodemailer"));
@@ -230,5 +231,76 @@ exports.submitForm = (0, https_1.onRequest)({ region: 'us-central1', maxInstance
     else {
         res.json({ ok: true });
     }
+});
+// Weekly signup report, mailed every Monday morning. The recipient is plain
+// config like NOTIFY_TO above; the schedule runs in Cloud Scheduler, so the
+// report arrives regardless of any local machine or session.
+const REPORT_TO = process.env.REPORT_TO ?? 'michael@newbillofrights.net';
+exports.weeklySignupReport = (0, scheduler_1.onSchedule)({
+    schedule: 'every monday 08:00',
+    timeZone: 'America/Los_Angeles',
+    secrets: [SMTP_APP_PASSWORD],
+}, async () => {
+    const pass = (SMTP_APP_PASSWORD.value() ?? '').replace(/\s+/g, '');
+    if (!pass) {
+        logger.warn('SMTP_APP_PASSWORD not set; skipping weekly signup report');
+        return;
+    }
+    const weekAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
+    const collections = [
+        { id: 'mailingList', label: 'Mailing list' },
+        { id: 'volunteerInterest', label: 'Volunteer interest' },
+        { id: 'seedDonorInterest', label: 'Founding-donor interest' },
+    ];
+    const sections = [];
+    const counts = [];
+    for (const { id, label } of collections) {
+        const all = await db.collection(id).count().get();
+        const total = all.data().count;
+        const fresh = await db
+            .collection(id)
+            .where('createdAt', '>=', weekAgo)
+            .orderBy('createdAt', 'desc')
+            .get();
+        counts.push(`${label}: ${total} total, ${fresh.size} new this week`);
+        const lines = fresh.docs.map((doc) => {
+            const d = doc.data();
+            const when = d.createdAt?.toDate?.()?.toISOString?.()?.slice(0, 10) ?? '?';
+            if (id === 'volunteerInterest') {
+                return [
+                    `  • ${when}  ${d.name} <${d.email}>${d.location ? ` — ${d.location}` : ''}`,
+                    `    areas: ${(d.areas ?? []).join(', ') || '(none)'}`,
+                    `    how they can help: ${String(d.howYouCanHelp ?? '').slice(0, 500)}`,
+                    `    why the mission: ${String(d.whyTheMission ?? '').slice(0, 500)}`,
+                ].join('\n');
+            }
+            if (id === 'seedDonorInterest') {
+                const amount = d.amount != null ? `$${Number(d.amount).toLocaleString('en-US')}` : '(no amount)';
+                return `  • ${when}  ${d.name} <${d.email}> — ${amount}${d.note ? `\n    note: ${String(d.note).slice(0, 500)}` : ''}`;
+            }
+            return `  • ${when}  ${d.email}${d.source ? `  (via ${d.source})` : ''}`;
+        });
+        sections.push(`${label} — ${total} total, ${fresh.size} new this week` +
+            (lines.length ? `\n${lines.join('\n')}` : ''));
+    }
+    const transport = nodemailer_1.default.createTransport({
+        host: 'smtp.gmail.com',
+        port: 465,
+        secure: true,
+        auth: { user: SMTP_USER, pass },
+    });
+    await transport.sendMail({
+        from: `"New Bill of Rights" <${SMTP_USER}>`,
+        to: REPORT_TO,
+        subject: `Weekly signups — ${counts.join(' · ')}`,
+        text: [
+            `Signup report for newbillofrights.net, week ending ${new Date().toISOString().slice(0, 10)}.`,
+            ``,
+            sections.join('\n\n'),
+            ``,
+            `Full records are in Firestore (mailingList, volunteerInterest, seedDonorInterest).`,
+        ].join('\n'),
+    });
+    logger.info('weekly signup report sent', { to: REPORT_TO });
 });
 //# sourceMappingURL=index.js.map
