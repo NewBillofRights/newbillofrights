@@ -8,6 +8,8 @@
 
 *Changelog: 2026-08-19 — mirror re-synced to the JSON: `thirteenth-prospective-effective-date` moved to Proposed (adopted 2026-08-18 as Article 9, Section 4); `redistricting-anti-favoritism` added as a candidate clause (registered by the 2026-08-19 movement-language pass); `privacy-data-protection` added as a candidate clause on the founder's direction; counts updated.*
 
+*Changelog: 2026-08-28 — founder decisions on the path-back audit applied to the JSON (no bucket moves, no count changes): `ethics-forced-divestment` note records the held rejection and the commissioned sale-only head-to-head; `ethics-civil-service-coverage` gains a written path back (senior-officials vs. all-employees split-sample); `civic-information`'s path back upgraded to fielded survey wording with the statutory-failure leg documented. Details in CATEGORIES.md and the memos' 2026-08-28 Review Additions.*
+
 ## Proposed (12)
 
 The nine target amendments and the clauses folded into them. For clauses, the last column gives the section of [PROPOSED_AMENDMENTS.md](PROPOSED_AMENDMENTS.md) the text now sits in.

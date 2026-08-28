@@ -101,3 +101,10 @@ Not a poll question in the ordinary sense — the ordinary question returns 79% 
 - Parent memo: [research/PRIVACY_RESEARCH.md](../../PRIVACY_RESEARCH.md), abstraction candidates 3 and 7, International Abstraction Lesson 11, and the right-to-be-forgotten trap note
 - Parent page: [site/src/content/amendments/privacy.mdx](../../../site/src/content/amendments/privacy.mdx), "What we left out"
 - Registry: [research/REGISTRY_INVENTORY_2026-08-18.md](../../REGISTRY_INVENTORY_2026-08-18.md) §A row `privacy-deletion-right`, §D.2, §E q.1
+
+
+## Review Addition (2026-08-28 — path-back audit applied)
+
+*Applied on the founder's direction of 2026-08-28 from [PATHBACK_AUDIT_2026-08-19.md](../../rejected/PATHBACK_AUDIT_2026-08-19.md); every figure was source-verified by the audit.*
+
+The 2026-08-19 [path-back audit](../../rejected/PATHBACK_AUDIT_2026-08-19.md) added instrument guidance, not a reopening: UMD PPC's deliberative criminal-records survey (Feb 12–22, 2021, n=2,487 RV) read **sealing** records of the never-convicted at 69.7% R / 84.7% D and automatic sealing of non-violent drug records at 67.9% R / 83.6% D, both after con arguments. The seal-from-public vs. erase-the-government's-copy distinction maps onto the records-excluding line this memo's path back draws; the 2019 30% R floor may partly be a vocabulary artifact of the word "delete." If the Step 2 question is ever commissioned, field "sealed from public view" alongside "deleted" as a split sample.

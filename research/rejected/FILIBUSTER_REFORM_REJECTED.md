@@ -118,3 +118,10 @@ The category reopens on a forward-looking, veil-of-ignorance question that names
 - [Pew Research Center — "How Americans View Proposals to Change the Political System," Sept. 19, 2023 (contains no filibuster item)](https://www.pewresearch.org/politics/2023/09/19/how-americans-view-proposals-to-change-the-political-system/)
 - [Newsweek / Cato / Morning Consult — constitutional-amendment battery, fieldwork June 25–26, 2026 (contains no filibuster item)](https://www.newsweek.com/how-americans-would-change-the-constitution-new-poll-12152648)
 - [UMD Program for Public Consultation — 200+ policy positions supported by bipartisan majorities (contains no Senate-procedure item)](https://publicconsultation.org/united-states/over-200-policy-positions-supported-by-bipartisan-majorities/)
+
+
+## Review Addition (2026-08-28 — path-back audit applied)
+
+*Applied on the founder's direction of 2026-08-28 from [PATHBACK_AUDIT_2026-08-19.md](PATHBACK_AUDIT_2026-08-19.md); every figure was source-verified by the audit.*
+
+The 2026-08-19 [path-back audit](PATHBACK_AUDIT_2026-08-19.md) **strengthened this rejection**: the newest wave, fielded under the flipped majority (Economist/YouGov, Oct 17–20, 2025), shows the parties re-sorting yet again — Republican support for the 60-vote rule fell 51 → 31 and Democratic opposition fell 56 → 24, with 48% unsure. The inversion design the path back specifies has never been fielded. One genuine note: the talking filibuster cleared 45% in both parties in the 2021 and 2022 waves, but both were under one majority and it is a milder design than the recorded path back.

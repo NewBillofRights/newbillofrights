@@ -128,3 +128,10 @@ Two findings belong in the parent memo regardless of the disposition. **The May 
 - [research/POLLING_RESEARCH.md](../../POLLING_RESEARCH.md) §8 — pardon polling and the public-justification gap
 - [research/SELECTION_METHOD.md](../../SELECTION_METHOD.md) §4.1, §4.3, §5, §6.2–6.4, §11
 - [research/REGISTRY_INVENTORY_2026-08-18.md](../../REGISTRY_INVENTORY_2026-08-18.md) §A, §C, §D.2
+
+
+## Review Addition (2026-08-28 — path-back audit applied)
+
+*Applied on the founder's direction of 2026-08-28 from [PATHBACK_AUDIT_2026-08-19.md](../../rejected/PATHBACK_AUDIT_2026-08-19.md); every figure was source-verified by the audit.*
+
+The 2026-08-19 [path-back audit](../../rejected/PATHBACK_AUDIT_2026-08-19.md) **strengthened this rejection**: the missed Aug 15–19, 2024 wave of the identical YouGov item read **26% R / 42% D**, against the 2026 reading of 30% R / 73% D — a 31-point Democratic swing on unchanged wording as the White House changed hands, with the Republican number stationary in the 20s–30s. That is the abuse-vs-remedy dynamic measured directly, and it predicts the path back's symmetry follow-up would fail. Design note for the record: a Supreme-Court-review variant slightly outpolled the congressional version (50% vs. 48% overall) on the same 2026 battery — the distrust may attach to Congress specifically.

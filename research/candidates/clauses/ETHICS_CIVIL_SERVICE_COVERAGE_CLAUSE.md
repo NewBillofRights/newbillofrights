@@ -94,3 +94,10 @@ Two corpus changes follow. The party breakdown **is** published and should repla
 - Rhode Island Ethics Commission Amendment, Question 2 (2016) — https://ballotpedia.org/Rhode_Island_Ethics_Commission_Amendment,_Question_2_(2016)
 - Congressional stock-trading bill passes the House, July 22, 2026 — https://rollcall.com/2026/07/22/congressional-stock-trading-bill-passes-the-house/
 - Internal: [research/ETHICS_RESEARCH.md](../../ETHICS_RESEARCH.md) (Principle 1 breadth trap; strategic read) · [research/POLLING_RESEARCH.md](../../POLLING_RESEARCH.md) §3 · [research/candidates/CIVIL_SERVICE_CANDIDATE.md](../CIVIL_SERVICE_CANDIDATE.md) §2, §4 · [research/REGISTRY_INVENTORY_2026-08-18.md](../../REGISTRY_INVENTORY_2026-08-18.md) §A, §C, §E.1 · [research/SELECTION_METHOD.md](../../SELECTION_METHOD.md) §4.1, §4.3, §5, §6.3, §11
+
+
+## Review Addition (2026-08-28 — path-back audit applied)
+
+*Applied on the founder's direction of 2026-08-28 from [PATHBACK_AUDIT_2026-08-19.md](../../rejected/PATHBACK_AUDIT_2026-08-19.md); every figure was source-verified by the audit.*
+
+The 2026-08-19 [path-back audit](../../rejected/PATHBACK_AUDIT_2026-08-19.md) found the clause's failure is breadth-specific, measured: Morning Consult/Politico (Oct 21–23, 2022, n=2,005 RV) read a trading ban for top federal-agency officials at **66% R / 66% D / 69% I**, against this memo's 41.6% R / 37.1% D for the all-employees breadth; PPC's own 2024 re-field dropped the all-employees item. **Founder decision 2026-08-28:** a path back is now recorded in the registry, keyed to a senior-officials vs. all-employees split-sample with a costs-named follow-up. The why-an-amendment objection is untouched by any of this and survives a qualifying poll.

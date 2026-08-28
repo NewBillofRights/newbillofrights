@@ -113,3 +113,10 @@ Commission, with an independent pollster, a single proposal worded roughly: *"Ev
 *Added after an outside completeness review; every item below was verified against the linked source before inclusion.*
 
 - ***Shelby County v. Holder*, 570 U.S. 529 (June 25, 2013)** — held that "Section 4 of the Voting Rights Act is unconstitutional; its formula can no longer be used as a basis for subjecting jurisdictions to preclearance" — [Cornell LII](https://www.law.cornell.edu/supremecourt/text/12-96). This is the struck statute behind the Democratic package's preclearance-restoration provisions (John Lewis VRAA) and is now named in §3's why-an-amendment line. It does not change the §5.3 result (passes narrowly) or the rejection, which rests on the gate and the symmetry test.
+
+
+## Review Addition (2026-08-28 — path-back audit applied)
+
+*Applied on the founder's direction of 2026-08-28 from [PATHBACK_AUDIT_2026-08-19.md](PATHBACK_AUDIT_2026-08-19.md); every figure was source-verified by the audit.*
+
+The 2026-08-19 [path-back audit](PATHBACK_AUDIT_2026-08-19.md): the paired item this memo's path back requires has never been fielded by anyone (Marquette Nov 2025, Marist Mar 2026, Fox Jul 2026, and Pew Aug 2025 all checked — components only). Two components now read strong in both parties: ID-to-register at 96% R / 72% D (Fox, Jul 2026) and the paper-record mandate at 87% R / 82% D (Pew, Aug 2025; see the election-technology entry). The path back also requires low salience after a House-control change, and the SAVE Act fight makes the present moment high-salience; the rejection stands.
