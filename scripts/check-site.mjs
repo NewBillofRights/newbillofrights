@@ -11,7 +11,7 @@
 // and research/candidates/*.md). Standalone MDX under site/src/copy/ is
 //   checked the same way (footnotes, provenance, banned words).
 // Exits non-zero on any failure.
-import { readFileSync, readdirSync } from 'node:fs';
+import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -64,5 +64,22 @@ checkDir('rejected', { draftText: false });
 checkDir('candidates', { draftText: false });
 // Standalone MDX copy rendered by .astro pages (e.g. /amendments/after-ratification)
 checkDir('copy', { draftText: false, base: 'site/src' });
+
+// 5. every registry `page` must resolve to an MDX content file — a moved or
+// renamed page otherwise 404s silently from /candidates, /rejected, and the
+// LeftOut lists that the registry drives.
+const registry = JSON.parse(readFileSync(resolve(root, 'site/src/content/data/registry.json'), 'utf8'));
+const deadPages = [...new Set(registry.map((e) => e.page).filter(Boolean))].filter((p) => {
+  const m = p.match(/^\/(amendments|candidates|rejected)\/([a-z0-9-]+)$/);
+  if (!m) return true; // a page outside the three content dirs has no MDX to resolve to
+  return !existsSync(resolve(root, 'site/src/content', m[1], `${m[2]}.mdx`));
+});
+if (deadPages.length) {
+  ok = false;
+  console.log('PROBLEM registry pages with no MDX file:', deadPages.join(' '));
+} else {
+  console.log(`OK      registry: all ${new Set(registry.map((e) => e.page).filter(Boolean)).size} page values resolve to MDX files`);
+}
+
 console.log(`${total} footnotes; ${ok ? 'ALL CHECKS PASS' : 'FIX NEEDED'}`);
 process.exit(ok ? 0 : 1);
