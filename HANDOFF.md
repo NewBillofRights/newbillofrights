@@ -44,4 +44,5 @@ Adopt American Promise's FOFA (website version) as Article 1 §§1–3 and USTL'
 
 - Firebase project sits under the newbillofrights.net GCP org; CLI is authenticated as the founder's other Google account. gcloud at `/opt/homebrew/share/google-cloud-sdk/bin/gcloud`.
 - Seed-donor/volunteer form notifications: `functions/src/index.ts` (nodemailer via smtp.gmail.com; `SMTP_APP_PASSWORD` in Secret Manager) — verified end to end 2026-08-18.
+- `weeklySignupReport` scheduled function (deployed 2026-08-27): every Monday 08:00 PT, emails michael@newbillofrights.net totals + new-this-week detail for mailingList / volunteerInterest / seedDonorInterest; first run verified. Local CLI tokens expire ~daily — `~/.claude/tools/reauth.sh` is repo-aware.
 - Analytics: Plausible in `Base.astro`, production builds only. contact@newbillofrights.net alias works.
