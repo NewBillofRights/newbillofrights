@@ -1,0 +1,177 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+// Every registry entry, one row each — the full-spectrum test applied to
+// everything in one view. Registry-driven; nothing on this page is hand-kept.
+const registry = await getCollection('registry');
+
+type Entry = Record<string, any>;
+
+const statusOrder: Record<string, number> = { proposed: 0, candidate: 1, rejected: 2 };
+const kindOrder: Record<string, number> = { category: 0, clause: 1 };
+
+const entries = registry
+  .map((e) => ({ id: e.id, ...(e.data as Entry) }))
+  .sort(
+    (a, b) =>
+      (statusOrder[a.status] ?? 9) - (statusOrder[b.status] ?? 9) ||
+      (kindOrder[a.kind] ?? 9) - (kindOrder[b.kind] ?? 9) ||
+      String(a.title).localeCompare(String(b.title))
+  );
+
+const counts = {
+  proposed: entries.filter((e) => e.status === 'proposed').length,
+  candidate: entries.filter((e) => e.status === 'candidate').length,
+  rejected: entries.filter((e) => e.status === 'rejected').length,
+};
+
+const floorCell = (e: Entry): string => {
+  const f = e.floor;
+  if (!f || (f.rep == null && f.dem == null)) return '—';
+  if (f.rep != null && f.dem != null)
+    return `${f.rep} R / ${f.dem} D — ${f.pollster ?? ''} ${f.year ?? ''}`.trim();
+  const one = f.overall != null ? `${f.overall} overall` : '—';
+  return `${one}${f.pollster ? ` — ${f.pollster} ${f.year ?? ''}` : ''}`.trim();
+};
+
+// The decisive column: what the entry cleared, waits on, or failed.
+const testCell = (e: Entry): string => {
+  if (e.status === 'proposed') return e.section ? `Adopted — ${e.section}` : 'Adopted';
+  if (e.status === 'candidate') return e.gate ?? '—';
+  return e.failedTest ?? '—';
+};
+
+const bucketLabel: Record<string, string> = {
+  proposed: 'Proposed',
+  candidate: 'Candidate',
+  rejected: 'Rejected',
+};
+---
+
+<Base
+  title="Scorecard"
+  description="Every proposal in the project — proposed, candidate, and rejected — in one table: the bipartisan floor, the verdict, and the test each one cleared, waits on, or failed."
+>
+  <div class="container">
+    <h1>Scorecard</h1>
+    <p class="intro">
+      This table lists every idea we have evaluated: {counts.proposed}
+      proposed, {counts.candidate} candidate, and {counts.rejected} rejected
+      entries, all judged by the same criteria. The <strong>bipartisan
+      floor</strong> is the level of support in the <em>less</em> supportive
+      party, with the pollster and year. The verdict applies our standard
+      scale (Strong ≥ 60, Moderate 45–59, Weak &lt; 45, or Unpolled). The
+      last column names the specific test each entry cleared, is waiting on,
+      or failed. Each row links to the page that carries the full evidence.
+    </p>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Proposal</th>
+            <th scope="col">Kind</th>
+            <th scope="col">Where it stands</th>
+            <th scope="col">Bipartisan floor</th>
+            <th scope="col">Verdict</th>
+            <th scope="col">The test</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            entries.map((e) => (
+              <tr class={`row-${e.status}`}>
+                <th scope="row">
+                  {e.page ? <a href={e.page}>{e.title}</a> : e.title}
+                </th>
+                <td>{e.kind === 'clause' && e.parent ? `clause · ${e.parent}` : e.kind}</td>
+                <td>{bucketLabel[e.status] ?? e.status}</td>
+                <td>{floorCell(e)}</td>
+                <td>{e.verdict ?? '—'}</td>
+                <td class="test">{testCell(e)}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <p class="see-also">
+      The <a href="/mission">mission page</a> describes how the criteria
+      work. The <a href="/candidates/polling-questions">polling questions</a>
+      page carries the survey wording candidates wait on. The
+      <a href="/polling">polling evidence</a> page holds the underlying
+      numbers with full party breakdowns.
+    </p>
+  </div>
+</Base>
+
+<style>
+  .intro,
+  .see-also {
+    max-width: var(--measure);
+  }
+
+  .table-scroll {
+    overflow-x: auto;
+    margin-top: var(--space-3);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 60rem;
+    font-size: 0.88rem;
+  }
+
+  thead th {
+    text-align: left;
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    background: var(--band);
+    padding: 0.6rem 0.75rem;
+    position: sticky;
+    top: 0;
+  }
+
+  tbody th,
+  tbody td {
+    padding: 0.55rem 0.75rem;
+    border-top: 1px solid var(--rule);
+    vertical-align: top;
+    text-align: left;
+  }
+
+  tbody th {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  tbody th a {
+    text-decoration: none;
+  }
+
+  tbody th a:hover {
+    text-decoration: underline;
+  }
+
+  td.test {
+    max-width: 26rem;
+  }
+
+  .row-proposed > td:nth-child(3) {
+    color: var(--accent-text);
+    font-weight: 600;
+  }
+
+  .see-also {
+    margin-top: var(--space-4);
+  }
+</style>
