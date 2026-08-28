@@ -86,3 +86,10 @@ Reopen if an independent pollster (Pew, Gallup, AP-NORC, Marquette, Economist/Yo
 
 - **Compact Clause, cited.** §3 already names the Compact Clause as the constitutional question the compact would face on activation; the text is Article I §10, clause 3: "No State shall, without the Consent of Congress, … enter into any Agreement or Compact with another State" — [Cornell LII, Article I §10](https://www.law.cornell.edu/constitution/articlei). Whether the compact needs congressional consent, and whether Congress could give it by statute, is unlitigated; either way the compact is a statutory route and the amendment remains the only instrument that changes Article II and the Twelfth Amendment themselves. No change to the §5.3 result ("satisfied").
 - Reviewer tone notes: "perceived unfairness from the left" is the founder's recorded rationale and is marked as a quotation from CATEGORIES.md; the phrase "neither can be sold with paired abuses because each side denies the other's premise" does not appear in this memo (it is in the Voting Rights memo). Neither was changed.
+
+
+## Review Addition (2026-08-28 — path-back audit applied)
+
+*Applied on the founder's direction of 2026-08-28 from [PATHBACK_AUDIT_2026-08-19.md](PATHBACK_AUDIT_2026-08-19.md); every figure was source-verified by the audit.*
+
+The 2026-08-19 [path-back audit](PATHBACK_AUDIT_2026-08-19.md): nothing has been fielded since Sept 2024 — Pew's July 2026 amendment roundup republishes 2024 data — and a missed Gallup wave (Sept 2024) read 32% R, below this memo's floor, not above it; the National Popular Vote compact framing reads worse with Republicans (21%, Gallup 2019), not better. Nothing to reopen.

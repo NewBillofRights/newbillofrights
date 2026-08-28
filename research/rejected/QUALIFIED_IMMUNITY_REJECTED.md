@@ -115,3 +115,10 @@ Searched for and not found (2026-08-17): any 2023–2026 national poll on qualif
 
 - **The federal-officer side (*Bivens*).** *Bivens v. Six Unknown Named Agents*, 403 U.S. 388 (June 21, 1971), held that a complaint "states a federal cause of action under the Fourth Amendment for which damages are recoverable" against federal agents — a judge-made remedy, not a statute — [Cornell LII](https://www.law.cornell.edu/supremecourt/text/403/388). *Egbert v. Boule* (June 8, 2022) declined to extend *Bivens* to Fourth Amendment excessive-force and First Amendment retaliation claims against a Border Patrol agent, asking "whether there is any reason to think that Congress might be better equipped" to create a damages remedy — [Cornell LII](https://www.law.cornell.edu/supremecourt/text/21-147). Bearing on §5.3: the reviewer suggested this makes the federal-officer half of the problem constitutional rather than statutory. It does not change the answer — the Court's own reasoning treats the remedy as Congress's to supply, and a statute creating a damages action against federal officers without a clearly-established-law defense would reach the same result an amendment would; no court has held that Congress lacks that power. The why-an-amendment test remains weak.
 - Reviewer tone note on "the framing that clears the bar is not the thing an 'eliminate qualified immunity' amendment would draft": not applied — the sentence states the framing-dependency finding, not a view on the merits.
+
+
+## Review Addition (2026-08-28 — path-back audit applied)
+
+*Applied on the founder's direction of 2026-08-28 from [PATHBACK_AUDIT_2026-08-19.md](PATHBACK_AUDIT_2026-08-19.md); every figure was source-verified by the audit.*
+
+The 2026-08-19 [path-back audit](PATHBACK_AUDIT_2026-08-19.md): no 2024–2026 fieldwork exists by anyone; the one 2026 publication (Oxford *Policing*, May 2026) recycles Oct 2020 MTurk data and shows support collapsing to a 45/46 split once the doctrine is defined and argued — consistent with this rejection. The path back's 2026-or-later, costs-named requirement remains entirely unmet.

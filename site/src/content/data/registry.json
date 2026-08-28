@@ -1268,7 +1268,10 @@
     "section": null,
     "summary": "Extending the ban on trading individual securities beyond elected and appointed constitutional officers to the entire federal civil service.",
     "pollQuestion": null,
-    "pathBack": null,
+    "pathBack": {
+      "wording": "Split sample, one arm per respondent. Arm A: senior officials who lead federal agencies — agency heads, their deputies, and officials who set policy — would be barred from owning or trading individual stocks while in office, with existing holdings sold or placed in a blind trust. Arm B: the identical rule applied to all federal employees, including rank-and-file civil servants. Both arms carry a costs-named follow-up (recruiting, and compliance burdens on employees far from policy decisions).",
+      "threshold": "Reopens scoped to senior officials only: Arm A at 60% or better in both parties after the costs follow-up while Arm B stays below it. A qualifying result reopens a narrower clause, not the all-employees breadth that failed — and the why-an-amendment objection must still be answered separately; nothing polled supplies that."
+    },
     "memo": "research/candidates/clauses/ETHICS_CIVIL_SERVICE_COVERAGE_CLAUSE.md",
     "page": null,
     "parentPage": "/amendments/ethics",
@@ -1280,7 +1283,7 @@
     "supersedes": [],
     "twinOf": null,
     "subItems": [],
-    "pathBackNote": "No path back identified, and the memo states this as a recommendation rather than an omission. The clause's failure is an affirmative finding, not a gap: asked deliberatively and given the strongest argument in its favor, both parties said no at nearly the same rate, Democrats lowest. Reopening would require a different proposal rather than a different framing, a demonstrated failure of the statutory floor under 18 U.S.C. 208, and a national reading clearing 60% in both parties on the operative breadth — none of which the 2026 record supplies.",
+    "pathBackNote": "Path back written 2026-08-28 on the founder's decision, following the 2026-08-19 path-back audit: the clause's failure is breadth-specific — top agency officials read 66% R / 66% D (Morning Consult/Politico, Oct 2022) while the all-employees breadth read 41.6% R / 37.1% D (PPC 2023, deliberative). The original finding stands for the breadth that was rejected.",
     "note": "The corpus's cleanest rejection and the only item rejected by consensus rather than by party split. The party breakdown is published, contrary to the earlier registry draft's note. Worth keeping visible precisely because it demonstrates that the gate measures something real rather than filtering for partisan comfort."
   },
   {
@@ -1320,7 +1323,7 @@
     "supersedes": [],
     "twinOf": null,
     "subItems": [],
-    "note": "The safe harbor is load-bearing, not a concession: it is what makes the section a rule against self-dealing rather than a condition on who may serve, and removing it would put the platform's strongest measured proposal at risk. The memo recommends fielding the path-back question only if it rides free in an ethics instrument already being commissioned."
+    "note": "Founder decision 2026-08-28, on the 2026-08-19 path-back audit: the rejection holds pending the recorded path back's own test. The audit verified PPC May 2023 fielded the sell-or-blind-trust design at 86.6% R / 88.3% D after a costs argument (Q6/Q8/Q4 of the cached questionnaire); the sale-only isolation below is now commissioned for the foundation's survey instrument. The 2016 Selzer floor and staleness objections no longer describe the evidence."
   },
   {
     "id": "privacy-deletion-right",
@@ -1757,8 +1760,8 @@
     "summary": "Never polled as an amendment; it fails the existential-problem and why-an-amendment tests, and both parties distrust the AI mechanism (54% of Republicans and 49% of Democrats expect AI to harm the news, Pew, 2024).",
     "pollQuestion": null,
     "pathBack": {
-      "wording": "a constitutional right of every person to access the records and proceedings of the federal government, with exemptions set by law",
-      "threshold": "A floor of 60% or better in the less-supportive party, together with a demonstrated statutory failure. Both are required."
+      "wording": "Should the Constitution guarantee every person the right to obtain the records and observe the proceedings of the federal government, with exceptions — such as national security, personal privacy, and ongoing law enforcement — defined by law? Follow-up names the costs: agencies would face binding, enforceable deadlines, and some records officials would prefer to withhold would become public.",
+      "threshold": "A floor of 60% or better in the less-supportive party after the costs follow-up, together with a demonstrated statutory failure. Both are required. As of the 2026-08-19 audit the statutory-failure leg is documented (GAO-24-106535 on persistent FOIA deadline failures; a record ~1.5M-request FY2024 backlog; the CDC FOIA office eliminated in April 2025); the question above was commissioned for the foundation's survey instrument on the founder's decision of 2026-08-28, and only this polling leg remains open."
     },
     "memo": "research/rejected/CIVIC_INFORMATION_REJECTED.md",
     "page": "/rejected/civic-information",

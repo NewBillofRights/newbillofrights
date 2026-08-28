@@ -110,3 +110,10 @@ Two conditions, in order. First, a statutory enlargement must be tried: passage 
 - [govinfo — H.J.Res. 186, *Congressional Apportionment Amendment Deadline Act*, 119th Congress, introduced May 14, 2026 (full text)](https://www.govinfo.gov/content/pkg/BILLS-119hjres186ih/html/BILLS-119hjres186ih.htm)
 - [Congressional Apportionment Amendment — ratification record (11 states; Kentucky, June 27, 1792; still pending; the "less"/"more" drafting error)](https://en.wikipedia.org/wiki/Congressional_Apportionment_Amendment)
 - [Newsweek / Cato / Morning Consult — constitutional-amendment battery, fieldwork June 25–26, 2026 (n=2,253); no House-size item](https://www.newsweek.com/how-americans-would-change-the-constitution-new-poll-12152648)
+
+
+## Review Addition (2026-08-28 — path-back audit applied)
+
+*Applied on the founder's direction of 2026-08-28 from [PATHBACK_AUDIT_2026-08-19.md](PATHBACK_AUDIT_2026-08-19.md); every figure was source-verified by the audit.*
+
+The 2026-08-19 [path-back audit](PATHBACK_AUDIT_2026-08-19.md): the formula framing remains unpolled with crosstabs — the new Verasight/New America poll (Jun–Jul 2026, 54% overall for +150 members) is advocacy-commissioned and withholds party splits — and the statutory-enlargement precondition is unmet: the Wyoming-Rule bill (H.R. 643, 118th) and every other House-size measure died at referral with no hearing.

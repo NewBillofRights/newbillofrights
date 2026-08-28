@@ -99,3 +99,10 @@ Carry it in the registry as `status: rejected, kind: clause` with the §4 questi
 - [House of Commons ETHI Committee, Report 5 (2025) — recommends full divestment by sale for the Prime Minister](https://www.ourcommons.ca/documentviewer/en/45-1/ETHI/report-5/page-24)
 - [18 U.S.C. § 208 (Cornell LII) — the conflict-of-interest statute and its exclusions](https://www.law.cornell.edu/uscode/text/18/208)
 - Internal: [research/ETHICS_RESEARCH.md](../../ETHICS_RESEARCH.md) Principle 1 (wealth-penalty framing trap); [research/POLLING_RESEARCH.md](../../POLLING_RESEARCH.md) §3–4; [research/SELECTION_METHOD.md](../../SELECTION_METHOD.md) §4.1–4.3, §5, §6.2–6.4, §11; [research/REGISTRY_INVENTORY_2026-08-18.md](../../REGISTRY_INVENTORY_2026-08-18.md) §A, §C, §D.2, §E.1; [site/src/content/amendments/ethics.mdx](../../../site/src/content/amendments/ethics.mdx) "What we left out"
+
+
+## Review Addition (2026-08-28 — path-back audit applied)
+
+*Applied on the founder's direction of 2026-08-28 from [PATHBACK_AUDIT_2026-08-19.md](../../rejected/PATHBACK_AUDIT_2026-08-19.md); every figure was source-verified by the audit.*
+
+The 2026-08-19 [path-back audit](../../rejected/PATHBACK_AUDIT_2026-08-19.md) — its headline finding — verified firsthand that the corpus's own PPC questionnaire of May 19–30, 2023 (n=2,625 RV, ±1.9) carries the divestment design this memo treated as unpolled with a party split: the sell-or-blind-trust requirement reads **86.2% (86.6% R / 88.3% D)** for Congress (Q6) and **87.3% (86.9% R / 90.0% D)** extended to the President, Vice President, and Supreme Court Justices (Q8), with the costs argument heard first (Q4). The 2016 Selzer floor, the no-party-split objection, and the staleness objection no longer describe the evidence. **Founder decision 2026-08-28:** the rejection holds pending the recorded path back's own test — the sale-only vs. blind-trust head-to-head is commissioned for the foundation's survey instrument.

@@ -128,3 +128,10 @@ The framing that has never been tested is the one that decides whether the categ
 - [Cornell LII — U.S. Constitution, Article IV (New States Clause, §3 cl. 1)](https://www.law.cornell.edu/constitution/articleiv)
 - [Cornell LII — U.S. Constitution, Article I (Enclave Clause, §8 cl. 17)](https://www.law.cornell.edu/constitution/articlei)
 - [Cornell LII — U.S. Constitution, Twenty-third Amendment](https://www.law.cornell.edu/constitution/amendmentxxiii)
+
+
+## Review Addition (2026-08-28 — path-back audit applied)
+
+*Applied on the founder's direction of 2026-08-28 from [PATHBACK_AUDIT_2026-08-19.md](PATHBACK_AUDIT_2026-08-19.md); every figure was source-verified by the audit.*
+
+The 2026-08-19 [path-back audit](PATHBACK_AUDIT_2026-08-19.md) surfaced a missed Washington Post–University of Maryland poll (Oct 9–14, 2019, n=860 Maryland residents) that fielded exactly the grievance/remedy split the path back specifies: a full voting House member for D.C. drew **54% R**, against 31% R for statehood and 30% R for retrocession in the same instrument. The 23-point Republican gap confirms the path back's design intuition; the sample is Maryland-only, 54% sits below the 60% R threshold, and no national pollster has fielded the split in 2021–2026. The rejection stands; the mechanism split is worth carrying into any commissioned instrument that revisits it.
