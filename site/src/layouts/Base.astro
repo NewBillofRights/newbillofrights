@@ -50,6 +50,10 @@ const canonicalUrl = new URL(path, Astro.site);
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
     {noindex && <meta name="robots" content="noindex" />}
+    <!-- Search Console ownership for the search-console@newbillofrights-prod
+         service account, which resubmits the sitemap after every prod deploy
+         (scripts/submit-sitemap.sh). Removing this tag revokes that ownership. -->
+    <meta name="google-site-verification" content="yELepSzSgVBvPNwgFKQhIJvDLNzIBZIka-2nClBh57Q" />
     <meta property="og:site_name" content="New Bill of Rights Foundation" />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
