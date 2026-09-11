@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(scripts/deploy.sh *)",
+      "Bash(./scripts/deploy.sh *)",
+      "Bash(firebase deploy *)",
+      "Bash(firebase hosting:channel:deploy *)",
+      "Bash(firebase login *)",
+      "Bash(node scripts/check-site.mjs)",
+      "Bash(npm --prefix site run build)"
+    ]
+  }
+}
