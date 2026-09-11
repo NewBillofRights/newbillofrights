@@ -263,6 +263,10 @@ rather than making an ask, so a reply is the expected outcome; chasing early und
    Promise went via the web contact form and has not responded; if nothing by **2026-09-04**, send
    to jennyp@americanpromise.net asking her to route it to Aliya Bhatia. A form submission with no
    reply is weak evidence of anything — it may never have reached a person.
+   **2026-09-11 update:** still no reply; window passed. Follow-up drafted for the jennyp@ route in
+   [email-american-promise-followup.txt](email-american-promise-followup.txt) — shorter, notes the page
+   is now live and indexed (item 1 above), restates the single version question, Gemini-passed
+   (two tone findings applied). Not yet sent; Michael's call.
 4. **The Gemini pass was skipped on these two** (founder's call, knowingly). The standing rule in
    [MEMORY / conventions] still governs the *next* piece of outbound copy; this was an exception,
    not a repeal.
