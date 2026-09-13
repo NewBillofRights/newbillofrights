@@ -1,0 +1,5 @@
+# newbillofrights.net
+User-agent: *
+Allow: /
+
+Sitemap: https://newbillofrights.net/sitemap-index.xml

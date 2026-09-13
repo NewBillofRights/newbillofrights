@@ -28,6 +28,8 @@ CHANNEL="${2:-preview}"
   case "$TARGET" in
     prod)
       (cd "$REPO_ROOT" && firebase deploy --only hosting)
+      # Tell Search Console the sitemap changed (non-fatal; see the script).
+      "$REPO_ROOT/scripts/submit-sitemap.sh" || true
       ;;
     preview)
       (cd "$REPO_ROOT" && firebase hosting:channel:deploy "$CHANNEL" --expires 30d)
